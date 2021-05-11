@@ -12,14 +12,14 @@ import man.openbanking.TransactionService;
 import man.openbanking.Transaction;
 
 @RestController
-@RequestMapping(path="",
+@RequestMapping(path="/api/v1/transactions",
                 produces="application/json")
 @CrossOrigin(origins="*")
 public class TransactionController {
     private TransactionService s; 
 
-    @GetMapping("/transactions")
-    public Transaction[] home() {
+    @GetMapping("/{accountNumber}")
+    public Transaction[] transactions() {
         return this.s.findAllByAccountNumber();
     }
 }
