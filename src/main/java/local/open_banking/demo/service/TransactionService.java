@@ -1,15 +1,22 @@
 package local.open_banking.demo.service;
 
 import local.open_banking.demo.entity.Transaction;
+import local.open_banking.demo.repository.TransactionRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
 import java.util.List;
 
 @Service
 public class TransactionService {
-    public List<Transaction> findAllByAccountNumber(final Integer accountNumber) {
-        return List.of(Transaction.builder().type("credit").date(new Date()).accountNumber(accountNumber)
-                .currency("USD").amount(100.00).merchantName("acme").merchantLogo("images/acme-logo.png").build());
+    @Autowired
+    public TransactionService(final TransactionRepository repository) {
+        this.repository = repository;
     }
+
+    public List<Transaction> findAllByAccountNumber(final Integer accountNumber) {
+        return repository.findAllByAccountNumber(accountNumber);
+    }
+
+    private final TransactionRepository repository;
 }
