@@ -1,4 +1,4 @@
-package man.openbanking.entity;
+package local.open_banking.demo.entity;
 
 import lombok.Builder;
 import lombok.Data;
@@ -8,17 +8,10 @@ import java.util.Date;
 @Data
 public class Transaction {
     private String type;
-
     private Date date;
-
     private Integer accountNumber;
-
     private String currency;
-
     private Double amount;
-
     private String merchantName;
-
     private String merchantLogo;
-
 }

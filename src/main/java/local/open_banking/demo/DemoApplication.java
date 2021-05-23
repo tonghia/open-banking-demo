@@ -1,13 +1,13 @@
-package man.openbanking;
+package local.open_banking.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OpenBankingApplication {
+public class DemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OpenBankingApplication.class, args);
+		SpringApplication.run(DemoApplication.class, args);
 	}
 
 }
