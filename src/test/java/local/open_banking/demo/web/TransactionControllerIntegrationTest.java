@@ -12,7 +12,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest(classes = { DemoApplication.class })
 @AutoConfigureMockMvc
-public class TransactionControllerIntegrationTest {
+class TransactionControllerIntegrationTest {
 
     @Test
     public void testTransactions() throws Exception {
