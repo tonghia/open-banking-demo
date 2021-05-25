@@ -22,12 +22,27 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+
+	testCompileOnly 'org.projectlombok:lombok:1.18.16'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
+
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
-	testImplementation 'io.rest-assured:rest-assured:4.4.0'
+	testCompile group: 'io.rest-assured', name: 'spring-mock-mvc', version: '3.0.0'
 }
 
 test {
 	useJUnitPlatform()
+}
+
+task srcZip(type: Zip) {
+	classifier = 'src'
+	from projectDir
+	include 'src/**/*'
+	include '*.gradle'
+	include 'README.md'
+	doLast {
+		println "Path to zip: $archivePath.path"
+	}
 }
