@@ -20,7 +20,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Other product type details associated with the account.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductType   {
+public class OBReadProduct2DataOtherProductType {
   @JsonProperty("Name")
   private String name;
 
@@ -43,7 +43,7 @@ public class OBReadProduct2DataOtherProductType   {
   private OBReadProduct2DataOtherProductTypeRepayment repayment;
 
   @JsonProperty("OtherFeesCharges")
-  
+
   private List<OBReadProduct2DataOtherProductTypeOtherFeesCharges> otherFeesCharges = null;
 
   @JsonProperty("SupplementaryData")
@@ -56,8 +56,9 @@ public class OBReadProduct2DataOtherProductType   {
 
   /**
    * Long name associated with the product
+   * 
    * @return name
-  */
+   */
   @ApiModelProperty(required = true, value = "Long name associated with the product")
   public String getName() {
     return name;
@@ -74,8 +75,9 @@ public class OBReadProduct2DataOtherProductType   {
 
   /**
    * Description of the Product associated with the account
+   * 
    * @return description
-  */
+   */
   @ApiModelProperty(required = true, value = "Description of the Product associated with the account")
   public String getDescription() {
     return description;
@@ -85,15 +87,17 @@ public class OBReadProduct2DataOtherProductType   {
     this.description = description;
   }
 
-  public OBReadProduct2DataOtherProductType productDetails(OBReadProduct2DataOtherProductTypeProductDetails productDetails) {
+  public OBReadProduct2DataOtherProductType productDetails(
+      OBReadProduct2DataOtherProductTypeProductDetails productDetails) {
     this.productDetails = productDetails;
     return this;
   }
 
   /**
    * Get productDetails
+   * 
    * @return productDetails
-  */
+   */
   @ApiModelProperty(value = "")
   public OBReadProduct2DataOtherProductTypeProductDetails getProductDetails() {
     return productDetails;
@@ -103,15 +107,17 @@ public class OBReadProduct2DataOtherProductType   {
     this.productDetails = productDetails;
   }
 
-  public OBReadProduct2DataOtherProductType creditInterest(OBReadProduct2DataOtherProductTypeCreditInterest creditInterest) {
+  public OBReadProduct2DataOtherProductType creditInterest(
+      OBReadProduct2DataOtherProductTypeCreditInterest creditInterest) {
     this.creditInterest = creditInterest;
     return this;
   }
 
   /**
    * Get creditInterest
+   * 
    * @return creditInterest
-  */
+   */
   @ApiModelProperty(value = "")
   public OBReadProduct2DataOtherProductTypeCreditInterest getCreditInterest() {
     return creditInterest;
@@ -128,8 +134,9 @@ public class OBReadProduct2DataOtherProductType   {
 
   /**
    * Get overdraft
+   * 
    * @return overdraft
-  */
+   */
   @ApiModelProperty(value = "")
   public OBReadProduct2DataOtherProductTypeOverdraft getOverdraft() {
     return overdraft;
@@ -146,8 +153,9 @@ public class OBReadProduct2DataOtherProductType   {
 
   /**
    * Get loanInterest
+   * 
    * @return loanInterest
-  */
+   */
   @ApiModelProperty(value = "")
   public OBReadProduct2DataOtherProductTypeLoanInterest getLoanInterest() {
     return loanInterest;
@@ -164,8 +172,9 @@ public class OBReadProduct2DataOtherProductType   {
 
   /**
    * Get repayment
+   * 
    * @return repayment
-  */
+   */
   @ApiModelProperty(value = "")
   public OBReadProduct2DataOtherProductTypeRepayment getRepayment() {
     return repayment;
@@ -175,12 +184,14 @@ public class OBReadProduct2DataOtherProductType   {
     this.repayment = repayment;
   }
 
-  public OBReadProduct2DataOtherProductType otherFeesCharges(List<OBReadProduct2DataOtherProductTypeOtherFeesCharges> otherFeesCharges) {
+  public OBReadProduct2DataOtherProductType otherFeesCharges(
+      List<OBReadProduct2DataOtherProductTypeOtherFeesCharges> otherFeesCharges) {
     this.otherFeesCharges = otherFeesCharges;
     return this;
   }
 
-  public OBReadProduct2DataOtherProductType addOtherFeesChargesItem(OBReadProduct2DataOtherProductTypeOtherFeesCharges otherFeesChargesItem) {
+  public OBReadProduct2DataOtherProductType addOtherFeesChargesItem(
+      OBReadProduct2DataOtherProductTypeOtherFeesCharges otherFeesChargesItem) {
     if (this.otherFeesCharges == null) {
       this.otherFeesCharges = new ArrayList<>();
     }
@@ -190,8 +201,9 @@ public class OBReadProduct2DataOtherProductType   {
 
   /**
    * Get otherFeesCharges
+   * 
    * @return otherFeesCharges
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBReadProduct2DataOtherProductTypeOtherFeesCharges> getOtherFeesCharges() {
     return otherFeesCharges;
@@ -207,9 +219,11 @@ public class OBReadProduct2DataOtherProductType   {
   }
 
   /**
-   * Additional information that can not be captured in the structured fields and/or any other specific block.
+   * Additional information that can not be captured in the structured fields
+   * and/or any other specific block.
+   * 
    * @return supplementaryData
-  */
+   */
   @ApiModelProperty(value = "Additional information that can not be captured in the structured fields and/or any other specific block.")
   public Object getSupplementaryData() {
     return supplementaryData;
@@ -218,7 +232,6 @@ public class OBReadProduct2DataOtherProductType   {
   public void setSupplementaryData(Object supplementaryData) {
     this.supplementaryData = supplementaryData;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -229,27 +242,28 @@ public class OBReadProduct2DataOtherProductType   {
       return false;
     }
     OBReadProduct2DataOtherProductType obReadProduct2DataOtherProductType = (OBReadProduct2DataOtherProductType) o;
-    return Objects.equals(this.name, obReadProduct2DataOtherProductType.name) &&
-        Objects.equals(this.description, obReadProduct2DataOtherProductType.description) &&
-        Objects.equals(this.productDetails, obReadProduct2DataOtherProductType.productDetails) &&
-        Objects.equals(this.creditInterest, obReadProduct2DataOtherProductType.creditInterest) &&
-        Objects.equals(this.overdraft, obReadProduct2DataOtherProductType.overdraft) &&
-        Objects.equals(this.loanInterest, obReadProduct2DataOtherProductType.loanInterest) &&
-        Objects.equals(this.repayment, obReadProduct2DataOtherProductType.repayment) &&
-        Objects.equals(this.otherFeesCharges, obReadProduct2DataOtherProductType.otherFeesCharges) &&
-        Objects.equals(this.supplementaryData, obReadProduct2DataOtherProductType.supplementaryData);
+    return Objects.equals(this.name, obReadProduct2DataOtherProductType.name)
+        && Objects.equals(this.description, obReadProduct2DataOtherProductType.description)
+        && Objects.equals(this.productDetails, obReadProduct2DataOtherProductType.productDetails)
+        && Objects.equals(this.creditInterest, obReadProduct2DataOtherProductType.creditInterest)
+        && Objects.equals(this.overdraft, obReadProduct2DataOtherProductType.overdraft)
+        && Objects.equals(this.loanInterest, obReadProduct2DataOtherProductType.loanInterest)
+        && Objects.equals(this.repayment, obReadProduct2DataOtherProductType.repayment)
+        && Objects.equals(this.otherFeesCharges, obReadProduct2DataOtherProductType.otherFeesCharges)
+        && Objects.equals(this.supplementaryData, obReadProduct2DataOtherProductType.supplementaryData);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, description, productDetails, creditInterest, overdraft, loanInterest, repayment, otherFeesCharges, supplementaryData);
+    return Objects.hash(name, description, productDetails, creditInterest, overdraft, loanInterest, repayment,
+        otherFeesCharges, supplementaryData);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductType {\n");
-    
+
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    productDetails: ").append(toIndentedString(productDetails)).append("\n");
@@ -274,4 +288,3 @@ public class OBReadProduct2DataOtherProductType   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

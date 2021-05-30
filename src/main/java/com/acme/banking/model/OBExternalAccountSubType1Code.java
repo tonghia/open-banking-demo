@@ -11,21 +11,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Specifies the sub type of account (product family group).
  */
 public enum OBExternalAccountSubType1Code {
-  
+
   CHARGECARD("ChargeCard"),
-  
+
   CREDITCARD("CreditCard"),
-  
+
   CURRENTACCOUNT("CurrentAccount"),
-  
+
   EMONEY("EMoney"),
-  
+
   LOAN("Loan"),
-  
+
   MORTGAGE("Mortgage"),
-  
+
   PREPAIDCARD("PrePaidCard"),
-  
+
   SAVINGS("Savings");
 
   private String value;
@@ -54,4 +54,3 @@ public enum OBExternalAccountSubType1Code {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

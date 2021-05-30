@@ -11,15 +11,15 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Statement type, in a coded form.
  */
 public enum OBExternalStatementType1Code {
-  
+
   ACCOUNTCLOSURE("AccountClosure"),
-  
+
   ACCOUNTOPENING("AccountOpening"),
-  
+
   ANNUAL("Annual"),
-  
+
   INTERIM("Interim"),
-  
+
   REGULARPERIODIC("RegularPeriodic");
 
   private String value;
@@ -48,4 +48,3 @@ public enum OBExternalStatementType1Code {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

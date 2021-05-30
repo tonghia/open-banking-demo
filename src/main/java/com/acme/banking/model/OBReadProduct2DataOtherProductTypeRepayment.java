@@ -20,35 +20,35 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Repayment details of the Loan product")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductTypeRepayment   {
+public class OBReadProduct2DataOtherProductTypeRepayment {
   /**
    * Repayment type
    */
   public enum RepaymentTypeEnum {
     USBA("USBA"),
-    
+
     USBU("USBU"),
-    
+
     USCI("USCI"),
-    
+
     USCS("USCS"),
-    
+
     USER("USER"),
-    
+
     USFA("USFA"),
-    
+
     USFB("USFB"),
-    
+
     USFI("USFI"),
-    
+
     USIO("USIO"),
-    
+
     USOT("USOT"),
-    
+
     USPF("USPF"),
-    
+
     USRW("USRW"),
-    
+
     USSL("USSL");
 
     private String value;
@@ -86,21 +86,21 @@ public class OBReadProduct2DataOtherProductTypeRepayment   {
    */
   public enum RepaymentFrequencyEnum {
     SMDA("SMDA"),
-    
+
     SMFL("SMFL"),
-    
+
     SMFO("SMFO"),
-    
+
     SMHY("SMHY"),
-    
+
     SMMO("SMMO"),
-    
+
     SMOT("SMOT"),
-    
+
     SMQU("SMQU"),
-    
+
     SMWE("SMWE"),
-    
+
     SMYE("SMYE");
 
     private String value;
@@ -134,21 +134,22 @@ public class OBReadProduct2DataOtherProductTypeRepayment   {
   private RepaymentFrequencyEnum repaymentFrequency;
 
   /**
-   * The repayment is for paying just the interest only or both interest and capital or bullet amount or balance to date etc
+   * The repayment is for paying just the interest only or both interest and
+   * capital or bullet amount or balance to date etc
    */
   public enum AmountTypeEnum {
     RABD("RABD"),
-    
+
     RABL("RABL"),
-    
+
     RACI("RACI"),
-    
+
     RAFC("RAFC"),
-    
+
     RAIO("RAIO"),
-    
+
     RALT("RALT"),
-    
+
     USOT("USOT");
 
     private String value;
@@ -182,7 +183,7 @@ public class OBReadProduct2DataOtherProductTypeRepayment   {
   private AmountTypeEnum amountType;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("OtherRepaymentType")
@@ -198,7 +199,7 @@ public class OBReadProduct2DataOtherProductTypeRepayment   {
   private OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeCharges repaymentFeeCharges;
 
   @JsonProperty("RepaymentHoliday")
-  
+
   private List<OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday> repaymentHoliday = null;
 
   public OBReadProduct2DataOtherProductTypeRepayment repaymentType(RepaymentTypeEnum repaymentType) {
@@ -208,8 +209,9 @@ public class OBReadProduct2DataOtherProductTypeRepayment   {
 
   /**
    * Repayment type
+   * 
    * @return repaymentType
-  */
+   */
   @ApiModelProperty(value = "Repayment type")
   public RepaymentTypeEnum getRepaymentType() {
     return repaymentType;
@@ -226,8 +228,9 @@ public class OBReadProduct2DataOtherProductTypeRepayment   {
 
   /**
    * Repayment frequency
+   * 
    * @return repaymentFrequency
-  */
+   */
   @ApiModelProperty(value = "Repayment frequency")
   public RepaymentFrequencyEnum getRepaymentFrequency() {
     return repaymentFrequency;
@@ -243,9 +246,11 @@ public class OBReadProduct2DataOtherProductTypeRepayment   {
   }
 
   /**
-   * The repayment is for paying just the interest only or both interest and capital or bullet amount or balance to date etc
+   * The repayment is for paying just the interest only or both interest and
+   * capital or bullet amount or balance to date etc
+   * 
    * @return amountType
-  */
+   */
   @ApiModelProperty(value = "The repayment is for paying just the interest only or both interest and capital or bullet amount or balance to date etc")
   public AmountTypeEnum getAmountType() {
     return amountType;
@@ -270,8 +275,9 @@ public class OBReadProduct2DataOtherProductTypeRepayment   {
 
   /**
    * Get notes
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "")
   public List<String> getNotes() {
     return notes;
@@ -281,15 +287,17 @@ public class OBReadProduct2DataOtherProductTypeRepayment   {
     this.notes = notes;
   }
 
-  public OBReadProduct2DataOtherProductTypeRepayment otherRepaymentType(OBReadProduct2DataOtherProductTypeRepaymentOtherRepaymentType otherRepaymentType) {
+  public OBReadProduct2DataOtherProductTypeRepayment otherRepaymentType(
+      OBReadProduct2DataOtherProductTypeRepaymentOtherRepaymentType otherRepaymentType) {
     this.otherRepaymentType = otherRepaymentType;
     return this;
   }
 
   /**
    * Get otherRepaymentType
+   * 
    * @return otherRepaymentType
-  */
+   */
   @ApiModelProperty(value = "")
   public OBReadProduct2DataOtherProductTypeRepaymentOtherRepaymentType getOtherRepaymentType() {
     return otherRepaymentType;
@@ -299,33 +307,38 @@ public class OBReadProduct2DataOtherProductTypeRepayment   {
     this.otherRepaymentType = otherRepaymentType;
   }
 
-  public OBReadProduct2DataOtherProductTypeRepayment otherRepaymentFrequency(OBReadProduct2DataOtherProductTypeRepaymentOtherRepaymentFrequency otherRepaymentFrequency) {
+  public OBReadProduct2DataOtherProductTypeRepayment otherRepaymentFrequency(
+      OBReadProduct2DataOtherProductTypeRepaymentOtherRepaymentFrequency otherRepaymentFrequency) {
     this.otherRepaymentFrequency = otherRepaymentFrequency;
     return this;
   }
 
   /**
    * Get otherRepaymentFrequency
+   * 
    * @return otherRepaymentFrequency
-  */
+   */
   @ApiModelProperty(value = "")
   public OBReadProduct2DataOtherProductTypeRepaymentOtherRepaymentFrequency getOtherRepaymentFrequency() {
     return otherRepaymentFrequency;
   }
 
-  public void setOtherRepaymentFrequency(OBReadProduct2DataOtherProductTypeRepaymentOtherRepaymentFrequency otherRepaymentFrequency) {
+  public void setOtherRepaymentFrequency(
+      OBReadProduct2DataOtherProductTypeRepaymentOtherRepaymentFrequency otherRepaymentFrequency) {
     this.otherRepaymentFrequency = otherRepaymentFrequency;
   }
 
-  public OBReadProduct2DataOtherProductTypeRepayment otherAmountType(OBReadProduct2DataOtherProductTypeRepaymentOtherAmountType otherAmountType) {
+  public OBReadProduct2DataOtherProductTypeRepayment otherAmountType(
+      OBReadProduct2DataOtherProductTypeRepaymentOtherAmountType otherAmountType) {
     this.otherAmountType = otherAmountType;
     return this;
   }
 
   /**
    * Get otherAmountType
+   * 
    * @return otherAmountType
-  */
+   */
   @ApiModelProperty(value = "")
   public OBReadProduct2DataOtherProductTypeRepaymentOtherAmountType getOtherAmountType() {
     return otherAmountType;
@@ -335,30 +348,35 @@ public class OBReadProduct2DataOtherProductTypeRepayment   {
     this.otherAmountType = otherAmountType;
   }
 
-  public OBReadProduct2DataOtherProductTypeRepayment repaymentFeeCharges(OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeCharges repaymentFeeCharges) {
+  public OBReadProduct2DataOtherProductTypeRepayment repaymentFeeCharges(
+      OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeCharges repaymentFeeCharges) {
     this.repaymentFeeCharges = repaymentFeeCharges;
     return this;
   }
 
   /**
    * Get repaymentFeeCharges
+   * 
    * @return repaymentFeeCharges
-  */
+   */
   @ApiModelProperty(value = "")
   public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeCharges getRepaymentFeeCharges() {
     return repaymentFeeCharges;
   }
 
-  public void setRepaymentFeeCharges(OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeCharges repaymentFeeCharges) {
+  public void setRepaymentFeeCharges(
+      OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeCharges repaymentFeeCharges) {
     this.repaymentFeeCharges = repaymentFeeCharges;
   }
 
-  public OBReadProduct2DataOtherProductTypeRepayment repaymentHoliday(List<OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday> repaymentHoliday) {
+  public OBReadProduct2DataOtherProductTypeRepayment repaymentHoliday(
+      List<OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday> repaymentHoliday) {
     this.repaymentHoliday = repaymentHoliday;
     return this;
   }
 
-  public OBReadProduct2DataOtherProductTypeRepayment addRepaymentHolidayItem(OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday repaymentHolidayItem) {
+  public OBReadProduct2DataOtherProductTypeRepayment addRepaymentHolidayItem(
+      OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday repaymentHolidayItem) {
     if (this.repaymentHoliday == null) {
       this.repaymentHoliday = new ArrayList<>();
     }
@@ -368,8 +386,9 @@ public class OBReadProduct2DataOtherProductTypeRepayment   {
 
   /**
    * Get repaymentHoliday
+   * 
    * @return repaymentHoliday
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday> getRepaymentHoliday() {
     return repaymentHoliday;
@@ -378,7 +397,6 @@ public class OBReadProduct2DataOtherProductTypeRepayment   {
   public void setRepaymentHoliday(List<OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday> repaymentHoliday) {
     this.repaymentHoliday = repaymentHoliday;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -389,27 +407,29 @@ public class OBReadProduct2DataOtherProductTypeRepayment   {
       return false;
     }
     OBReadProduct2DataOtherProductTypeRepayment obReadProduct2DataOtherProductTypeRepayment = (OBReadProduct2DataOtherProductTypeRepayment) o;
-    return Objects.equals(this.repaymentType, obReadProduct2DataOtherProductTypeRepayment.repaymentType) &&
-        Objects.equals(this.repaymentFrequency, obReadProduct2DataOtherProductTypeRepayment.repaymentFrequency) &&
-        Objects.equals(this.amountType, obReadProduct2DataOtherProductTypeRepayment.amountType) &&
-        Objects.equals(this.notes, obReadProduct2DataOtherProductTypeRepayment.notes) &&
-        Objects.equals(this.otherRepaymentType, obReadProduct2DataOtherProductTypeRepayment.otherRepaymentType) &&
-        Objects.equals(this.otherRepaymentFrequency, obReadProduct2DataOtherProductTypeRepayment.otherRepaymentFrequency) &&
-        Objects.equals(this.otherAmountType, obReadProduct2DataOtherProductTypeRepayment.otherAmountType) &&
-        Objects.equals(this.repaymentFeeCharges, obReadProduct2DataOtherProductTypeRepayment.repaymentFeeCharges) &&
-        Objects.equals(this.repaymentHoliday, obReadProduct2DataOtherProductTypeRepayment.repaymentHoliday);
+    return Objects.equals(this.repaymentType, obReadProduct2DataOtherProductTypeRepayment.repaymentType)
+        && Objects.equals(this.repaymentFrequency, obReadProduct2DataOtherProductTypeRepayment.repaymentFrequency)
+        && Objects.equals(this.amountType, obReadProduct2DataOtherProductTypeRepayment.amountType)
+        && Objects.equals(this.notes, obReadProduct2DataOtherProductTypeRepayment.notes)
+        && Objects.equals(this.otherRepaymentType, obReadProduct2DataOtherProductTypeRepayment.otherRepaymentType)
+        && Objects.equals(this.otherRepaymentFrequency,
+            obReadProduct2DataOtherProductTypeRepayment.otherRepaymentFrequency)
+        && Objects.equals(this.otherAmountType, obReadProduct2DataOtherProductTypeRepayment.otherAmountType)
+        && Objects.equals(this.repaymentFeeCharges, obReadProduct2DataOtherProductTypeRepayment.repaymentFeeCharges)
+        && Objects.equals(this.repaymentHoliday, obReadProduct2DataOtherProductTypeRepayment.repaymentHoliday);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(repaymentType, repaymentFrequency, amountType, notes, otherRepaymentType, otherRepaymentFrequency, otherAmountType, repaymentFeeCharges, repaymentHoliday);
+    return Objects.hash(repaymentType, repaymentFrequency, amountType, notes, otherRepaymentType,
+        otherRepaymentFrequency, otherAmountType, repaymentFeeCharges, repaymentHoliday);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductTypeRepayment {\n");
-    
+
     sb.append("    repaymentType: ").append(toIndentedString(repaymentType)).append("\n");
     sb.append("    repaymentFrequency: ").append(toIndentedString(repaymentFrequency)).append("\n");
     sb.append("    amountType: ").append(toIndentedString(amountType)).append("\n");
@@ -434,4 +454,3 @@ public class OBReadProduct2DataOtherProductTypeRepayment   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

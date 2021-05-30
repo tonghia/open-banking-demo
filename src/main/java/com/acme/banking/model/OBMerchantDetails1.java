@@ -12,7 +12,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Details of the merchant involved in the transaction.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBMerchantDetails1   {
+public class OBMerchantDetails1 {
   @JsonProperty("MerchantName")
   private String merchantName;
 
@@ -26,8 +26,9 @@ public class OBMerchantDetails1   {
 
   /**
    * Name by which the merchant is known.
+   * 
    * @return merchantName
-  */
+   */
   @ApiModelProperty(value = "Name by which the merchant is known.")
   public String getMerchantName() {
     return merchantName;
@@ -43,9 +44,11 @@ public class OBMerchantDetails1   {
   }
 
   /**
-   * Category code conform to ISO 18245, related to the type of services or goods the merchant provides for the transaction.
+   * Category code conform to ISO 18245, related to the type of services or goods
+   * the merchant provides for the transaction.
+   * 
    * @return merchantCategoryCode
-  */
+   */
   @ApiModelProperty(value = "Category code conform to ISO 18245, related to the type of services or goods the merchant provides for the transaction.")
   public String getMerchantCategoryCode() {
     return merchantCategoryCode;
@@ -54,7 +57,6 @@ public class OBMerchantDetails1   {
   public void setMerchantCategoryCode(String merchantCategoryCode) {
     this.merchantCategoryCode = merchantCategoryCode;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -65,8 +67,8 @@ public class OBMerchantDetails1   {
       return false;
     }
     OBMerchantDetails1 obMerchantDetails1 = (OBMerchantDetails1) o;
-    return Objects.equals(this.merchantName, obMerchantDetails1.merchantName) &&
-        Objects.equals(this.merchantCategoryCode, obMerchantDetails1.merchantCategoryCode);
+    return Objects.equals(this.merchantName, obMerchantDetails1.merchantName)
+        && Objects.equals(this.merchantCategoryCode, obMerchantDetails1.merchantCategoryCode);
   }
 
   @Override
@@ -78,7 +80,7 @@ public class OBMerchantDetails1   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBMerchantDetails1 {\n");
-    
+
     sb.append("    merchantName: ").append(toIndentedString(merchantName)).append("\n");
     sb.append("    merchantCategoryCode: ").append(toIndentedString(merchantCategoryCode)).append("\n");
     sb.append("}");
@@ -96,4 +98,3 @@ public class OBMerchantDetails1   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

@@ -19,7 +19,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Set of elements used to define the balance details.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadBalance1DataBalance   {
+public class OBReadBalance1DataBalance {
   @JsonProperty("AccountId")
   private String accountId;
 
@@ -37,7 +37,7 @@ public class OBReadBalance1DataBalance   {
   private OBReadBalance1DataAmount amount;
 
   @JsonProperty("CreditLine")
-  
+
   private List<OBReadBalance1DataCreditLine> creditLine = null;
 
   public OBReadBalance1DataBalance accountId(String accountId) {
@@ -46,9 +46,11 @@ public class OBReadBalance1DataBalance   {
   }
 
   /**
-   * A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.
+   * A unique and immutable identifier used to identify the account resource. This
+   * identifier has no meaning to the account owner.
+   * 
    * @return accountId
-  */
+   */
   @ApiModelProperty(required = true, value = "A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.")
   public String getAccountId() {
     return accountId;
@@ -65,8 +67,9 @@ public class OBReadBalance1DataBalance   {
 
   /**
    * Get creditDebitIndicator
+   * 
    * @return creditDebitIndicator
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBCreditDebitCode2 getCreditDebitIndicator() {
     return creditDebitIndicator;
@@ -83,8 +86,9 @@ public class OBReadBalance1DataBalance   {
 
   /**
    * Get type
+   * 
    * @return type
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBBalanceType1Code getType() {
     return type;
@@ -100,9 +104,13 @@ public class OBReadBalance1DataBalance   {
   }
 
   /**
-   * Indicates the date (and time) of the balance.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Indicates the date (and time) of the balance.All dates in the JSON payloads
+   * are represented in ISO 8601 date-time format. All date-time fields in
+   * responses must include the timezone. An example is below:
+   * 2017-04-05T10:43:07+00:00
+   * 
    * @return dateTime
-  */
+   */
   @ApiModelProperty(required = true, value = "Indicates the date (and time) of the balance.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getDateTime() {
     return dateTime;
@@ -119,8 +127,9 @@ public class OBReadBalance1DataBalance   {
 
   /**
    * Get amount
+   * 
    * @return amount
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBReadBalance1DataAmount getAmount() {
     return amount;
@@ -145,8 +154,9 @@ public class OBReadBalance1DataBalance   {
 
   /**
    * Get creditLine
+   * 
    * @return creditLine
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBReadBalance1DataCreditLine> getCreditLine() {
     return creditLine;
@@ -155,7 +165,6 @@ public class OBReadBalance1DataBalance   {
   public void setCreditLine(List<OBReadBalance1DataCreditLine> creditLine) {
     this.creditLine = creditLine;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -166,12 +175,12 @@ public class OBReadBalance1DataBalance   {
       return false;
     }
     OBReadBalance1DataBalance obReadBalance1DataBalance = (OBReadBalance1DataBalance) o;
-    return Objects.equals(this.accountId, obReadBalance1DataBalance.accountId) &&
-        Objects.equals(this.creditDebitIndicator, obReadBalance1DataBalance.creditDebitIndicator) &&
-        Objects.equals(this.type, obReadBalance1DataBalance.type) &&
-        Objects.equals(this.dateTime, obReadBalance1DataBalance.dateTime) &&
-        Objects.equals(this.amount, obReadBalance1DataBalance.amount) &&
-        Objects.equals(this.creditLine, obReadBalance1DataBalance.creditLine);
+    return Objects.equals(this.accountId, obReadBalance1DataBalance.accountId)
+        && Objects.equals(this.creditDebitIndicator, obReadBalance1DataBalance.creditDebitIndicator)
+        && Objects.equals(this.type, obReadBalance1DataBalance.type)
+        && Objects.equals(this.dateTime, obReadBalance1DataBalance.dateTime)
+        && Objects.equals(this.amount, obReadBalance1DataBalance.amount)
+        && Objects.equals(this.creditLine, obReadBalance1DataBalance.creditLine);
   }
 
   @Override
@@ -183,7 +192,7 @@ public class OBReadBalance1DataBalance   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadBalance1DataBalance {\n");
-    
+
     sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
     sb.append("    creditDebitIndicator: ").append(toIndentedString(creditDebitIndicator)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
@@ -205,4 +214,3 @@ public class OBReadBalance1DataBalance   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

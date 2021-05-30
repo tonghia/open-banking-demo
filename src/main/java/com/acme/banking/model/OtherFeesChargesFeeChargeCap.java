@@ -12,21 +12,22 @@ import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Details about any caps (maximum charges) that apply to a particular fee/charge
+ * Details about any caps (maximum charges) that apply to a particular
+ * fee/charge
  */
 @ApiModel(description = "Details about any caps (maximum charges) that apply to a particular fee/charge")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OtherFeesChargesFeeChargeCap   {
+public class OtherFeesChargesFeeChargeCap {
   /**
    * Fee/charge type which is being capped
    */
   public enum FeeTypeEnum {
     SERVICECACCOUNTFEE("ServiceCAccountFee"),
-    
+
     SERVICECACCOUNTFEEMONTHLY("ServiceCAccountFeeMonthly"),
-    
+
     SERVICECOTHER("ServiceCOther"),
-    
+
     OTHER("Other");
 
     private String value;
@@ -57,15 +58,16 @@ public class OtherFeesChargesFeeChargeCap   {
   }
 
   @JsonProperty("FeeType")
-  
+
   private List<FeeTypeEnum> feeType = new ArrayList<>();
 
   /**
-   * Indicates that this is the minimum/ maximum fee/charge that can be applied by the financial institution
+   * Indicates that this is the minimum/ maximum fee/charge that can be applied by
+   * the financial institution
    */
   public enum MinMaxTypeEnum {
     MINIMUM("Minimum"),
-    
+
     MAXIMUM("Maximum");
 
     private String value;
@@ -109,17 +111,17 @@ public class OtherFeesChargesFeeChargeCap   {
    */
   public enum CappingPeriodEnum {
     ACADEMICTERM("AcademicTerm"),
-    
+
     DAY("Day"),
-    
+
     HALF_YEAR("Half Year"),
-    
+
     MONTH("Month"),
-    
+
     QUARTER("Quarter"),
-    
+
     WEEK("Week"),
-    
+
     YEAR("Year");
 
     private String value;
@@ -153,11 +155,11 @@ public class OtherFeesChargesFeeChargeCap   {
   private CappingPeriodEnum cappingPeriod;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("OtherFeeType")
-  
+
   private List<OverdraftOtherFeeType> otherFeeType = null;
 
   public OtherFeesChargesFeeChargeCap feeType(List<FeeTypeEnum> feeType) {
@@ -172,8 +174,9 @@ public class OtherFeesChargesFeeChargeCap   {
 
   /**
    * Fee/charge type which is being capped
+   * 
    * @return feeType
-  */
+   */
   @ApiModelProperty(required = true, value = "Fee/charge type which is being capped")
   public List<FeeTypeEnum> getFeeType() {
     return feeType;
@@ -189,9 +192,11 @@ public class OtherFeesChargesFeeChargeCap   {
   }
 
   /**
-   * Indicates that this is the minimum/ maximum fee/charge that can be applied by the financial institution
+   * Indicates that this is the minimum/ maximum fee/charge that can be applied by
+   * the financial institution
+   * 
    * @return minMaxType
-  */
+   */
   @ApiModelProperty(required = true, value = "Indicates that this is the minimum/ maximum fee/charge that can be applied by the financial institution")
   public MinMaxTypeEnum getMinMaxType() {
     return minMaxType;
@@ -207,9 +212,11 @@ public class OtherFeesChargesFeeChargeCap   {
   }
 
   /**
-   * fee/charges are captured dependent on the number of occurrences rather than capped at a particular amount
+   * fee/charges are captured dependent on the number of occurrences rather than
+   * capped at a particular amount
+   * 
    * @return feeCapOccurrence
-  */
+   */
   @ApiModelProperty(value = "fee/charges are captured dependent on the number of occurrences rather than capped at a particular amount")
   public Float getFeeCapOccurrence() {
     return feeCapOccurrence;
@@ -225,9 +232,11 @@ public class OtherFeesChargesFeeChargeCap   {
   }
 
   /**
-   * Cap amount charged for a fee/charge (where it is charged in terms of an amount rather than a rate)
+   * Cap amount charged for a fee/charge (where it is charged in terms of an
+   * amount rather than a rate)
+   * 
    * @return feeCapAmount
-  */
+   */
   @ApiModelProperty(value = "Cap amount charged for a fee/charge (where it is charged in terms of an amount rather than a rate)")
   public String getFeeCapAmount() {
     return feeCapAmount;
@@ -244,8 +253,9 @@ public class OtherFeesChargesFeeChargeCap   {
 
   /**
    * Period e.g. day, week, month etc. for which the fee/charge is capped
+   * 
    * @return cappingPeriod
-  */
+   */
   @ApiModelProperty(value = "Period e.g. day, week, month etc. for which the fee/charge is capped")
   public CappingPeriodEnum getCappingPeriod() {
     return cappingPeriod;
@@ -269,9 +279,10 @@ public class OtherFeesChargesFeeChargeCap   {
   }
 
   /**
-   * Free text for adding  extra details for fee charge cap
+   * Free text for adding extra details for fee charge cap
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "Free text for adding  extra details for fee charge cap")
   public List<String> getNotes() {
     return notes;
@@ -296,8 +307,9 @@ public class OtherFeesChargesFeeChargeCap   {
 
   /**
    * Other fee type code which is not available in the standard code set
+   * 
    * @return otherFeeType
-  */
+   */
   @ApiModelProperty(value = "Other fee type code which is not available in the standard code set")
   public List<OverdraftOtherFeeType> getOtherFeeType() {
     return otherFeeType;
@@ -306,7 +318,6 @@ public class OtherFeesChargesFeeChargeCap   {
   public void setOtherFeeType(List<OverdraftOtherFeeType> otherFeeType) {
     this.otherFeeType = otherFeeType;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -317,13 +328,13 @@ public class OtherFeesChargesFeeChargeCap   {
       return false;
     }
     OtherFeesChargesFeeChargeCap otherFeesChargesFeeChargeCap = (OtherFeesChargesFeeChargeCap) o;
-    return Objects.equals(this.feeType, otherFeesChargesFeeChargeCap.feeType) &&
-        Objects.equals(this.minMaxType, otherFeesChargesFeeChargeCap.minMaxType) &&
-        Objects.equals(this.feeCapOccurrence, otherFeesChargesFeeChargeCap.feeCapOccurrence) &&
-        Objects.equals(this.feeCapAmount, otherFeesChargesFeeChargeCap.feeCapAmount) &&
-        Objects.equals(this.cappingPeriod, otherFeesChargesFeeChargeCap.cappingPeriod) &&
-        Objects.equals(this.notes, otherFeesChargesFeeChargeCap.notes) &&
-        Objects.equals(this.otherFeeType, otherFeesChargesFeeChargeCap.otherFeeType);
+    return Objects.equals(this.feeType, otherFeesChargesFeeChargeCap.feeType)
+        && Objects.equals(this.minMaxType, otherFeesChargesFeeChargeCap.minMaxType)
+        && Objects.equals(this.feeCapOccurrence, otherFeesChargesFeeChargeCap.feeCapOccurrence)
+        && Objects.equals(this.feeCapAmount, otherFeesChargesFeeChargeCap.feeCapAmount)
+        && Objects.equals(this.cappingPeriod, otherFeesChargesFeeChargeCap.cappingPeriod)
+        && Objects.equals(this.notes, otherFeesChargesFeeChargeCap.notes)
+        && Objects.equals(this.otherFeeType, otherFeesChargesFeeChargeCap.otherFeeType);
   }
 
   @Override
@@ -335,7 +346,7 @@ public class OtherFeesChargesFeeChargeCap   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OtherFeesChargesFeeChargeCap {\n");
-    
+
     sb.append("    feeType: ").append(toIndentedString(feeType)).append("\n");
     sb.append("    minMaxType: ").append(toIndentedString(minMaxType)).append("\n");
     sb.append("    feeCapOccurrence: ").append(toIndentedString(feeCapOccurrence)).append("\n");
@@ -358,4 +369,3 @@ public class OtherFeesChargesFeeChargeCap   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

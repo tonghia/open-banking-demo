@@ -14,7 +14,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Set of elements used to provide details on the credit line.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadBalance1DataCreditLine   {
+public class OBReadBalance1DataCreditLine {
   @JsonProperty("Included")
   private Boolean included;
 
@@ -23,13 +23,13 @@ public class OBReadBalance1DataCreditLine   {
    */
   public enum TypeEnum {
     AVAILABLE("Available"),
-    
+
     CREDIT("Credit"),
-    
+
     EMERGENCY("Emergency"),
-    
+
     PRE_AGREED("Pre-Agreed"),
-    
+
     TEMPORARY("Temporary");
 
     private String value;
@@ -71,9 +71,12 @@ public class OBReadBalance1DataCreditLine   {
   }
 
   /**
-   * Indicates whether or not the credit line is included in the balance of the account. Usage: If not present, credit line is not included in the balance amount of the account.
+   * Indicates whether or not the credit line is included in the balance of the
+   * account. Usage: If not present, credit line is not included in the balance
+   * amount of the account.
+   * 
    * @return included
-  */
+   */
   @ApiModelProperty(required = true, value = "Indicates whether or not the credit line is included in the balance of the account. Usage: If not present, credit line is not included in the balance amount of the account.")
   public Boolean getIncluded() {
     return included;
@@ -90,8 +93,9 @@ public class OBReadBalance1DataCreditLine   {
 
   /**
    * Limit type, in a coded form.
+   * 
    * @return type
-  */
+   */
   @ApiModelProperty(value = "Limit type, in a coded form.")
   public TypeEnum getType() {
     return type;
@@ -108,8 +112,9 @@ public class OBReadBalance1DataCreditLine   {
 
   /**
    * Get amount
+   * 
    * @return amount
-  */
+   */
   @ApiModelProperty(value = "")
   public OBReadBalance1DataAmount1 getAmount() {
     return amount;
@@ -118,7 +123,6 @@ public class OBReadBalance1DataCreditLine   {
   public void setAmount(OBReadBalance1DataAmount1 amount) {
     this.amount = amount;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -129,9 +133,9 @@ public class OBReadBalance1DataCreditLine   {
       return false;
     }
     OBReadBalance1DataCreditLine obReadBalance1DataCreditLine = (OBReadBalance1DataCreditLine) o;
-    return Objects.equals(this.included, obReadBalance1DataCreditLine.included) &&
-        Objects.equals(this.type, obReadBalance1DataCreditLine.type) &&
-        Objects.equals(this.amount, obReadBalance1DataCreditLine.amount);
+    return Objects.equals(this.included, obReadBalance1DataCreditLine.included)
+        && Objects.equals(this.type, obReadBalance1DataCreditLine.type)
+        && Objects.equals(this.amount, obReadBalance1DataCreditLine.amount);
   }
 
   @Override
@@ -143,7 +147,7 @@ public class OBReadBalance1DataCreditLine   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadBalance1DataCreditLine {\n");
-    
+
     sb.append("    included: ").append(toIndentedString(included)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
@@ -162,4 +166,3 @@ public class OBReadBalance1DataCreditLine   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

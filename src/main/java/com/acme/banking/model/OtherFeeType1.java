@@ -13,7 +13,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Other Fee/charge type which is not available in the standard code set")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OtherFeeType1   {
+public class OtherFeeType1 {
   @JsonProperty("Code")
   private String code;
 
@@ -22,7 +22,7 @@ public class OtherFeeType1   {
    */
   public enum FeeCategoryEnum {
     OTHER("Other"),
-    
+
     SERVICING("Servicing");
 
     private String value;
@@ -68,8 +68,9 @@ public class OtherFeeType1   {
 
   /**
    * The four letter Mnemonic used within an XML file to identify a code
+   * 
    * @return code
-  */
+   */
   @ApiModelProperty(value = "The four letter Mnemonic used within an XML file to identify a code")
   public String getCode() {
     return code;
@@ -86,8 +87,9 @@ public class OtherFeeType1   {
 
   /**
    * Categorisation of fees and charges into standard categories.
+   * 
    * @return feeCategory
-  */
+   */
   @ApiModelProperty(required = true, value = "Categorisation of fees and charges into standard categories.")
   public FeeCategoryEnum getFeeCategory() {
     return feeCategory;
@@ -104,8 +106,9 @@ public class OtherFeeType1   {
 
   /**
    * Long name associated with the code
+   * 
    * @return name
-  */
+   */
   @ApiModelProperty(required = true, value = "Long name associated with the code")
   public String getName() {
     return name;
@@ -122,8 +125,9 @@ public class OtherFeeType1   {
 
   /**
    * Description to describe the purpose of the code
+   * 
    * @return description
-  */
+   */
   @ApiModelProperty(required = true, value = "Description to describe the purpose of the code")
   public String getDescription() {
     return description;
@@ -132,7 +136,6 @@ public class OtherFeeType1   {
   public void setDescription(String description) {
     this.description = description;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -143,10 +146,8 @@ public class OtherFeeType1   {
       return false;
     }
     OtherFeeType1 otherFeeType1 = (OtherFeeType1) o;
-    return Objects.equals(this.code, otherFeeType1.code) &&
-        Objects.equals(this.feeCategory, otherFeeType1.feeCategory) &&
-        Objects.equals(this.name, otherFeeType1.name) &&
-        Objects.equals(this.description, otherFeeType1.description);
+    return Objects.equals(this.code, otherFeeType1.code) && Objects.equals(this.feeCategory, otherFeeType1.feeCategory)
+        && Objects.equals(this.name, otherFeeType1.name) && Objects.equals(this.description, otherFeeType1.description);
   }
 
   @Override
@@ -158,7 +159,7 @@ public class OtherFeeType1   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OtherFeeType1 {\n");
-    
+
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    feeCategory: ").append(toIndentedString(feeCategory)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
@@ -178,4 +179,3 @@ public class OtherFeeType1   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

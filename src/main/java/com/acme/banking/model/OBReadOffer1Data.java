@@ -14,9 +14,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBReadOffer1Data
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadOffer1Data   {
+public class OBReadOffer1Data {
   @JsonProperty("Offer")
-  
+
   private List<OBReadOffer1DataOffer> offer = null;
 
   public OBReadOffer1Data offer(List<OBReadOffer1DataOffer> offer) {
@@ -34,8 +34,9 @@ public class OBReadOffer1Data   {
 
   /**
    * Get offer
+   * 
    * @return offer
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBReadOffer1DataOffer> getOffer() {
     return offer;
@@ -44,7 +45,6 @@ public class OBReadOffer1Data   {
   public void setOffer(List<OBReadOffer1DataOffer> offer) {
     this.offer = offer;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -67,7 +67,7 @@ public class OBReadOffer1Data   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadOffer1Data {\n");
-    
+
     sb.append("    offer: ").append(toIndentedString(offer)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -84,4 +84,3 @@ public class OBReadOffer1Data   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

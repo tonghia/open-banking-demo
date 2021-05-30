@@ -8,11 +8,14 @@ import io.swagger.annotations.ApiModelProperty;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Amount of money to be moved between the debtor and creditor, before deduction of charges, expressed in the currency as ordered by the initiating party. Usage: This amount has to be transported unchanged through the transaction chain.
+ * Amount of money to be moved between the debtor and creditor, before deduction
+ * of charges, expressed in the currency as ordered by the initiating party.
+ * Usage: This amount has to be transported unchanged through the transaction
+ * chain.
  */
 @ApiModel(description = "Amount of money to be moved between the debtor and creditor, before deduction of charges, expressed in the currency as ordered by the initiating party. Usage: This amount has to be transported unchanged through the transaction chain.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBActiveOrHistoricCurrencyAndAmount1   {
+public class OBActiveOrHistoricCurrencyAndAmount1 {
   @JsonProperty("Amount")
   private String amount;
 
@@ -25,9 +28,11 @@ public class OBActiveOrHistoricCurrencyAndAmount1   {
   }
 
   /**
-   * A number of monetary units specified in an active currency where the unit of currency is explicit and compliant with ISO 4217.
+   * A number of monetary units specified in an active currency where the unit of
+   * currency is explicit and compliant with ISO 4217.
+   * 
    * @return amount
-  */
+   */
   @ApiModelProperty(required = true, value = "A number of monetary units specified in an active currency where the unit of currency is explicit and compliant with ISO 4217.")
   public String getAmount() {
     return amount;
@@ -43,9 +48,13 @@ public class OBActiveOrHistoricCurrencyAndAmount1   {
   }
 
   /**
-   * A code allocated to a currency by a Maintenance Agency under an international identification scheme, as described in the latest edition of the international standard ISO 4217 \"Codes for the representation of currencies and funds\".
+   * A code allocated to a currency by a Maintenance Agency under an international
+   * identification scheme, as described in the latest edition of the
+   * international standard ISO 4217 \"Codes for the representation of currencies
+   * and funds\".
+   * 
    * @return currency
-  */
+   */
   @ApiModelProperty(required = true, value = "A code allocated to a currency by a Maintenance Agency under an international identification scheme, as described in the latest edition of the international standard ISO 4217 \"Codes for the representation of currencies and funds\".")
   public String getCurrency() {
     return currency;
@@ -54,7 +63,6 @@ public class OBActiveOrHistoricCurrencyAndAmount1   {
   public void setCurrency(String currency) {
     this.currency = currency;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -65,8 +73,8 @@ public class OBActiveOrHistoricCurrencyAndAmount1   {
       return false;
     }
     OBActiveOrHistoricCurrencyAndAmount1 obActiveOrHistoricCurrencyAndAmount1 = (OBActiveOrHistoricCurrencyAndAmount1) o;
-    return Objects.equals(this.amount, obActiveOrHistoricCurrencyAndAmount1.amount) &&
-        Objects.equals(this.currency, obActiveOrHistoricCurrencyAndAmount1.currency);
+    return Objects.equals(this.amount, obActiveOrHistoricCurrencyAndAmount1.amount)
+        && Objects.equals(this.currency, obActiveOrHistoricCurrencyAndAmount1.currency);
   }
 
   @Override
@@ -78,7 +86,7 @@ public class OBActiveOrHistoricCurrencyAndAmount1   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBActiveOrHistoricCurrencyAndAmount1 {\n");
-    
+
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
     sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
     sb.append("}");
@@ -96,4 +104,3 @@ public class OBActiveOrHistoricCurrencyAndAmount1   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

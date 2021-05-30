@@ -13,7 +13,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Financial institution servicing an account for the creditor.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBBranchAndFinancialInstitutionIdentification61   {
+public class OBBranchAndFinancialInstitutionIdentification61 {
   @JsonProperty("SchemeName")
   private String schemeName;
 
@@ -32,9 +32,11 @@ public class OBBranchAndFinancialInstitutionIdentification61   {
   }
 
   /**
-   * Name of the identification scheme, in a coded form as published in an external list.
+   * Name of the identification scheme, in a coded form as published in an
+   * external list.
+   * 
    * @return schemeName
-  */
+   */
   @ApiModelProperty(value = "Name of the identification scheme, in a coded form as published in an external list.")
   public String getSchemeName() {
     return schemeName;
@@ -50,9 +52,11 @@ public class OBBranchAndFinancialInstitutionIdentification61   {
   }
 
   /**
-   * Unique and unambiguous identification of a financial institution or a branch of a financial institution.
+   * Unique and unambiguous identification of a financial institution or a branch
+   * of a financial institution.
+   * 
    * @return identification
-  */
+   */
   @ApiModelProperty(value = "Unique and unambiguous identification of a financial institution or a branch of a financial institution.")
   public String getIdentification() {
     return identification;
@@ -68,9 +72,11 @@ public class OBBranchAndFinancialInstitutionIdentification61   {
   }
 
   /**
-   * Name by which an agent is known and which is usually used to identify that agent.
+   * Name by which an agent is known and which is usually used to identify that
+   * agent.
+   * 
    * @return name
-  */
+   */
   @ApiModelProperty(value = "Name by which an agent is known and which is usually used to identify that agent.")
   public String getName() {
     return name;
@@ -87,8 +93,9 @@ public class OBBranchAndFinancialInstitutionIdentification61   {
 
   /**
    * Get postalAddress
+   * 
    * @return postalAddress
-  */
+   */
   @ApiModelProperty(value = "")
   public OBPostalAddress6 getPostalAddress() {
     return postalAddress;
@@ -97,7 +104,6 @@ public class OBBranchAndFinancialInstitutionIdentification61   {
   public void setPostalAddress(OBPostalAddress6 postalAddress) {
     this.postalAddress = postalAddress;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -108,10 +114,10 @@ public class OBBranchAndFinancialInstitutionIdentification61   {
       return false;
     }
     OBBranchAndFinancialInstitutionIdentification61 obBranchAndFinancialInstitutionIdentification61 = (OBBranchAndFinancialInstitutionIdentification61) o;
-    return Objects.equals(this.schemeName, obBranchAndFinancialInstitutionIdentification61.schemeName) &&
-        Objects.equals(this.identification, obBranchAndFinancialInstitutionIdentification61.identification) &&
-        Objects.equals(this.name, obBranchAndFinancialInstitutionIdentification61.name) &&
-        Objects.equals(this.postalAddress, obBranchAndFinancialInstitutionIdentification61.postalAddress);
+    return Objects.equals(this.schemeName, obBranchAndFinancialInstitutionIdentification61.schemeName)
+        && Objects.equals(this.identification, obBranchAndFinancialInstitutionIdentification61.identification)
+        && Objects.equals(this.name, obBranchAndFinancialInstitutionIdentification61.name)
+        && Objects.equals(this.postalAddress, obBranchAndFinancialInstitutionIdentification61.postalAddress);
   }
 
   @Override
@@ -123,7 +129,7 @@ public class OBBranchAndFinancialInstitutionIdentification61   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBBranchAndFinancialInstitutionIdentification61 {\n");
-    
+
     sb.append("    schemeName: ").append(toIndentedString(schemeName)).append("\n");
     sb.append("    identification: ").append(toIndentedString(identification)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
@@ -143,4 +149,3 @@ public class OBBranchAndFinancialInstitutionIdentification61   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

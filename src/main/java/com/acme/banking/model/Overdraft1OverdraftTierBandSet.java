@@ -17,15 +17,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Tier band set details")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class Overdraft1OverdraftTierBandSet   {
+public class Overdraft1OverdraftTierBandSet {
   /**
-   * The methodology of how overdraft is charged. It can be: 'Whole'  Where the same charge/rate is applied to the entirety of the overdraft balance (where charges are applicable).  'Tiered' Where different charges/rates are applied dependent on overdraft maximum and minimum balance amount tiers defined by the lending financial organisation 'Banded' Where different charges/rates are applied dependent on overdraft maximum and minimum balance amount bands defined by a government organisation.
+   * The methodology of how overdraft is charged. It can be: 'Whole' Where the
+   * same charge/rate is applied to the entirety of the overdraft balance (where
+   * charges are applicable). 'Tiered' Where different charges/rates are applied
+   * dependent on overdraft maximum and minimum balance amount tiers defined by
+   * the lending financial organisation 'Banded' Where different charges/rates are
+   * applied dependent on overdraft maximum and minimum balance amount bands
+   * defined by a government organisation.
    */
   public enum TierBandMethodEnum {
     TIERED("Tiered"),
-    
+
     WHOLE("Whole"),
-    
+
     BANDED("Banded");
 
     private String value;
@@ -59,13 +65,16 @@ public class Overdraft1OverdraftTierBandSet   {
   private TierBandMethodEnum tierBandMethod;
 
   /**
-   * An overdraft can either be 'committed' which means that the facility cannot be withdrawn without reasonable notification before it's agreed end date, or 'on demand' which means that the financial institution can demand repayment at any point in time.
+   * An overdraft can either be 'committed' which means that the facility cannot
+   * be withdrawn without reasonable notification before it's agreed end date, or
+   * 'on demand' which means that the financial institution can demand repayment
+   * at any point in time.
    */
   public enum OverdraftTypeEnum {
     COMMITTED("Committed"),
-    
+
     ONDEMAND("OnDemand"),
-    
+
     OTHER("Other");
 
     private String value;
@@ -108,15 +117,15 @@ public class Overdraft1OverdraftTierBandSet   {
   private String bufferAmount;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("OverdraftTierBand")
-  
+
   private List<Overdraft1OverdraftTierBand> overdraftTierBand = new ArrayList<>();
 
   @JsonProperty("OverdraftFeesCharges")
-  
+
   private List<Overdraft1OverdraftFeesCharges1> overdraftFeesCharges = null;
 
   public Overdraft1OverdraftTierBandSet tierBandMethod(TierBandMethodEnum tierBandMethod) {
@@ -125,9 +134,16 @@ public class Overdraft1OverdraftTierBandSet   {
   }
 
   /**
-   * The methodology of how overdraft is charged. It can be: 'Whole'  Where the same charge/rate is applied to the entirety of the overdraft balance (where charges are applicable).  'Tiered' Where different charges/rates are applied dependent on overdraft maximum and minimum balance amount tiers defined by the lending financial organisation 'Banded' Where different charges/rates are applied dependent on overdraft maximum and minimum balance amount bands defined by a government organisation.
+   * The methodology of how overdraft is charged. It can be: 'Whole' Where the
+   * same charge/rate is applied to the entirety of the overdraft balance (where
+   * charges are applicable). 'Tiered' Where different charges/rates are applied
+   * dependent on overdraft maximum and minimum balance amount tiers defined by
+   * the lending financial organisation 'Banded' Where different charges/rates are
+   * applied dependent on overdraft maximum and minimum balance amount bands
+   * defined by a government organisation.
+   * 
    * @return tierBandMethod
-  */
+   */
   @ApiModelProperty(required = true, value = "The methodology of how overdraft is charged. It can be: 'Whole'  Where the same charge/rate is applied to the entirety of the overdraft balance (where charges are applicable).  'Tiered' Where different charges/rates are applied dependent on overdraft maximum and minimum balance amount tiers defined by the lending financial organisation 'Banded' Where different charges/rates are applied dependent on overdraft maximum and minimum balance amount bands defined by a government organisation.")
   public TierBandMethodEnum getTierBandMethod() {
     return tierBandMethod;
@@ -143,9 +159,13 @@ public class Overdraft1OverdraftTierBandSet   {
   }
 
   /**
-   * An overdraft can either be 'committed' which means that the facility cannot be withdrawn without reasonable notification before it's agreed end date, or 'on demand' which means that the financial institution can demand repayment at any point in time.
+   * An overdraft can either be 'committed' which means that the facility cannot
+   * be withdrawn without reasonable notification before it's agreed end date, or
+   * 'on demand' which means that the financial institution can demand repayment
+   * at any point in time.
+   * 
    * @return overdraftType
-  */
+   */
   @ApiModelProperty(value = "An overdraft can either be 'committed' which means that the facility cannot be withdrawn without reasonable notification before it's agreed end date, or 'on demand' which means that the financial institution can demand repayment at any point in time.")
   public OverdraftTypeEnum getOverdraftType() {
     return overdraftType;
@@ -161,9 +181,10 @@ public class Overdraft1OverdraftTierBandSet   {
   }
 
   /**
-   * Unique and unambiguous identification of a  Tier Band for a overdraft product.
+   * Unique and unambiguous identification of a Tier Band for a overdraft product.
+   * 
    * @return identification
-  */
+   */
   @ApiModelProperty(value = "Unique and unambiguous identification of a  Tier Band for a overdraft product.")
   public String getIdentification() {
     return identification;
@@ -180,8 +201,9 @@ public class Overdraft1OverdraftTierBandSet   {
 
   /**
    * Indicates if the Overdraft is authorised (Y) or unauthorised (N)
+   * 
    * @return authorisedIndicator
-  */
+   */
   @ApiModelProperty(value = "Indicates if the Overdraft is authorised (Y) or unauthorised (N)")
   public Boolean getAuthorisedIndicator() {
     return authorisedIndicator;
@@ -197,9 +219,13 @@ public class Overdraft1OverdraftTierBandSet   {
   }
 
   /**
-   * When a customer exceeds their credit limit, a financial institution will not charge the customer unauthorised overdraft charges if they do not exceed by more than the buffer amount. Note: Authorised overdraft charges may still apply.
+   * When a customer exceeds their credit limit, a financial institution will not
+   * charge the customer unauthorised overdraft charges if they do not exceed by
+   * more than the buffer amount. Note: Authorised overdraft charges may still
+   * apply.
+   * 
    * @return bufferAmount
-  */
+   */
   @ApiModelProperty(value = "When a customer exceeds their credit limit, a financial institution will not charge the customer unauthorised overdraft charges if they do not exceed by more than the buffer amount. Note: Authorised overdraft charges may still apply.")
   public String getBufferAmount() {
     return bufferAmount;
@@ -224,8 +250,9 @@ public class Overdraft1OverdraftTierBandSet   {
 
   /**
    * Optional additional notes to supplement the overdraft Tier Band Set details
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "Optional additional notes to supplement the overdraft Tier Band Set details")
   public List<String> getNotes() {
     return notes;
@@ -247,8 +274,9 @@ public class Overdraft1OverdraftTierBandSet   {
 
   /**
    * Provides overdraft details for a specific tier or band
+   * 
    * @return overdraftTierBand
-  */
+   */
   @ApiModelProperty(required = true, value = "Provides overdraft details for a specific tier or band")
   public List<Overdraft1OverdraftTierBand> getOverdraftTierBand() {
     return overdraftTierBand;
@@ -258,12 +286,14 @@ public class Overdraft1OverdraftTierBandSet   {
     this.overdraftTierBand = overdraftTierBand;
   }
 
-  public Overdraft1OverdraftTierBandSet overdraftFeesCharges(List<Overdraft1OverdraftFeesCharges1> overdraftFeesCharges) {
+  public Overdraft1OverdraftTierBandSet overdraftFeesCharges(
+      List<Overdraft1OverdraftFeesCharges1> overdraftFeesCharges) {
     this.overdraftFeesCharges = overdraftFeesCharges;
     return this;
   }
 
-  public Overdraft1OverdraftTierBandSet addOverdraftFeesChargesItem(Overdraft1OverdraftFeesCharges1 overdraftFeesChargesItem) {
+  public Overdraft1OverdraftTierBandSet addOverdraftFeesChargesItem(
+      Overdraft1OverdraftFeesCharges1 overdraftFeesChargesItem) {
     if (this.overdraftFeesCharges == null) {
       this.overdraftFeesCharges = new ArrayList<>();
     }
@@ -273,8 +303,9 @@ public class Overdraft1OverdraftTierBandSet   {
 
   /**
    * Overdraft fees and charges details
+   * 
    * @return overdraftFeesCharges
-  */
+   */
   @ApiModelProperty(value = "Overdraft fees and charges details")
   public List<Overdraft1OverdraftFeesCharges1> getOverdraftFeesCharges() {
     return overdraftFeesCharges;
@@ -283,7 +314,6 @@ public class Overdraft1OverdraftTierBandSet   {
   public void setOverdraftFeesCharges(List<Overdraft1OverdraftFeesCharges1> overdraftFeesCharges) {
     this.overdraftFeesCharges = overdraftFeesCharges;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -294,26 +324,27 @@ public class Overdraft1OverdraftTierBandSet   {
       return false;
     }
     Overdraft1OverdraftTierBandSet overdraft1OverdraftTierBandSet = (Overdraft1OverdraftTierBandSet) o;
-    return Objects.equals(this.tierBandMethod, overdraft1OverdraftTierBandSet.tierBandMethod) &&
-        Objects.equals(this.overdraftType, overdraft1OverdraftTierBandSet.overdraftType) &&
-        Objects.equals(this.identification, overdraft1OverdraftTierBandSet.identification) &&
-        Objects.equals(this.authorisedIndicator, overdraft1OverdraftTierBandSet.authorisedIndicator) &&
-        Objects.equals(this.bufferAmount, overdraft1OverdraftTierBandSet.bufferAmount) &&
-        Objects.equals(this.notes, overdraft1OverdraftTierBandSet.notes) &&
-        Objects.equals(this.overdraftTierBand, overdraft1OverdraftTierBandSet.overdraftTierBand) &&
-        Objects.equals(this.overdraftFeesCharges, overdraft1OverdraftTierBandSet.overdraftFeesCharges);
+    return Objects.equals(this.tierBandMethod, overdraft1OverdraftTierBandSet.tierBandMethod)
+        && Objects.equals(this.overdraftType, overdraft1OverdraftTierBandSet.overdraftType)
+        && Objects.equals(this.identification, overdraft1OverdraftTierBandSet.identification)
+        && Objects.equals(this.authorisedIndicator, overdraft1OverdraftTierBandSet.authorisedIndicator)
+        && Objects.equals(this.bufferAmount, overdraft1OverdraftTierBandSet.bufferAmount)
+        && Objects.equals(this.notes, overdraft1OverdraftTierBandSet.notes)
+        && Objects.equals(this.overdraftTierBand, overdraft1OverdraftTierBandSet.overdraftTierBand)
+        && Objects.equals(this.overdraftFeesCharges, overdraft1OverdraftTierBandSet.overdraftFeesCharges);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(tierBandMethod, overdraftType, identification, authorisedIndicator, bufferAmount, notes, overdraftTierBand, overdraftFeesCharges);
+    return Objects.hash(tierBandMethod, overdraftType, identification, authorisedIndicator, bufferAmount, notes,
+        overdraftTierBand, overdraftFeesCharges);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Overdraft1OverdraftTierBandSet {\n");
-    
+
     sb.append("    tierBandMethod: ").append(toIndentedString(tierBandMethod)).append("\n");
     sb.append("    overdraftType: ").append(toIndentedString(overdraftType)).append("\n");
     sb.append("    identification: ").append(toIndentedString(identification)).append("\n");
@@ -337,4 +368,3 @@ public class Overdraft1OverdraftTierBandSet   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

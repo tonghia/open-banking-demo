@@ -9,11 +9,14 @@ import io.swagger.annotations.ApiModelProperty;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Party that manages the account on behalf of the account owner, that is manages the registration and booking of entries on the account, calculates balances on the account and provides information about the account. This is the servicer of the beneficiary account.
+ * Party that manages the account on behalf of the account owner, that is
+ * manages the registration and booking of entries on the account, calculates
+ * balances on the account and provides information about the account. This is
+ * the servicer of the beneficiary account.
  */
 @ApiModel(description = "Party that manages the account on behalf of the account owner, that is manages the registration and booking of entries on the account, calculates balances on the account and provides information about the account. This is the servicer of the beneficiary account.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBBranchAndFinancialInstitutionIdentification60   {
+public class OBBranchAndFinancialInstitutionIdentification60 {
   @JsonProperty("SchemeName")
   private String schemeName;
 
@@ -32,9 +35,11 @@ public class OBBranchAndFinancialInstitutionIdentification60   {
   }
 
   /**
-   * Name of the identification scheme, in a coded form as published in an external list.
+   * Name of the identification scheme, in a coded form as published in an
+   * external list.
+   * 
    * @return schemeName
-  */
+   */
   @ApiModelProperty(value = "Name of the identification scheme, in a coded form as published in an external list.")
   public String getSchemeName() {
     return schemeName;
@@ -51,8 +56,9 @@ public class OBBranchAndFinancialInstitutionIdentification60   {
 
   /**
    * Unique and unambiguous identification of the servicing institution.
+   * 
    * @return identification
-  */
+   */
   @ApiModelProperty(value = "Unique and unambiguous identification of the servicing institution.")
   public String getIdentification() {
     return identification;
@@ -68,9 +74,11 @@ public class OBBranchAndFinancialInstitutionIdentification60   {
   }
 
   /**
-   * Name by which an agent is known and which is usually used to identify that agent.
+   * Name by which an agent is known and which is usually used to identify that
+   * agent.
+   * 
    * @return name
-  */
+   */
   @ApiModelProperty(value = "Name by which an agent is known and which is usually used to identify that agent.")
   public String getName() {
     return name;
@@ -87,8 +95,9 @@ public class OBBranchAndFinancialInstitutionIdentification60   {
 
   /**
    * Get postalAddress
+   * 
    * @return postalAddress
-  */
+   */
   @ApiModelProperty(value = "")
   public OBPostalAddress6 getPostalAddress() {
     return postalAddress;
@@ -97,7 +106,6 @@ public class OBBranchAndFinancialInstitutionIdentification60   {
   public void setPostalAddress(OBPostalAddress6 postalAddress) {
     this.postalAddress = postalAddress;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -108,10 +116,10 @@ public class OBBranchAndFinancialInstitutionIdentification60   {
       return false;
     }
     OBBranchAndFinancialInstitutionIdentification60 obBranchAndFinancialInstitutionIdentification60 = (OBBranchAndFinancialInstitutionIdentification60) o;
-    return Objects.equals(this.schemeName, obBranchAndFinancialInstitutionIdentification60.schemeName) &&
-        Objects.equals(this.identification, obBranchAndFinancialInstitutionIdentification60.identification) &&
-        Objects.equals(this.name, obBranchAndFinancialInstitutionIdentification60.name) &&
-        Objects.equals(this.postalAddress, obBranchAndFinancialInstitutionIdentification60.postalAddress);
+    return Objects.equals(this.schemeName, obBranchAndFinancialInstitutionIdentification60.schemeName)
+        && Objects.equals(this.identification, obBranchAndFinancialInstitutionIdentification60.identification)
+        && Objects.equals(this.name, obBranchAndFinancialInstitutionIdentification60.name)
+        && Objects.equals(this.postalAddress, obBranchAndFinancialInstitutionIdentification60.postalAddress);
   }
 
   @Override
@@ -123,7 +131,7 @@ public class OBBranchAndFinancialInstitutionIdentification60   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBBranchAndFinancialInstitutionIdentification60 {\n");
-    
+
     sb.append("    schemeName: ").append(toIndentedString(schemeName)).append("\n");
     sb.append("    identification: ").append(toIndentedString(identification)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
@@ -143,4 +151,3 @@ public class OBBranchAndFinancialInstitutionIdentification60   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

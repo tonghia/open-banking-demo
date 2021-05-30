@@ -12,7 +12,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Other interest rate types which are not available in the standard code list")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestType   {
+public class OBReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestType {
   @JsonProperty("Code")
   private String code;
 
@@ -29,8 +29,9 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestTy
 
   /**
    * The four letter Mnemonic used within an XML file to identify a code
+   * 
    * @return code
-  */
+   */
   @ApiModelProperty(value = "The four letter Mnemonic used within an XML file to identify a code")
   public String getCode() {
     return code;
@@ -47,8 +48,9 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestTy
 
   /**
    * Long name associated with the code
+   * 
    * @return name
-  */
+   */
   @ApiModelProperty(required = true, value = "Long name associated with the code")
   public String getName() {
     return name;
@@ -65,8 +67,9 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestTy
 
   /**
    * Description to describe the purpose of the code
+   * 
    * @return description
-  */
+   */
   @ApiModelProperty(required = true, value = "Description to describe the purpose of the code")
   public String getDescription() {
     return description;
@@ -75,7 +78,6 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestTy
   public void setDescription(String description) {
     this.description = description;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -86,9 +88,10 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestTy
       return false;
     }
     OBReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestType obReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestType = (OBReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestType) o;
-    return Objects.equals(this.code, obReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestType.code) &&
-        Objects.equals(this.name, obReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestType.name) &&
-        Objects.equals(this.description, obReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestType.description);
+    return Objects.equals(this.code, obReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestType.code)
+        && Objects.equals(this.name, obReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestType.name)
+        && Objects.equals(this.description,
+            obReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestType.description);
   }
 
   @Override
@@ -100,7 +103,7 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestTy
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestType {\n");
-    
+
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
@@ -119,4 +122,3 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestTy
     return o.toString().replace("\n", "\n    ");
   }
 }
-

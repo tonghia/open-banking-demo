@@ -12,7 +12,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBReadConsent1
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadConsent1   {
+public class OBReadConsent1 {
   @JsonProperty("Data")
   private OBReadConsent1Data data;
 
@@ -26,8 +26,9 @@ public class OBReadConsent1   {
 
   /**
    * Get data
+   * 
    * @return data
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBReadConsent1Data getData() {
     return data;
@@ -43,9 +44,11 @@ public class OBReadConsent1   {
   }
 
   /**
-   * The Risk section is sent by the initiating party to the ASPSP. It is used to specify additional details for risk scoring for Account Info.
+   * The Risk section is sent by the initiating party to the ASPSP. It is used to
+   * specify additional details for risk scoring for Account Info.
+   * 
    * @return risk
-  */
+   */
   @ApiModelProperty(required = true, value = "The Risk section is sent by the initiating party to the ASPSP. It is used to specify additional details for risk scoring for Account Info.")
   public Object getRisk() {
     return risk;
@@ -54,7 +57,6 @@ public class OBReadConsent1   {
   public void setRisk(Object risk) {
     this.risk = risk;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -65,8 +67,7 @@ public class OBReadConsent1   {
       return false;
     }
     OBReadConsent1 obReadConsent1 = (OBReadConsent1) o;
-    return Objects.equals(this.data, obReadConsent1.data) &&
-        Objects.equals(this.risk, obReadConsent1.risk);
+    return Objects.equals(this.data, obReadConsent1.data) && Objects.equals(this.risk, obReadConsent1.risk);
   }
 
   @Override
@@ -78,7 +79,7 @@ public class OBReadConsent1   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadConsent1 {\n");
-    
+
     sb.append("    data: ").append(toIndentedString(data)).append("\n");
     sb.append("    risk: ").append(toIndentedString(risk)).append("\n");
     sb.append("}");
@@ -96,4 +97,3 @@ public class OBReadConsent1   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

@@ -13,19 +13,19 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Set of elements to describe the card instrument used in the transaction.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBTransactionCardInstrument1   {
+public class OBTransactionCardInstrument1 {
   /**
    * Name of the card scheme.
    */
   public enum CardSchemeNameEnum {
     AMERICANEXPRESS("AmericanExpress"),
-    
+
     DINERS("Diners"),
-    
+
     DISCOVER("Discover"),
-    
+
     MASTERCARD("MasterCard"),
-    
+
     VISA("VISA");
 
     private String value;
@@ -63,11 +63,11 @@ public class OBTransactionCardInstrument1   {
    */
   public enum AuthorisationTypeEnum {
     CONSUMERDEVICE("ConsumerDevice"),
-    
+
     CONTACTLESS("Contactless"),
-    
+
     NONE("None"),
-    
+
     PIN("PIN");
 
     private String value;
@@ -113,8 +113,9 @@ public class OBTransactionCardInstrument1   {
 
   /**
    * Name of the card scheme.
+   * 
    * @return cardSchemeName
-  */
+   */
   @ApiModelProperty(required = true, value = "Name of the card scheme.")
   public CardSchemeNameEnum getCardSchemeName() {
     return cardSchemeName;
@@ -131,8 +132,9 @@ public class OBTransactionCardInstrument1   {
 
   /**
    * The card authorisation type.
+   * 
    * @return authorisationType
-  */
+   */
   @ApiModelProperty(value = "The card authorisation type.")
   public AuthorisationTypeEnum getAuthorisationType() {
     return authorisationType;
@@ -149,8 +151,9 @@ public class OBTransactionCardInstrument1   {
 
   /**
    * Name of the cardholder using the card instrument.
+   * 
    * @return name
-  */
+   */
   @ApiModelProperty(value = "Name of the cardholder using the card instrument.")
   public String getName() {
     return name;
@@ -166,9 +169,12 @@ public class OBTransactionCardInstrument1   {
   }
 
   /**
-   * Identification assigned by an institution to identify the card instrument used in the transaction. This identification is known by the account owner, and may be masked.
+   * Identification assigned by an institution to identify the card instrument
+   * used in the transaction. This identification is known by the account owner,
+   * and may be masked.
+   * 
    * @return identification
-  */
+   */
   @ApiModelProperty(value = "Identification assigned by an institution to identify the card instrument used in the transaction. This identification is known by the account owner, and may be masked.")
   public String getIdentification() {
     return identification;
@@ -177,7 +183,6 @@ public class OBTransactionCardInstrument1   {
   public void setIdentification(String identification) {
     this.identification = identification;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -188,10 +193,10 @@ public class OBTransactionCardInstrument1   {
       return false;
     }
     OBTransactionCardInstrument1 obTransactionCardInstrument1 = (OBTransactionCardInstrument1) o;
-    return Objects.equals(this.cardSchemeName, obTransactionCardInstrument1.cardSchemeName) &&
-        Objects.equals(this.authorisationType, obTransactionCardInstrument1.authorisationType) &&
-        Objects.equals(this.name, obTransactionCardInstrument1.name) &&
-        Objects.equals(this.identification, obTransactionCardInstrument1.identification);
+    return Objects.equals(this.cardSchemeName, obTransactionCardInstrument1.cardSchemeName)
+        && Objects.equals(this.authorisationType, obTransactionCardInstrument1.authorisationType)
+        && Objects.equals(this.name, obTransactionCardInstrument1.name)
+        && Objects.equals(this.identification, obTransactionCardInstrument1.identification);
   }
 
   @Override
@@ -203,7 +208,7 @@ public class OBTransactionCardInstrument1   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBTransactionCardInstrument1 {\n");
-    
+
     sb.append("    cardSchemeName: ").append(toIndentedString(cardSchemeName)).append("\n");
     sb.append("    authorisationType: ").append(toIndentedString(authorisationType)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
@@ -223,4 +228,3 @@ public class OBTransactionCardInstrument1   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

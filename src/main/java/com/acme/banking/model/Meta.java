@@ -13,7 +13,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Meta Data relevant to the payload")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class Meta   {
+public class Meta {
   @JsonProperty("TotalPages")
   private Integer totalPages;
 
@@ -32,8 +32,9 @@ public class Meta   {
 
   /**
    * Get totalPages
+   * 
    * @return totalPages
-  */
+   */
   @ApiModelProperty(value = "")
   public Integer getTotalPages() {
     return totalPages;
@@ -49,9 +50,12 @@ public class Meta   {
   }
 
   /**
-   * All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * All dates in the JSON payloads are represented in ISO 8601 date-time format.
+   * All date-time fields in responses must include the timezone. An example is
+   * below: 2017-04-05T10:43:07+00:00
+   * 
    * @return firstAvailableDateTime
-  */
+   */
   @ApiModelProperty(value = "All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getFirstAvailableDateTime() {
     return firstAvailableDateTime;
@@ -67,9 +71,12 @@ public class Meta   {
   }
 
   /**
-   * All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * All dates in the JSON payloads are represented in ISO 8601 date-time format.
+   * All date-time fields in responses must include the timezone. An example is
+   * below: 2017-04-05T10:43:07+00:00
+   * 
    * @return lastAvailableDateTime
-  */
+   */
   @ApiModelProperty(value = "All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getLastAvailableDateTime() {
     return lastAvailableDateTime;
@@ -78,7 +85,6 @@ public class Meta   {
   public void setLastAvailableDateTime(OffsetDateTime lastAvailableDateTime) {
     this.lastAvailableDateTime = lastAvailableDateTime;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -89,9 +95,9 @@ public class Meta   {
       return false;
     }
     Meta meta = (Meta) o;
-    return Objects.equals(this.totalPages, meta.totalPages) &&
-        Objects.equals(this.firstAvailableDateTime, meta.firstAvailableDateTime) &&
-        Objects.equals(this.lastAvailableDateTime, meta.lastAvailableDateTime);
+    return Objects.equals(this.totalPages, meta.totalPages)
+        && Objects.equals(this.firstAvailableDateTime, meta.firstAvailableDateTime)
+        && Objects.equals(this.lastAvailableDateTime, meta.lastAvailableDateTime);
   }
 
   @Override
@@ -103,7 +109,7 @@ public class Meta   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Meta {\n");
-    
+
     sb.append("    totalPages: ").append(toIndentedString(totalPages)).append("\n");
     sb.append("    firstAvailableDateTime: ").append(toIndentedString(firstAvailableDateTime)).append("\n");
     sb.append("    lastAvailableDateTime: ").append(toIndentedString(lastAvailableDateTime)).append("\n");
@@ -122,4 +128,3 @@ public class Meta   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

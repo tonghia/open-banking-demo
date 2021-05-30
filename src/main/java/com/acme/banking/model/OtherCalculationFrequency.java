@@ -12,7 +12,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Other calculation frequency which is not available in the standard code set.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OtherCalculationFrequency   {
+public class OtherCalculationFrequency {
   @JsonProperty("Code")
   private String code;
 
@@ -29,8 +29,9 @@ public class OtherCalculationFrequency   {
 
   /**
    * The four letter Mnemonic used within an XML file to identify a code
+   * 
    * @return code
-  */
+   */
   @ApiModelProperty(value = "The four letter Mnemonic used within an XML file to identify a code")
   public String getCode() {
     return code;
@@ -47,8 +48,9 @@ public class OtherCalculationFrequency   {
 
   /**
    * Long name associated with the code
+   * 
    * @return name
-  */
+   */
   @ApiModelProperty(required = true, value = "Long name associated with the code")
   public String getName() {
     return name;
@@ -65,8 +67,9 @@ public class OtherCalculationFrequency   {
 
   /**
    * Description to describe the purpose of the code
+   * 
    * @return description
-  */
+   */
   @ApiModelProperty(required = true, value = "Description to describe the purpose of the code")
   public String getDescription() {
     return description;
@@ -75,7 +78,6 @@ public class OtherCalculationFrequency   {
   public void setDescription(String description) {
     this.description = description;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -86,9 +88,9 @@ public class OtherCalculationFrequency   {
       return false;
     }
     OtherCalculationFrequency otherCalculationFrequency = (OtherCalculationFrequency) o;
-    return Objects.equals(this.code, otherCalculationFrequency.code) &&
-        Objects.equals(this.name, otherCalculationFrequency.name) &&
-        Objects.equals(this.description, otherCalculationFrequency.description);
+    return Objects.equals(this.code, otherCalculationFrequency.code)
+        && Objects.equals(this.name, otherCalculationFrequency.name)
+        && Objects.equals(this.description, otherCalculationFrequency.description);
   }
 
   @Override
@@ -100,7 +102,7 @@ public class OtherCalculationFrequency   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OtherCalculationFrequency {\n");
-    
+
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
@@ -119,4 +121,3 @@ public class OtherCalculationFrequency   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

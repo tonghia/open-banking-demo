@@ -11,29 +11,29 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Overdraft fee type
  */
 public enum OBOverdraftFeeType1Code {
-  
+
   FBAO("FBAO"),
-  
+
   FBAR("FBAR"),
-  
+
   FBEB("FBEB"),
-  
+
   FBIT("FBIT"),
-  
+
   FBOR("FBOR"),
-  
+
   FBOS("FBOS"),
-  
+
   FBSC("FBSC"),
-  
+
   FBTO("FBTO"),
-  
+
   FBUB("FBUB"),
-  
+
   FBUT("FBUT"),
-  
+
   FTOT("FTOT"),
-  
+
   FTUT("FTUT");
 
   private String value;
@@ -62,4 +62,3 @@ public enum OBOverdraftFeeType1Code {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

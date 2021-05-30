@@ -12,7 +12,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Range or amounts or rates for which the fee/charge applies")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class FeeApplicableRange   {
+public class FeeApplicableRange {
   @JsonProperty("MinimumAmount")
   private String minimumAmount;
 
@@ -31,9 +31,11 @@ public class FeeApplicableRange   {
   }
 
   /**
-   * Minimum Amount on which fee/charge is applicable (where it is expressed as an amount)
+   * Minimum Amount on which fee/charge is applicable (where it is expressed as an
+   * amount)
+   * 
    * @return minimumAmount
-  */
+   */
   @ApiModelProperty(value = "Minimum Amount on which fee/charge is applicable (where it is expressed as an amount)")
   public String getMinimumAmount() {
     return minimumAmount;
@@ -49,9 +51,11 @@ public class FeeApplicableRange   {
   }
 
   /**
-   * Maximum Amount on which fee is applicable (where it is expressed as an amount)
+   * Maximum Amount on which fee is applicable (where it is expressed as an
+   * amount)
+   * 
    * @return maximumAmount
-  */
+   */
   @ApiModelProperty(value = "Maximum Amount on which fee is applicable (where it is expressed as an amount)")
   public String getMaximumAmount() {
     return maximumAmount;
@@ -67,9 +71,11 @@ public class FeeApplicableRange   {
   }
 
   /**
-   * Minimum rate on which fee/charge is applicable(where it is expressed as an rate)
+   * Minimum rate on which fee/charge is applicable(where it is expressed as an
+   * rate)
+   * 
    * @return minimumRate
-  */
+   */
   @ApiModelProperty(value = "Minimum rate on which fee/charge is applicable(where it is expressed as an rate)")
   public String getMinimumRate() {
     return minimumRate;
@@ -85,9 +91,11 @@ public class FeeApplicableRange   {
   }
 
   /**
-   * Maximum rate on which fee/charge is applicable(where it is expressed as an rate)
+   * Maximum rate on which fee/charge is applicable(where it is expressed as an
+   * rate)
+   * 
    * @return maximumRate
-  */
+   */
   @ApiModelProperty(value = "Maximum rate on which fee/charge is applicable(where it is expressed as an rate)")
   public String getMaximumRate() {
     return maximumRate;
@@ -96,7 +104,6 @@ public class FeeApplicableRange   {
   public void setMaximumRate(String maximumRate) {
     this.maximumRate = maximumRate;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -107,10 +114,10 @@ public class FeeApplicableRange   {
       return false;
     }
     FeeApplicableRange feeApplicableRange = (FeeApplicableRange) o;
-    return Objects.equals(this.minimumAmount, feeApplicableRange.minimumAmount) &&
-        Objects.equals(this.maximumAmount, feeApplicableRange.maximumAmount) &&
-        Objects.equals(this.minimumRate, feeApplicableRange.minimumRate) &&
-        Objects.equals(this.maximumRate, feeApplicableRange.maximumRate);
+    return Objects.equals(this.minimumAmount, feeApplicableRange.minimumAmount)
+        && Objects.equals(this.maximumAmount, feeApplicableRange.maximumAmount)
+        && Objects.equals(this.minimumRate, feeApplicableRange.minimumRate)
+        && Objects.equals(this.maximumRate, feeApplicableRange.maximumRate);
   }
 
   @Override
@@ -122,7 +129,7 @@ public class FeeApplicableRange   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class FeeApplicableRange {\n");
-    
+
     sb.append("    minimumAmount: ").append(toIndentedString(minimumAmount)).append("\n");
     sb.append("    maximumAmount: ").append(toIndentedString(maximumAmount)).append("\n");
     sb.append("    minimumRate: ").append(toIndentedString(minimumRate)).append("\n");
@@ -142,4 +149,3 @@ public class FeeApplicableRange   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

@@ -26,7 +26,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Other fees/charges details")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
+public class OBReadProduct2DataOtherProductTypeFeeChargeDetail {
   @JsonProperty("FeeCategory")
   private OBFeeCategory1Code feeCategory;
 
@@ -52,11 +52,11 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
   private OBFeeFrequency1Code3 calculationFrequency;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("FeeChargeCap")
-  
+
   private List<OBReadProduct2DataOtherProductTypeFeeChargeCap> feeChargeCap = null;
 
   @JsonProperty("OtherFeeCategoryType")
@@ -84,8 +84,9 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
 
   /**
    * Get feeCategory
+   * 
    * @return feeCategory
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBFeeCategory1Code getFeeCategory() {
     return feeCategory;
@@ -102,8 +103,9 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
 
   /**
    * Get feeType
+   * 
    * @return feeType
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBFeeType1Code getFeeType() {
     return feeType;
@@ -120,8 +122,9 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
 
   /**
    * Fee/charge which is usually negotiable rather than a fixed amount
+   * 
    * @return negotiableIndicator
-  */
+   */
   @ApiModelProperty(value = "Fee/charge which is usually negotiable rather than a fixed amount")
   public Boolean getNegotiableIndicator() {
     return negotiableIndicator;
@@ -137,9 +140,11 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
   }
 
   /**
-   * Fee Amount charged for a fee/charge (where it is charged in terms of an amount rather than a rate)
+   * Fee Amount charged for a fee/charge (where it is charged in terms of an
+   * amount rather than a rate)
+   * 
    * @return feeAmount
-  */
+   */
   @ApiModelProperty(value = "Fee Amount charged for a fee/charge (where it is charged in terms of an amount rather than a rate)")
   public String getFeeAmount() {
     return feeAmount;
@@ -155,9 +160,11 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
   }
 
   /**
-   * Rate charged for Fee/Charge (where it is charged in terms of a rate rather than an amount)
+   * Rate charged for Fee/Charge (where it is charged in terms of a rate rather
+   * than an amount)
+   * 
    * @return feeRate
-  */
+   */
   @ApiModelProperty(value = "Rate charged for Fee/Charge (where it is charged in terms of a rate rather than an amount)")
   public String getFeeRate() {
     return feeRate;
@@ -174,8 +181,9 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
 
   /**
    * Get feeRateType
+   * 
    * @return feeRateType
-  */
+   */
   @ApiModelProperty(value = "")
   public OBInterestRateType1Code1 getFeeRateType() {
     return feeRateType;
@@ -185,15 +193,17 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
     this.feeRateType = feeRateType;
   }
 
-  public OBReadProduct2DataOtherProductTypeFeeChargeDetail applicationFrequency(OBFeeFrequency1Code2 applicationFrequency) {
+  public OBReadProduct2DataOtherProductTypeFeeChargeDetail applicationFrequency(
+      OBFeeFrequency1Code2 applicationFrequency) {
     this.applicationFrequency = applicationFrequency;
     return this;
   }
 
   /**
    * Get applicationFrequency
+   * 
    * @return applicationFrequency
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBFeeFrequency1Code2 getApplicationFrequency() {
     return applicationFrequency;
@@ -203,15 +213,17 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
     this.applicationFrequency = applicationFrequency;
   }
 
-  public OBReadProduct2DataOtherProductTypeFeeChargeDetail calculationFrequency(OBFeeFrequency1Code3 calculationFrequency) {
+  public OBReadProduct2DataOtherProductTypeFeeChargeDetail calculationFrequency(
+      OBFeeFrequency1Code3 calculationFrequency) {
     this.calculationFrequency = calculationFrequency;
     return this;
   }
 
   /**
    * Get calculationFrequency
+   * 
    * @return calculationFrequency
-  */
+   */
   @ApiModelProperty(value = "")
   public OBFeeFrequency1Code3 getCalculationFrequency() {
     return calculationFrequency;
@@ -236,8 +248,9 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
 
   /**
    * Get notes
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "")
   public List<String> getNotes() {
     return notes;
@@ -247,12 +260,14 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
     this.notes = notes;
   }
 
-  public OBReadProduct2DataOtherProductTypeFeeChargeDetail feeChargeCap(List<OBReadProduct2DataOtherProductTypeFeeChargeCap> feeChargeCap) {
+  public OBReadProduct2DataOtherProductTypeFeeChargeDetail feeChargeCap(
+      List<OBReadProduct2DataOtherProductTypeFeeChargeCap> feeChargeCap) {
     this.feeChargeCap = feeChargeCap;
     return this;
   }
 
-  public OBReadProduct2DataOtherProductTypeFeeChargeDetail addFeeChargeCapItem(OBReadProduct2DataOtherProductTypeFeeChargeCap feeChargeCapItem) {
+  public OBReadProduct2DataOtherProductTypeFeeChargeDetail addFeeChargeCapItem(
+      OBReadProduct2DataOtherProductTypeFeeChargeCap feeChargeCapItem) {
     if (this.feeChargeCap == null) {
       this.feeChargeCap = new ArrayList<>();
     }
@@ -262,8 +277,9 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
 
   /**
    * Get feeChargeCap
+   * 
    * @return feeChargeCap
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBReadProduct2DataOtherProductTypeFeeChargeCap> getFeeChargeCap() {
     return feeChargeCap;
@@ -273,15 +289,17 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
     this.feeChargeCap = feeChargeCap;
   }
 
-  public OBReadProduct2DataOtherProductTypeFeeChargeDetail otherFeeCategoryType(OBOtherCodeType10 otherFeeCategoryType) {
+  public OBReadProduct2DataOtherProductTypeFeeChargeDetail otherFeeCategoryType(
+      OBOtherCodeType10 otherFeeCategoryType) {
     this.otherFeeCategoryType = otherFeeCategoryType;
     return this;
   }
 
   /**
    * Get otherFeeCategoryType
+   * 
    * @return otherFeeCategoryType
-  */
+   */
   @ApiModelProperty(value = "")
   public OBOtherCodeType10 getOtherFeeCategoryType() {
     return otherFeeCategoryType;
@@ -298,8 +316,9 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
 
   /**
    * Get otherFeeType
+   * 
    * @return otherFeeType
-  */
+   */
   @ApiModelProperty(value = "")
   public OBOtherFeeChargeDetailType getOtherFeeType() {
     return otherFeeType;
@@ -316,8 +335,9 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
 
   /**
    * Get otherFeeRateType
+   * 
    * @return otherFeeRateType
-  */
+   */
   @ApiModelProperty(value = "")
   public OBOtherCodeType18 getOtherFeeRateType() {
     return otherFeeRateType;
@@ -327,15 +347,17 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
     this.otherFeeRateType = otherFeeRateType;
   }
 
-  public OBReadProduct2DataOtherProductTypeFeeChargeDetail otherApplicationFrequency(OBOtherCodeType16 otherApplicationFrequency) {
+  public OBReadProduct2DataOtherProductTypeFeeChargeDetail otherApplicationFrequency(
+      OBOtherCodeType16 otherApplicationFrequency) {
     this.otherApplicationFrequency = otherApplicationFrequency;
     return this;
   }
 
   /**
    * Get otherApplicationFrequency
+   * 
    * @return otherApplicationFrequency
-  */
+   */
   @ApiModelProperty(value = "")
   public OBOtherCodeType16 getOtherApplicationFrequency() {
     return otherApplicationFrequency;
@@ -345,15 +367,17 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
     this.otherApplicationFrequency = otherApplicationFrequency;
   }
 
-  public OBReadProduct2DataOtherProductTypeFeeChargeDetail otherCalculationFrequency(OBOtherCodeType17 otherCalculationFrequency) {
+  public OBReadProduct2DataOtherProductTypeFeeChargeDetail otherCalculationFrequency(
+      OBOtherCodeType17 otherCalculationFrequency) {
     this.otherCalculationFrequency = otherCalculationFrequency;
     return this;
   }
 
   /**
    * Get otherCalculationFrequency
+   * 
    * @return otherCalculationFrequency
-  */
+   */
   @ApiModelProperty(value = "")
   public OBOtherCodeType17 getOtherCalculationFrequency() {
     return otherCalculationFrequency;
@@ -363,15 +387,17 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
     this.otherCalculationFrequency = otherCalculationFrequency;
   }
 
-  public OBReadProduct2DataOtherProductTypeFeeChargeDetail feeApplicableRange(OBReadProduct2DataOtherProductTypeFeeApplicableRange feeApplicableRange) {
+  public OBReadProduct2DataOtherProductTypeFeeChargeDetail feeApplicableRange(
+      OBReadProduct2DataOtherProductTypeFeeApplicableRange feeApplicableRange) {
     this.feeApplicableRange = feeApplicableRange;
     return this;
   }
 
   /**
    * Get feeApplicableRange
+   * 
    * @return feeApplicableRange
-  */
+   */
   @ApiModelProperty(value = "")
   public OBReadProduct2DataOtherProductTypeFeeApplicableRange getFeeApplicableRange() {
     return feeApplicableRange;
@@ -380,7 +406,6 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
   public void setFeeApplicableRange(OBReadProduct2DataOtherProductTypeFeeApplicableRange feeApplicableRange) {
     this.feeApplicableRange = feeApplicableRange;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -391,34 +416,43 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
       return false;
     }
     OBReadProduct2DataOtherProductTypeFeeChargeDetail obReadProduct2DataOtherProductTypeFeeChargeDetail = (OBReadProduct2DataOtherProductTypeFeeChargeDetail) o;
-    return Objects.equals(this.feeCategory, obReadProduct2DataOtherProductTypeFeeChargeDetail.feeCategory) &&
-        Objects.equals(this.feeType, obReadProduct2DataOtherProductTypeFeeChargeDetail.feeType) &&
-        Objects.equals(this.negotiableIndicator, obReadProduct2DataOtherProductTypeFeeChargeDetail.negotiableIndicator) &&
-        Objects.equals(this.feeAmount, obReadProduct2DataOtherProductTypeFeeChargeDetail.feeAmount) &&
-        Objects.equals(this.feeRate, obReadProduct2DataOtherProductTypeFeeChargeDetail.feeRate) &&
-        Objects.equals(this.feeRateType, obReadProduct2DataOtherProductTypeFeeChargeDetail.feeRateType) &&
-        Objects.equals(this.applicationFrequency, obReadProduct2DataOtherProductTypeFeeChargeDetail.applicationFrequency) &&
-        Objects.equals(this.calculationFrequency, obReadProduct2DataOtherProductTypeFeeChargeDetail.calculationFrequency) &&
-        Objects.equals(this.notes, obReadProduct2DataOtherProductTypeFeeChargeDetail.notes) &&
-        Objects.equals(this.feeChargeCap, obReadProduct2DataOtherProductTypeFeeChargeDetail.feeChargeCap) &&
-        Objects.equals(this.otherFeeCategoryType, obReadProduct2DataOtherProductTypeFeeChargeDetail.otherFeeCategoryType) &&
-        Objects.equals(this.otherFeeType, obReadProduct2DataOtherProductTypeFeeChargeDetail.otherFeeType) &&
-        Objects.equals(this.otherFeeRateType, obReadProduct2DataOtherProductTypeFeeChargeDetail.otherFeeRateType) &&
-        Objects.equals(this.otherApplicationFrequency, obReadProduct2DataOtherProductTypeFeeChargeDetail.otherApplicationFrequency) &&
-        Objects.equals(this.otherCalculationFrequency, obReadProduct2DataOtherProductTypeFeeChargeDetail.otherCalculationFrequency) &&
-        Objects.equals(this.feeApplicableRange, obReadProduct2DataOtherProductTypeFeeChargeDetail.feeApplicableRange);
+    return Objects.equals(this.feeCategory, obReadProduct2DataOtherProductTypeFeeChargeDetail.feeCategory)
+        && Objects.equals(this.feeType, obReadProduct2DataOtherProductTypeFeeChargeDetail.feeType)
+        && Objects.equals(this.negotiableIndicator,
+            obReadProduct2DataOtherProductTypeFeeChargeDetail.negotiableIndicator)
+        && Objects.equals(this.feeAmount, obReadProduct2DataOtherProductTypeFeeChargeDetail.feeAmount)
+        && Objects.equals(this.feeRate, obReadProduct2DataOtherProductTypeFeeChargeDetail.feeRate)
+        && Objects.equals(this.feeRateType, obReadProduct2DataOtherProductTypeFeeChargeDetail.feeRateType)
+        && Objects.equals(this.applicationFrequency,
+            obReadProduct2DataOtherProductTypeFeeChargeDetail.applicationFrequency)
+        && Objects.equals(this.calculationFrequency,
+            obReadProduct2DataOtherProductTypeFeeChargeDetail.calculationFrequency)
+        && Objects.equals(this.notes, obReadProduct2DataOtherProductTypeFeeChargeDetail.notes)
+        && Objects.equals(this.feeChargeCap, obReadProduct2DataOtherProductTypeFeeChargeDetail.feeChargeCap)
+        && Objects.equals(this.otherFeeCategoryType,
+            obReadProduct2DataOtherProductTypeFeeChargeDetail.otherFeeCategoryType)
+        && Objects.equals(this.otherFeeType, obReadProduct2DataOtherProductTypeFeeChargeDetail.otherFeeType)
+        && Objects.equals(this.otherFeeRateType, obReadProduct2DataOtherProductTypeFeeChargeDetail.otherFeeRateType)
+        && Objects.equals(this.otherApplicationFrequency,
+            obReadProduct2DataOtherProductTypeFeeChargeDetail.otherApplicationFrequency)
+        && Objects.equals(this.otherCalculationFrequency,
+            obReadProduct2DataOtherProductTypeFeeChargeDetail.otherCalculationFrequency)
+        && Objects.equals(this.feeApplicableRange,
+            obReadProduct2DataOtherProductTypeFeeChargeDetail.feeApplicableRange);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(feeCategory, feeType, negotiableIndicator, feeAmount, feeRate, feeRateType, applicationFrequency, calculationFrequency, notes, feeChargeCap, otherFeeCategoryType, otherFeeType, otherFeeRateType, otherApplicationFrequency, otherCalculationFrequency, feeApplicableRange);
+    return Objects.hash(feeCategory, feeType, negotiableIndicator, feeAmount, feeRate, feeRateType,
+        applicationFrequency, calculationFrequency, notes, feeChargeCap, otherFeeCategoryType, otherFeeType,
+        otherFeeRateType, otherApplicationFrequency, otherCalculationFrequency, feeApplicableRange);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductTypeFeeChargeDetail {\n");
-    
+
     sb.append("    feeCategory: ").append(toIndentedString(feeCategory)).append("\n");
     sb.append("    feeType: ").append(toIndentedString(feeType)).append("\n");
     sb.append("    negotiableIndicator: ").append(toIndentedString(negotiableIndicator)).append("\n");
@@ -450,4 +484,3 @@ public class OBReadProduct2DataOtherProductTypeFeeChargeDetail   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

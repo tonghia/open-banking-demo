@@ -8,12 +8,13 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonCreator;
 
 /**
- * Indicates whether the balance is a credit or a debit balance.  Usage: A zero balance is considered to be a credit balance.
+ * Indicates whether the balance is a credit or a debit balance. Usage: A zero
+ * balance is considered to be a credit balance.
  */
 public enum OBCreditDebitCode2 {
-  
+
   CREDIT("Credit"),
-  
+
   DEBIT("Debit");
 
   private String value;
@@ -42,4 +43,3 @@ public enum OBCreditDebitCode2 {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

@@ -14,9 +14,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBReadDirectDebit2Data
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadDirectDebit2Data   {
+public class OBReadDirectDebit2Data {
   @JsonProperty("DirectDebit")
-  
+
   private List<OBReadDirectDebit2DataDirectDebit> directDebit = null;
 
   public OBReadDirectDebit2Data directDebit(List<OBReadDirectDebit2DataDirectDebit> directDebit) {
@@ -34,8 +34,9 @@ public class OBReadDirectDebit2Data   {
 
   /**
    * Get directDebit
+   * 
    * @return directDebit
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBReadDirectDebit2DataDirectDebit> getDirectDebit() {
     return directDebit;
@@ -44,7 +45,6 @@ public class OBReadDirectDebit2Data   {
   public void setDirectDebit(List<OBReadDirectDebit2DataDirectDebit> directDebit) {
     this.directDebit = directDebit;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -67,7 +67,7 @@ public class OBReadDirectDebit2Data   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadDirectDebit2Data {\n");
-    
+
     sb.append("    directDebit: ").append(toIndentedString(directDebit)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -84,4 +84,3 @@ public class OBReadDirectDebit2Data   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

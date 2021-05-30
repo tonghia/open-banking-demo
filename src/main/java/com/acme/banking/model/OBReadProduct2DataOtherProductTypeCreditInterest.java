@@ -15,25 +15,28 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Details about the interest that may be payable to the Account holders")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductTypeCreditInterest   {
+public class OBReadProduct2DataOtherProductTypeCreditInterest {
   @JsonProperty("TierBandSet")
-  
+
   private List<OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet> tierBandSet = new ArrayList<>();
 
-  public OBReadProduct2DataOtherProductTypeCreditInterest tierBandSet(List<OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet> tierBandSet) {
+  public OBReadProduct2DataOtherProductTypeCreditInterest tierBandSet(
+      List<OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet> tierBandSet) {
     this.tierBandSet = tierBandSet;
     return this;
   }
 
-  public OBReadProduct2DataOtherProductTypeCreditInterest addTierBandSetItem(OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet tierBandSetItem) {
+  public OBReadProduct2DataOtherProductTypeCreditInterest addTierBandSetItem(
+      OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet tierBandSetItem) {
     this.tierBandSet.add(tierBandSetItem);
     return this;
   }
 
   /**
    * Get tierBandSet
+   * 
    * @return tierBandSet
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public List<OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet> getTierBandSet() {
     return tierBandSet;
@@ -42,7 +45,6 @@ public class OBReadProduct2DataOtherProductTypeCreditInterest   {
   public void setTierBandSet(List<OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet> tierBandSet) {
     this.tierBandSet = tierBandSet;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -65,7 +67,7 @@ public class OBReadProduct2DataOtherProductTypeCreditInterest   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductTypeCreditInterest {\n");
-    
+
     sb.append("    tierBandSet: ").append(toIndentedString(tierBandSet)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -82,4 +84,3 @@ public class OBReadProduct2DataOtherProductTypeCreditInterest   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

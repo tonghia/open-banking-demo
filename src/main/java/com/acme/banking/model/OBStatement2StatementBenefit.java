@@ -9,11 +9,12 @@ import io.swagger.annotations.ApiModelProperty;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Set of elements used to provide details of a benefit or reward amount for the statement resource.
+ * Set of elements used to provide details of a benefit or reward amount for the
+ * statement resource.
  */
 @ApiModel(description = "Set of elements used to provide details of a benefit or reward amount for the statement resource.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBStatement2StatementBenefit   {
+public class OBStatement2StatementBenefit {
   @JsonProperty("Type")
   private String type;
 
@@ -27,8 +28,9 @@ public class OBStatement2StatementBenefit   {
 
   /**
    * Benefit type, in a coded form.
+   * 
    * @return type
-  */
+   */
   @ApiModelProperty(required = true, value = "Benefit type, in a coded form.")
   public String getType() {
     return type;
@@ -45,8 +47,9 @@ public class OBStatement2StatementBenefit   {
 
   /**
    * Get amount
+   * 
    * @return amount
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBActiveOrHistoricCurrencyAndAmount5 getAmount() {
     return amount;
@@ -55,7 +58,6 @@ public class OBStatement2StatementBenefit   {
   public void setAmount(OBActiveOrHistoricCurrencyAndAmount5 amount) {
     this.amount = amount;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -66,8 +68,8 @@ public class OBStatement2StatementBenefit   {
       return false;
     }
     OBStatement2StatementBenefit obStatement2StatementBenefit = (OBStatement2StatementBenefit) o;
-    return Objects.equals(this.type, obStatement2StatementBenefit.type) &&
-        Objects.equals(this.amount, obStatement2StatementBenefit.amount);
+    return Objects.equals(this.type, obStatement2StatementBenefit.type)
+        && Objects.equals(this.amount, obStatement2StatementBenefit.amount);
   }
 
   @Override
@@ -79,7 +81,7 @@ public class OBStatement2StatementBenefit   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBStatement2StatementBenefit {\n");
-    
+
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
     sb.append("}");
@@ -97,4 +99,3 @@ public class OBStatement2StatementBenefit   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

@@ -16,7 +16,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Provides overdraft details for a specific tier or band")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class Overdraft1OverdraftTierBand   {
+public class Overdraft1OverdraftTierBand {
   @JsonProperty("Identification")
   private String identification;
 
@@ -31,7 +31,7 @@ public class Overdraft1OverdraftTierBand   {
    */
   public enum OverdraftInterestChargingCoverageEnum {
     TIERED("Tiered"),
-    
+
     WHOLE("Whole");
 
     private String value;
@@ -74,11 +74,11 @@ public class Overdraft1OverdraftTierBand   {
   private String representativeAPR;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("OverdraftFeesCharges")
-  
+
   private List<Overdraft1OverdraftFeesCharges> overdraftFeesCharges = null;
 
   public Overdraft1OverdraftTierBand identification(String identification) {
@@ -87,9 +87,10 @@ public class Overdraft1OverdraftTierBand   {
   }
 
   /**
-   * Unique and unambiguous identification of a  Tier Band for a overdraft.
+   * Unique and unambiguous identification of a Tier Band for a overdraft.
+   * 
    * @return identification
-  */
+   */
   @ApiModelProperty(value = "Unique and unambiguous identification of a  Tier Band for a overdraft.")
   public String getIdentification() {
     return identification;
@@ -106,8 +107,9 @@ public class Overdraft1OverdraftTierBand   {
 
   /**
    * Minimum value of Overdraft Tier/Band
+   * 
    * @return tierValueMin
-  */
+   */
   @ApiModelProperty(required = true, value = "Minimum value of Overdraft Tier/Band")
   public String getTierValueMin() {
     return tierValueMin;
@@ -124,8 +126,9 @@ public class Overdraft1OverdraftTierBand   {
 
   /**
    * Maximum value of Overdraft Tier/Band
+   * 
    * @return tierValueMax
-  */
+   */
   @ApiModelProperty(value = "Maximum value of Overdraft Tier/Band")
   public String getTierValueMax() {
     return tierValueMax;
@@ -135,21 +138,24 @@ public class Overdraft1OverdraftTierBand   {
     this.tierValueMax = tierValueMax;
   }
 
-  public Overdraft1OverdraftTierBand overdraftInterestChargingCoverage(OverdraftInterestChargingCoverageEnum overdraftInterestChargingCoverage) {
+  public Overdraft1OverdraftTierBand overdraftInterestChargingCoverage(
+      OverdraftInterestChargingCoverageEnum overdraftInterestChargingCoverage) {
     this.overdraftInterestChargingCoverage = overdraftInterestChargingCoverage;
     return this;
   }
 
   /**
    * Interest charged on whole amount or tiered/banded
+   * 
    * @return overdraftInterestChargingCoverage
-  */
+   */
   @ApiModelProperty(value = "Interest charged on whole amount or tiered/banded")
   public OverdraftInterestChargingCoverageEnum getOverdraftInterestChargingCoverage() {
     return overdraftInterestChargingCoverage;
   }
 
-  public void setOverdraftInterestChargingCoverage(OverdraftInterestChargingCoverageEnum overdraftInterestChargingCoverage) {
+  public void setOverdraftInterestChargingCoverage(
+      OverdraftInterestChargingCoverageEnum overdraftInterestChargingCoverage) {
     this.overdraftInterestChargingCoverage = overdraftInterestChargingCoverage;
   }
 
@@ -159,9 +165,11 @@ public class Overdraft1OverdraftTierBand   {
   }
 
   /**
-   * Indicates that a bank provides the overdraft limit up to TierValueMIn to all customers automatically
+   * Indicates that a bank provides the overdraft limit up to TierValueMIn to all
+   * customers automatically
+   * 
    * @return bankGuaranteedIndicator
-  */
+   */
   @ApiModelProperty(value = "Indicates that a bank provides the overdraft limit up to TierValueMIn to all customers automatically")
   public Boolean getBankGuaranteedIndicator() {
     return bankGuaranteedIndicator;
@@ -177,9 +185,11 @@ public class Overdraft1OverdraftTierBand   {
   }
 
   /**
-   * EAR means Effective Annual Rate and/or Equivalent Annual Rate (frequently used interchangeably), being the actual annual interest rate of an Overdraft.
+   * EAR means Effective Annual Rate and/or Equivalent Annual Rate (frequently
+   * used interchangeably), being the actual annual interest rate of an Overdraft.
+   * 
    * @return EAR
-  */
+   */
   @ApiModelProperty(value = "EAR means Effective Annual Rate and/or Equivalent Annual Rate (frequently used interchangeably), being the actual annual interest rate of an Overdraft.")
   public String getEAR() {
     return EAR;
@@ -195,9 +205,14 @@ public class Overdraft1OverdraftTierBand   {
   }
 
   /**
-   * An annual percentage rate (APR) is the annual rate charged for borrowing or earned through an investment. APR is expressed as a percentage that represents the actual yearly cost of funds over the term of a loan. This includes any fees or additional costs associated with the transaction but does not take compounding into account.
+   * An annual percentage rate (APR) is the annual rate charged for borrowing or
+   * earned through an investment. APR is expressed as a percentage that
+   * represents the actual yearly cost of funds over the term of a loan. This
+   * includes any fees or additional costs associated with the transaction but
+   * does not take compounding into account.
+   * 
    * @return representativeAPR
-  */
+   */
   @ApiModelProperty(value = "An annual percentage rate (APR) is the annual rate charged for borrowing or earned through an investment. APR is expressed as a percentage that represents the actual yearly cost of funds over the term of a loan. This includes any fees or additional costs associated with the transaction but does not take compounding into account.")
   public String getRepresentativeAPR() {
     return representativeAPR;
@@ -222,8 +237,9 @@ public class Overdraft1OverdraftTierBand   {
 
   /**
    * Optional additional notes to supplement the Tier/band details
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "Optional additional notes to supplement the Tier/band details")
   public List<String> getNotes() {
     return notes;
@@ -238,7 +254,8 @@ public class Overdraft1OverdraftTierBand   {
     return this;
   }
 
-  public Overdraft1OverdraftTierBand addOverdraftFeesChargesItem(Overdraft1OverdraftFeesCharges overdraftFeesChargesItem) {
+  public Overdraft1OverdraftTierBand addOverdraftFeesChargesItem(
+      Overdraft1OverdraftFeesCharges overdraftFeesChargesItem) {
     if (this.overdraftFeesCharges == null) {
       this.overdraftFeesCharges = new ArrayList<>();
     }
@@ -248,8 +265,9 @@ public class Overdraft1OverdraftTierBand   {
 
   /**
    * Overdraft fees and charges
+   * 
    * @return overdraftFeesCharges
-  */
+   */
   @ApiModelProperty(value = "Overdraft fees and charges")
   public List<Overdraft1OverdraftFeesCharges> getOverdraftFeesCharges() {
     return overdraftFeesCharges;
@@ -258,7 +276,6 @@ public class Overdraft1OverdraftTierBand   {
   public void setOverdraftFeesCharges(List<Overdraft1OverdraftFeesCharges> overdraftFeesCharges) {
     this.overdraftFeesCharges = overdraftFeesCharges;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -269,31 +286,34 @@ public class Overdraft1OverdraftTierBand   {
       return false;
     }
     Overdraft1OverdraftTierBand overdraft1OverdraftTierBand = (Overdraft1OverdraftTierBand) o;
-    return Objects.equals(this.identification, overdraft1OverdraftTierBand.identification) &&
-        Objects.equals(this.tierValueMin, overdraft1OverdraftTierBand.tierValueMin) &&
-        Objects.equals(this.tierValueMax, overdraft1OverdraftTierBand.tierValueMax) &&
-        Objects.equals(this.overdraftInterestChargingCoverage, overdraft1OverdraftTierBand.overdraftInterestChargingCoverage) &&
-        Objects.equals(this.bankGuaranteedIndicator, overdraft1OverdraftTierBand.bankGuaranteedIndicator) &&
-        Objects.equals(this.EAR, overdraft1OverdraftTierBand.EAR) &&
-        Objects.equals(this.representativeAPR, overdraft1OverdraftTierBand.representativeAPR) &&
-        Objects.equals(this.notes, overdraft1OverdraftTierBand.notes) &&
-        Objects.equals(this.overdraftFeesCharges, overdraft1OverdraftTierBand.overdraftFeesCharges);
+    return Objects.equals(this.identification, overdraft1OverdraftTierBand.identification)
+        && Objects.equals(this.tierValueMin, overdraft1OverdraftTierBand.tierValueMin)
+        && Objects.equals(this.tierValueMax, overdraft1OverdraftTierBand.tierValueMax)
+        && Objects.equals(this.overdraftInterestChargingCoverage,
+            overdraft1OverdraftTierBand.overdraftInterestChargingCoverage)
+        && Objects.equals(this.bankGuaranteedIndicator, overdraft1OverdraftTierBand.bankGuaranteedIndicator)
+        && Objects.equals(this.EAR, overdraft1OverdraftTierBand.EAR)
+        && Objects.equals(this.representativeAPR, overdraft1OverdraftTierBand.representativeAPR)
+        && Objects.equals(this.notes, overdraft1OverdraftTierBand.notes)
+        && Objects.equals(this.overdraftFeesCharges, overdraft1OverdraftTierBand.overdraftFeesCharges);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(identification, tierValueMin, tierValueMax, overdraftInterestChargingCoverage, bankGuaranteedIndicator, EAR, representativeAPR, notes, overdraftFeesCharges);
+    return Objects.hash(identification, tierValueMin, tierValueMax, overdraftInterestChargingCoverage,
+        bankGuaranteedIndicator, EAR, representativeAPR, notes, overdraftFeesCharges);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Overdraft1OverdraftTierBand {\n");
-    
+
     sb.append("    identification: ").append(toIndentedString(identification)).append("\n");
     sb.append("    tierValueMin: ").append(toIndentedString(tierValueMin)).append("\n");
     sb.append("    tierValueMax: ").append(toIndentedString(tierValueMax)).append("\n");
-    sb.append("    overdraftInterestChargingCoverage: ").append(toIndentedString(overdraftInterestChargingCoverage)).append("\n");
+    sb.append("    overdraftInterestChargingCoverage: ").append(toIndentedString(overdraftInterestChargingCoverage))
+        .append("\n");
     sb.append("    bankGuaranteedIndicator: ").append(toIndentedString(bankGuaranteedIndicator)).append("\n");
     sb.append("    EAR: ").append(toIndentedString(EAR)).append("\n");
     sb.append("    representativeAPR: ").append(toIndentedString(representativeAPR)).append("\n");
@@ -314,4 +334,3 @@ public class Overdraft1OverdraftTierBand   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

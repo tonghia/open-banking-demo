@@ -23,7 +23,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Details about the fees/charges")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail   {
+public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail {
   @JsonProperty("FeeType")
   private OBOverdraftFeeType1Code feeType;
 
@@ -52,11 +52,11 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
   private OBFeeFrequency1Code1 calculationFrequency;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("OverdraftFeeChargeCap")
-  
+
   private List<OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeCap> overdraftFeeChargeCap = null;
 
   @JsonProperty("OtherFeeType")
@@ -78,8 +78,9 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
 
   /**
    * Get feeType
+   * 
    * @return feeType
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBOverdraftFeeType1Code getFeeType() {
     return feeType;
@@ -89,15 +90,17 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
     this.feeType = feeType;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail negotiableIndicator(Boolean negotiableIndicator) {
+  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail negotiableIndicator(
+      Boolean negotiableIndicator) {
     this.negotiableIndicator = negotiableIndicator;
     return this;
   }
 
   /**
    * Indicates whether fee and charges are negotiable
+   * 
    * @return negotiableIndicator
-  */
+   */
   @ApiModelProperty(value = "Indicates whether fee and charges are negotiable")
   public Boolean getNegotiableIndicator() {
     return negotiableIndicator;
@@ -107,15 +110,18 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
     this.negotiableIndicator = negotiableIndicator;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail overdraftControlIndicator(Boolean overdraftControlIndicator) {
+  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail overdraftControlIndicator(
+      Boolean overdraftControlIndicator) {
     this.overdraftControlIndicator = overdraftControlIndicator;
     return this;
   }
 
   /**
-   * Indicates if the fee/charge is already covered by an 'Overdraft Control' fee or not.
+   * Indicates if the fee/charge is already covered by an 'Overdraft Control' fee
+   * or not.
+   * 
    * @return overdraftControlIndicator
-  */
+   */
   @ApiModelProperty(value = "Indicates if the fee/charge is already covered by an 'Overdraft Control' fee or not.")
   public Boolean getOverdraftControlIndicator() {
     return overdraftControlIndicator;
@@ -125,15 +131,18 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
     this.overdraftControlIndicator = overdraftControlIndicator;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail incrementalBorrowingAmount(String incrementalBorrowingAmount) {
+  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail incrementalBorrowingAmount(
+      String incrementalBorrowingAmount) {
     this.incrementalBorrowingAmount = incrementalBorrowingAmount;
     return this;
   }
 
   /**
-   * Every additional tranche of an overdraft balance to which an overdraft fee is applied
+   * Every additional tranche of an overdraft balance to which an overdraft fee is
+   * applied
+   * 
    * @return incrementalBorrowingAmount
-  */
+   */
   @ApiModelProperty(value = "Every additional tranche of an overdraft balance to which an overdraft fee is applied")
   public String getIncrementalBorrowingAmount() {
     return incrementalBorrowingAmount;
@@ -149,9 +158,11 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
   }
 
   /**
-   * Amount charged for an overdraft fee/charge (where it is charged in terms of an amount rather than a rate)
+   * Amount charged for an overdraft fee/charge (where it is charged in terms of
+   * an amount rather than a rate)
+   * 
    * @return feeAmount
-  */
+   */
   @ApiModelProperty(value = "Amount charged for an overdraft fee/charge (where it is charged in terms of an amount rather than a rate)")
   public String getFeeAmount() {
     return feeAmount;
@@ -167,9 +178,11 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
   }
 
   /**
-   * Rate charged for overdraft fee/charge (where it is charged in terms of a rate rather than an amount)
+   * Rate charged for overdraft fee/charge (where it is charged in terms of a rate
+   * rather than an amount)
+   * 
    * @return feeRate
-  */
+   */
   @ApiModelProperty(value = "Rate charged for overdraft fee/charge (where it is charged in terms of a rate rather than an amount)")
   public String getFeeRate() {
     return feeRate;
@@ -179,15 +192,17 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
     this.feeRate = feeRate;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail feeRateType(OBInterestRateType1Code0 feeRateType) {
+  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail feeRateType(
+      OBInterestRateType1Code0 feeRateType) {
     this.feeRateType = feeRateType;
     return this;
   }
 
   /**
    * Get feeRateType
+   * 
    * @return feeRateType
-  */
+   */
   @ApiModelProperty(value = "")
   public OBInterestRateType1Code0 getFeeRateType() {
     return feeRateType;
@@ -197,15 +212,17 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
     this.feeRateType = feeRateType;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail applicationFrequency(OBFeeFrequency1Code0 applicationFrequency) {
+  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail applicationFrequency(
+      OBFeeFrequency1Code0 applicationFrequency) {
     this.applicationFrequency = applicationFrequency;
     return this;
   }
 
   /**
    * Get applicationFrequency
+   * 
    * @return applicationFrequency
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBFeeFrequency1Code0 getApplicationFrequency() {
     return applicationFrequency;
@@ -215,15 +232,17 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
     this.applicationFrequency = applicationFrequency;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail calculationFrequency(OBFeeFrequency1Code1 calculationFrequency) {
+  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail calculationFrequency(
+      OBFeeFrequency1Code1 calculationFrequency) {
     this.calculationFrequency = calculationFrequency;
     return this;
   }
 
   /**
    * Get calculationFrequency
+   * 
    * @return calculationFrequency
-  */
+   */
   @ApiModelProperty(value = "")
   public OBFeeFrequency1Code1 getCalculationFrequency() {
     return calculationFrequency;
@@ -248,8 +267,9 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
 
   /**
    * Get notes
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "")
   public List<String> getNotes() {
     return notes;
@@ -259,12 +279,14 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
     this.notes = notes;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail overdraftFeeChargeCap(List<OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeCap> overdraftFeeChargeCap) {
+  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail overdraftFeeChargeCap(
+      List<OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeCap> overdraftFeeChargeCap) {
     this.overdraftFeeChargeCap = overdraftFeeChargeCap;
     return this;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail addOverdraftFeeChargeCapItem(OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeCap overdraftFeeChargeCapItem) {
+  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail addOverdraftFeeChargeCapItem(
+      OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeCap overdraftFeeChargeCapItem) {
     if (this.overdraftFeeChargeCap == null) {
       this.overdraftFeeChargeCap = new ArrayList<>();
     }
@@ -274,26 +296,30 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
 
   /**
    * Get overdraftFeeChargeCap
+   * 
    * @return overdraftFeeChargeCap
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeCap> getOverdraftFeeChargeCap() {
     return overdraftFeeChargeCap;
   }
 
-  public void setOverdraftFeeChargeCap(List<OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeCap> overdraftFeeChargeCap) {
+  public void setOverdraftFeeChargeCap(
+      List<OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeCap> overdraftFeeChargeCap) {
     this.overdraftFeeChargeCap = overdraftFeeChargeCap;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail otherFeeType(OBOtherCodeType13 otherFeeType) {
+  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail otherFeeType(
+      OBOtherCodeType13 otherFeeType) {
     this.otherFeeType = otherFeeType;
     return this;
   }
 
   /**
    * Get otherFeeType
+   * 
    * @return otherFeeType
-  */
+   */
   @ApiModelProperty(value = "")
   public OBOtherCodeType13 getOtherFeeType() {
     return otherFeeType;
@@ -303,15 +329,17 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
     this.otherFeeType = otherFeeType;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail otherFeeRateType(OBOtherCodeType14 otherFeeRateType) {
+  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail otherFeeRateType(
+      OBOtherCodeType14 otherFeeRateType) {
     this.otherFeeRateType = otherFeeRateType;
     return this;
   }
 
   /**
    * Get otherFeeRateType
+   * 
    * @return otherFeeRateType
-  */
+   */
   @ApiModelProperty(value = "")
   public OBOtherCodeType14 getOtherFeeRateType() {
     return otherFeeRateType;
@@ -321,15 +349,17 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
     this.otherFeeRateType = otherFeeRateType;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail otherApplicationFrequency(OBOtherCodeType11 otherApplicationFrequency) {
+  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail otherApplicationFrequency(
+      OBOtherCodeType11 otherApplicationFrequency) {
     this.otherApplicationFrequency = otherApplicationFrequency;
     return this;
   }
 
   /**
    * Get otherApplicationFrequency
+   * 
    * @return otherApplicationFrequency
-  */
+   */
   @ApiModelProperty(value = "")
   public OBOtherCodeType11 getOtherApplicationFrequency() {
     return otherApplicationFrequency;
@@ -339,15 +369,17 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
     this.otherApplicationFrequency = otherApplicationFrequency;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail otherCalculationFrequency(OBOtherCodeType12 otherCalculationFrequency) {
+  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail otherCalculationFrequency(
+      OBOtherCodeType12 otherCalculationFrequency) {
     this.otherCalculationFrequency = otherCalculationFrequency;
     return this;
   }
 
   /**
    * Get otherCalculationFrequency
+   * 
    * @return otherCalculationFrequency
-  */
+   */
   @ApiModelProperty(value = "")
   public OBOtherCodeType12 getOtherCalculationFrequency() {
     return otherCalculationFrequency;
@@ -356,7 +388,6 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
   public void setOtherCalculationFrequency(OBOtherCodeType12 otherCalculationFrequency) {
     this.otherCalculationFrequency = otherCalculationFrequency;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -367,33 +398,46 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
       return false;
     }
     OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail = (OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail) o;
-    return Objects.equals(this.feeType, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.feeType) &&
-        Objects.equals(this.negotiableIndicator, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.negotiableIndicator) &&
-        Objects.equals(this.overdraftControlIndicator, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.overdraftControlIndicator) &&
-        Objects.equals(this.incrementalBorrowingAmount, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.incrementalBorrowingAmount) &&
-        Objects.equals(this.feeAmount, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.feeAmount) &&
-        Objects.equals(this.feeRate, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.feeRate) &&
-        Objects.equals(this.feeRateType, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.feeRateType) &&
-        Objects.equals(this.applicationFrequency, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.applicationFrequency) &&
-        Objects.equals(this.calculationFrequency, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.calculationFrequency) &&
-        Objects.equals(this.notes, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.notes) &&
-        Objects.equals(this.overdraftFeeChargeCap, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.overdraftFeeChargeCap) &&
-        Objects.equals(this.otherFeeType, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.otherFeeType) &&
-        Objects.equals(this.otherFeeRateType, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.otherFeeRateType) &&
-        Objects.equals(this.otherApplicationFrequency, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.otherApplicationFrequency) &&
-        Objects.equals(this.otherCalculationFrequency, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.otherCalculationFrequency);
+    return Objects.equals(this.feeType, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.feeType)
+        && Objects.equals(this.negotiableIndicator,
+            obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.negotiableIndicator)
+        && Objects.equals(this.overdraftControlIndicator,
+            obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.overdraftControlIndicator)
+        && Objects.equals(this.incrementalBorrowingAmount,
+            obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.incrementalBorrowingAmount)
+        && Objects.equals(this.feeAmount, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.feeAmount)
+        && Objects.equals(this.feeRate, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.feeRate)
+        && Objects.equals(this.feeRateType,
+            obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.feeRateType)
+        && Objects.equals(this.applicationFrequency,
+            obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.applicationFrequency)
+        && Objects.equals(this.calculationFrequency,
+            obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.calculationFrequency)
+        && Objects.equals(this.notes, obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.notes)
+        && Objects.equals(this.overdraftFeeChargeCap,
+            obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.overdraftFeeChargeCap)
+        && Objects.equals(this.otherFeeType,
+            obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.otherFeeType)
+        && Objects.equals(this.otherFeeRateType,
+            obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.otherFeeRateType)
+        && Objects.equals(this.otherApplicationFrequency,
+            obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.otherApplicationFrequency)
+        && Objects.equals(this.otherCalculationFrequency,
+            obReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail.otherCalculationFrequency);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(feeType, negotiableIndicator, overdraftControlIndicator, incrementalBorrowingAmount, feeAmount, feeRate, feeRateType, applicationFrequency, calculationFrequency, notes, overdraftFeeChargeCap, otherFeeType, otherFeeRateType, otherApplicationFrequency, otherCalculationFrequency);
+    return Objects.hash(feeType, negotiableIndicator, overdraftControlIndicator, incrementalBorrowingAmount, feeAmount,
+        feeRate, feeRateType, applicationFrequency, calculationFrequency, notes, overdraftFeeChargeCap, otherFeeType,
+        otherFeeRateType, otherApplicationFrequency, otherCalculationFrequency);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail {\n");
-    
+
     sb.append("    feeType: ").append(toIndentedString(feeType)).append("\n");
     sb.append("    negotiableIndicator: ").append(toIndentedString(negotiableIndicator)).append("\n");
     sb.append("    overdraftControlIndicator: ").append(toIndentedString(overdraftControlIndicator)).append("\n");
@@ -424,4 +468,3 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeeChargeDetail
     return o.toString().replace("\n", "\n    ");
   }
 }
-

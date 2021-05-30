@@ -16,7 +16,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBParty2
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBParty2   {
+public class OBParty2 {
   @JsonProperty("PartyId")
   private String partyId;
 
@@ -54,7 +54,7 @@ public class OBParty2   {
   private OBPartyRelationships1 relationships;
 
   @JsonProperty("Address")
-  
+
   private List<OBParty2Address> address = null;
 
   public OBParty2 partyId(String partyId) {
@@ -63,9 +63,11 @@ public class OBParty2   {
   }
 
   /**
-   * A unique and immutable identifier used to identify the customer resource. This identifier has no meaning to the account owner.
+   * A unique and immutable identifier used to identify the customer resource.
+   * This identifier has no meaning to the account owner.
+   * 
    * @return partyId
-  */
+   */
   @ApiModelProperty(required = true, value = "A unique and immutable identifier used to identify the customer resource. This identifier has no meaning to the account owner.")
   public String getPartyId() {
     return partyId;
@@ -82,8 +84,9 @@ public class OBParty2   {
 
   /**
    * Number assigned by an agent to identify its customer.
+   * 
    * @return partyNumber
-  */
+   */
   @ApiModelProperty(value = "Number assigned by an agent to identify its customer.")
   public String getPartyNumber() {
     return partyNumber;
@@ -100,8 +103,9 @@ public class OBParty2   {
 
   /**
    * Get partyType
+   * 
    * @return partyType
-  */
+   */
   @ApiModelProperty(value = "")
   public OBExternalPartyType1Code getPartyType() {
     return partyType;
@@ -117,9 +121,11 @@ public class OBParty2   {
   }
 
   /**
-   * Name by which a party is known and which is usually used to identify that party.
+   * Name by which a party is known and which is usually used to identify that
+   * party.
+   * 
    * @return name
-  */
+   */
   @ApiModelProperty(value = "Name by which a party is known and which is usually used to identify that party.")
   public String getName() {
     return name;
@@ -136,8 +142,9 @@ public class OBParty2   {
 
   /**
    * Specifies a character string with a maximum length of 350 characters.
+   * 
    * @return fullLegalName
-  */
+   */
   @ApiModelProperty(value = "Specifies a character string with a maximum length of 350 characters.")
   public String getFullLegalName() {
     return fullLegalName;
@@ -154,8 +161,9 @@ public class OBParty2   {
 
   /**
    * Legal standing of the party.
+   * 
    * @return legalStructure
-  */
+   */
   @ApiModelProperty(value = "Legal standing of the party.")
   public String getLegalStructure() {
     return legalStructure;
@@ -172,8 +180,9 @@ public class OBParty2   {
 
   /**
    * Get beneficialOwnership
+   * 
    * @return beneficialOwnership
-  */
+   */
   @ApiModelProperty(value = "")
   public Boolean getBeneficialOwnership() {
     return beneficialOwnership;
@@ -190,8 +199,9 @@ public class OBParty2   {
 
   /**
    * A party’s role with respect to the related account.
+   * 
    * @return accountRole
-  */
+   */
   @ApiModelProperty(value = "A party’s role with respect to the related account.")
   public String getAccountRole() {
     return accountRole;
@@ -208,8 +218,9 @@ public class OBParty2   {
 
   /**
    * Address for electronic mail (e-mail).
+   * 
    * @return emailAddress
-  */
+   */
   @ApiModelProperty(value = "Address for electronic mail (e-mail).")
   public String getEmailAddress() {
     return emailAddress;
@@ -225,9 +236,11 @@ public class OBParty2   {
   }
 
   /**
-   * Collection of information that identifies a phone number, as defined by telecom services.
+   * Collection of information that identifies a phone number, as defined by
+   * telecom services.
+   * 
    * @return phone
-  */
+   */
   @ApiModelProperty(value = "Collection of information that identifies a phone number, as defined by telecom services.")
   public String getPhone() {
     return phone;
@@ -243,9 +256,11 @@ public class OBParty2   {
   }
 
   /**
-   * Collection of information that identifies a mobile phone number, as defined by telecom services.
+   * Collection of information that identifies a mobile phone number, as defined
+   * by telecom services.
+   * 
    * @return mobile
-  */
+   */
   @ApiModelProperty(value = "Collection of information that identifies a mobile phone number, as defined by telecom services.")
   public String getMobile() {
     return mobile;
@@ -262,8 +277,9 @@ public class OBParty2   {
 
   /**
    * Get relationships
+   * 
    * @return relationships
-  */
+   */
   @ApiModelProperty(value = "")
   public OBPartyRelationships1 getRelationships() {
     return relationships;
@@ -288,8 +304,9 @@ public class OBParty2   {
 
   /**
    * Get address
+   * 
    * @return address
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBParty2Address> getAddress() {
     return address;
@@ -298,7 +315,6 @@ public class OBParty2   {
   public void setAddress(List<OBParty2Address> address) {
     this.address = address;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -309,31 +325,28 @@ public class OBParty2   {
       return false;
     }
     OBParty2 obParty2 = (OBParty2) o;
-    return Objects.equals(this.partyId, obParty2.partyId) &&
-        Objects.equals(this.partyNumber, obParty2.partyNumber) &&
-        Objects.equals(this.partyType, obParty2.partyType) &&
-        Objects.equals(this.name, obParty2.name) &&
-        Objects.equals(this.fullLegalName, obParty2.fullLegalName) &&
-        Objects.equals(this.legalStructure, obParty2.legalStructure) &&
-        Objects.equals(this.beneficialOwnership, obParty2.beneficialOwnership) &&
-        Objects.equals(this.accountRole, obParty2.accountRole) &&
-        Objects.equals(this.emailAddress, obParty2.emailAddress) &&
-        Objects.equals(this.phone, obParty2.phone) &&
-        Objects.equals(this.mobile, obParty2.mobile) &&
-        Objects.equals(this.relationships, obParty2.relationships) &&
-        Objects.equals(this.address, obParty2.address);
+    return Objects.equals(this.partyId, obParty2.partyId) && Objects.equals(this.partyNumber, obParty2.partyNumber)
+        && Objects.equals(this.partyType, obParty2.partyType) && Objects.equals(this.name, obParty2.name)
+        && Objects.equals(this.fullLegalName, obParty2.fullLegalName)
+        && Objects.equals(this.legalStructure, obParty2.legalStructure)
+        && Objects.equals(this.beneficialOwnership, obParty2.beneficialOwnership)
+        && Objects.equals(this.accountRole, obParty2.accountRole)
+        && Objects.equals(this.emailAddress, obParty2.emailAddress) && Objects.equals(this.phone, obParty2.phone)
+        && Objects.equals(this.mobile, obParty2.mobile) && Objects.equals(this.relationships, obParty2.relationships)
+        && Objects.equals(this.address, obParty2.address);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(partyId, partyNumber, partyType, name, fullLegalName, legalStructure, beneficialOwnership, accountRole, emailAddress, phone, mobile, relationships, address);
+    return Objects.hash(partyId, partyNumber, partyType, name, fullLegalName, legalStructure, beneficialOwnership,
+        accountRole, emailAddress, phone, mobile, relationships, address);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBParty2 {\n");
-    
+
     sb.append("    partyId: ").append(toIndentedString(partyId)).append("\n");
     sb.append("    partyNumber: ").append(toIndentedString(partyNumber)).append("\n");
     sb.append("    partyType: ").append(toIndentedString(partyType)).append("\n");
@@ -362,4 +375,3 @@ public class OBParty2   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

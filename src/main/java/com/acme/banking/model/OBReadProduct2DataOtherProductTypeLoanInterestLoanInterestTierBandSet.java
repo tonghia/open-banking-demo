@@ -19,15 +19,20 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "The group of tiers or bands for which debit interest can be applied.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet   {
+public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet {
   /**
-   * The methodology of how credit interest is charged. It can be:- 1. Banded Interest rates are banded. i.e. Increasing rate on whole balance as balance increases. 2. Tiered Interest rates are tiered. i.e. increasing rate for each tier as balance increases, but interest paid on tier fixed for that tier and not on whole balance. 3. Whole The same interest rate is applied irrespective of the SME Loan balance
+   * The methodology of how credit interest is charged. It can be:- 1. Banded
+   * Interest rates are banded. i.e. Increasing rate on whole balance as balance
+   * increases. 2. Tiered Interest rates are tiered. i.e. increasing rate for each
+   * tier as balance increases, but interest paid on tier fixed for that tier and
+   * not on whole balance. 3. Whole The same interest rate is applied irrespective
+   * of the SME Loan balance
    */
   public enum TierBandMethodEnum {
     INBA("INBA"),
-    
+
     INTI("INTI"),
-    
+
     INWH("INWH");
 
     private String value;
@@ -67,29 +72,36 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandS
   private OBInterestCalculationMethod1Code calculationMethod;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("OtherCalculationMethod")
   private OBOtherCodeType10 otherCalculationMethod;
 
   @JsonProperty("LoanInterestTierBand")
-  
+
   private List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand> loanInterestTierBand = new ArrayList<>();
 
   @JsonProperty("LoanInterestFeesCharges")
-  
+
   private List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestFeesCharges> loanInterestFeesCharges = null;
 
-  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet tierBandMethod(TierBandMethodEnum tierBandMethod) {
+  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet tierBandMethod(
+      TierBandMethodEnum tierBandMethod) {
     this.tierBandMethod = tierBandMethod;
     return this;
   }
 
   /**
-   * The methodology of how credit interest is charged. It can be:- 1. Banded Interest rates are banded. i.e. Increasing rate on whole balance as balance increases. 2. Tiered Interest rates are tiered. i.e. increasing rate for each tier as balance increases, but interest paid on tier fixed for that tier and not on whole balance. 3. Whole The same interest rate is applied irrespective of the SME Loan balance
+   * The methodology of how credit interest is charged. It can be:- 1. Banded
+   * Interest rates are banded. i.e. Increasing rate on whole balance as balance
+   * increases. 2. Tiered Interest rates are tiered. i.e. increasing rate for each
+   * tier as balance increases, but interest paid on tier fixed for that tier and
+   * not on whole balance. 3. Whole The same interest rate is applied irrespective
+   * of the SME Loan balance
+   * 
    * @return tierBandMethod
-  */
+   */
   @ApiModelProperty(required = true, value = "The methodology of how credit interest is charged. It can be:- 1. Banded Interest rates are banded. i.e. Increasing rate on whole balance as balance increases. 2. Tiered Interest rates are tiered. i.e. increasing rate for each tier as balance increases, but interest paid on tier fixed for that tier and not on whole balance. 3. Whole The same interest rate is applied irrespective of the SME Loan balance")
   public TierBandMethodEnum getTierBandMethod() {
     return tierBandMethod;
@@ -105,9 +117,11 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandS
   }
 
   /**
-   * Loan interest tierbandset identification. Used by  loan providers for internal use purpose.
+   * Loan interest tierbandset identification. Used by loan providers for internal
+   * use purpose.
+   * 
    * @return identification
-  */
+   */
   @ApiModelProperty(value = "Loan interest tierbandset identification. Used by  loan providers for internal use purpose.")
   public String getIdentification() {
     return identification;
@@ -117,15 +131,17 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandS
     this.identification = identification;
   }
 
-  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet calculationMethod(OBInterestCalculationMethod1Code calculationMethod) {
+  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet calculationMethod(
+      OBInterestCalculationMethod1Code calculationMethod) {
     this.calculationMethod = calculationMethod;
     return this;
   }
 
   /**
    * Get calculationMethod
+   * 
    * @return calculationMethod
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBInterestCalculationMethod1Code getCalculationMethod() {
     return calculationMethod;
@@ -150,8 +166,9 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandS
 
   /**
    * Get notes
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "")
   public List<String> getNotes() {
     return notes;
@@ -161,15 +178,17 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandS
     this.notes = notes;
   }
 
-  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet otherCalculationMethod(OBOtherCodeType10 otherCalculationMethod) {
+  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet otherCalculationMethod(
+      OBOtherCodeType10 otherCalculationMethod) {
     this.otherCalculationMethod = otherCalculationMethod;
     return this;
   }
 
   /**
    * Get otherCalculationMethod
+   * 
    * @return otherCalculationMethod
-  */
+   */
   @ApiModelProperty(value = "")
   public OBOtherCodeType10 getOtherCalculationMethod() {
     return otherCalculationMethod;
@@ -179,35 +198,41 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandS
     this.otherCalculationMethod = otherCalculationMethod;
   }
 
-  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet loanInterestTierBand(List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand> loanInterestTierBand) {
+  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet loanInterestTierBand(
+      List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand> loanInterestTierBand) {
     this.loanInterestTierBand = loanInterestTierBand;
     return this;
   }
 
-  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet addLoanInterestTierBandItem(OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand loanInterestTierBandItem) {
+  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet addLoanInterestTierBandItem(
+      OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand loanInterestTierBandItem) {
     this.loanInterestTierBand.add(loanInterestTierBandItem);
     return this;
   }
 
   /**
    * Get loanInterestTierBand
+   * 
    * @return loanInterestTierBand
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand> getLoanInterestTierBand() {
     return loanInterestTierBand;
   }
 
-  public void setLoanInterestTierBand(List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand> loanInterestTierBand) {
+  public void setLoanInterestTierBand(
+      List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand> loanInterestTierBand) {
     this.loanInterestTierBand = loanInterestTierBand;
   }
 
-  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet loanInterestFeesCharges(List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestFeesCharges> loanInterestFeesCharges) {
+  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet loanInterestFeesCharges(
+      List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestFeesCharges> loanInterestFeesCharges) {
     this.loanInterestFeesCharges = loanInterestFeesCharges;
     return this;
   }
 
-  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet addLoanInterestFeesChargesItem(OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestFeesCharges loanInterestFeesChargesItem) {
+  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet addLoanInterestFeesChargesItem(
+      OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestFeesCharges loanInterestFeesChargesItem) {
     if (this.loanInterestFeesCharges == null) {
       this.loanInterestFeesCharges = new ArrayList<>();
     }
@@ -217,17 +242,18 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandS
 
   /**
    * Get loanInterestFeesCharges
+   * 
    * @return loanInterestFeesCharges
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestFeesCharges> getLoanInterestFeesCharges() {
     return loanInterestFeesCharges;
   }
 
-  public void setLoanInterestFeesCharges(List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestFeesCharges> loanInterestFeesCharges) {
+  public void setLoanInterestFeesCharges(
+      List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestFeesCharges> loanInterestFeesCharges) {
     this.loanInterestFeesCharges = loanInterestFeesCharges;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -238,25 +264,32 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandS
       return false;
     }
     OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet = (OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet) o;
-    return Objects.equals(this.tierBandMethod, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet.tierBandMethod) &&
-        Objects.equals(this.identification, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet.identification) &&
-        Objects.equals(this.calculationMethod, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet.calculationMethod) &&
-        Objects.equals(this.notes, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet.notes) &&
-        Objects.equals(this.otherCalculationMethod, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet.otherCalculationMethod) &&
-        Objects.equals(this.loanInterestTierBand, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet.loanInterestTierBand) &&
-        Objects.equals(this.loanInterestFeesCharges, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet.loanInterestFeesCharges);
+    return Objects.equals(this.tierBandMethod,
+        obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet.tierBandMethod)
+        && Objects.equals(this.identification,
+            obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet.identification)
+        && Objects.equals(this.calculationMethod,
+            obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet.calculationMethod)
+        && Objects.equals(this.notes, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet.notes)
+        && Objects.equals(this.otherCalculationMethod,
+            obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet.otherCalculationMethod)
+        && Objects.equals(this.loanInterestTierBand,
+            obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet.loanInterestTierBand)
+        && Objects.equals(this.loanInterestFeesCharges,
+            obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet.loanInterestFeesCharges);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(tierBandMethod, identification, calculationMethod, notes, otherCalculationMethod, loanInterestTierBand, loanInterestFeesCharges);
+    return Objects.hash(tierBandMethod, identification, calculationMethod, notes, otherCalculationMethod,
+        loanInterestTierBand, loanInterestFeesCharges);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet {\n");
-    
+
     sb.append("    tierBandMethod: ").append(toIndentedString(tierBandMethod)).append("\n");
     sb.append("    identification: ").append(toIndentedString(identification)).append("\n");
     sb.append("    calculationMethod: ").append(toIndentedString(calculationMethod)).append("\n");
@@ -279,4 +312,3 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandS
     return o.toString().replace("\n", "\n    ");
   }
 }
-

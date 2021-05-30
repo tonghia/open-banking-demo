@@ -15,63 +15,69 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBReadProduct2DataOtherProductTypeProductDetails
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductTypeProductDetails   {
+public class OBReadProduct2DataOtherProductTypeProductDetails {
   /**
-   * Market segmentation is a marketing term referring to the aggregating of prospective buyers into groups, or segments, that have common needs and respond similarly to a marketing action. Market segmentation enables companies to target different categories of consumers who perceive the full value of certain products and services differently from one another. Read more: Market Segmentation http://www.investopedia.com/terms/m/marketsegmentation.asp#ixzz4gfEEalTd 
+   * Market segmentation is a marketing term referring to the aggregating of
+   * prospective buyers into groups, or segments, that have common needs and
+   * respond similarly to a marketing action. Market segmentation enables
+   * companies to target different categories of consumers who perceive the full
+   * value of certain products and services differently from one another. Read
+   * more: Market Segmentation
+   * http://www.investopedia.com/terms/m/marketsegmentation.asp#ixzz4gfEEalTd
    */
   public enum SegmentEnum {
     GEAS("GEAS"),
-    
+
     GEBA("GEBA"),
-    
+
     GEBR("GEBR"),
-    
+
     GEBU("GEBU"),
-    
+
     GECI("GECI"),
-    
+
     GECS("GECS"),
-    
+
     GEFB("GEFB"),
-    
+
     GEFG("GEFG"),
-    
+
     GEG("GEG"),
-    
+
     GEGR("GEGR"),
-    
+
     GEGS("GEGS"),
-    
+
     GEOT("GEOT"),
-    
+
     GEOV("GEOV"),
-    
+
     GEPA("GEPA"),
-    
+
     GEPR("GEPR"),
-    
+
     GERE("GERE"),
-    
+
     GEST("GEST"),
-    
+
     GEYA("GEYA"),
-    
+
     GEYO("GEYO"),
-    
+
     PSCA("PSCA"),
-    
+
     PSES("PSES"),
-    
+
     PSNC("PSNC"),
-    
+
     PSNP("PSNP"),
-    
+
     PSRG("PSRG"),
-    
+
     PSSS("PSSS"),
-    
+
     PSST("PSST"),
-    
+
     PSSW("PSSW");
 
     private String value;
@@ -102,7 +108,7 @@ public class OBReadProduct2DataOtherProductTypeProductDetails   {
   }
 
   @JsonProperty("Segment")
-  
+
   private List<SegmentEnum> segment = null;
 
   @JsonProperty("FeeFreeLength")
@@ -113,17 +119,17 @@ public class OBReadProduct2DataOtherProductTypeProductDetails   {
    */
   public enum FeeFreeLengthPeriodEnum {
     PACT("PACT"),
-    
+
     PDAY("PDAY"),
-    
+
     PHYR("PHYR"),
-    
+
     PMTH("PMTH"),
-    
+
     PQTR("PQTR"),
-    
+
     PWEK("PWEK"),
-    
+
     PYER("PYER");
 
     private String value;
@@ -160,7 +166,7 @@ public class OBReadProduct2DataOtherProductTypeProductDetails   {
   private String monthlyMaximumCharge;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("OtherSegment")
@@ -181,8 +187,9 @@ public class OBReadProduct2DataOtherProductTypeProductDetails   {
 
   /**
    * Get segment
+   * 
    * @return segment
-  */
+   */
   @ApiModelProperty(value = "")
   public List<SegmentEnum> getSegment() {
     return segment;
@@ -199,8 +206,9 @@ public class OBReadProduct2DataOtherProductTypeProductDetails   {
 
   /**
    * The length/duration of the fee free period
+   * 
    * @return feeFreeLength
-  */
+   */
   @ApiModelProperty(value = "The length/duration of the fee free period")
   public Integer getFeeFreeLength() {
     return feeFreeLength;
@@ -210,15 +218,17 @@ public class OBReadProduct2DataOtherProductTypeProductDetails   {
     this.feeFreeLength = feeFreeLength;
   }
 
-  public OBReadProduct2DataOtherProductTypeProductDetails feeFreeLengthPeriod(FeeFreeLengthPeriodEnum feeFreeLengthPeriod) {
+  public OBReadProduct2DataOtherProductTypeProductDetails feeFreeLengthPeriod(
+      FeeFreeLengthPeriodEnum feeFreeLengthPeriod) {
     this.feeFreeLengthPeriod = feeFreeLengthPeriod;
     return this;
   }
 
   /**
    * The unit of period (days, weeks, months etc.) of the promotional length
+   * 
    * @return feeFreeLengthPeriod
-  */
+   */
   @ApiModelProperty(value = "The unit of period (days, weeks, months etc.) of the promotional length")
   public FeeFreeLengthPeriodEnum getFeeFreeLengthPeriod() {
     return feeFreeLengthPeriod;
@@ -234,9 +244,11 @@ public class OBReadProduct2DataOtherProductTypeProductDetails   {
   }
 
   /**
-   * The maximum relevant charges that could accrue as defined fully in Part 7 of the CMA order
+   * The maximum relevant charges that could accrue as defined fully in Part 7 of
+   * the CMA order
+   * 
    * @return monthlyMaximumCharge
-  */
+   */
   @ApiModelProperty(value = "The maximum relevant charges that could accrue as defined fully in Part 7 of the CMA order")
   public String getMonthlyMaximumCharge() {
     return monthlyMaximumCharge;
@@ -261,8 +273,9 @@ public class OBReadProduct2DataOtherProductTypeProductDetails   {
 
   /**
    * Get notes
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "")
   public List<String> getNotes() {
     return notes;
@@ -279,8 +292,9 @@ public class OBReadProduct2DataOtherProductTypeProductDetails   {
 
   /**
    * Get otherSegment
+   * 
    * @return otherSegment
-  */
+   */
   @ApiModelProperty(value = "")
   public OBOtherCodeType10 getOtherSegment() {
     return otherSegment;
@@ -289,7 +303,6 @@ public class OBReadProduct2DataOtherProductTypeProductDetails   {
   public void setOtherSegment(OBOtherCodeType10 otherSegment) {
     this.otherSegment = otherSegment;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -300,12 +313,14 @@ public class OBReadProduct2DataOtherProductTypeProductDetails   {
       return false;
     }
     OBReadProduct2DataOtherProductTypeProductDetails obReadProduct2DataOtherProductTypeProductDetails = (OBReadProduct2DataOtherProductTypeProductDetails) o;
-    return Objects.equals(this.segment, obReadProduct2DataOtherProductTypeProductDetails.segment) &&
-        Objects.equals(this.feeFreeLength, obReadProduct2DataOtherProductTypeProductDetails.feeFreeLength) &&
-        Objects.equals(this.feeFreeLengthPeriod, obReadProduct2DataOtherProductTypeProductDetails.feeFreeLengthPeriod) &&
-        Objects.equals(this.monthlyMaximumCharge, obReadProduct2DataOtherProductTypeProductDetails.monthlyMaximumCharge) &&
-        Objects.equals(this.notes, obReadProduct2DataOtherProductTypeProductDetails.notes) &&
-        Objects.equals(this.otherSegment, obReadProduct2DataOtherProductTypeProductDetails.otherSegment);
+    return Objects.equals(this.segment, obReadProduct2DataOtherProductTypeProductDetails.segment)
+        && Objects.equals(this.feeFreeLength, obReadProduct2DataOtherProductTypeProductDetails.feeFreeLength)
+        && Objects.equals(this.feeFreeLengthPeriod,
+            obReadProduct2DataOtherProductTypeProductDetails.feeFreeLengthPeriod)
+        && Objects.equals(this.monthlyMaximumCharge,
+            obReadProduct2DataOtherProductTypeProductDetails.monthlyMaximumCharge)
+        && Objects.equals(this.notes, obReadProduct2DataOtherProductTypeProductDetails.notes)
+        && Objects.equals(this.otherSegment, obReadProduct2DataOtherProductTypeProductDetails.otherSegment);
   }
 
   @Override
@@ -317,7 +332,7 @@ public class OBReadProduct2DataOtherProductTypeProductDetails   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductTypeProductDetails {\n");
-    
+
     sb.append("    segment: ").append(toIndentedString(segment)).append("\n");
     sb.append("    feeFreeLength: ").append(toIndentedString(feeFreeLength)).append("\n");
     sb.append("    feeFreeLengthPeriod: ").append(toIndentedString(feeFreeLengthPeriod)).append("\n");
@@ -339,4 +354,3 @@ public class OBReadProduct2DataOtherProductTypeProductDetails   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

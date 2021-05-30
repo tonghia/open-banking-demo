@@ -8,11 +8,12 @@ import io.swagger.annotations.ApiModelProperty;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Set of elements used to provide details of a generic number value related to the statement resource.
+ * Set of elements used to provide details of a generic number value related to
+ * the statement resource.
  */
 @ApiModel(description = "Set of elements used to provide details of a generic number value related to the statement resource.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBStatement2StatementValue   {
+public class OBStatement2StatementValue {
   @JsonProperty("Value")
   private String value;
 
@@ -26,8 +27,9 @@ public class OBStatement2StatementValue   {
 
   /**
    * Value associated with the statement value type.
+   * 
    * @return value
-  */
+   */
   @ApiModelProperty(required = true, value = "Value associated with the statement value type.")
   public String getValue() {
     return value;
@@ -44,8 +46,9 @@ public class OBStatement2StatementValue   {
 
   /**
    * Statement value type, in a coded form.
+   * 
    * @return type
-  */
+   */
   @ApiModelProperty(required = true, value = "Statement value type, in a coded form.")
   public String getType() {
     return type;
@@ -54,7 +57,6 @@ public class OBStatement2StatementValue   {
   public void setType(String type) {
     this.type = type;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -65,8 +67,8 @@ public class OBStatement2StatementValue   {
       return false;
     }
     OBStatement2StatementValue obStatement2StatementValue = (OBStatement2StatementValue) o;
-    return Objects.equals(this.value, obStatement2StatementValue.value) &&
-        Objects.equals(this.type, obStatement2StatementValue.type);
+    return Objects.equals(this.value, obStatement2StatementValue.value)
+        && Objects.equals(this.type, obStatement2StatementValue.type);
   }
 
   @Override
@@ -78,7 +80,7 @@ public class OBStatement2StatementValue   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBStatement2StatementValue {\n");
-    
+
     sb.append("    value: ").append(toIndentedString(value)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("}");
@@ -96,4 +98,3 @@ public class OBStatement2StatementValue   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

@@ -11,9 +11,9 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Type of interest rate, Fixed or Variable
  */
 public enum OBInterestFixedVariableType1Code {
-  
+
   INFI("INFI"),
-  
+
   INVA("INVA");
 
   private String value;
@@ -42,4 +42,3 @@ public enum OBInterestFixedVariableType1Code {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

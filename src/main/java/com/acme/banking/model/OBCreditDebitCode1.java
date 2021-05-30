@@ -11,9 +11,9 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Indicates whether the transaction is a credit or a debit entry.
  */
 public enum OBCreditDebitCode1 {
-  
+
   CREDIT("Credit"),
-  
+
   DEBIT("Debit");
 
   private String value;
@@ -42,4 +42,3 @@ public enum OBCreditDebitCode1 {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

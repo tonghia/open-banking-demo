@@ -9,11 +9,12 @@ import java.time.OffsetDateTime;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Set of elements used to provide details of a generic date time for the statement resource.
+ * Set of elements used to provide details of a generic date time for the
+ * statement resource.
  */
 @ApiModel(description = "Set of elements used to provide details of a generic date time for the statement resource.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBStatement2StatementDateTime   {
+public class OBStatement2StatementDateTime {
   @JsonProperty("DateTime")
   private OffsetDateTime dateTime;
 
@@ -27,8 +28,9 @@ public class OBStatement2StatementDateTime   {
 
   /**
    * Get dateTime
+   * 
    * @return dateTime
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OffsetDateTime getDateTime() {
     return dateTime;
@@ -45,8 +47,9 @@ public class OBStatement2StatementDateTime   {
 
   /**
    * Date time type, in a coded form.
+   * 
    * @return type
-  */
+   */
   @ApiModelProperty(required = true, value = "Date time type, in a coded form.")
   public String getType() {
     return type;
@@ -55,7 +58,6 @@ public class OBStatement2StatementDateTime   {
   public void setType(String type) {
     this.type = type;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -66,8 +68,8 @@ public class OBStatement2StatementDateTime   {
       return false;
     }
     OBStatement2StatementDateTime obStatement2StatementDateTime = (OBStatement2StatementDateTime) o;
-    return Objects.equals(this.dateTime, obStatement2StatementDateTime.dateTime) &&
-        Objects.equals(this.type, obStatement2StatementDateTime.type);
+    return Objects.equals(this.dateTime, obStatement2StatementDateTime.dateTime)
+        && Objects.equals(this.type, obStatement2StatementDateTime.type);
   }
 
   @Override
@@ -79,7 +81,7 @@ public class OBStatement2StatementDateTime   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBStatement2StatementDateTime {\n");
-    
+
     sb.append("    dateTime: ").append(toIndentedString(dateTime)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("}");
@@ -97,4 +99,3 @@ public class OBStatement2StatementDateTime   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

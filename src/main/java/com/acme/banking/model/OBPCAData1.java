@@ -15,7 +15,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBPCAData1
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBPCAData1   {
+public class OBPCAData1 {
   @JsonProperty("ProductDetails")
   private ProductDetails1 productDetails;
 
@@ -35,8 +35,9 @@ public class OBPCAData1   {
 
   /**
    * Get productDetails
+   * 
    * @return productDetails
-  */
+   */
   @ApiModelProperty(value = "")
   public ProductDetails1 getProductDetails() {
     return productDetails;
@@ -53,8 +54,9 @@ public class OBPCAData1   {
 
   /**
    * Get creditInterest
+   * 
    * @return creditInterest
-  */
+   */
   @ApiModelProperty(value = "")
   public CreditInterest1 getCreditInterest() {
     return creditInterest;
@@ -71,8 +73,9 @@ public class OBPCAData1   {
 
   /**
    * Get overdraft
+   * 
    * @return overdraft
-  */
+   */
   @ApiModelProperty(value = "")
   public Overdraft1 getOverdraft() {
     return overdraft;
@@ -89,8 +92,9 @@ public class OBPCAData1   {
 
   /**
    * Get otherFeesCharges
+   * 
    * @return otherFeesCharges
-  */
+   */
   @ApiModelProperty(value = "")
   public OtherFeesCharges getOtherFeesCharges() {
     return otherFeesCharges;
@@ -99,7 +103,6 @@ public class OBPCAData1   {
   public void setOtherFeesCharges(OtherFeesCharges otherFeesCharges) {
     this.otherFeesCharges = otherFeesCharges;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -110,10 +113,10 @@ public class OBPCAData1   {
       return false;
     }
     OBPCAData1 obPCAData1 = (OBPCAData1) o;
-    return Objects.equals(this.productDetails, obPCAData1.productDetails) &&
-        Objects.equals(this.creditInterest, obPCAData1.creditInterest) &&
-        Objects.equals(this.overdraft, obPCAData1.overdraft) &&
-        Objects.equals(this.otherFeesCharges, obPCAData1.otherFeesCharges);
+    return Objects.equals(this.productDetails, obPCAData1.productDetails)
+        && Objects.equals(this.creditInterest, obPCAData1.creditInterest)
+        && Objects.equals(this.overdraft, obPCAData1.overdraft)
+        && Objects.equals(this.otherFeesCharges, obPCAData1.otherFeesCharges);
   }
 
   @Override
@@ -125,7 +128,7 @@ public class OBPCAData1   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBPCAData1 {\n");
-    
+
     sb.append("    productDetails: ").append(toIndentedString(productDetails)).append("\n");
     sb.append("    creditInterest: ").append(toIndentedString(creditInterest)).append("\n");
     sb.append("    overdraft: ").append(toIndentedString(overdraft)).append("\n");
@@ -145,4 +148,3 @@ public class OBPCAData1   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

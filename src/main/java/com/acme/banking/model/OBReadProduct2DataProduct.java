@@ -16,7 +16,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Product details associated with the Account")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataProduct   {
+public class OBReadProduct2DataProduct {
   @JsonProperty("ProductName")
   private String productName;
 
@@ -34,13 +34,13 @@ public class OBReadProduct2DataProduct   {
    */
   public enum ProductTypeEnum {
     BUSINESSCURRENTACCOUNT("BusinessCurrentAccount"),
-    
+
     COMMERCIALCREDITCARD("CommercialCreditCard"),
-    
+
     OTHER("Other"),
-    
+
     PERSONALCURRENTACCOUNT("PersonalCurrentAccount"),
-    
+
     SMELOAN("SMELoan");
 
     private String value;
@@ -91,9 +91,11 @@ public class OBReadProduct2DataProduct   {
   }
 
   /**
-   * The name of the Product used for marketing purposes from a customer perspective. I.e. what the customer would recognise.
+   * The name of the Product used for marketing purposes from a customer
+   * perspective. I.e. what the customer would recognise.
+   * 
    * @return productName
-  */
+   */
   @ApiModelProperty(value = "The name of the Product used for marketing purposes from a customer perspective. I.e. what the customer would recognise.")
   public String getProductName() {
     return productName;
@@ -109,9 +111,12 @@ public class OBReadProduct2DataProduct   {
   }
 
   /**
-   * The unique ID that has been internally assigned by the financial institution to each of the current account banking products they market to their retail and/or small to medium enterprise (SME) customers.
+   * The unique ID that has been internally assigned by the financial institution
+   * to each of the current account banking products they market to their retail
+   * and/or small to medium enterprise (SME) customers.
+   * 
    * @return productId
-  */
+   */
   @ApiModelProperty(value = "The unique ID that has been internally assigned by the financial institution to each of the current account banking products they market to their retail and/or small to medium enterprise (SME) customers.")
   public String getProductId() {
     return productId;
@@ -127,9 +132,11 @@ public class OBReadProduct2DataProduct   {
   }
 
   /**
-   * A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.
+   * A unique and immutable identifier used to identify the account resource. This
+   * identifier has no meaning to the account owner.
+   * 
    * @return accountId
-  */
+   */
   @ApiModelProperty(required = true, value = "A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.")
   public String getAccountId() {
     return accountId;
@@ -145,9 +152,11 @@ public class OBReadProduct2DataProduct   {
   }
 
   /**
-   * Any secondary Identification which  supports Product Identifier to uniquely identify the current account banking products.
+   * Any secondary Identification which supports Product Identifier to uniquely
+   * identify the current account banking products.
+   * 
    * @return secondaryProductId
-  */
+   */
   @ApiModelProperty(value = "Any secondary Identification which  supports Product Identifier to uniquely identify the current account banking products.")
   public String getSecondaryProductId() {
     return secondaryProductId;
@@ -164,8 +173,9 @@ public class OBReadProduct2DataProduct   {
 
   /**
    * Product type : Personal Current Account, Business Current Account
+   * 
    * @return productType
-  */
+   */
   @ApiModelProperty(required = true, value = "Product type : Personal Current Account, Business Current Account")
   public ProductTypeEnum getProductType() {
     return productType;
@@ -181,9 +191,10 @@ public class OBReadProduct2DataProduct   {
   }
 
   /**
-   * Unique and unambiguous identification of a  Product Marketing State.
+   * Unique and unambiguous identification of a Product Marketing State.
+   * 
    * @return marketingStateId
-  */
+   */
   @ApiModelProperty(value = "Unique and unambiguous identification of a  Product Marketing State.")
   public String getMarketingStateId() {
     return marketingStateId;
@@ -200,8 +211,9 @@ public class OBReadProduct2DataProduct   {
 
   /**
    * Get otherProductType
+   * 
    * @return otherProductType
-  */
+   */
   @ApiModelProperty(value = "")
   public OBReadProduct2DataOtherProductType getOtherProductType() {
     return otherProductType;
@@ -218,8 +230,9 @@ public class OBReadProduct2DataProduct   {
 
   /**
    * Get BCA
+   * 
    * @return BCA
-  */
+   */
   @ApiModelProperty(value = "")
   public OBBCAData1 getBCA() {
     return BCA;
@@ -236,8 +249,9 @@ public class OBReadProduct2DataProduct   {
 
   /**
    * Get PCA
+   * 
    * @return PCA
-  */
+   */
   @ApiModelProperty(value = "")
   public OBPCAData1 getPCA() {
     return PCA;
@@ -246,7 +260,6 @@ public class OBReadProduct2DataProduct   {
   public void setPCA(OBPCAData1 PCA) {
     this.PCA = PCA;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -257,27 +270,28 @@ public class OBReadProduct2DataProduct   {
       return false;
     }
     OBReadProduct2DataProduct obReadProduct2DataProduct = (OBReadProduct2DataProduct) o;
-    return Objects.equals(this.productName, obReadProduct2DataProduct.productName) &&
-        Objects.equals(this.productId, obReadProduct2DataProduct.productId) &&
-        Objects.equals(this.accountId, obReadProduct2DataProduct.accountId) &&
-        Objects.equals(this.secondaryProductId, obReadProduct2DataProduct.secondaryProductId) &&
-        Objects.equals(this.productType, obReadProduct2DataProduct.productType) &&
-        Objects.equals(this.marketingStateId, obReadProduct2DataProduct.marketingStateId) &&
-        Objects.equals(this.otherProductType, obReadProduct2DataProduct.otherProductType) &&
-        Objects.equals(this.BCA, obReadProduct2DataProduct.BCA) &&
-        Objects.equals(this.PCA, obReadProduct2DataProduct.PCA);
+    return Objects.equals(this.productName, obReadProduct2DataProduct.productName)
+        && Objects.equals(this.productId, obReadProduct2DataProduct.productId)
+        && Objects.equals(this.accountId, obReadProduct2DataProduct.accountId)
+        && Objects.equals(this.secondaryProductId, obReadProduct2DataProduct.secondaryProductId)
+        && Objects.equals(this.productType, obReadProduct2DataProduct.productType)
+        && Objects.equals(this.marketingStateId, obReadProduct2DataProduct.marketingStateId)
+        && Objects.equals(this.otherProductType, obReadProduct2DataProduct.otherProductType)
+        && Objects.equals(this.BCA, obReadProduct2DataProduct.BCA)
+        && Objects.equals(this.PCA, obReadProduct2DataProduct.PCA);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(productName, productId, accountId, secondaryProductId, productType, marketingStateId, otherProductType, BCA, PCA);
+    return Objects.hash(productName, productId, accountId, secondaryProductId, productType, marketingStateId,
+        otherProductType, BCA, PCA);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataProduct {\n");
-    
+
     sb.append("    productName: ").append(toIndentedString(productName)).append("\n");
     sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
     sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
@@ -302,4 +316,3 @@ public class OBReadProduct2DataProduct   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

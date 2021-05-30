@@ -16,7 +16,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBScheduledPayment3
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBScheduledPayment3   {
+public class OBScheduledPayment3 {
   @JsonProperty("AccountId")
   private String accountId;
 
@@ -51,9 +51,11 @@ public class OBScheduledPayment3   {
   }
 
   /**
-   * A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.
+   * A unique and immutable identifier used to identify the account resource. This
+   * identifier has no meaning to the account owner.
+   * 
    * @return accountId
-  */
+   */
   @ApiModelProperty(required = true, value = "A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.")
   public String getAccountId() {
     return accountId;
@@ -69,9 +71,11 @@ public class OBScheduledPayment3   {
   }
 
   /**
-   * A unique and immutable identifier used to identify the scheduled payment resource. This identifier has no meaning to the account owner.
+   * A unique and immutable identifier used to identify the scheduled payment
+   * resource. This identifier has no meaning to the account owner.
+   * 
    * @return scheduledPaymentId
-  */
+   */
   @ApiModelProperty(value = "A unique and immutable identifier used to identify the scheduled payment resource. This identifier has no meaning to the account owner.")
   public String getScheduledPaymentId() {
     return scheduledPaymentId;
@@ -87,9 +91,13 @@ public class OBScheduledPayment3   {
   }
 
   /**
-   * The date on which the scheduled payment will be made.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * The date on which the scheduled payment will be made.All dates in the JSON
+   * payloads are represented in ISO 8601 date-time format. All date-time fields
+   * in responses must include the timezone. An example is below:
+   * 2017-04-05T10:43:07+00:00
+   * 
    * @return scheduledPaymentDateTime
-  */
+   */
   @ApiModelProperty(required = true, value = "The date on which the scheduled payment will be made.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getScheduledPaymentDateTime() {
     return scheduledPaymentDateTime;
@@ -106,8 +114,9 @@ public class OBScheduledPayment3   {
 
   /**
    * Get scheduledType
+   * 
    * @return scheduledType
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBExternalScheduleType1Code getScheduledType() {
     return scheduledType;
@@ -123,9 +132,17 @@ public class OBScheduledPayment3   {
   }
 
   /**
-   * Unique reference, as assigned by the creditor, to unambiguously refer to the payment transaction. Usage: If available, the initiating party should provide this reference in the structured remittance information, to enable reconciliation by the creditor upon receipt of the amount of money. If the business context requires the use of a creditor reference or a payment remit identification, and only one identifier can be passed through the end-to-end chain, the creditor's reference or payment remittance identification should be quoted in the end-to-end transaction identification.
+   * Unique reference, as assigned by the creditor, to unambiguously refer to the
+   * payment transaction. Usage: If available, the initiating party should provide
+   * this reference in the structured remittance information, to enable
+   * reconciliation by the creditor upon receipt of the amount of money. If the
+   * business context requires the use of a creditor reference or a payment remit
+   * identification, and only one identifier can be passed through the end-to-end
+   * chain, the creditor's reference or payment remittance identification should
+   * be quoted in the end-to-end transaction identification.
+   * 
    * @return reference
-  */
+   */
   @ApiModelProperty(value = "Unique reference, as assigned by the creditor, to unambiguously refer to the payment transaction. Usage: If available, the initiating party should provide this reference in the structured remittance information, to enable reconciliation by the creditor upon receipt of the amount of money. If the business context requires the use of a creditor reference or a payment remit identification, and only one identifier can be passed through the end-to-end chain, the creditor's reference or payment remittance identification should be quoted in the end-to-end transaction identification.")
   public String getReference() {
     return reference;
@@ -141,9 +158,11 @@ public class OBScheduledPayment3   {
   }
 
   /**
-   * A reference value provided by the PSU to the PISP while setting up the scheduled payment.
+   * A reference value provided by the PSU to the PISP while setting up the
+   * scheduled payment.
+   * 
    * @return debtorReference
-  */
+   */
   @ApiModelProperty(value = "A reference value provided by the PSU to the PISP while setting up the scheduled payment.")
   public String getDebtorReference() {
     return debtorReference;
@@ -160,8 +179,9 @@ public class OBScheduledPayment3   {
 
   /**
    * Get instructedAmount
+   * 
    * @return instructedAmount
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBActiveOrHistoricCurrencyAndAmount1 getInstructedAmount() {
     return instructedAmount;
@@ -178,8 +198,9 @@ public class OBScheduledPayment3   {
 
   /**
    * Get creditorAgent
+   * 
    * @return creditorAgent
-  */
+   */
   @ApiModelProperty(value = "")
   public OBBranchAndFinancialInstitutionIdentification51 getCreditorAgent() {
     return creditorAgent;
@@ -196,8 +217,9 @@ public class OBScheduledPayment3   {
 
   /**
    * Get creditorAccount
+   * 
    * @return creditorAccount
-  */
+   */
   @ApiModelProperty(value = "")
   public OBCashAccount51 getCreditorAccount() {
     return creditorAccount;
@@ -206,7 +228,6 @@ public class OBScheduledPayment3   {
   public void setCreditorAccount(OBCashAccount51 creditorAccount) {
     this.creditorAccount = creditorAccount;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -217,27 +238,28 @@ public class OBScheduledPayment3   {
       return false;
     }
     OBScheduledPayment3 obScheduledPayment3 = (OBScheduledPayment3) o;
-    return Objects.equals(this.accountId, obScheduledPayment3.accountId) &&
-        Objects.equals(this.scheduledPaymentId, obScheduledPayment3.scheduledPaymentId) &&
-        Objects.equals(this.scheduledPaymentDateTime, obScheduledPayment3.scheduledPaymentDateTime) &&
-        Objects.equals(this.scheduledType, obScheduledPayment3.scheduledType) &&
-        Objects.equals(this.reference, obScheduledPayment3.reference) &&
-        Objects.equals(this.debtorReference, obScheduledPayment3.debtorReference) &&
-        Objects.equals(this.instructedAmount, obScheduledPayment3.instructedAmount) &&
-        Objects.equals(this.creditorAgent, obScheduledPayment3.creditorAgent) &&
-        Objects.equals(this.creditorAccount, obScheduledPayment3.creditorAccount);
+    return Objects.equals(this.accountId, obScheduledPayment3.accountId)
+        && Objects.equals(this.scheduledPaymentId, obScheduledPayment3.scheduledPaymentId)
+        && Objects.equals(this.scheduledPaymentDateTime, obScheduledPayment3.scheduledPaymentDateTime)
+        && Objects.equals(this.scheduledType, obScheduledPayment3.scheduledType)
+        && Objects.equals(this.reference, obScheduledPayment3.reference)
+        && Objects.equals(this.debtorReference, obScheduledPayment3.debtorReference)
+        && Objects.equals(this.instructedAmount, obScheduledPayment3.instructedAmount)
+        && Objects.equals(this.creditorAgent, obScheduledPayment3.creditorAgent)
+        && Objects.equals(this.creditorAccount, obScheduledPayment3.creditorAccount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(accountId, scheduledPaymentId, scheduledPaymentDateTime, scheduledType, reference, debtorReference, instructedAmount, creditorAgent, creditorAccount);
+    return Objects.hash(accountId, scheduledPaymentId, scheduledPaymentDateTime, scheduledType, reference,
+        debtorReference, instructedAmount, creditorAgent, creditorAccount);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBScheduledPayment3 {\n");
-    
+
     sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
     sb.append("    scheduledPaymentId: ").append(toIndentedString(scheduledPaymentId)).append("\n");
     sb.append("    scheduledPaymentDateTime: ").append(toIndentedString(scheduledPaymentDateTime)).append("\n");
@@ -262,4 +284,3 @@ public class OBScheduledPayment3   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

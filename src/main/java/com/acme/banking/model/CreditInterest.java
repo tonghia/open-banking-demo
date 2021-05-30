@@ -15,9 +15,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Details about the interest that may be payable to the BCA account holders")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class CreditInterest   {
+public class CreditInterest {
   @JsonProperty("TierBandSet")
-  
+
   private List<CreditInterestTierBandSet> tierBandSet = new ArrayList<>();
 
   public CreditInterest tierBandSet(List<CreditInterestTierBandSet> tierBandSet) {
@@ -32,8 +32,9 @@ public class CreditInterest   {
 
   /**
    * The group of tiers or bands for which credit interest can be applied.
+   * 
    * @return tierBandSet
-  */
+   */
   @ApiModelProperty(required = true, value = "The group of tiers or bands for which credit interest can be applied.")
   public List<CreditInterestTierBandSet> getTierBandSet() {
     return tierBandSet;
@@ -42,7 +43,6 @@ public class CreditInterest   {
   public void setTierBandSet(List<CreditInterestTierBandSet> tierBandSet) {
     this.tierBandSet = tierBandSet;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -65,7 +65,7 @@ public class CreditInterest   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CreditInterest {\n");
-    
+
     sb.append("    tierBandSet: ").append(toIndentedString(tierBandSet)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -82,4 +82,3 @@ public class CreditInterest   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

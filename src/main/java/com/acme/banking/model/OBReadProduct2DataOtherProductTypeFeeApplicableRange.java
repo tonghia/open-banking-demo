@@ -12,7 +12,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Range or amounts or rates for which the fee/charge applies")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductTypeFeeApplicableRange   {
+public class OBReadProduct2DataOtherProductTypeFeeApplicableRange {
   @JsonProperty("MinimumAmount")
   private String minimumAmount;
 
@@ -31,9 +31,11 @@ public class OBReadProduct2DataOtherProductTypeFeeApplicableRange   {
   }
 
   /**
-   * Minimum Amount on which fee/charge is applicable (where it is expressed as an amount)
+   * Minimum Amount on which fee/charge is applicable (where it is expressed as an
+   * amount)
+   * 
    * @return minimumAmount
-  */
+   */
   @ApiModelProperty(value = "Minimum Amount on which fee/charge is applicable (where it is expressed as an amount)")
   public String getMinimumAmount() {
     return minimumAmount;
@@ -49,9 +51,11 @@ public class OBReadProduct2DataOtherProductTypeFeeApplicableRange   {
   }
 
   /**
-   * Maximum Amount on which fee is applicable (where it is expressed as an amount)
+   * Maximum Amount on which fee is applicable (where it is expressed as an
+   * amount)
+   * 
    * @return maximumAmount
-  */
+   */
   @ApiModelProperty(value = "Maximum Amount on which fee is applicable (where it is expressed as an amount)")
   public String getMaximumAmount() {
     return maximumAmount;
@@ -67,9 +71,11 @@ public class OBReadProduct2DataOtherProductTypeFeeApplicableRange   {
   }
 
   /**
-   * Minimum rate on which fee/charge is applicable(where it is expressed as an rate)
+   * Minimum rate on which fee/charge is applicable(where it is expressed as an
+   * rate)
+   * 
    * @return minimumRate
-  */
+   */
   @ApiModelProperty(value = "Minimum rate on which fee/charge is applicable(where it is expressed as an rate)")
   public String getMinimumRate() {
     return minimumRate;
@@ -85,9 +91,11 @@ public class OBReadProduct2DataOtherProductTypeFeeApplicableRange   {
   }
 
   /**
-   * Maximum rate on which fee/charge is applicable(where it is expressed as an rate)
+   * Maximum rate on which fee/charge is applicable(where it is expressed as an
+   * rate)
+   * 
    * @return maximumRate
-  */
+   */
   @ApiModelProperty(value = "Maximum rate on which fee/charge is applicable(where it is expressed as an rate)")
   public String getMaximumRate() {
     return maximumRate;
@@ -96,7 +104,6 @@ public class OBReadProduct2DataOtherProductTypeFeeApplicableRange   {
   public void setMaximumRate(String maximumRate) {
     this.maximumRate = maximumRate;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -107,10 +114,10 @@ public class OBReadProduct2DataOtherProductTypeFeeApplicableRange   {
       return false;
     }
     OBReadProduct2DataOtherProductTypeFeeApplicableRange obReadProduct2DataOtherProductTypeFeeApplicableRange = (OBReadProduct2DataOtherProductTypeFeeApplicableRange) o;
-    return Objects.equals(this.minimumAmount, obReadProduct2DataOtherProductTypeFeeApplicableRange.minimumAmount) &&
-        Objects.equals(this.maximumAmount, obReadProduct2DataOtherProductTypeFeeApplicableRange.maximumAmount) &&
-        Objects.equals(this.minimumRate, obReadProduct2DataOtherProductTypeFeeApplicableRange.minimumRate) &&
-        Objects.equals(this.maximumRate, obReadProduct2DataOtherProductTypeFeeApplicableRange.maximumRate);
+    return Objects.equals(this.minimumAmount, obReadProduct2DataOtherProductTypeFeeApplicableRange.minimumAmount)
+        && Objects.equals(this.maximumAmount, obReadProduct2DataOtherProductTypeFeeApplicableRange.maximumAmount)
+        && Objects.equals(this.minimumRate, obReadProduct2DataOtherProductTypeFeeApplicableRange.minimumRate)
+        && Objects.equals(this.maximumRate, obReadProduct2DataOtherProductTypeFeeApplicableRange.maximumRate);
   }
 
   @Override
@@ -122,7 +129,7 @@ public class OBReadProduct2DataOtherProductTypeFeeApplicableRange   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductTypeFeeApplicableRange {\n");
-    
+
     sb.append("    minimumAmount: ").append(toIndentedString(minimumAmount)).append("\n");
     sb.append("    maximumAmount: ").append(toIndentedString(maximumAmount)).append("\n");
     sb.append("    minimumRate: ").append(toIndentedString(minimumRate)).append("\n");
@@ -142,4 +149,3 @@ public class OBReadProduct2DataOtherProductTypeFeeApplicableRange   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

@@ -14,9 +14,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBReadScheduledPayment3Data
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadScheduledPayment3Data   {
+public class OBReadScheduledPayment3Data {
   @JsonProperty("ScheduledPayment")
-  
+
   private List<OBScheduledPayment3> scheduledPayment = null;
 
   public OBReadScheduledPayment3Data scheduledPayment(List<OBScheduledPayment3> scheduledPayment) {
@@ -34,8 +34,9 @@ public class OBReadScheduledPayment3Data   {
 
   /**
    * Get scheduledPayment
+   * 
    * @return scheduledPayment
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBScheduledPayment3> getScheduledPayment() {
     return scheduledPayment;
@@ -44,7 +45,6 @@ public class OBReadScheduledPayment3Data   {
   public void setScheduledPayment(List<OBScheduledPayment3> scheduledPayment) {
     this.scheduledPayment = scheduledPayment;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -67,7 +67,7 @@ public class OBReadScheduledPayment3Data   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadScheduledPayment3Data {\n");
-    
+
     sb.append("    scheduledPayment: ").append(toIndentedString(scheduledPayment)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -84,4 +84,3 @@ public class OBReadScheduledPayment3Data   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

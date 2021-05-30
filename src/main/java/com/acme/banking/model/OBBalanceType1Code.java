@@ -11,31 +11,31 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Balance type, in a coded form.
  */
 public enum OBBalanceType1Code {
-  
+
   CLOSINGAVAILABLE("ClosingAvailable"),
-  
+
   CLOSINGBOOKED("ClosingBooked"),
-  
+
   CLOSINGCLEARED("ClosingCleared"),
-  
+
   EXPECTED("Expected"),
-  
+
   FORWARDAVAILABLE("ForwardAvailable"),
-  
+
   INFORMATION("Information"),
-  
+
   INTERIMAVAILABLE("InterimAvailable"),
-  
+
   INTERIMBOOKED("InterimBooked"),
-  
+
   INTERIMCLEARED("InterimCleared"),
-  
+
   OPENINGAVAILABLE("OpeningAvailable"),
-  
+
   OPENINGBOOKED("OpeningBooked"),
-  
+
   OPENINGCLEARED("OpeningCleared"),
-  
+
   PREVIOUSLYCLOSEDBOOKED("PreviouslyClosedBooked");
 
   private String value;
@@ -64,4 +64,3 @@ public enum OBBalanceType1Code {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

@@ -11,9 +11,9 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Specifies the scheduled payment date type requested
  */
 public enum OBExternalScheduleType1Code {
-  
+
   ARRIVAL("Arrival"),
-  
+
   EXECUTION("Execution");
 
   private String value;
@@ -42,4 +42,3 @@ public enum OBExternalScheduleType1Code {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

@@ -11,19 +11,19 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Period e.g. day, week, month etc. for which the fee/charge is capped
  */
 public enum OBPeriod1Code {
-  
+
   PACT("PACT"),
-  
+
   PDAY("PDAY"),
-  
+
   PHYR("PHYR"),
-  
+
   PMTH("PMTH"),
-  
+
   PQTR("PQTR"),
-  
+
   PWEK("PWEK"),
-  
+
   PYER("PYER");
 
   private String value;
@@ -52,4 +52,3 @@ public enum OBPeriod1Code {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

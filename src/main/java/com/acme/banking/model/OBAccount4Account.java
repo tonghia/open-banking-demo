@@ -12,7 +12,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Provides the details to identify an account.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBAccount4Account   {
+public class OBAccount4Account {
   @JsonProperty("SchemeName")
   private String schemeName;
 
@@ -31,9 +31,11 @@ public class OBAccount4Account   {
   }
 
   /**
-   * Name of the identification scheme, in a coded form as published in an external list.
+   * Name of the identification scheme, in a coded form as published in an
+   * external list.
+   * 
    * @return schemeName
-  */
+   */
   @ApiModelProperty(required = true, value = "Name of the identification scheme, in a coded form as published in an external list.")
   public String getSchemeName() {
     return schemeName;
@@ -49,9 +51,11 @@ public class OBAccount4Account   {
   }
 
   /**
-   * Identification assigned by an institution to identify an account. This identification is known by the account owner.
+   * Identification assigned by an institution to identify an account. This
+   * identification is known by the account owner.
+   * 
    * @return identification
-  */
+   */
   @ApiModelProperty(required = true, value = "Identification assigned by an institution to identify an account. This identification is known by the account owner.")
   public String getIdentification() {
     return identification;
@@ -67,9 +71,12 @@ public class OBAccount4Account   {
   }
 
   /**
-   * The account name is the name or names of the account owner(s) represented at an account level, as displayed by the ASPSP's online channels. Note, the account name is not the product name or the nickname of the account.
+   * The account name is the name or names of the account owner(s) represented at
+   * an account level, as displayed by the ASPSP's online channels. Note, the
+   * account name is not the product name or the nickname of the account.
+   * 
    * @return name
-  */
+   */
   @ApiModelProperty(value = "The account name is the name or names of the account owner(s) represented at an account level, as displayed by the ASPSP's online channels. Note, the account name is not the product name or the nickname of the account.")
   public String getName() {
     return name;
@@ -85,9 +92,13 @@ public class OBAccount4Account   {
   }
 
   /**
-   * This is secondary identification of the account, as assigned by the account servicing institution.  This can be used by building societies to additionally identify accounts with a roll number (in addition to a sort code and account number combination).
+   * This is secondary identification of the account, as assigned by the account
+   * servicing institution. This can be used by building societies to additionally
+   * identify accounts with a roll number (in addition to a sort code and account
+   * number combination).
+   * 
    * @return secondaryIdentification
-  */
+   */
   @ApiModelProperty(value = "This is secondary identification of the account, as assigned by the account servicing institution.  This can be used by building societies to additionally identify accounts with a roll number (in addition to a sort code and account number combination).")
   public String getSecondaryIdentification() {
     return secondaryIdentification;
@@ -96,7 +107,6 @@ public class OBAccount4Account   {
   public void setSecondaryIdentification(String secondaryIdentification) {
     this.secondaryIdentification = secondaryIdentification;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -107,10 +117,10 @@ public class OBAccount4Account   {
       return false;
     }
     OBAccount4Account obAccount4Account = (OBAccount4Account) o;
-    return Objects.equals(this.schemeName, obAccount4Account.schemeName) &&
-        Objects.equals(this.identification, obAccount4Account.identification) &&
-        Objects.equals(this.name, obAccount4Account.name) &&
-        Objects.equals(this.secondaryIdentification, obAccount4Account.secondaryIdentification);
+    return Objects.equals(this.schemeName, obAccount4Account.schemeName)
+        && Objects.equals(this.identification, obAccount4Account.identification)
+        && Objects.equals(this.name, obAccount4Account.name)
+        && Objects.equals(this.secondaryIdentification, obAccount4Account.secondaryIdentification);
   }
 
   @Override
@@ -122,7 +132,7 @@ public class OBAccount4Account   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBAccount4Account {\n");
-    
+
     sb.append("    schemeName: ").append(toIndentedString(schemeName)).append("\n");
     sb.append("    identification: ").append(toIndentedString(identification)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
@@ -142,4 +152,3 @@ public class OBAccount4Account   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

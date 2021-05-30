@@ -15,7 +15,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Details of capital repayment holiday if any")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday   {
+public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday {
   @JsonProperty("MaxHolidayLength")
   private Integer maxHolidayLength;
 
@@ -24,17 +24,17 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday   {
    */
   public enum MaxHolidayPeriodEnum {
     PACT("PACT"),
-    
+
     PDAY("PDAY"),
-    
+
     PHYR("PHYR"),
-    
+
     PMTH("PMTH"),
-    
+
     PQTR("PQTR"),
-    
+
     PWEK("PWEK"),
-    
+
     PYER("PYER");
 
     private String value;
@@ -68,7 +68,7 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday   {
   private MaxHolidayPeriodEnum maxHolidayPeriod;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   public OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday maxHolidayLength(Integer maxHolidayLength) {
@@ -78,8 +78,9 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday   {
 
   /**
    * The maximum length/duration of a Repayment Holiday
+   * 
    * @return maxHolidayLength
-  */
+   */
   @ApiModelProperty(value = "The maximum length/duration of a Repayment Holiday")
   public Integer getMaxHolidayLength() {
     return maxHolidayLength;
@@ -89,15 +90,17 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday   {
     this.maxHolidayLength = maxHolidayLength;
   }
 
-  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday maxHolidayPeriod(MaxHolidayPeriodEnum maxHolidayPeriod) {
+  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday maxHolidayPeriod(
+      MaxHolidayPeriodEnum maxHolidayPeriod) {
     this.maxHolidayPeriod = maxHolidayPeriod;
     return this;
   }
 
   /**
    * The unit of period (days, weeks, months etc.) of the repayment holiday
+   * 
    * @return maxHolidayPeriod
-  */
+   */
   @ApiModelProperty(value = "The unit of period (days, weeks, months etc.) of the repayment holiday")
   public MaxHolidayPeriodEnum getMaxHolidayPeriod() {
     return maxHolidayPeriod;
@@ -122,8 +125,9 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday   {
 
   /**
    * Get notes
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "")
   public List<String> getNotes() {
     return notes;
@@ -132,7 +136,6 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday   {
   public void setNotes(List<String> notes) {
     this.notes = notes;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -143,9 +146,11 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday   {
       return false;
     }
     OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday obReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday = (OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday) o;
-    return Objects.equals(this.maxHolidayLength, obReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday.maxHolidayLength) &&
-        Objects.equals(this.maxHolidayPeriod, obReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday.maxHolidayPeriod) &&
-        Objects.equals(this.notes, obReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday.notes);
+    return Objects.equals(this.maxHolidayLength,
+        obReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday.maxHolidayLength)
+        && Objects.equals(this.maxHolidayPeriod,
+            obReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday.maxHolidayPeriod)
+        && Objects.equals(this.notes, obReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday.notes);
   }
 
   @Override
@@ -157,7 +162,7 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday {\n");
-    
+
     sb.append("    maxHolidayLength: ").append(toIndentedString(maxHolidayLength)).append("\n");
     sb.append("    maxHolidayPeriod: ").append(toIndentedString(maxHolidayPeriod)).append("\n");
     sb.append("    notes: ").append(toIndentedString(notes)).append("\n");
@@ -176,4 +181,3 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentHoliday   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

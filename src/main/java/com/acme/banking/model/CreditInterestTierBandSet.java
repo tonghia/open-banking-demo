@@ -16,15 +16,20 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "The group of tiers or bands for which credit interest can be applied.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class CreditInterestTierBandSet   {
+public class CreditInterestTierBandSet {
   /**
-   * The methodology of how credit interest is paid/applied. It can be:-  1. Banded Interest rates are banded. i.e. Increasing rate on whole balance as balance increases.  2. Tiered Interest rates are tiered. i.e. increasing rate for each tier as balance increases, but interest paid on tier fixed for that tier and not on whole balance.  3. Whole The same interest rate is applied irrespective of the BCA balance
+   * The methodology of how credit interest is paid/applied. It can be:- 1. Banded
+   * Interest rates are banded. i.e. Increasing rate on whole balance as balance
+   * increases. 2. Tiered Interest rates are tiered. i.e. increasing rate for each
+   * tier as balance increases, but interest paid on tier fixed for that tier and
+   * not on whole balance. 3. Whole The same interest rate is applied irrespective
+   * of the BCA balance
    */
   public enum TierBandMethodEnum {
     BANDED("Banded"),
-    
+
     TIERED("Tiered"),
-    
+
     WHOLE("Whole");
 
     private String value;
@@ -62,7 +67,7 @@ public class CreditInterestTierBandSet   {
    */
   public enum CalculationMethodEnum {
     COMPOUND("Compound"),
-    
+
     SIMPLEINTEREST("SimpleInterest");
 
     private String value;
@@ -96,11 +101,12 @@ public class CreditInterestTierBandSet   {
   private CalculationMethodEnum calculationMethod;
 
   /**
-   * Describes whether accrued interest is payable only to the BCA or to another bank account
+   * Describes whether accrued interest is payable only to the BCA or to another
+   * bank account
    */
   public enum DestinationEnum {
     PAYAWAY("PayAway"),
-    
+
     SELFCREDIT("SelfCredit");
 
     private String value;
@@ -134,11 +140,11 @@ public class CreditInterestTierBandSet   {
   private DestinationEnum destination;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("TierBand")
-  
+
   private List<CreditInterestTierBand> tierBand = new ArrayList<>();
 
   public CreditInterestTierBandSet tierBandMethod(TierBandMethodEnum tierBandMethod) {
@@ -147,9 +153,15 @@ public class CreditInterestTierBandSet   {
   }
 
   /**
-   * The methodology of how credit interest is paid/applied. It can be:-  1. Banded Interest rates are banded. i.e. Increasing rate on whole balance as balance increases.  2. Tiered Interest rates are tiered. i.e. increasing rate for each tier as balance increases, but interest paid on tier fixed for that tier and not on whole balance.  3. Whole The same interest rate is applied irrespective of the BCA balance
+   * The methodology of how credit interest is paid/applied. It can be:- 1. Banded
+   * Interest rates are banded. i.e. Increasing rate on whole balance as balance
+   * increases. 2. Tiered Interest rates are tiered. i.e. increasing rate for each
+   * tier as balance increases, but interest paid on tier fixed for that tier and
+   * not on whole balance. 3. Whole The same interest rate is applied irrespective
+   * of the BCA balance
+   * 
    * @return tierBandMethod
-  */
+   */
   @ApiModelProperty(required = true, value = "The methodology of how credit interest is paid/applied. It can be:-  1. Banded Interest rates are banded. i.e. Increasing rate on whole balance as balance increases.  2. Tiered Interest rates are tiered. i.e. increasing rate for each tier as balance increases, but interest paid on tier fixed for that tier and not on whole balance.  3. Whole The same interest rate is applied irrespective of the BCA balance")
   public TierBandMethodEnum getTierBandMethod() {
     return tierBandMethod;
@@ -166,8 +178,9 @@ public class CreditInterestTierBandSet   {
 
   /**
    * Methods of calculating interest
+   * 
    * @return calculationMethod
-  */
+   */
   @ApiModelProperty(value = "Methods of calculating interest")
   public CalculationMethodEnum getCalculationMethod() {
     return calculationMethod;
@@ -183,9 +196,11 @@ public class CreditInterestTierBandSet   {
   }
 
   /**
-   * Describes whether accrued interest is payable only to the BCA or to another bank account
+   * Describes whether accrued interest is payable only to the BCA or to another
+   * bank account
+   * 
    * @return destination
-  */
+   */
   @ApiModelProperty(required = true, value = "Describes whether accrued interest is payable only to the BCA or to another bank account")
   public DestinationEnum getDestination() {
     return destination;
@@ -210,8 +225,9 @@ public class CreditInterestTierBandSet   {
 
   /**
    * Optional additional notes to supplement the Tier Band Set details
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "Optional additional notes to supplement the Tier Band Set details")
   public List<String> getNotes() {
     return notes;
@@ -233,8 +249,9 @@ public class CreditInterestTierBandSet   {
 
   /**
    * Tier Band Details
+   * 
    * @return tierBand
-  */
+   */
   @ApiModelProperty(required = true, value = "Tier Band Details")
   public List<CreditInterestTierBand> getTierBand() {
     return tierBand;
@@ -243,7 +260,6 @@ public class CreditInterestTierBandSet   {
   public void setTierBand(List<CreditInterestTierBand> tierBand) {
     this.tierBand = tierBand;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -254,11 +270,11 @@ public class CreditInterestTierBandSet   {
       return false;
     }
     CreditInterestTierBandSet creditInterestTierBandSet = (CreditInterestTierBandSet) o;
-    return Objects.equals(this.tierBandMethod, creditInterestTierBandSet.tierBandMethod) &&
-        Objects.equals(this.calculationMethod, creditInterestTierBandSet.calculationMethod) &&
-        Objects.equals(this.destination, creditInterestTierBandSet.destination) &&
-        Objects.equals(this.notes, creditInterestTierBandSet.notes) &&
-        Objects.equals(this.tierBand, creditInterestTierBandSet.tierBand);
+    return Objects.equals(this.tierBandMethod, creditInterestTierBandSet.tierBandMethod)
+        && Objects.equals(this.calculationMethod, creditInterestTierBandSet.calculationMethod)
+        && Objects.equals(this.destination, creditInterestTierBandSet.destination)
+        && Objects.equals(this.notes, creditInterestTierBandSet.notes)
+        && Objects.equals(this.tierBand, creditInterestTierBandSet.tierBand);
   }
 
   @Override
@@ -270,7 +286,7 @@ public class CreditInterestTierBandSet   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CreditInterestTierBandSet {\n");
-    
+
     sb.append("    tierBandMethod: ").append(toIndentedString(tierBandMethod)).append("\n");
     sb.append("    calculationMethod: ").append(toIndentedString(calculationMethod)).append("\n");
     sb.append("    destination: ").append(toIndentedString(destination)).append("\n");
@@ -291,4 +307,3 @@ public class CreditInterestTierBandSet   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

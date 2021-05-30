@@ -15,7 +15,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBReadOffer1DataOffer
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadOffer1DataOffer   {
+public class OBReadOffer1DataOffer {
   @JsonProperty("AccountId")
   private String accountId;
 
@@ -27,13 +27,13 @@ public class OBReadOffer1DataOffer   {
    */
   public enum OfferTypeEnum {
     BALANCETRANSFER("BalanceTransfer"),
-    
+
     LIMITINCREASE("LimitIncrease"),
-    
+
     MONEYTRANSFER("MoneyTransfer"),
-    
+
     OTHER("Other"),
-    
+
     PROMOTIONALRATE("PromotionalRate");
 
     private String value;
@@ -101,9 +101,11 @@ public class OBReadOffer1DataOffer   {
   }
 
   /**
-   * A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.
+   * A unique and immutable identifier used to identify the account resource. This
+   * identifier has no meaning to the account owner.
+   * 
    * @return accountId
-  */
+   */
   @ApiModelProperty(required = true, value = "A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.")
   public String getAccountId() {
     return accountId;
@@ -119,9 +121,11 @@ public class OBReadOffer1DataOffer   {
   }
 
   /**
-   * A unique and immutable identifier used to identify the offer resource. This identifier has no meaning to the account owner.
+   * A unique and immutable identifier used to identify the offer resource. This
+   * identifier has no meaning to the account owner.
+   * 
    * @return offerId
-  */
+   */
   @ApiModelProperty(value = "A unique and immutable identifier used to identify the offer resource. This identifier has no meaning to the account owner.")
   public String getOfferId() {
     return offerId;
@@ -138,8 +142,9 @@ public class OBReadOffer1DataOffer   {
 
   /**
    * Offer type, in a coded form.
+   * 
    * @return offerType
-  */
+   */
   @ApiModelProperty(value = "Offer type, in a coded form.")
   public OfferTypeEnum getOfferType() {
     return offerType;
@@ -156,8 +161,9 @@ public class OBReadOffer1DataOffer   {
 
   /**
    * Further details of the offer.
+   * 
    * @return description
-  */
+   */
   @ApiModelProperty(value = "Further details of the offer.")
   public String getDescription() {
     return description;
@@ -173,9 +179,12 @@ public class OBReadOffer1DataOffer   {
   }
 
   /**
-   * Date and time at which the offer starts.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Date and time at which the offer starts.All dates in the JSON payloads are
+   * represented in ISO 8601 date-time format. All date-time fields in responses
+   * must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * 
    * @return startDateTime
-  */
+   */
   @ApiModelProperty(value = "Date and time at which the offer starts.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getStartDateTime() {
     return startDateTime;
@@ -191,9 +200,12 @@ public class OBReadOffer1DataOffer   {
   }
 
   /**
-   * Date and time at which the offer ends.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Date and time at which the offer ends.All dates in the JSON payloads are
+   * represented in ISO 8601 date-time format. All date-time fields in responses
+   * must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * 
    * @return endDateTime
-  */
+   */
   @ApiModelProperty(value = "Date and time at which the offer ends.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getEndDateTime() {
     return endDateTime;
@@ -210,8 +222,9 @@ public class OBReadOffer1DataOffer   {
 
   /**
    * Rate associated with the offer type.
+   * 
    * @return rate
-  */
+   */
   @ApiModelProperty(value = "Rate associated with the offer type.")
   public String getRate() {
     return rate;
@@ -228,8 +241,9 @@ public class OBReadOffer1DataOffer   {
 
   /**
    * Value associated with the offer type.
+   * 
    * @return value
-  */
+   */
   @ApiModelProperty(value = "Value associated with the offer type.")
   public Integer getValue() {
     return value;
@@ -246,8 +260,9 @@ public class OBReadOffer1DataOffer   {
 
   /**
    * Further details of the term of the offer.
+   * 
    * @return term
-  */
+   */
   @ApiModelProperty(value = "Further details of the term of the offer.")
   public String getTerm() {
     return term;
@@ -264,8 +279,9 @@ public class OBReadOffer1DataOffer   {
 
   /**
    * URL (Uniform Resource Locator) where documentation on the offer can be found
+   * 
    * @return URL
-  */
+   */
   @ApiModelProperty(value = "URL (Uniform Resource Locator) where documentation on the offer can be found")
   public String getURL() {
     return URL;
@@ -282,8 +298,9 @@ public class OBReadOffer1DataOffer   {
 
   /**
    * Get amount
+   * 
    * @return amount
-  */
+   */
   @ApiModelProperty(value = "")
   public OBReadOffer1DataAmount getAmount() {
     return amount;
@@ -300,8 +317,9 @@ public class OBReadOffer1DataOffer   {
 
   /**
    * Get fee
+   * 
    * @return fee
-  */
+   */
   @ApiModelProperty(value = "")
   public OBReadOffer1DataFee getFee() {
     return fee;
@@ -310,7 +328,6 @@ public class OBReadOffer1DataOffer   {
   public void setFee(OBReadOffer1DataFee fee) {
     this.fee = fee;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -321,30 +338,30 @@ public class OBReadOffer1DataOffer   {
       return false;
     }
     OBReadOffer1DataOffer obReadOffer1DataOffer = (OBReadOffer1DataOffer) o;
-    return Objects.equals(this.accountId, obReadOffer1DataOffer.accountId) &&
-        Objects.equals(this.offerId, obReadOffer1DataOffer.offerId) &&
-        Objects.equals(this.offerType, obReadOffer1DataOffer.offerType) &&
-        Objects.equals(this.description, obReadOffer1DataOffer.description) &&
-        Objects.equals(this.startDateTime, obReadOffer1DataOffer.startDateTime) &&
-        Objects.equals(this.endDateTime, obReadOffer1DataOffer.endDateTime) &&
-        Objects.equals(this.rate, obReadOffer1DataOffer.rate) &&
-        Objects.equals(this.value, obReadOffer1DataOffer.value) &&
-        Objects.equals(this.term, obReadOffer1DataOffer.term) &&
-        Objects.equals(this.URL, obReadOffer1DataOffer.URL) &&
-        Objects.equals(this.amount, obReadOffer1DataOffer.amount) &&
-        Objects.equals(this.fee, obReadOffer1DataOffer.fee);
+    return Objects.equals(this.accountId, obReadOffer1DataOffer.accountId)
+        && Objects.equals(this.offerId, obReadOffer1DataOffer.offerId)
+        && Objects.equals(this.offerType, obReadOffer1DataOffer.offerType)
+        && Objects.equals(this.description, obReadOffer1DataOffer.description)
+        && Objects.equals(this.startDateTime, obReadOffer1DataOffer.startDateTime)
+        && Objects.equals(this.endDateTime, obReadOffer1DataOffer.endDateTime)
+        && Objects.equals(this.rate, obReadOffer1DataOffer.rate)
+        && Objects.equals(this.value, obReadOffer1DataOffer.value)
+        && Objects.equals(this.term, obReadOffer1DataOffer.term) && Objects.equals(this.URL, obReadOffer1DataOffer.URL)
+        && Objects.equals(this.amount, obReadOffer1DataOffer.amount)
+        && Objects.equals(this.fee, obReadOffer1DataOffer.fee);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(accountId, offerId, offerType, description, startDateTime, endDateTime, rate, value, term, URL, amount, fee);
+    return Objects.hash(accountId, offerId, offerType, description, startDateTime, endDateTime, rate, value, term, URL,
+        amount, fee);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadOffer1DataOffer {\n");
-    
+
     sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
     sb.append("    offerId: ").append(toIndentedString(offerId)).append("\n");
     sb.append("    offerType: ").append(toIndentedString(offerType)).append("\n");
@@ -372,4 +389,3 @@ public class OBReadOffer1DataOffer   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

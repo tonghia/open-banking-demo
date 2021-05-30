@@ -14,9 +14,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBReadBalance1Data
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadBalance1Data   {
+public class OBReadBalance1Data {
   @JsonProperty("Balance")
-  
+
   private List<OBReadBalance1DataBalance> balance = new ArrayList<>();
 
   public OBReadBalance1Data balance(List<OBReadBalance1DataBalance> balance) {
@@ -31,8 +31,9 @@ public class OBReadBalance1Data   {
 
   /**
    * Get balance
+   * 
    * @return balance
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public List<OBReadBalance1DataBalance> getBalance() {
     return balance;
@@ -41,7 +42,6 @@ public class OBReadBalance1Data   {
   public void setBalance(List<OBReadBalance1DataBalance> balance) {
     this.balance = balance;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -64,7 +64,7 @@ public class OBReadBalance1Data   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadBalance1Data {\n");
-    
+
     sb.append("    balance: ").append(toIndentedString(balance)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -81,4 +81,3 @@ public class OBReadBalance1Data   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

@@ -14,19 +14,20 @@ import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Contains details of fees and charges which are not associated with either Overdraft or features/benefits
+ * Contains details of fees and charges which are not associated with either
+ * Overdraft or features/benefits
  */
 @ApiModel(description = "Contains details of fees and charges which are not associated with either Overdraft or features/benefits")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductTypeOtherFeesCharges   {
+public class OBReadProduct2DataOtherProductTypeOtherFeesCharges {
   /**
    * TariffType which defines the fee and charges.
    */
   public enum TariffTypeEnum {
     TTEL("TTEL"),
-    
+
     TTMX("TTMX"),
-    
+
     TTOT("TTOT");
 
     private String value;
@@ -66,11 +67,11 @@ public class OBReadProduct2DataOtherProductTypeOtherFeesCharges   {
   private OBReadProduct2DataOtherProductTypeOtherTariffType otherTariffType;
 
   @JsonProperty("FeeChargeDetail")
-  
+
   private List<OBReadProduct2DataOtherProductTypeFeeChargeDetail> feeChargeDetail = new ArrayList<>();
 
   @JsonProperty("FeeChargeCap")
-  
+
   private List<OBReadProduct2DataOtherProductTypeFeeChargeCap> feeChargeCap = null;
 
   public OBReadProduct2DataOtherProductTypeOtherFeesCharges tariffType(TariffTypeEnum tariffType) {
@@ -80,8 +81,9 @@ public class OBReadProduct2DataOtherProductTypeOtherFeesCharges   {
 
   /**
    * TariffType which defines the fee and charges.
+   * 
    * @return tariffType
-  */
+   */
   @ApiModelProperty(value = "TariffType which defines the fee and charges.")
   public TariffTypeEnum getTariffType() {
     return tariffType;
@@ -98,8 +100,9 @@ public class OBReadProduct2DataOtherProductTypeOtherFeesCharges   {
 
   /**
    * Name of the tariff
+   * 
    * @return tariffName
-  */
+   */
   @ApiModelProperty(value = "Name of the tariff")
   public String getTariffName() {
     return tariffName;
@@ -109,15 +112,17 @@ public class OBReadProduct2DataOtherProductTypeOtherFeesCharges   {
     this.tariffName = tariffName;
   }
 
-  public OBReadProduct2DataOtherProductTypeOtherFeesCharges otherTariffType(OBReadProduct2DataOtherProductTypeOtherTariffType otherTariffType) {
+  public OBReadProduct2DataOtherProductTypeOtherFeesCharges otherTariffType(
+      OBReadProduct2DataOtherProductTypeOtherTariffType otherTariffType) {
     this.otherTariffType = otherTariffType;
     return this;
   }
 
   /**
    * Get otherTariffType
+   * 
    * @return otherTariffType
-  */
+   */
   @ApiModelProperty(value = "")
   public OBReadProduct2DataOtherProductTypeOtherTariffType getOtherTariffType() {
     return otherTariffType;
@@ -127,20 +132,23 @@ public class OBReadProduct2DataOtherProductTypeOtherFeesCharges   {
     this.otherTariffType = otherTariffType;
   }
 
-  public OBReadProduct2DataOtherProductTypeOtherFeesCharges feeChargeDetail(List<OBReadProduct2DataOtherProductTypeFeeChargeDetail> feeChargeDetail) {
+  public OBReadProduct2DataOtherProductTypeOtherFeesCharges feeChargeDetail(
+      List<OBReadProduct2DataOtherProductTypeFeeChargeDetail> feeChargeDetail) {
     this.feeChargeDetail = feeChargeDetail;
     return this;
   }
 
-  public OBReadProduct2DataOtherProductTypeOtherFeesCharges addFeeChargeDetailItem(OBReadProduct2DataOtherProductTypeFeeChargeDetail feeChargeDetailItem) {
+  public OBReadProduct2DataOtherProductTypeOtherFeesCharges addFeeChargeDetailItem(
+      OBReadProduct2DataOtherProductTypeFeeChargeDetail feeChargeDetailItem) {
     this.feeChargeDetail.add(feeChargeDetailItem);
     return this;
   }
 
   /**
    * Get feeChargeDetail
+   * 
    * @return feeChargeDetail
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public List<OBReadProduct2DataOtherProductTypeFeeChargeDetail> getFeeChargeDetail() {
     return feeChargeDetail;
@@ -150,12 +158,14 @@ public class OBReadProduct2DataOtherProductTypeOtherFeesCharges   {
     this.feeChargeDetail = feeChargeDetail;
   }
 
-  public OBReadProduct2DataOtherProductTypeOtherFeesCharges feeChargeCap(List<OBReadProduct2DataOtherProductTypeFeeChargeCap> feeChargeCap) {
+  public OBReadProduct2DataOtherProductTypeOtherFeesCharges feeChargeCap(
+      List<OBReadProduct2DataOtherProductTypeFeeChargeCap> feeChargeCap) {
     this.feeChargeCap = feeChargeCap;
     return this;
   }
 
-  public OBReadProduct2DataOtherProductTypeOtherFeesCharges addFeeChargeCapItem(OBReadProduct2DataOtherProductTypeFeeChargeCap feeChargeCapItem) {
+  public OBReadProduct2DataOtherProductTypeOtherFeesCharges addFeeChargeCapItem(
+      OBReadProduct2DataOtherProductTypeFeeChargeCap feeChargeCapItem) {
     if (this.feeChargeCap == null) {
       this.feeChargeCap = new ArrayList<>();
     }
@@ -165,8 +175,9 @@ public class OBReadProduct2DataOtherProductTypeOtherFeesCharges   {
 
   /**
    * Get feeChargeCap
+   * 
    * @return feeChargeCap
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBReadProduct2DataOtherProductTypeFeeChargeCap> getFeeChargeCap() {
     return feeChargeCap;
@@ -175,7 +186,6 @@ public class OBReadProduct2DataOtherProductTypeOtherFeesCharges   {
   public void setFeeChargeCap(List<OBReadProduct2DataOtherProductTypeFeeChargeCap> feeChargeCap) {
     this.feeChargeCap = feeChargeCap;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -186,11 +196,11 @@ public class OBReadProduct2DataOtherProductTypeOtherFeesCharges   {
       return false;
     }
     OBReadProduct2DataOtherProductTypeOtherFeesCharges obReadProduct2DataOtherProductTypeOtherFeesCharges = (OBReadProduct2DataOtherProductTypeOtherFeesCharges) o;
-    return Objects.equals(this.tariffType, obReadProduct2DataOtherProductTypeOtherFeesCharges.tariffType) &&
-        Objects.equals(this.tariffName, obReadProduct2DataOtherProductTypeOtherFeesCharges.tariffName) &&
-        Objects.equals(this.otherTariffType, obReadProduct2DataOtherProductTypeOtherFeesCharges.otherTariffType) &&
-        Objects.equals(this.feeChargeDetail, obReadProduct2DataOtherProductTypeOtherFeesCharges.feeChargeDetail) &&
-        Objects.equals(this.feeChargeCap, obReadProduct2DataOtherProductTypeOtherFeesCharges.feeChargeCap);
+    return Objects.equals(this.tariffType, obReadProduct2DataOtherProductTypeOtherFeesCharges.tariffType)
+        && Objects.equals(this.tariffName, obReadProduct2DataOtherProductTypeOtherFeesCharges.tariffName)
+        && Objects.equals(this.otherTariffType, obReadProduct2DataOtherProductTypeOtherFeesCharges.otherTariffType)
+        && Objects.equals(this.feeChargeDetail, obReadProduct2DataOtherProductTypeOtherFeesCharges.feeChargeDetail)
+        && Objects.equals(this.feeChargeCap, obReadProduct2DataOtherProductTypeOtherFeesCharges.feeChargeCap);
   }
 
   @Override
@@ -202,7 +212,7 @@ public class OBReadProduct2DataOtherProductTypeOtherFeesCharges   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductTypeOtherFeesCharges {\n");
-    
+
     sb.append("    tariffType: ").append(toIndentedString(tariffType)).append("\n");
     sb.append("    tariffName: ").append(toIndentedString(tariffName)).append("\n");
     sb.append("    otherTariffType: ").append(toIndentedString(otherTariffType)).append("\n");
@@ -223,4 +233,3 @@ public class OBReadProduct2DataOtherProductTypeOtherFeesCharges   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

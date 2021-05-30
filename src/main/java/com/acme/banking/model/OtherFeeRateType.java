@@ -12,7 +12,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Other fee rate type code which is not available in the standard code set")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OtherFeeRateType   {
+public class OtherFeeRateType {
   @JsonProperty("Code")
   private String code;
 
@@ -29,8 +29,9 @@ public class OtherFeeRateType   {
 
   /**
    * The four letter Mnemonic used within an XML file to identify a code
+   * 
    * @return code
-  */
+   */
   @ApiModelProperty(value = "The four letter Mnemonic used within an XML file to identify a code")
   public String getCode() {
     return code;
@@ -47,8 +48,9 @@ public class OtherFeeRateType   {
 
   /**
    * Long name associated with the code
+   * 
    * @return name
-  */
+   */
   @ApiModelProperty(required = true, value = "Long name associated with the code")
   public String getName() {
     return name;
@@ -65,8 +67,9 @@ public class OtherFeeRateType   {
 
   /**
    * Description to describe the purpose of the code
+   * 
    * @return description
-  */
+   */
   @ApiModelProperty(required = true, value = "Description to describe the purpose of the code")
   public String getDescription() {
     return description;
@@ -75,7 +78,6 @@ public class OtherFeeRateType   {
   public void setDescription(String description) {
     this.description = description;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -86,9 +88,8 @@ public class OtherFeeRateType   {
       return false;
     }
     OtherFeeRateType otherFeeRateType = (OtherFeeRateType) o;
-    return Objects.equals(this.code, otherFeeRateType.code) &&
-        Objects.equals(this.name, otherFeeRateType.name) &&
-        Objects.equals(this.description, otherFeeRateType.description);
+    return Objects.equals(this.code, otherFeeRateType.code) && Objects.equals(this.name, otherFeeRateType.name)
+        && Objects.equals(this.description, otherFeeRateType.description);
   }
 
   @Override
@@ -100,7 +101,7 @@ public class OtherFeeRateType   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OtherFeeRateType {\n");
-    
+
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
@@ -119,4 +120,3 @@ public class OtherFeeRateType   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

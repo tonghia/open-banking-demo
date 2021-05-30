@@ -15,7 +15,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Set of elements used to provide details on the currency exchange.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBCurrencyExchange5   {
+public class OBCurrencyExchange5 {
   @JsonProperty("SourceCurrency")
   private String sourceCurrency;
 
@@ -45,8 +45,9 @@ public class OBCurrencyExchange5   {
 
   /**
    * Currency from which an amount is to be converted in a currency conversion.
+   * 
    * @return sourceCurrency
-  */
+   */
   @ApiModelProperty(required = true, value = "Currency from which an amount is to be converted in a currency conversion.")
   public String getSourceCurrency() {
     return sourceCurrency;
@@ -63,8 +64,9 @@ public class OBCurrencyExchange5   {
 
   /**
    * Currency into which an amount is to be converted in a currency conversion.
+   * 
    * @return targetCurrency
-  */
+   */
   @ApiModelProperty(value = "Currency into which an amount is to be converted in a currency conversion.")
   public String getTargetCurrency() {
     return targetCurrency;
@@ -80,9 +82,11 @@ public class OBCurrencyExchange5   {
   }
 
   /**
-   * Currency in which the rate of exchange is expressed in a currency exchange. In the example 1GBP = xxxCUR, the unit currency is GBP.
+   * Currency in which the rate of exchange is expressed in a currency exchange.
+   * In the example 1GBP = xxxCUR, the unit currency is GBP.
+   * 
    * @return unitCurrency
-  */
+   */
   @ApiModelProperty(value = "Currency in which the rate of exchange is expressed in a currency exchange. In the example 1GBP = xxxCUR, the unit currency is GBP.")
   public String getUnitCurrency() {
     return unitCurrency;
@@ -98,9 +102,13 @@ public class OBCurrencyExchange5   {
   }
 
   /**
-   * Factor used to convert an amount from one currency into another. This reflects the price at which one currency was bought with another currency. Usage: ExchangeRate expresses the ratio between UnitCurrency and QuotedCurrency (ExchangeRate = UnitCurrency/QuotedCurrency).
+   * Factor used to convert an amount from one currency into another. This
+   * reflects the price at which one currency was bought with another currency.
+   * Usage: ExchangeRate expresses the ratio between UnitCurrency and
+   * QuotedCurrency (ExchangeRate = UnitCurrency/QuotedCurrency).
+   * 
    * @return exchangeRate
-  */
+   */
   @ApiModelProperty(required = true, value = "Factor used to convert an amount from one currency into another. This reflects the price at which one currency was bought with another currency. Usage: ExchangeRate expresses the ratio between UnitCurrency and QuotedCurrency (ExchangeRate = UnitCurrency/QuotedCurrency).")
   public BigDecimal getExchangeRate() {
     return exchangeRate;
@@ -116,9 +124,11 @@ public class OBCurrencyExchange5   {
   }
 
   /**
-   * Unique identification to unambiguously identify the foreign exchange contract.
+   * Unique identification to unambiguously identify the foreign exchange
+   * contract.
+   * 
    * @return contractIdentification
-  */
+   */
   @ApiModelProperty(value = "Unique identification to unambiguously identify the foreign exchange contract.")
   public String getContractIdentification() {
     return contractIdentification;
@@ -134,9 +144,13 @@ public class OBCurrencyExchange5   {
   }
 
   /**
-   * Date and time at which an exchange rate is quoted.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Date and time at which an exchange rate is quoted.All dates in the JSON
+   * payloads are represented in ISO 8601 date-time format. All date-time fields
+   * in responses must include the timezone. An example is below:
+   * 2017-04-05T10:43:07+00:00
+   * 
    * @return quotationDate
-  */
+   */
   @ApiModelProperty(value = "Date and time at which an exchange rate is quoted.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getQuotationDate() {
     return quotationDate;
@@ -153,8 +167,9 @@ public class OBCurrencyExchange5   {
 
   /**
    * Get instructedAmount
+   * 
    * @return instructedAmount
-  */
+   */
   @ApiModelProperty(value = "")
   public OBCurrencyExchange5InstructedAmount getInstructedAmount() {
     return instructedAmount;
@@ -163,7 +178,6 @@ public class OBCurrencyExchange5   {
   public void setInstructedAmount(OBCurrencyExchange5InstructedAmount instructedAmount) {
     this.instructedAmount = instructedAmount;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -174,25 +188,26 @@ public class OBCurrencyExchange5   {
       return false;
     }
     OBCurrencyExchange5 obCurrencyExchange5 = (OBCurrencyExchange5) o;
-    return Objects.equals(this.sourceCurrency, obCurrencyExchange5.sourceCurrency) &&
-        Objects.equals(this.targetCurrency, obCurrencyExchange5.targetCurrency) &&
-        Objects.equals(this.unitCurrency, obCurrencyExchange5.unitCurrency) &&
-        Objects.equals(this.exchangeRate, obCurrencyExchange5.exchangeRate) &&
-        Objects.equals(this.contractIdentification, obCurrencyExchange5.contractIdentification) &&
-        Objects.equals(this.quotationDate, obCurrencyExchange5.quotationDate) &&
-        Objects.equals(this.instructedAmount, obCurrencyExchange5.instructedAmount);
+    return Objects.equals(this.sourceCurrency, obCurrencyExchange5.sourceCurrency)
+        && Objects.equals(this.targetCurrency, obCurrencyExchange5.targetCurrency)
+        && Objects.equals(this.unitCurrency, obCurrencyExchange5.unitCurrency)
+        && Objects.equals(this.exchangeRate, obCurrencyExchange5.exchangeRate)
+        && Objects.equals(this.contractIdentification, obCurrencyExchange5.contractIdentification)
+        && Objects.equals(this.quotationDate, obCurrencyExchange5.quotationDate)
+        && Objects.equals(this.instructedAmount, obCurrencyExchange5.instructedAmount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(sourceCurrency, targetCurrency, unitCurrency, exchangeRate, contractIdentification, quotationDate, instructedAmount);
+    return Objects.hash(sourceCurrency, targetCurrency, unitCurrency, exchangeRate, contractIdentification,
+        quotationDate, instructedAmount);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBCurrencyExchange5 {\n");
-    
+
     sb.append("    sourceCurrency: ").append(toIndentedString(sourceCurrency)).append("\n");
     sb.append("    targetCurrency: ").append(toIndentedString(targetCurrency)).append("\n");
     sb.append("    unitCurrency: ").append(toIndentedString(unitCurrency)).append("\n");
@@ -215,4 +230,3 @@ public class OBCurrencyExchange5   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

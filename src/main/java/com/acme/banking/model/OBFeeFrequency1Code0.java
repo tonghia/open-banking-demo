@@ -11,47 +11,47 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Frequency at which the overdraft charge is applied to the account
  */
 public enum OBFeeFrequency1Code0 {
-  
+
   FEAC("FEAC"),
-  
+
   FEAO("FEAO"),
-  
+
   FECP("FECP"),
-  
+
   FEDA("FEDA"),
-  
+
   FEHO("FEHO"),
-  
+
   FEI("FEI"),
-  
+
   FEMO("FEMO"),
-  
+
   FEOA("FEOA"),
-  
+
   FEOT("FEOT"),
-  
+
   FEPC("FEPC"),
-  
+
   FEPH("FEPH"),
-  
+
   FEPO("FEPO"),
-  
+
   FEPS("FEPS"),
-  
+
   FEPT("FEPT"),
-  
+
   FEPTA("FEPTA"),
-  
+
   FEPTP("FEPTP"),
-  
+
   FEQU("FEQU"),
-  
+
   FESM("FESM"),
-  
+
   FEST("FEST"),
-  
+
   FEWE("FEWE"),
-  
+
   FEYE("FEYE");
 
   private String value;
@@ -80,4 +80,3 @@ public enum OBFeeFrequency1Code0 {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

@@ -8,11 +8,13 @@ import io.swagger.annotations.ApiModelProperty;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Party that manages the account on behalf of the account owner, that is manages the registration and booking of entries on the account, calculates balances on the account and provides information about the account.
+ * Party that manages the account on behalf of the account owner, that is
+ * manages the registration and booking of entries on the account, calculates
+ * balances on the account and provides information about the account.
  */
 @ApiModel(description = "Party that manages the account on behalf of the account owner, that is manages the registration and booking of entries on the account, calculates balances on the account and provides information about the account.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBBranchAndFinancialInstitutionIdentification50   {
+public class OBBranchAndFinancialInstitutionIdentification50 {
   @JsonProperty("SchemeName")
   private String schemeName;
 
@@ -25,9 +27,11 @@ public class OBBranchAndFinancialInstitutionIdentification50   {
   }
 
   /**
-   * Name of the identification scheme, in a coded form as published in an external list.
+   * Name of the identification scheme, in a coded form as published in an
+   * external list.
+   * 
    * @return schemeName
-  */
+   */
   @ApiModelProperty(required = true, value = "Name of the identification scheme, in a coded form as published in an external list.")
   public String getSchemeName() {
     return schemeName;
@@ -44,8 +48,9 @@ public class OBBranchAndFinancialInstitutionIdentification50   {
 
   /**
    * Unique and unambiguous identification of the servicing institution.
+   * 
    * @return identification
-  */
+   */
   @ApiModelProperty(required = true, value = "Unique and unambiguous identification of the servicing institution.")
   public String getIdentification() {
     return identification;
@@ -54,7 +59,6 @@ public class OBBranchAndFinancialInstitutionIdentification50   {
   public void setIdentification(String identification) {
     this.identification = identification;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -65,8 +69,8 @@ public class OBBranchAndFinancialInstitutionIdentification50   {
       return false;
     }
     OBBranchAndFinancialInstitutionIdentification50 obBranchAndFinancialInstitutionIdentification50 = (OBBranchAndFinancialInstitutionIdentification50) o;
-    return Objects.equals(this.schemeName, obBranchAndFinancialInstitutionIdentification50.schemeName) &&
-        Objects.equals(this.identification, obBranchAndFinancialInstitutionIdentification50.identification);
+    return Objects.equals(this.schemeName, obBranchAndFinancialInstitutionIdentification50.schemeName)
+        && Objects.equals(this.identification, obBranchAndFinancialInstitutionIdentification50.identification);
   }
 
   @Override
@@ -78,7 +82,7 @@ public class OBBranchAndFinancialInstitutionIdentification50   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBBranchAndFinancialInstitutionIdentification50 {\n");
-    
+
     sb.append("    schemeName: ").append(toIndentedString(schemeName)).append("\n");
     sb.append("    identification: ").append(toIndentedString(identification)).append("\n");
     sb.append("}");
@@ -96,4 +100,3 @@ public class OBBranchAndFinancialInstitutionIdentification50   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

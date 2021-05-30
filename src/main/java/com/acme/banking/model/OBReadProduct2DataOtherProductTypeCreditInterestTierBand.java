@@ -19,7 +19,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Tier Band Details")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
+public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand {
   @JsonProperty("Identification")
   private String identification;
 
@@ -34,21 +34,21 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
    */
   public enum CalculationFrequencyEnum {
     FQAT("FQAT"),
-    
+
     FQDY("FQDY"),
-    
+
     FQHY("FQHY"),
-    
+
     FQMY("FQMY"),
-    
+
     FQOT("FQOT"),
-    
+
     FQQY("FQQY"),
-    
+
     FQSD("FQSD"),
-    
+
     FQWY("FQWY"),
-    
+
     FQYY("FQYY");
 
     private String value;
@@ -82,25 +82,27 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
   private CalculationFrequencyEnum calculationFrequency;
 
   /**
-   * How often is interest applied to the Product for this tier/band i.e. how often the financial institution pays accumulated interest to the customer's account.
+   * How often is interest applied to the Product for this tier/band i.e. how
+   * often the financial institution pays accumulated interest to the customer's
+   * account.
    */
   public enum ApplicationFrequencyEnum {
     FQAT("FQAT"),
-    
+
     FQDY("FQDY"),
-    
+
     FQHY("FQHY"),
-    
+
     FQMY("FQMY"),
-    
+
     FQOT("FQOT"),
-    
+
     FQQY("FQQY"),
-    
+
     FQSD("FQSD"),
-    
+
     FQWY("FQWY"),
-    
+
     FQYY("FQYY");
 
     private String value;
@@ -138,9 +140,9 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
    */
   public enum DepositInterestAppliedCoverageEnum {
     INBA("INBA"),
-    
+
     INTI("INTI"),
-    
+
     INWH("INWH");
 
     private String value;
@@ -180,19 +182,20 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
   private String AER;
 
   /**
-   * Interest rate types, other than AER, which financial institutions may use to describe the annual interest rate payable to the account holder's account.
+   * Interest rate types, other than AER, which financial institutions may use to
+   * describe the annual interest rate payable to the account holder's account.
    */
   public enum BankInterestRateTypeEnum {
     INBB("INBB"),
-    
+
     INFR("INFR"),
-    
+
     INGR("INGR"),
-    
+
     INLR("INLR"),
-    
+
     INNE("INNE"),
-    
+
     INOT("INOT");
 
     private String value;
@@ -229,7 +232,7 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
   private String bankInterestRate;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("OtherBankInterestType")
@@ -247,9 +250,10 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
   }
 
   /**
-   * Unique and unambiguous identification of a  Tier Band for the Product.
+   * Unique and unambiguous identification of a Tier Band for the Product.
+   * 
    * @return identification
-  */
+   */
   @ApiModelProperty(value = "Unique and unambiguous identification of a  Tier Band for the Product.")
   public String getIdentification() {
     return identification;
@@ -266,8 +270,9 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
 
   /**
    * Minimum deposit value for which the credit interest tier applies.
+   * 
    * @return tierValueMinimum
-  */
+   */
   @ApiModelProperty(required = true, value = "Minimum deposit value for which the credit interest tier applies.")
   public String getTierValueMinimum() {
     return tierValueMinimum;
@@ -284,8 +289,9 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
 
   /**
    * Maximum deposit value for which the credit interest tier applies.
+   * 
    * @return tierValueMaximum
-  */
+   */
   @ApiModelProperty(value = "Maximum deposit value for which the credit interest tier applies.")
   public String getTierValueMaximum() {
     return tierValueMaximum;
@@ -295,15 +301,17 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
     this.tierValueMaximum = tierValueMaximum;
   }
 
-  public OBReadProduct2DataOtherProductTypeCreditInterestTierBand calculationFrequency(CalculationFrequencyEnum calculationFrequency) {
+  public OBReadProduct2DataOtherProductTypeCreditInterestTierBand calculationFrequency(
+      CalculationFrequencyEnum calculationFrequency) {
     this.calculationFrequency = calculationFrequency;
     return this;
   }
 
   /**
    * How often is credit interest calculated for the account.
+   * 
    * @return calculationFrequency
-  */
+   */
   @ApiModelProperty(value = "How often is credit interest calculated for the account.")
   public CalculationFrequencyEnum getCalculationFrequency() {
     return calculationFrequency;
@@ -313,15 +321,19 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
     this.calculationFrequency = calculationFrequency;
   }
 
-  public OBReadProduct2DataOtherProductTypeCreditInterestTierBand applicationFrequency(ApplicationFrequencyEnum applicationFrequency) {
+  public OBReadProduct2DataOtherProductTypeCreditInterestTierBand applicationFrequency(
+      ApplicationFrequencyEnum applicationFrequency) {
     this.applicationFrequency = applicationFrequency;
     return this;
   }
 
   /**
-   * How often is interest applied to the Product for this tier/band i.e. how often the financial institution pays accumulated interest to the customer's account.
+   * How often is interest applied to the Product for this tier/band i.e. how
+   * often the financial institution pays accumulated interest to the customer's
+   * account.
+   * 
    * @return applicationFrequency
-  */
+   */
   @ApiModelProperty(required = true, value = "How often is interest applied to the Product for this tier/band i.e. how often the financial institution pays accumulated interest to the customer's account.")
   public ApplicationFrequencyEnum getApplicationFrequency() {
     return applicationFrequency;
@@ -331,15 +343,17 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
     this.applicationFrequency = applicationFrequency;
   }
 
-  public OBReadProduct2DataOtherProductTypeCreditInterestTierBand depositInterestAppliedCoverage(DepositInterestAppliedCoverageEnum depositInterestAppliedCoverage) {
+  public OBReadProduct2DataOtherProductTypeCreditInterestTierBand depositInterestAppliedCoverage(
+      DepositInterestAppliedCoverageEnum depositInterestAppliedCoverage) {
     this.depositInterestAppliedCoverage = depositInterestAppliedCoverage;
     return this;
   }
 
   /**
    * Amount on which Interest applied.
+   * 
    * @return depositInterestAppliedCoverage
-  */
+   */
   @ApiModelProperty(value = "Amount on which Interest applied.")
   public DepositInterestAppliedCoverageEnum getDepositInterestAppliedCoverage() {
     return depositInterestAppliedCoverage;
@@ -349,15 +363,17 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
     this.depositInterestAppliedCoverage = depositInterestAppliedCoverage;
   }
 
-  public OBReadProduct2DataOtherProductTypeCreditInterestTierBand fixedVariableInterestRateType(OBInterestFixedVariableType1Code fixedVariableInterestRateType) {
+  public OBReadProduct2DataOtherProductTypeCreditInterestTierBand fixedVariableInterestRateType(
+      OBInterestFixedVariableType1Code fixedVariableInterestRateType) {
     this.fixedVariableInterestRateType = fixedVariableInterestRateType;
     return this;
   }
 
   /**
    * Get fixedVariableInterestRateType
+   * 
    * @return fixedVariableInterestRateType
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBInterestFixedVariableType1Code getFixedVariableInterestRateType() {
     return fixedVariableInterestRateType;
@@ -373,9 +389,16 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
   }
 
   /**
-   * The annual equivalent rate (AER) is interest that is calculated under the assumption that any interest paid is combined with the original balance and the next interest payment will be based on the slightly higher account balance. Overall, this means that interest can be compounded several times in a year depending on the number of times that interest payments are made.  Read more: Annual Equivalent Rate (AER) http://www.investopedia.com/terms/a/aer.asp#ixzz4gfR7IO1A
+   * The annual equivalent rate (AER) is interest that is calculated under the
+   * assumption that any interest paid is combined with the original balance and
+   * the next interest payment will be based on the slightly higher account
+   * balance. Overall, this means that interest can be compounded several times in
+   * a year depending on the number of times that interest payments are made. Read
+   * more: Annual Equivalent Rate (AER)
+   * http://www.investopedia.com/terms/a/aer.asp#ixzz4gfR7IO1A
+   * 
    * @return AER
-  */
+   */
   @ApiModelProperty(required = true, value = "The annual equivalent rate (AER) is interest that is calculated under the assumption that any interest paid is combined with the original balance and the next interest payment will be based on the slightly higher account balance. Overall, this means that interest can be compounded several times in a year depending on the number of times that interest payments are made.  Read more: Annual Equivalent Rate (AER) http://www.investopedia.com/terms/a/aer.asp#ixzz4gfR7IO1A")
   public String getAER() {
     return AER;
@@ -385,15 +408,18 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
     this.AER = AER;
   }
 
-  public OBReadProduct2DataOtherProductTypeCreditInterestTierBand bankInterestRateType(BankInterestRateTypeEnum bankInterestRateType) {
+  public OBReadProduct2DataOtherProductTypeCreditInterestTierBand bankInterestRateType(
+      BankInterestRateTypeEnum bankInterestRateType) {
     this.bankInterestRateType = bankInterestRateType;
     return this;
   }
 
   /**
-   * Interest rate types, other than AER, which financial institutions may use to describe the annual interest rate payable to the account holder's account.
+   * Interest rate types, other than AER, which financial institutions may use to
+   * describe the annual interest rate payable to the account holder's account.
+   * 
    * @return bankInterestRateType
-  */
+   */
   @ApiModelProperty(value = "Interest rate types, other than AER, which financial institutions may use to describe the annual interest rate payable to the account holder's account.")
   public BankInterestRateTypeEnum getBankInterestRateType() {
     return bankInterestRateType;
@@ -410,8 +436,9 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
 
   /**
    * Bank Interest for the product
+   * 
    * @return bankInterestRate
-  */
+   */
   @ApiModelProperty(value = "Bank Interest for the product")
   public String getBankInterestRate() {
     return bankInterestRate;
@@ -436,8 +463,9 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
 
   /**
    * Get notes
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "")
   public List<String> getNotes() {
     return notes;
@@ -447,33 +475,38 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
     this.notes = notes;
   }
 
-  public OBReadProduct2DataOtherProductTypeCreditInterestTierBand otherBankInterestType(OBReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestType otherBankInterestType) {
+  public OBReadProduct2DataOtherProductTypeCreditInterestTierBand otherBankInterestType(
+      OBReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestType otherBankInterestType) {
     this.otherBankInterestType = otherBankInterestType;
     return this;
   }
 
   /**
    * Get otherBankInterestType
+   * 
    * @return otherBankInterestType
-  */
+   */
   @ApiModelProperty(value = "")
   public OBReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestType getOtherBankInterestType() {
     return otherBankInterestType;
   }
 
-  public void setOtherBankInterestType(OBReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestType otherBankInterestType) {
+  public void setOtherBankInterestType(
+      OBReadProduct2DataOtherProductTypeCreditInterestOtherBankInterestType otherBankInterestType) {
     this.otherBankInterestType = otherBankInterestType;
   }
 
-  public OBReadProduct2DataOtherProductTypeCreditInterestTierBand otherApplicationFrequency(OBOtherCodeType11 otherApplicationFrequency) {
+  public OBReadProduct2DataOtherProductTypeCreditInterestTierBand otherApplicationFrequency(
+      OBOtherCodeType11 otherApplicationFrequency) {
     this.otherApplicationFrequency = otherApplicationFrequency;
     return this;
   }
 
   /**
    * Get otherApplicationFrequency
+   * 
    * @return otherApplicationFrequency
-  */
+   */
   @ApiModelProperty(value = "")
   public OBOtherCodeType11 getOtherApplicationFrequency() {
     return otherApplicationFrequency;
@@ -483,15 +516,17 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
     this.otherApplicationFrequency = otherApplicationFrequency;
   }
 
-  public OBReadProduct2DataOtherProductTypeCreditInterestTierBand otherCalculationFrequency(OBOtherCodeType12 otherCalculationFrequency) {
+  public OBReadProduct2DataOtherProductTypeCreditInterestTierBand otherCalculationFrequency(
+      OBOtherCodeType12 otherCalculationFrequency) {
     this.otherCalculationFrequency = otherCalculationFrequency;
     return this;
   }
 
   /**
    * Get otherCalculationFrequency
+   * 
    * @return otherCalculationFrequency
-  */
+   */
   @ApiModelProperty(value = "")
   public OBOtherCodeType12 getOtherCalculationFrequency() {
     return otherCalculationFrequency;
@@ -500,7 +535,6 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
   public void setOtherCalculationFrequency(OBOtherCodeType12 otherCalculationFrequency) {
     this.otherCalculationFrequency = otherCalculationFrequency;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -511,39 +545,54 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
       return false;
     }
     OBReadProduct2DataOtherProductTypeCreditInterestTierBand obReadProduct2DataOtherProductTypeCreditInterestTierBand = (OBReadProduct2DataOtherProductTypeCreditInterestTierBand) o;
-    return Objects.equals(this.identification, obReadProduct2DataOtherProductTypeCreditInterestTierBand.identification) &&
-        Objects.equals(this.tierValueMinimum, obReadProduct2DataOtherProductTypeCreditInterestTierBand.tierValueMinimum) &&
-        Objects.equals(this.tierValueMaximum, obReadProduct2DataOtherProductTypeCreditInterestTierBand.tierValueMaximum) &&
-        Objects.equals(this.calculationFrequency, obReadProduct2DataOtherProductTypeCreditInterestTierBand.calculationFrequency) &&
-        Objects.equals(this.applicationFrequency, obReadProduct2DataOtherProductTypeCreditInterestTierBand.applicationFrequency) &&
-        Objects.equals(this.depositInterestAppliedCoverage, obReadProduct2DataOtherProductTypeCreditInterestTierBand.depositInterestAppliedCoverage) &&
-        Objects.equals(this.fixedVariableInterestRateType, obReadProduct2DataOtherProductTypeCreditInterestTierBand.fixedVariableInterestRateType) &&
-        Objects.equals(this.AER, obReadProduct2DataOtherProductTypeCreditInterestTierBand.AER) &&
-        Objects.equals(this.bankInterestRateType, obReadProduct2DataOtherProductTypeCreditInterestTierBand.bankInterestRateType) &&
-        Objects.equals(this.bankInterestRate, obReadProduct2DataOtherProductTypeCreditInterestTierBand.bankInterestRate) &&
-        Objects.equals(this.notes, obReadProduct2DataOtherProductTypeCreditInterestTierBand.notes) &&
-        Objects.equals(this.otherBankInterestType, obReadProduct2DataOtherProductTypeCreditInterestTierBand.otherBankInterestType) &&
-        Objects.equals(this.otherApplicationFrequency, obReadProduct2DataOtherProductTypeCreditInterestTierBand.otherApplicationFrequency) &&
-        Objects.equals(this.otherCalculationFrequency, obReadProduct2DataOtherProductTypeCreditInterestTierBand.otherCalculationFrequency);
+    return Objects.equals(this.identification, obReadProduct2DataOtherProductTypeCreditInterestTierBand.identification)
+        && Objects.equals(this.tierValueMinimum,
+            obReadProduct2DataOtherProductTypeCreditInterestTierBand.tierValueMinimum)
+        && Objects.equals(this.tierValueMaximum,
+            obReadProduct2DataOtherProductTypeCreditInterestTierBand.tierValueMaximum)
+        && Objects.equals(this.calculationFrequency,
+            obReadProduct2DataOtherProductTypeCreditInterestTierBand.calculationFrequency)
+        && Objects.equals(this.applicationFrequency,
+            obReadProduct2DataOtherProductTypeCreditInterestTierBand.applicationFrequency)
+        && Objects.equals(this.depositInterestAppliedCoverage,
+            obReadProduct2DataOtherProductTypeCreditInterestTierBand.depositInterestAppliedCoverage)
+        && Objects.equals(this.fixedVariableInterestRateType,
+            obReadProduct2DataOtherProductTypeCreditInterestTierBand.fixedVariableInterestRateType)
+        && Objects.equals(this.AER, obReadProduct2DataOtherProductTypeCreditInterestTierBand.AER)
+        && Objects.equals(this.bankInterestRateType,
+            obReadProduct2DataOtherProductTypeCreditInterestTierBand.bankInterestRateType)
+        && Objects.equals(this.bankInterestRate,
+            obReadProduct2DataOtherProductTypeCreditInterestTierBand.bankInterestRate)
+        && Objects.equals(this.notes, obReadProduct2DataOtherProductTypeCreditInterestTierBand.notes)
+        && Objects.equals(this.otherBankInterestType,
+            obReadProduct2DataOtherProductTypeCreditInterestTierBand.otherBankInterestType)
+        && Objects.equals(this.otherApplicationFrequency,
+            obReadProduct2DataOtherProductTypeCreditInterestTierBand.otherApplicationFrequency)
+        && Objects.equals(this.otherCalculationFrequency,
+            obReadProduct2DataOtherProductTypeCreditInterestTierBand.otherCalculationFrequency);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(identification, tierValueMinimum, tierValueMaximum, calculationFrequency, applicationFrequency, depositInterestAppliedCoverage, fixedVariableInterestRateType, AER, bankInterestRateType, bankInterestRate, notes, otherBankInterestType, otherApplicationFrequency, otherCalculationFrequency);
+    return Objects.hash(identification, tierValueMinimum, tierValueMaximum, calculationFrequency, applicationFrequency,
+        depositInterestAppliedCoverage, fixedVariableInterestRateType, AER, bankInterestRateType, bankInterestRate,
+        notes, otherBankInterestType, otherApplicationFrequency, otherCalculationFrequency);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductTypeCreditInterestTierBand {\n");
-    
+
     sb.append("    identification: ").append(toIndentedString(identification)).append("\n");
     sb.append("    tierValueMinimum: ").append(toIndentedString(tierValueMinimum)).append("\n");
     sb.append("    tierValueMaximum: ").append(toIndentedString(tierValueMaximum)).append("\n");
     sb.append("    calculationFrequency: ").append(toIndentedString(calculationFrequency)).append("\n");
     sb.append("    applicationFrequency: ").append(toIndentedString(applicationFrequency)).append("\n");
-    sb.append("    depositInterestAppliedCoverage: ").append(toIndentedString(depositInterestAppliedCoverage)).append("\n");
-    sb.append("    fixedVariableInterestRateType: ").append(toIndentedString(fixedVariableInterestRateType)).append("\n");
+    sb.append("    depositInterestAppliedCoverage: ").append(toIndentedString(depositInterestAppliedCoverage))
+        .append("\n");
+    sb.append("    fixedVariableInterestRateType: ").append(toIndentedString(fixedVariableInterestRateType))
+        .append("\n");
     sb.append("    AER: ").append(toIndentedString(AER)).append("\n");
     sb.append("    bankInterestRateType: ").append(toIndentedString(bankInterestRateType)).append("\n");
     sb.append("    bankInterestRate: ").append(toIndentedString(bankInterestRate)).append("\n");
@@ -566,4 +615,3 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBand   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

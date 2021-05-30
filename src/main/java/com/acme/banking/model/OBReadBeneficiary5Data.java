@@ -14,9 +14,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBReadBeneficiary5Data
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadBeneficiary5Data   {
+public class OBReadBeneficiary5Data {
   @JsonProperty("Beneficiary")
-  
+
   private List<OBBeneficiary5> beneficiary = null;
 
   public OBReadBeneficiary5Data beneficiary(List<OBBeneficiary5> beneficiary) {
@@ -34,8 +34,9 @@ public class OBReadBeneficiary5Data   {
 
   /**
    * Get beneficiary
+   * 
    * @return beneficiary
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBBeneficiary5> getBeneficiary() {
     return beneficiary;
@@ -44,7 +45,6 @@ public class OBReadBeneficiary5Data   {
   public void setBeneficiary(List<OBBeneficiary5> beneficiary) {
     this.beneficiary = beneficiary;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -67,7 +67,7 @@ public class OBReadBeneficiary5Data   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadBeneficiary5Data {\n");
-    
+
     sb.append("    beneficiary: ").append(toIndentedString(beneficiary)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -84,4 +84,3 @@ public class OBReadBeneficiary5Data   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

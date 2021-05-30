@@ -11,11 +11,11 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Party type, in a coded form.
  */
 public enum OBExternalPartyType1Code {
-  
+
   DELEGATE("Delegate"),
-  
+
   JOINT("Joint"),
-  
+
   SOLE("Sole");
 
   private String value;
@@ -44,4 +44,3 @@ public enum OBExternalPartyType1Code {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

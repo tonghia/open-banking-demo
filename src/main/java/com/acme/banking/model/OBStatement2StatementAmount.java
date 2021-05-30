@@ -10,11 +10,12 @@ import io.swagger.annotations.ApiModelProperty;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Set of elements used to provide details of a generic amount for the statement resource.
+ * Set of elements used to provide details of a generic amount for the statement
+ * resource.
  */
 @ApiModel(description = "Set of elements used to provide details of a generic amount for the statement resource.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBStatement2StatementAmount   {
+public class OBStatement2StatementAmount {
   @JsonProperty("CreditDebitIndicator")
   private OBCreditDebitCode0 creditDebitIndicator;
 
@@ -31,8 +32,9 @@ public class OBStatement2StatementAmount   {
 
   /**
    * Get creditDebitIndicator
+   * 
    * @return creditDebitIndicator
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBCreditDebitCode0 getCreditDebitIndicator() {
     return creditDebitIndicator;
@@ -49,8 +51,9 @@ public class OBStatement2StatementAmount   {
 
   /**
    * Amount type, in a coded form.
+   * 
    * @return type
-  */
+   */
   @ApiModelProperty(required = true, value = "Amount type, in a coded form.")
   public String getType() {
     return type;
@@ -67,8 +70,9 @@ public class OBStatement2StatementAmount   {
 
   /**
    * Get amount
+   * 
    * @return amount
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBActiveOrHistoricCurrencyAndAmount8 getAmount() {
     return amount;
@@ -77,7 +81,6 @@ public class OBStatement2StatementAmount   {
   public void setAmount(OBActiveOrHistoricCurrencyAndAmount8 amount) {
     this.amount = amount;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -88,9 +91,9 @@ public class OBStatement2StatementAmount   {
       return false;
     }
     OBStatement2StatementAmount obStatement2StatementAmount = (OBStatement2StatementAmount) o;
-    return Objects.equals(this.creditDebitIndicator, obStatement2StatementAmount.creditDebitIndicator) &&
-        Objects.equals(this.type, obStatement2StatementAmount.type) &&
-        Objects.equals(this.amount, obStatement2StatementAmount.amount);
+    return Objects.equals(this.creditDebitIndicator, obStatement2StatementAmount.creditDebitIndicator)
+        && Objects.equals(this.type, obStatement2StatementAmount.type)
+        && Objects.equals(this.amount, obStatement2StatementAmount.amount);
   }
 
   @Override
@@ -102,7 +105,7 @@ public class OBStatement2StatementAmount   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBStatement2StatementAmount {\n");
-    
+
     sb.append("    creditDebitIndicator: ").append(toIndentedString(creditDebitIndicator)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
@@ -121,4 +124,3 @@ public class OBStatement2StatementAmount   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

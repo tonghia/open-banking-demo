@@ -11,21 +11,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Identifies the nature of the postal address.
  */
 public enum OBAddressTypeCode {
-  
+
   BUSINESS("Business"),
-  
+
   CORRESPONDENCE("Correspondence"),
-  
+
   DELIVERYTO("DeliveryTo"),
-  
+
   MAILTO("MailTo"),
-  
+
   POBOX("POBox"),
-  
+
   POSTAL("Postal"),
-  
+
   RESIDENTIAL("Residential"),
-  
+
   STATEMENT("Statement");
 
   private String value;
@@ -54,4 +54,3 @@ public enum OBAddressTypeCode {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

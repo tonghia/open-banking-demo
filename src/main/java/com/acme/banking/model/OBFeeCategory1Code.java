@@ -11,11 +11,11 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Categorisation of fees and charges into standard categories.
  */
 public enum OBFeeCategory1Code {
-  
+
   FCOT("FCOT"),
-  
+
   FCRE("FCRE"),
-  
+
   FCSV("FCSV");
 
   private String value;
@@ -44,4 +44,3 @@ public enum OBFeeCategory1Code {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

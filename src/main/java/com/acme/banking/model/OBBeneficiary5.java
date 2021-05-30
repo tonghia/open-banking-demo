@@ -14,7 +14,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBBeneficiary5
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBBeneficiary5   {
+public class OBBeneficiary5 {
   @JsonProperty("AccountId")
   private String accountId;
 
@@ -42,9 +42,11 @@ public class OBBeneficiary5   {
   }
 
   /**
-   * A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.
+   * A unique and immutable identifier used to identify the account resource. This
+   * identifier has no meaning to the account owner.
+   * 
    * @return accountId
-  */
+   */
   @ApiModelProperty(value = "A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.")
   public String getAccountId() {
     return accountId;
@@ -60,9 +62,11 @@ public class OBBeneficiary5   {
   }
 
   /**
-   * A unique and immutable identifier used to identify the beneficiary resource. This identifier has no meaning to the account owner.
+   * A unique and immutable identifier used to identify the beneficiary resource.
+   * This identifier has no meaning to the account owner.
+   * 
    * @return beneficiaryId
-  */
+   */
   @ApiModelProperty(value = "A unique and immutable identifier used to identify the beneficiary resource. This identifier has no meaning to the account owner.")
   public String getBeneficiaryId() {
     return beneficiaryId;
@@ -79,8 +83,9 @@ public class OBBeneficiary5   {
 
   /**
    * Get beneficiaryType
+   * 
    * @return beneficiaryType
-  */
+   */
   @ApiModelProperty(value = "")
   public OBBeneficiaryType1Code getBeneficiaryType() {
     return beneficiaryType;
@@ -96,9 +101,17 @@ public class OBBeneficiary5   {
   }
 
   /**
-   * Unique reference, as assigned by the creditor, to unambiguously refer to the payment transaction. Usage: If available, the initiating party should provide this reference in the structured remittance information, to enable reconciliation by the creditor upon receipt of the amount of money. If the business context requires the use of a creditor reference or a payment remit identification, and only one identifier can be passed through the end-to-end chain, the creditor's reference or payment remittance identification should be quoted in the end-to-end transaction identification.
+   * Unique reference, as assigned by the creditor, to unambiguously refer to the
+   * payment transaction. Usage: If available, the initiating party should provide
+   * this reference in the structured remittance information, to enable
+   * reconciliation by the creditor upon receipt of the amount of money. If the
+   * business context requires the use of a creditor reference or a payment remit
+   * identification, and only one identifier can be passed through the end-to-end
+   * chain, the creditor's reference or payment remittance identification should
+   * be quoted in the end-to-end transaction identification.
+   * 
    * @return reference
-  */
+   */
   @ApiModelProperty(value = "Unique reference, as assigned by the creditor, to unambiguously refer to the payment transaction. Usage: If available, the initiating party should provide this reference in the structured remittance information, to enable reconciliation by the creditor upon receipt of the amount of money. If the business context requires the use of a creditor reference or a payment remit identification, and only one identifier can be passed through the end-to-end chain, the creditor's reference or payment remittance identification should be quoted in the end-to-end transaction identification.")
   public String getReference() {
     return reference;
@@ -114,9 +127,11 @@ public class OBBeneficiary5   {
   }
 
   /**
-   * Additional information that can not be captured in the structured fields and/or any other specific block.
+   * Additional information that can not be captured in the structured fields
+   * and/or any other specific block.
+   * 
    * @return supplementaryData
-  */
+   */
   @ApiModelProperty(value = "Additional information that can not be captured in the structured fields and/or any other specific block.")
   public Object getSupplementaryData() {
     return supplementaryData;
@@ -133,8 +148,9 @@ public class OBBeneficiary5   {
 
   /**
    * Get creditorAgent
+   * 
    * @return creditorAgent
-  */
+   */
   @ApiModelProperty(value = "")
   public OBBranchAndFinancialInstitutionIdentification60 getCreditorAgent() {
     return creditorAgent;
@@ -151,8 +167,9 @@ public class OBBeneficiary5   {
 
   /**
    * Get creditorAccount
+   * 
    * @return creditorAccount
-  */
+   */
   @ApiModelProperty(value = "")
   public OBCashAccount50 getCreditorAccount() {
     return creditorAccount;
@@ -161,7 +178,6 @@ public class OBBeneficiary5   {
   public void setCreditorAccount(OBCashAccount50 creditorAccount) {
     this.creditorAccount = creditorAccount;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -172,25 +188,26 @@ public class OBBeneficiary5   {
       return false;
     }
     OBBeneficiary5 obBeneficiary5 = (OBBeneficiary5) o;
-    return Objects.equals(this.accountId, obBeneficiary5.accountId) &&
-        Objects.equals(this.beneficiaryId, obBeneficiary5.beneficiaryId) &&
-        Objects.equals(this.beneficiaryType, obBeneficiary5.beneficiaryType) &&
-        Objects.equals(this.reference, obBeneficiary5.reference) &&
-        Objects.equals(this.supplementaryData, obBeneficiary5.supplementaryData) &&
-        Objects.equals(this.creditorAgent, obBeneficiary5.creditorAgent) &&
-        Objects.equals(this.creditorAccount, obBeneficiary5.creditorAccount);
+    return Objects.equals(this.accountId, obBeneficiary5.accountId)
+        && Objects.equals(this.beneficiaryId, obBeneficiary5.beneficiaryId)
+        && Objects.equals(this.beneficiaryType, obBeneficiary5.beneficiaryType)
+        && Objects.equals(this.reference, obBeneficiary5.reference)
+        && Objects.equals(this.supplementaryData, obBeneficiary5.supplementaryData)
+        && Objects.equals(this.creditorAgent, obBeneficiary5.creditorAgent)
+        && Objects.equals(this.creditorAccount, obBeneficiary5.creditorAccount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(accountId, beneficiaryId, beneficiaryType, reference, supplementaryData, creditorAgent, creditorAccount);
+    return Objects.hash(accountId, beneficiaryId, beneficiaryType, reference, supplementaryData, creditorAgent,
+        creditorAccount);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBBeneficiary5 {\n");
-    
+
     sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
     sb.append("    beneficiaryId: ").append(toIndentedString(beneficiaryId)).append("\n");
     sb.append("    beneficiaryType: ").append(toIndentedString(beneficiaryType)).append("\n");
@@ -213,4 +230,3 @@ public class OBBeneficiary5   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

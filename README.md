@@ -8,7 +8,14 @@
     
 2. Start the Spring Boot application
     
-    `./gradlew bootRun`
+    `./gradlew bootRun -Dorg.gradle.java.home=<JDK-11>`
+
+    
+   For example: ./gradlew bootRun -Dorg.gradle.java.home=/Users/nbcrocker/Library/Java/JavaVirtualMachines/adopt-openj9-11.0.10/Contents/Home
+    
+3. String Keycloak: 
+    
+    `docker run -d -p 9001:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=123456 --name=keycloak quay.io/keycloak/keycloak:12.0.2`    
 
 ### To generate new model: 
 `./gradlew clean openApiGenerate copyGenerated build`

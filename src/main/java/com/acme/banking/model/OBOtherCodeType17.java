@@ -12,7 +12,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Other calculation frequency which is not available in standard code set.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBOtherCodeType17   {
+public class OBOtherCodeType17 {
   @JsonProperty("Code")
   private String code;
 
@@ -29,8 +29,9 @@ public class OBOtherCodeType17   {
 
   /**
    * The four letter Mnemonic used within an XML file to identify a code
+   * 
    * @return code
-  */
+   */
   @ApiModelProperty(value = "The four letter Mnemonic used within an XML file to identify a code")
   public String getCode() {
     return code;
@@ -47,8 +48,9 @@ public class OBOtherCodeType17   {
 
   /**
    * Long name associated with the code
+   * 
    * @return name
-  */
+   */
   @ApiModelProperty(required = true, value = "Long name associated with the code")
   public String getName() {
     return name;
@@ -65,8 +67,9 @@ public class OBOtherCodeType17   {
 
   /**
    * Description to describe the purpose of the code
+   * 
    * @return description
-  */
+   */
   @ApiModelProperty(required = true, value = "Description to describe the purpose of the code")
   public String getDescription() {
     return description;
@@ -75,7 +78,6 @@ public class OBOtherCodeType17   {
   public void setDescription(String description) {
     this.description = description;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -86,9 +88,8 @@ public class OBOtherCodeType17   {
       return false;
     }
     OBOtherCodeType17 obOtherCodeType17 = (OBOtherCodeType17) o;
-    return Objects.equals(this.code, obOtherCodeType17.code) &&
-        Objects.equals(this.name, obOtherCodeType17.name) &&
-        Objects.equals(this.description, obOtherCodeType17.description);
+    return Objects.equals(this.code, obOtherCodeType17.code) && Objects.equals(this.name, obOtherCodeType17.name)
+        && Objects.equals(this.description, obOtherCodeType17.description);
   }
 
   @Override
@@ -100,7 +101,7 @@ public class OBOtherCodeType17   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBOtherCodeType17 {\n");
-    
+
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
@@ -119,4 +120,3 @@ public class OBOtherCodeType17   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

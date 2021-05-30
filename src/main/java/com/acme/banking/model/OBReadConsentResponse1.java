@@ -14,7 +14,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBReadConsentResponse1
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadConsentResponse1   {
+public class OBReadConsentResponse1 {
   @JsonProperty("Data")
   private OBReadConsentResponse1Data data;
 
@@ -34,8 +34,9 @@ public class OBReadConsentResponse1   {
 
   /**
    * Get data
+   * 
    * @return data
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBReadConsentResponse1Data getData() {
     return data;
@@ -51,9 +52,11 @@ public class OBReadConsentResponse1   {
   }
 
   /**
-   * The Risk section is sent by the initiating party to the ASPSP. It is used to specify additional details for risk scoring for Account Info.
+   * The Risk section is sent by the initiating party to the ASPSP. It is used to
+   * specify additional details for risk scoring for Account Info.
+   * 
    * @return risk
-  */
+   */
   @ApiModelProperty(required = true, value = "The Risk section is sent by the initiating party to the ASPSP. It is used to specify additional details for risk scoring for Account Info.")
   public Object getRisk() {
     return risk;
@@ -70,8 +73,9 @@ public class OBReadConsentResponse1   {
 
   /**
    * Get links
+   * 
    * @return links
-  */
+   */
   @ApiModelProperty(value = "")
   public Links getLinks() {
     return links;
@@ -88,8 +92,9 @@ public class OBReadConsentResponse1   {
 
   /**
    * Get meta
+   * 
    * @return meta
-  */
+   */
   @ApiModelProperty(value = "")
   public Meta getMeta() {
     return meta;
@@ -98,7 +103,6 @@ public class OBReadConsentResponse1   {
   public void setMeta(Meta meta) {
     this.meta = meta;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -109,10 +113,10 @@ public class OBReadConsentResponse1   {
       return false;
     }
     OBReadConsentResponse1 obReadConsentResponse1 = (OBReadConsentResponse1) o;
-    return Objects.equals(this.data, obReadConsentResponse1.data) &&
-        Objects.equals(this.risk, obReadConsentResponse1.risk) &&
-        Objects.equals(this.links, obReadConsentResponse1.links) &&
-        Objects.equals(this.meta, obReadConsentResponse1.meta);
+    return Objects.equals(this.data, obReadConsentResponse1.data)
+        && Objects.equals(this.risk, obReadConsentResponse1.risk)
+        && Objects.equals(this.links, obReadConsentResponse1.links)
+        && Objects.equals(this.meta, obReadConsentResponse1.meta);
   }
 
   @Override
@@ -124,7 +128,7 @@ public class OBReadConsentResponse1   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadConsentResponse1 {\n");
-    
+
     sb.append("    data: ").append(toIndentedString(data)).append("\n");
     sb.append("    risk: ").append(toIndentedString(risk)).append("\n");
     sb.append("    links: ").append(toIndentedString(links)).append("\n");
@@ -144,4 +148,3 @@ public class OBReadConsentResponse1   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

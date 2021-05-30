@@ -11,9 +11,9 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Specifies the Mutability of the Transaction record.
  */
 public enum OBTransactionMutability1Code {
-  
+
   MUTABLE("Mutable"),
-  
+
   IMMUTABLE("Immutable");
 
   private String value;
@@ -42,4 +42,3 @@ public enum OBTransactionMutability1Code {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

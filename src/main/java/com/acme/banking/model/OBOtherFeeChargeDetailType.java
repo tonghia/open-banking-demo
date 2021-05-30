@@ -13,7 +13,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Other Fee/charge type which is not available in the standard code set")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBOtherFeeChargeDetailType   {
+public class OBOtherFeeChargeDetailType {
   @JsonProperty("Code")
   private String code;
 
@@ -33,8 +33,9 @@ public class OBOtherFeeChargeDetailType   {
 
   /**
    * The four letter Mnemonic used within an XML file to identify a code
+   * 
    * @return code
-  */
+   */
   @ApiModelProperty(value = "The four letter Mnemonic used within an XML file to identify a code")
   public String getCode() {
     return code;
@@ -51,8 +52,9 @@ public class OBOtherFeeChargeDetailType   {
 
   /**
    * Get feeCategory
+   * 
    * @return feeCategory
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBFeeCategory1Code getFeeCategory() {
     return feeCategory;
@@ -69,8 +71,9 @@ public class OBOtherFeeChargeDetailType   {
 
   /**
    * Long name associated with the code
+   * 
    * @return name
-  */
+   */
   @ApiModelProperty(required = true, value = "Long name associated with the code")
   public String getName() {
     return name;
@@ -87,8 +90,9 @@ public class OBOtherFeeChargeDetailType   {
 
   /**
    * Description to describe the purpose of the code
+   * 
    * @return description
-  */
+   */
   @ApiModelProperty(required = true, value = "Description to describe the purpose of the code")
   public String getDescription() {
     return description;
@@ -97,7 +101,6 @@ public class OBOtherFeeChargeDetailType   {
   public void setDescription(String description) {
     this.description = description;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -108,10 +111,10 @@ public class OBOtherFeeChargeDetailType   {
       return false;
     }
     OBOtherFeeChargeDetailType obOtherFeeChargeDetailType = (OBOtherFeeChargeDetailType) o;
-    return Objects.equals(this.code, obOtherFeeChargeDetailType.code) &&
-        Objects.equals(this.feeCategory, obOtherFeeChargeDetailType.feeCategory) &&
-        Objects.equals(this.name, obOtherFeeChargeDetailType.name) &&
-        Objects.equals(this.description, obOtherFeeChargeDetailType.description);
+    return Objects.equals(this.code, obOtherFeeChargeDetailType.code)
+        && Objects.equals(this.feeCategory, obOtherFeeChargeDetailType.feeCategory)
+        && Objects.equals(this.name, obOtherFeeChargeDetailType.name)
+        && Objects.equals(this.description, obOtherFeeChargeDetailType.description);
   }
 
   @Override
@@ -123,7 +126,7 @@ public class OBOtherFeeChargeDetailType   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBOtherFeeChargeDetailType {\n");
-    
+
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    feeCategory: ").append(toIndentedString(feeCategory)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
@@ -143,4 +146,3 @@ public class OBOtherFeeChargeDetailType   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

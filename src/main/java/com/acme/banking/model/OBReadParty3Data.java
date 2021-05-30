@@ -14,9 +14,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBReadParty3Data
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadParty3Data   {
+public class OBReadParty3Data {
   @JsonProperty("Party")
-  
+
   private List<OBParty2> party = null;
 
   public OBReadParty3Data party(List<OBParty2> party) {
@@ -34,8 +34,9 @@ public class OBReadParty3Data   {
 
   /**
    * Get party
+   * 
    * @return party
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBParty2> getParty() {
     return party;
@@ -44,7 +45,6 @@ public class OBReadParty3Data   {
   public void setParty(List<OBParty2> party) {
     this.party = party;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -67,7 +67,7 @@ public class OBReadParty3Data   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadParty3Data {\n");
-    
+
     sb.append("    party: ").append(toIndentedString(party)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -84,4 +84,3 @@ public class OBReadParty3Data   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

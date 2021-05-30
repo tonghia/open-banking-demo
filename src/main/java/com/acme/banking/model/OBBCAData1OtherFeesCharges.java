@@ -14,19 +14,20 @@ import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Contains details of fees and charges which are not associated with either Overdraft or features/benefits
+ * Contains details of fees and charges which are not associated with either
+ * Overdraft or features/benefits
  */
 @ApiModel(description = "Contains details of fees and charges which are not associated with either Overdraft or features/benefits")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBBCAData1OtherFeesCharges   {
+public class OBBCAData1OtherFeesCharges {
   /**
    * TariffType which defines the fee and charges.
    */
   public enum TariffTypeEnum {
     ELECTRONIC("Electronic"),
-    
+
     MIXED("Mixed"),
-    
+
     OTHER("Other");
 
     private String value;
@@ -66,11 +67,11 @@ public class OBBCAData1OtherFeesCharges   {
   private OtherTariffType otherTariffType;
 
   @JsonProperty("FeeChargeDetail")
-  
+
   private List<OBBCAData1FeeChargeDetail> feeChargeDetail = new ArrayList<>();
 
   @JsonProperty("FeeChargeCap")
-  
+
   private List<OBBCAData1FeeChargeCap> feeChargeCap = null;
 
   public OBBCAData1OtherFeesCharges tariffType(TariffTypeEnum tariffType) {
@@ -80,8 +81,9 @@ public class OBBCAData1OtherFeesCharges   {
 
   /**
    * TariffType which defines the fee and charges.
+   * 
    * @return tariffType
-  */
+   */
   @ApiModelProperty(value = "TariffType which defines the fee and charges.")
   public TariffTypeEnum getTariffType() {
     return tariffType;
@@ -98,8 +100,9 @@ public class OBBCAData1OtherFeesCharges   {
 
   /**
    * Name of the tariff
+   * 
    * @return tariffName
-  */
+   */
   @ApiModelProperty(value = "Name of the tariff")
   public String getTariffName() {
     return tariffName;
@@ -116,8 +119,9 @@ public class OBBCAData1OtherFeesCharges   {
 
   /**
    * Get otherTariffType
+   * 
    * @return otherTariffType
-  */
+   */
   @ApiModelProperty(value = "")
   public OtherTariffType getOtherTariffType() {
     return otherTariffType;
@@ -139,8 +143,9 @@ public class OBBCAData1OtherFeesCharges   {
 
   /**
    * Other fees/charges details
+   * 
    * @return feeChargeDetail
-  */
+   */
   @ApiModelProperty(required = true, value = "Other fees/charges details")
   public List<OBBCAData1FeeChargeDetail> getFeeChargeDetail() {
     return feeChargeDetail;
@@ -164,9 +169,11 @@ public class OBBCAData1OtherFeesCharges   {
   }
 
   /**
-   * Details about any caps (maximum charges) that apply to a particular or group of fee/charge
+   * Details about any caps (maximum charges) that apply to a particular or group
+   * of fee/charge
+   * 
    * @return feeChargeCap
-  */
+   */
   @ApiModelProperty(value = "Details about any caps (maximum charges) that apply to a particular or group of fee/charge")
   public List<OBBCAData1FeeChargeCap> getFeeChargeCap() {
     return feeChargeCap;
@@ -175,7 +182,6 @@ public class OBBCAData1OtherFeesCharges   {
   public void setFeeChargeCap(List<OBBCAData1FeeChargeCap> feeChargeCap) {
     this.feeChargeCap = feeChargeCap;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -186,11 +192,11 @@ public class OBBCAData1OtherFeesCharges   {
       return false;
     }
     OBBCAData1OtherFeesCharges obBCAData1OtherFeesCharges = (OBBCAData1OtherFeesCharges) o;
-    return Objects.equals(this.tariffType, obBCAData1OtherFeesCharges.tariffType) &&
-        Objects.equals(this.tariffName, obBCAData1OtherFeesCharges.tariffName) &&
-        Objects.equals(this.otherTariffType, obBCAData1OtherFeesCharges.otherTariffType) &&
-        Objects.equals(this.feeChargeDetail, obBCAData1OtherFeesCharges.feeChargeDetail) &&
-        Objects.equals(this.feeChargeCap, obBCAData1OtherFeesCharges.feeChargeCap);
+    return Objects.equals(this.tariffType, obBCAData1OtherFeesCharges.tariffType)
+        && Objects.equals(this.tariffName, obBCAData1OtherFeesCharges.tariffName)
+        && Objects.equals(this.otherTariffType, obBCAData1OtherFeesCharges.otherTariffType)
+        && Objects.equals(this.feeChargeDetail, obBCAData1OtherFeesCharges.feeChargeDetail)
+        && Objects.equals(this.feeChargeCap, obBCAData1OtherFeesCharges.feeChargeCap);
   }
 
   @Override
@@ -202,7 +208,7 @@ public class OBBCAData1OtherFeesCharges   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBBCAData1OtherFeesCharges {\n");
-    
+
     sb.append("    tariffType: ").append(toIndentedString(tariffType)).append("\n");
     sb.append("    tariffName: ").append(toIndentedString(tariffName)).append("\n");
     sb.append("    otherTariffType: ").append(toIndentedString(otherTariffType)).append("\n");
@@ -223,4 +229,3 @@ public class OBBCAData1OtherFeesCharges   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

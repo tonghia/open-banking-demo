@@ -12,37 +12,38 @@ import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Details about any caps (maximum charges) that apply to a particular fee/charge
+ * Details about any caps (maximum charges) that apply to a particular
+ * fee/charge
  */
 @ApiModel(description = "Details about any caps (maximum charges) that apply to a particular fee/charge")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class Overdraft1OverdraftFeeChargeCap   {
+public class Overdraft1OverdraftFeeChargeCap {
   /**
    * Overdraft fee type
    */
   public enum FeeTypeEnum {
     ARRANGEDOVERDRAFT("ArrangedOverdraft"),
-    
+
     EMERGENCYBORROWING("EmergencyBorrowing"),
-    
+
     BORROWINGITEM("BorrowingItem"),
-    
+
     OVERDRAFTRENEWAL("OverdraftRenewal"),
-    
+
     ANNUALREVIEW("AnnualReview"),
-    
+
     OVERDRAFTSETUP("OverdraftSetup"),
-    
+
     SURCHARGE("Surcharge"),
-    
+
     TEMPOVERDRAFT("TempOverdraft"),
-    
+
     UNAUTHORISEDBORROWING("UnauthorisedBorrowing"),
-    
+
     UNAUTHORISEDPAIDTRANS("UnauthorisedPaidTrans"),
-    
+
     OTHER("Other"),
-    
+
     UNAUTHORISEDUNPAIDTRANS("UnauthorisedUnpaidTrans");
 
     private String value;
@@ -73,18 +74,19 @@ public class Overdraft1OverdraftFeeChargeCap   {
   }
 
   @JsonProperty("FeeType")
-  
+
   private List<FeeTypeEnum> feeType = new ArrayList<>();
 
   @JsonProperty("OverdraftControlIndicator")
   private Boolean overdraftControlIndicator;
 
   /**
-   * Indicates that this is the minimum/ maximum fee/charge that can be applied by the financial institution
+   * Indicates that this is the minimum/ maximum fee/charge that can be applied by
+   * the financial institution
    */
   public enum MinMaxTypeEnum {
     MINIMUM("Minimum"),
-    
+
     MAXIMUM("Maximum");
 
     private String value;
@@ -128,17 +130,17 @@ public class Overdraft1OverdraftFeeChargeCap   {
    */
   public enum CappingPeriodEnum {
     ACADEMICTERM("AcademicTerm"),
-    
+
     DAY("Day"),
-    
+
     HALF_YEAR("Half Year"),
-    
+
     MONTH("Month"),
-    
+
     QUARTER("Quarter"),
-    
+
     WEEK("Week"),
-    
+
     YEAR("Year");
 
     private String value;
@@ -172,11 +174,11 @@ public class Overdraft1OverdraftFeeChargeCap   {
   private CappingPeriodEnum cappingPeriod;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("OtherFeeType")
-  
+
   private List<OverdraftOtherFeeType> otherFeeType = null;
 
   public Overdraft1OverdraftFeeChargeCap feeType(List<FeeTypeEnum> feeType) {
@@ -191,8 +193,9 @@ public class Overdraft1OverdraftFeeChargeCap   {
 
   /**
    * Fee/charge type which is being capped
+   * 
    * @return feeType
-  */
+   */
   @ApiModelProperty(required = true, value = "Fee/charge type which is being capped")
   public List<FeeTypeEnum> getFeeType() {
     return feeType;
@@ -209,8 +212,9 @@ public class Overdraft1OverdraftFeeChargeCap   {
 
   /**
    * Specifies for the overdraft control feature/benefit
+   * 
    * @return overdraftControlIndicator
-  */
+   */
   @ApiModelProperty(value = "Specifies for the overdraft control feature/benefit")
   public Boolean getOverdraftControlIndicator() {
     return overdraftControlIndicator;
@@ -226,9 +230,11 @@ public class Overdraft1OverdraftFeeChargeCap   {
   }
 
   /**
-   * Indicates that this is the minimum/ maximum fee/charge that can be applied by the financial institution
+   * Indicates that this is the minimum/ maximum fee/charge that can be applied by
+   * the financial institution
+   * 
    * @return minMaxType
-  */
+   */
   @ApiModelProperty(required = true, value = "Indicates that this is the minimum/ maximum fee/charge that can be applied by the financial institution")
   public MinMaxTypeEnum getMinMaxType() {
     return minMaxType;
@@ -244,9 +250,11 @@ public class Overdraft1OverdraftFeeChargeCap   {
   }
 
   /**
-   * fee/charges are captured dependent on the number of occurrences rather than capped at a particular amount
+   * fee/charges are captured dependent on the number of occurrences rather than
+   * capped at a particular amount
+   * 
    * @return feeCapOccurrence
-  */
+   */
   @ApiModelProperty(value = "fee/charges are captured dependent on the number of occurrences rather than capped at a particular amount")
   public Float getFeeCapOccurrence() {
     return feeCapOccurrence;
@@ -263,8 +271,9 @@ public class Overdraft1OverdraftFeeChargeCap   {
 
   /**
    * Cap amount charged for a fee/charge
+   * 
    * @return feeCapAmount
-  */
+   */
   @ApiModelProperty(value = "Cap amount charged for a fee/charge")
   public String getFeeCapAmount() {
     return feeCapAmount;
@@ -281,8 +290,9 @@ public class Overdraft1OverdraftFeeChargeCap   {
 
   /**
    * Period e.g. day, week, month etc. for which the fee/charge is capped
+   * 
    * @return cappingPeriod
-  */
+   */
   @ApiModelProperty(value = "Period e.g. day, week, month etc. for which the fee/charge is capped")
   public CappingPeriodEnum getCappingPeriod() {
     return cappingPeriod;
@@ -307,8 +317,9 @@ public class Overdraft1OverdraftFeeChargeCap   {
 
   /**
    * Notes related to Overdraft fee charge cap
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "Notes related to Overdraft fee charge cap")
   public List<String> getNotes() {
     return notes;
@@ -333,8 +344,9 @@ public class Overdraft1OverdraftFeeChargeCap   {
 
   /**
    * Other fee type code which is not available in the standard code set
+   * 
    * @return otherFeeType
-  */
+   */
   @ApiModelProperty(value = "Other fee type code which is not available in the standard code set")
   public List<OverdraftOtherFeeType> getOtherFeeType() {
     return otherFeeType;
@@ -343,7 +355,6 @@ public class Overdraft1OverdraftFeeChargeCap   {
   public void setOtherFeeType(List<OverdraftOtherFeeType> otherFeeType) {
     this.otherFeeType = otherFeeType;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -354,26 +365,27 @@ public class Overdraft1OverdraftFeeChargeCap   {
       return false;
     }
     Overdraft1OverdraftFeeChargeCap overdraft1OverdraftFeeChargeCap = (Overdraft1OverdraftFeeChargeCap) o;
-    return Objects.equals(this.feeType, overdraft1OverdraftFeeChargeCap.feeType) &&
-        Objects.equals(this.overdraftControlIndicator, overdraft1OverdraftFeeChargeCap.overdraftControlIndicator) &&
-        Objects.equals(this.minMaxType, overdraft1OverdraftFeeChargeCap.minMaxType) &&
-        Objects.equals(this.feeCapOccurrence, overdraft1OverdraftFeeChargeCap.feeCapOccurrence) &&
-        Objects.equals(this.feeCapAmount, overdraft1OverdraftFeeChargeCap.feeCapAmount) &&
-        Objects.equals(this.cappingPeriod, overdraft1OverdraftFeeChargeCap.cappingPeriod) &&
-        Objects.equals(this.notes, overdraft1OverdraftFeeChargeCap.notes) &&
-        Objects.equals(this.otherFeeType, overdraft1OverdraftFeeChargeCap.otherFeeType);
+    return Objects.equals(this.feeType, overdraft1OverdraftFeeChargeCap.feeType)
+        && Objects.equals(this.overdraftControlIndicator, overdraft1OverdraftFeeChargeCap.overdraftControlIndicator)
+        && Objects.equals(this.minMaxType, overdraft1OverdraftFeeChargeCap.minMaxType)
+        && Objects.equals(this.feeCapOccurrence, overdraft1OverdraftFeeChargeCap.feeCapOccurrence)
+        && Objects.equals(this.feeCapAmount, overdraft1OverdraftFeeChargeCap.feeCapAmount)
+        && Objects.equals(this.cappingPeriod, overdraft1OverdraftFeeChargeCap.cappingPeriod)
+        && Objects.equals(this.notes, overdraft1OverdraftFeeChargeCap.notes)
+        && Objects.equals(this.otherFeeType, overdraft1OverdraftFeeChargeCap.otherFeeType);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(feeType, overdraftControlIndicator, minMaxType, feeCapOccurrence, feeCapAmount, cappingPeriod, notes, otherFeeType);
+    return Objects.hash(feeType, overdraftControlIndicator, minMaxType, feeCapOccurrence, feeCapAmount, cappingPeriod,
+        notes, otherFeeType);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Overdraft1OverdraftFeeChargeCap {\n");
-    
+
     sb.append("    feeType: ").append(toIndentedString(feeType)).append("\n");
     sb.append("    overdraftControlIndicator: ").append(toIndentedString(overdraftControlIndicator)).append("\n");
     sb.append("    minMaxType: ").append(toIndentedString(minMaxType)).append("\n");
@@ -397,4 +409,3 @@ public class Overdraft1OverdraftFeeChargeCap   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

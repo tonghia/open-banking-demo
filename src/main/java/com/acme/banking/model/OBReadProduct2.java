@@ -15,7 +15,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Product details of Other Product which is not avaiable in the standard list")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2   {
+public class OBReadProduct2 {
   @JsonProperty("Data")
   private OBReadProduct2Data data;
 
@@ -32,8 +32,9 @@ public class OBReadProduct2   {
 
   /**
    * Get data
+   * 
    * @return data
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBReadProduct2Data getData() {
     return data;
@@ -50,8 +51,9 @@ public class OBReadProduct2   {
 
   /**
    * Get links
+   * 
    * @return links
-  */
+   */
   @ApiModelProperty(value = "")
   public Links getLinks() {
     return links;
@@ -68,8 +70,9 @@ public class OBReadProduct2   {
 
   /**
    * Get meta
+   * 
    * @return meta
-  */
+   */
   @ApiModelProperty(value = "")
   public Meta getMeta() {
     return meta;
@@ -78,7 +81,6 @@ public class OBReadProduct2   {
   public void setMeta(Meta meta) {
     this.meta = meta;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -89,9 +91,8 @@ public class OBReadProduct2   {
       return false;
     }
     OBReadProduct2 obReadProduct2 = (OBReadProduct2) o;
-    return Objects.equals(this.data, obReadProduct2.data) &&
-        Objects.equals(this.links, obReadProduct2.links) &&
-        Objects.equals(this.meta, obReadProduct2.meta);
+    return Objects.equals(this.data, obReadProduct2.data) && Objects.equals(this.links, obReadProduct2.links)
+        && Objects.equals(this.meta, obReadProduct2.meta);
   }
 
   @Override
@@ -103,7 +104,7 @@ public class OBReadProduct2   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2 {\n");
-    
+
     sb.append("    data: ").append(toIndentedString(data)).append("\n");
     sb.append("    links: ").append(toIndentedString(links)).append("\n");
     sb.append("    meta: ").append(toIndentedString(meta)).append("\n");
@@ -122,4 +123,3 @@ public class OBReadProduct2   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

@@ -11,7 +11,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBError1
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBError1   {
+public class OBError1 {
   @JsonProperty("ErrorCode")
   private String errorCode;
 
@@ -31,8 +31,9 @@ public class OBError1   {
 
   /**
    * Low level textual error code, e.g., UK.OBIE.Field.Missing
+   * 
    * @return errorCode
-  */
+   */
   @ApiModelProperty(required = true, value = "Low level textual error code, e.g., UK.OBIE.Field.Missing")
   public String getErrorCode() {
     return errorCode;
@@ -48,9 +49,12 @@ public class OBError1   {
   }
 
   /**
-   * A description of the error that occurred. e.g., 'A mandatory field isn't supplied' or 'RequestedExecutionDateTime must be in future' OBIE doesn't standardise this field
+   * A description of the error that occurred. e.g., 'A mandatory field isn't
+   * supplied' or 'RequestedExecutionDateTime must be in future' OBIE doesn't
+   * standardise this field
+   * 
    * @return message
-  */
+   */
   @ApiModelProperty(required = true, value = "A description of the error that occurred. e.g., 'A mandatory field isn't supplied' or 'RequestedExecutionDateTime must be in future' OBIE doesn't standardise this field")
   public String getMessage() {
     return message;
@@ -66,9 +70,11 @@ public class OBError1   {
   }
 
   /**
-   * Recommended but optional reference to the JSON Path of the field with error, e.g., Data.Initiation.InstructedAmount.Currency
+   * Recommended but optional reference to the JSON Path of the field with error,
+   * e.g., Data.Initiation.InstructedAmount.Currency
+   * 
    * @return path
-  */
+   */
   @ApiModelProperty(value = "Recommended but optional reference to the JSON Path of the field with error, e.g., Data.Initiation.InstructedAmount.Currency")
   public String getPath() {
     return path;
@@ -84,9 +90,11 @@ public class OBError1   {
   }
 
   /**
-   * URL to help remediate the problem, or provide more information, or to API Reference, or help etc
+   * URL to help remediate the problem, or provide more information, or to API
+   * Reference, or help etc
+   * 
    * @return url
-  */
+   */
   @ApiModelProperty(value = "URL to help remediate the problem, or provide more information, or to API Reference, or help etc")
   public String getUrl() {
     return url;
@@ -95,7 +103,6 @@ public class OBError1   {
   public void setUrl(String url) {
     this.url = url;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -106,10 +113,8 @@ public class OBError1   {
       return false;
     }
     OBError1 obError1 = (OBError1) o;
-    return Objects.equals(this.errorCode, obError1.errorCode) &&
-        Objects.equals(this.message, obError1.message) &&
-        Objects.equals(this.path, obError1.path) &&
-        Objects.equals(this.url, obError1.url);
+    return Objects.equals(this.errorCode, obError1.errorCode) && Objects.equals(this.message, obError1.message)
+        && Objects.equals(this.path, obError1.path) && Objects.equals(this.url, obError1.url);
   }
 
   @Override
@@ -121,7 +126,7 @@ public class OBError1   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBError1 {\n");
-    
+
     sb.append("    errorCode: ").append(toIndentedString(errorCode)).append("\n");
     sb.append("    message: ").append(toIndentedString(message)).append("\n");
     sb.append("    path: ").append(toIndentedString(path)).append("\n");
@@ -141,4 +146,3 @@ public class OBError1   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

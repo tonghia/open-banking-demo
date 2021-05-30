@@ -11,11 +11,13 @@ import io.swagger.annotations.ApiModelProperty;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Set of elements used to define the balance as a numerical representation of the net increases and decreases in an account after a transaction entry is applied to the account.
+ * Set of elements used to define the balance as a numerical representation of
+ * the net increases and decreases in an account after a transaction entry is
+ * applied to the account.
  */
 @ApiModel(description = "Set of elements used to define the balance as a numerical representation of the net increases and decreases in an account after a transaction entry is applied to the account.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBTransactionCashBalance   {
+public class OBTransactionCashBalance {
   @JsonProperty("CreditDebitIndicator")
   private OBCreditDebitCode2 creditDebitIndicator;
 
@@ -32,8 +34,9 @@ public class OBTransactionCashBalance   {
 
   /**
    * Get creditDebitIndicator
+   * 
    * @return creditDebitIndicator
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBCreditDebitCode2 getCreditDebitIndicator() {
     return creditDebitIndicator;
@@ -50,8 +53,9 @@ public class OBTransactionCashBalance   {
 
   /**
    * Get type
+   * 
    * @return type
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBBalanceType1Code getType() {
     return type;
@@ -68,8 +72,9 @@ public class OBTransactionCashBalance   {
 
   /**
    * Get amount
+   * 
    * @return amount
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBTransactionCashBalanceAmount getAmount() {
     return amount;
@@ -78,7 +83,6 @@ public class OBTransactionCashBalance   {
   public void setAmount(OBTransactionCashBalanceAmount amount) {
     this.amount = amount;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -89,9 +93,9 @@ public class OBTransactionCashBalance   {
       return false;
     }
     OBTransactionCashBalance obTransactionCashBalance = (OBTransactionCashBalance) o;
-    return Objects.equals(this.creditDebitIndicator, obTransactionCashBalance.creditDebitIndicator) &&
-        Objects.equals(this.type, obTransactionCashBalance.type) &&
-        Objects.equals(this.amount, obTransactionCashBalance.amount);
+    return Objects.equals(this.creditDebitIndicator, obTransactionCashBalance.creditDebitIndicator)
+        && Objects.equals(this.type, obTransactionCashBalance.type)
+        && Objects.equals(this.amount, obTransactionCashBalance.amount);
   }
 
   @Override
@@ -103,7 +107,7 @@ public class OBTransactionCashBalance   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBTransactionCashBalance {\n");
-    
+
     sb.append("    creditDebitIndicator: ").append(toIndentedString(creditDebitIndicator)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
@@ -122,4 +126,3 @@ public class OBTransactionCashBalance   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

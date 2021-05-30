@@ -16,11 +16,12 @@ import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Unambiguous identification of the account to which credit and debit entries are made.
+ * Unambiguous identification of the account to which credit and debit entries
+ * are made.
  */
 @ApiModel(description = "Unambiguous identification of the account to which credit and debit entries are made.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBAccount4   {
+public class OBAccount4 {
   @JsonProperty("AccountId")
   private String accountId;
 
@@ -47,7 +48,7 @@ public class OBAccount4   {
   private String nickname;
 
   @JsonProperty("Account")
-  
+
   private List<OBAccount4Account> account = null;
 
   @JsonProperty("Servicer")
@@ -59,9 +60,11 @@ public class OBAccount4   {
   }
 
   /**
-   * A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.
+   * A unique and immutable identifier used to identify the account resource. This
+   * identifier has no meaning to the account owner.
+   * 
    * @return accountId
-  */
+   */
   @ApiModelProperty(required = true, value = "A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.")
   public String getAccountId() {
     return accountId;
@@ -78,8 +81,9 @@ public class OBAccount4   {
 
   /**
    * Get status
+   * 
    * @return status
-  */
+   */
   @ApiModelProperty(value = "")
   public OBAccountStatus1Code getStatus() {
     return status;
@@ -95,9 +99,13 @@ public class OBAccount4   {
   }
 
   /**
-   * Date and time at which the resource status was updated.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Date and time at which the resource status was updated.All dates in the JSON
+   * payloads are represented in ISO 8601 date-time format. All date-time fields
+   * in responses must include the timezone. An example is below:
+   * 2017-04-05T10:43:07+00:00
+   * 
    * @return statusUpdateDateTime
-  */
+   */
   @ApiModelProperty(value = "Date and time at which the resource status was updated.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getStatusUpdateDateTime() {
     return statusUpdateDateTime;
@@ -113,9 +121,13 @@ public class OBAccount4   {
   }
 
   /**
-   * Identification of the currency in which the account is held.  Usage: Currency should only be used in case one and the same account number covers several currencies and the initiating party needs to identify which currency needs to be used for settlement on the account.
+   * Identification of the currency in which the account is held. Usage: Currency
+   * should only be used in case one and the same account number covers several
+   * currencies and the initiating party needs to identify which currency needs to
+   * be used for settlement on the account.
+   * 
    * @return currency
-  */
+   */
   @ApiModelProperty(required = true, value = "Identification of the currency in which the account is held.  Usage: Currency should only be used in case one and the same account number covers several currencies and the initiating party needs to identify which currency needs to be used for settlement on the account.")
   public String getCurrency() {
     return currency;
@@ -132,8 +144,9 @@ public class OBAccount4   {
 
   /**
    * Get accountType
+   * 
    * @return accountType
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBExternalAccountType1Code getAccountType() {
     return accountType;
@@ -150,8 +163,9 @@ public class OBAccount4   {
 
   /**
    * Get accountSubType
+   * 
    * @return accountSubType
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBExternalAccountSubType1Code getAccountSubType() {
     return accountSubType;
@@ -168,8 +182,9 @@ public class OBAccount4   {
 
   /**
    * Specifies the description of the account type.
+   * 
    * @return description
-  */
+   */
   @ApiModelProperty(value = "Specifies the description of the account type.")
   public String getDescription() {
     return description;
@@ -185,9 +200,11 @@ public class OBAccount4   {
   }
 
   /**
-   * The nickname of the account, assigned by the account owner in order to provide an additional means of identification of the account.
+   * The nickname of the account, assigned by the account owner in order to
+   * provide an additional means of identification of the account.
+   * 
    * @return nickname
-  */
+   */
   @ApiModelProperty(value = "The nickname of the account, assigned by the account owner in order to provide an additional means of identification of the account.")
   public String getNickname() {
     return nickname;
@@ -212,8 +229,9 @@ public class OBAccount4   {
 
   /**
    * Get account
+   * 
    * @return account
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBAccount4Account> getAccount() {
     return account;
@@ -230,8 +248,9 @@ public class OBAccount4   {
 
   /**
    * Get servicer
+   * 
    * @return servicer
-  */
+   */
   @ApiModelProperty(value = "")
   public OBBranchAndFinancialInstitutionIdentification50 getServicer() {
     return servicer;
@@ -240,7 +259,6 @@ public class OBAccount4   {
   public void setServicer(OBBranchAndFinancialInstitutionIdentification50 servicer) {
     this.servicer = servicer;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -251,28 +269,27 @@ public class OBAccount4   {
       return false;
     }
     OBAccount4 obAccount4 = (OBAccount4) o;
-    return Objects.equals(this.accountId, obAccount4.accountId) &&
-        Objects.equals(this.status, obAccount4.status) &&
-        Objects.equals(this.statusUpdateDateTime, obAccount4.statusUpdateDateTime) &&
-        Objects.equals(this.currency, obAccount4.currency) &&
-        Objects.equals(this.accountType, obAccount4.accountType) &&
-        Objects.equals(this.accountSubType, obAccount4.accountSubType) &&
-        Objects.equals(this.description, obAccount4.description) &&
-        Objects.equals(this.nickname, obAccount4.nickname) &&
-        Objects.equals(this.account, obAccount4.account) &&
-        Objects.equals(this.servicer, obAccount4.servicer);
+    return Objects.equals(this.accountId, obAccount4.accountId) && Objects.equals(this.status, obAccount4.status)
+        && Objects.equals(this.statusUpdateDateTime, obAccount4.statusUpdateDateTime)
+        && Objects.equals(this.currency, obAccount4.currency)
+        && Objects.equals(this.accountType, obAccount4.accountType)
+        && Objects.equals(this.accountSubType, obAccount4.accountSubType)
+        && Objects.equals(this.description, obAccount4.description)
+        && Objects.equals(this.nickname, obAccount4.nickname) && Objects.equals(this.account, obAccount4.account)
+        && Objects.equals(this.servicer, obAccount4.servicer);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(accountId, status, statusUpdateDateTime, currency, accountType, accountSubType, description, nickname, account, servicer);
+    return Objects.hash(accountId, status, statusUpdateDateTime, currency, accountType, accountSubType, description,
+        nickname, account, servicer);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBAccount4 {\n");
-    
+
     sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    statusUpdateDateTime: ").append(toIndentedString(statusUpdateDateTime)).append("\n");
@@ -298,4 +315,3 @@ public class OBAccount4   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

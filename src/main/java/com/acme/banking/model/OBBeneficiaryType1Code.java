@@ -11,9 +11,9 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Specifies the Beneficiary Type.
  */
 public enum OBBeneficiaryType1Code {
-  
+
   TRUSTED("Trusted"),
-  
+
   ORDINARY("Ordinary");
 
   private String value;
@@ -42,4 +42,3 @@ public enum OBBeneficiaryType1Code {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

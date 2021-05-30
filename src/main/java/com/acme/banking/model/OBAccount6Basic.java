@@ -12,11 +12,12 @@ import java.time.OffsetDateTime;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Unambiguous identification of the account to which credit and debit entries are made.
+ * Unambiguous identification of the account to which credit and debit entries
+ * are made.
  */
 @ApiModel(description = "Unambiguous identification of the account to which credit and debit entries are made.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBAccount6Basic   {
+public class OBAccount6Basic {
   @JsonProperty("AccountId")
   private String accountId;
 
@@ -59,9 +60,11 @@ public class OBAccount6Basic   {
   }
 
   /**
-   * A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.
+   * A unique and immutable identifier used to identify the account resource. This
+   * identifier has no meaning to the account owner.
+   * 
    * @return accountId
-  */
+   */
   @ApiModelProperty(required = true, value = "A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.")
   public String getAccountId() {
     return accountId;
@@ -78,8 +81,9 @@ public class OBAccount6Basic   {
 
   /**
    * Get status
+   * 
    * @return status
-  */
+   */
   @ApiModelProperty(value = "")
   public OBAccountStatus1Code getStatus() {
     return status;
@@ -95,9 +99,13 @@ public class OBAccount6Basic   {
   }
 
   /**
-   * Date and time at which the resource status was updated.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Date and time at which the resource status was updated.All dates in the JSON
+   * payloads are represented in ISO 8601 date-time format. All date-time fields
+   * in responses must include the timezone. An example is below:
+   * 2017-04-05T10:43:07+00:00
+   * 
    * @return statusUpdateDateTime
-  */
+   */
   @ApiModelProperty(value = "Date and time at which the resource status was updated.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getStatusUpdateDateTime() {
     return statusUpdateDateTime;
@@ -113,9 +121,13 @@ public class OBAccount6Basic   {
   }
 
   /**
-   * Identification of the currency in which the account is held.  Usage: Currency should only be used in case one and the same account number covers several currencies and the initiating party needs to identify which currency needs to be used for settlement on the account.
+   * Identification of the currency in which the account is held. Usage: Currency
+   * should only be used in case one and the same account number covers several
+   * currencies and the initiating party needs to identify which currency needs to
+   * be used for settlement on the account.
+   * 
    * @return currency
-  */
+   */
   @ApiModelProperty(required = true, value = "Identification of the currency in which the account is held.  Usage: Currency should only be used in case one and the same account number covers several currencies and the initiating party needs to identify which currency needs to be used for settlement on the account.")
   public String getCurrency() {
     return currency;
@@ -132,8 +144,9 @@ public class OBAccount6Basic   {
 
   /**
    * Get accountType
+   * 
    * @return accountType
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBExternalAccountType1Code getAccountType() {
     return accountType;
@@ -150,8 +163,9 @@ public class OBAccount6Basic   {
 
   /**
    * Get accountSubType
+   * 
    * @return accountSubType
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBExternalAccountSubType1Code getAccountSubType() {
     return accountSubType;
@@ -168,8 +182,9 @@ public class OBAccount6Basic   {
 
   /**
    * Specifies the description of the account type.
+   * 
    * @return description
-  */
+   */
   @ApiModelProperty(value = "Specifies the description of the account type.")
   public String getDescription() {
     return description;
@@ -185,9 +200,11 @@ public class OBAccount6Basic   {
   }
 
   /**
-   * The nickname of the account, assigned by the account owner in order to provide an additional means of identification of the account.
+   * The nickname of the account, assigned by the account owner in order to
+   * provide an additional means of identification of the account.
+   * 
    * @return nickname
-  */
+   */
   @ApiModelProperty(value = "The nickname of the account, assigned by the account owner in order to provide an additional means of identification of the account.")
   public String getNickname() {
     return nickname;
@@ -203,9 +220,13 @@ public class OBAccount6Basic   {
   }
 
   /**
-   * Date on which the account and related basic services are effectively operational for the account owner.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Date on which the account and related basic services are effectively
+   * operational for the account owner.All dates in the JSON payloads are
+   * represented in ISO 8601 date-time format. All date-time fields in responses
+   * must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * 
    * @return openingDate
-  */
+   */
   @ApiModelProperty(value = "Date on which the account and related basic services are effectively operational for the account owner.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getOpeningDate() {
     return openingDate;
@@ -221,9 +242,12 @@ public class OBAccount6Basic   {
   }
 
   /**
-   * Maturity date of the account.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Maturity date of the account.All dates in the JSON payloads are represented
+   * in ISO 8601 date-time format. All date-time fields in responses must include
+   * the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * 
    * @return maturityDate
-  */
+   */
   @ApiModelProperty(value = "Maturity date of the account.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getMaturityDate() {
     return maturityDate;
@@ -240,8 +264,9 @@ public class OBAccount6Basic   {
 
   /**
    * Specifies the switch status for the account, in a coded form.
+   * 
    * @return switchStatus
-  */
+   */
   @ApiModelProperty(value = "Specifies the switch status for the account, in a coded form.")
   public String getSwitchStatus() {
     return switchStatus;
@@ -250,7 +275,6 @@ public class OBAccount6Basic   {
   public void setSwitchStatus(String switchStatus) {
     this.switchStatus = switchStatus;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -261,29 +285,30 @@ public class OBAccount6Basic   {
       return false;
     }
     OBAccount6Basic obAccount6Basic = (OBAccount6Basic) o;
-    return Objects.equals(this.accountId, obAccount6Basic.accountId) &&
-        Objects.equals(this.status, obAccount6Basic.status) &&
-        Objects.equals(this.statusUpdateDateTime, obAccount6Basic.statusUpdateDateTime) &&
-        Objects.equals(this.currency, obAccount6Basic.currency) &&
-        Objects.equals(this.accountType, obAccount6Basic.accountType) &&
-        Objects.equals(this.accountSubType, obAccount6Basic.accountSubType) &&
-        Objects.equals(this.description, obAccount6Basic.description) &&
-        Objects.equals(this.nickname, obAccount6Basic.nickname) &&
-        Objects.equals(this.openingDate, obAccount6Basic.openingDate) &&
-        Objects.equals(this.maturityDate, obAccount6Basic.maturityDate) &&
-        Objects.equals(this.switchStatus, obAccount6Basic.switchStatus);
+    return Objects.equals(this.accountId, obAccount6Basic.accountId)
+        && Objects.equals(this.status, obAccount6Basic.status)
+        && Objects.equals(this.statusUpdateDateTime, obAccount6Basic.statusUpdateDateTime)
+        && Objects.equals(this.currency, obAccount6Basic.currency)
+        && Objects.equals(this.accountType, obAccount6Basic.accountType)
+        && Objects.equals(this.accountSubType, obAccount6Basic.accountSubType)
+        && Objects.equals(this.description, obAccount6Basic.description)
+        && Objects.equals(this.nickname, obAccount6Basic.nickname)
+        && Objects.equals(this.openingDate, obAccount6Basic.openingDate)
+        && Objects.equals(this.maturityDate, obAccount6Basic.maturityDate)
+        && Objects.equals(this.switchStatus, obAccount6Basic.switchStatus);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(accountId, status, statusUpdateDateTime, currency, accountType, accountSubType, description, nickname, openingDate, maturityDate, switchStatus);
+    return Objects.hash(accountId, status, statusUpdateDateTime, currency, accountType, accountSubType, description,
+        nickname, openingDate, maturityDate, switchStatus);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBAccount6Basic {\n");
-    
+
     sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    statusUpdateDateTime: ").append(toIndentedString(statusUpdateDateTime)).append("\n");
@@ -310,4 +335,3 @@ public class OBAccount6Basic   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

@@ -15,13 +15,13 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Details about Overdraft rates, fees & charges")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class Overdraft1   {
+public class Overdraft1 {
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("OverdraftTierBandSet")
-  
+
   private List<Overdraft1OverdraftTierBandSet> overdraftTierBandSet = new ArrayList<>();
 
   public Overdraft1 notes(List<String> notes) {
@@ -39,8 +39,9 @@ public class Overdraft1   {
 
   /**
    * Associated Notes about the overdraft rates
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "Associated Notes about the overdraft rates")
   public List<String> getNotes() {
     return notes;
@@ -62,8 +63,9 @@ public class Overdraft1   {
 
   /**
    * Tier band set details
+   * 
    * @return overdraftTierBandSet
-  */
+   */
   @ApiModelProperty(required = true, value = "Tier band set details")
   public List<Overdraft1OverdraftTierBandSet> getOverdraftTierBandSet() {
     return overdraftTierBandSet;
@@ -72,7 +74,6 @@ public class Overdraft1   {
   public void setOverdraftTierBandSet(List<Overdraft1OverdraftTierBandSet> overdraftTierBandSet) {
     this.overdraftTierBandSet = overdraftTierBandSet;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -83,8 +84,8 @@ public class Overdraft1   {
       return false;
     }
     Overdraft1 overdraft1 = (Overdraft1) o;
-    return Objects.equals(this.notes, overdraft1.notes) &&
-        Objects.equals(this.overdraftTierBandSet, overdraft1.overdraftTierBandSet);
+    return Objects.equals(this.notes, overdraft1.notes)
+        && Objects.equals(this.overdraftTierBandSet, overdraft1.overdraftTierBandSet);
   }
 
   @Override
@@ -96,7 +97,7 @@ public class Overdraft1   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Overdraft1 {\n");
-    
+
     sb.append("    notes: ").append(toIndentedString(notes)).append("\n");
     sb.append("    overdraftTierBandSet: ").append(toIndentedString(overdraftTierBandSet)).append("\n");
     sb.append("}");
@@ -114,4 +115,3 @@ public class Overdraft1   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

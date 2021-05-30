@@ -12,7 +12,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Other Fee type which is not available in the standard code set")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OtherFeeType   {
+public class OtherFeeType {
   @JsonProperty("Code")
   private String code;
 
@@ -29,8 +29,9 @@ public class OtherFeeType   {
 
   /**
    * The four letter Mnemonic used within an XML file to identify a code
+   * 
    * @return code
-  */
+   */
   @ApiModelProperty(value = "The four letter Mnemonic used within an XML file to identify a code")
   public String getCode() {
     return code;
@@ -47,8 +48,9 @@ public class OtherFeeType   {
 
   /**
    * Long name associated with the code
+   * 
    * @return name
-  */
+   */
   @ApiModelProperty(required = true, value = "Long name associated with the code")
   public String getName() {
     return name;
@@ -65,8 +67,9 @@ public class OtherFeeType   {
 
   /**
    * Description to describe the purpose of the code
+   * 
    * @return description
-  */
+   */
   @ApiModelProperty(required = true, value = "Description to describe the purpose of the code")
   public String getDescription() {
     return description;
@@ -75,7 +78,6 @@ public class OtherFeeType   {
   public void setDescription(String description) {
     this.description = description;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -86,9 +88,8 @@ public class OtherFeeType   {
       return false;
     }
     OtherFeeType otherFeeType = (OtherFeeType) o;
-    return Objects.equals(this.code, otherFeeType.code) &&
-        Objects.equals(this.name, otherFeeType.name) &&
-        Objects.equals(this.description, otherFeeType.description);
+    return Objects.equals(this.code, otherFeeType.code) && Objects.equals(this.name, otherFeeType.name)
+        && Objects.equals(this.description, otherFeeType.description);
   }
 
   @Override
@@ -100,7 +101,7 @@ public class OtherFeeType   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OtherFeeType {\n");
-    
+
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
@@ -119,4 +120,3 @@ public class OtherFeeType   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

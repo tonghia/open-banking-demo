@@ -14,7 +14,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBReadOffer1
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadOffer1   {
+public class OBReadOffer1 {
   @JsonProperty("Data")
   private OBReadOffer1Data data;
 
@@ -31,8 +31,9 @@ public class OBReadOffer1   {
 
   /**
    * Get data
+   * 
    * @return data
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBReadOffer1Data getData() {
     return data;
@@ -49,8 +50,9 @@ public class OBReadOffer1   {
 
   /**
    * Get links
+   * 
    * @return links
-  */
+   */
   @ApiModelProperty(value = "")
   public Links getLinks() {
     return links;
@@ -67,8 +69,9 @@ public class OBReadOffer1   {
 
   /**
    * Get meta
+   * 
    * @return meta
-  */
+   */
   @ApiModelProperty(value = "")
   public Meta getMeta() {
     return meta;
@@ -77,7 +80,6 @@ public class OBReadOffer1   {
   public void setMeta(Meta meta) {
     this.meta = meta;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -88,9 +90,8 @@ public class OBReadOffer1   {
       return false;
     }
     OBReadOffer1 obReadOffer1 = (OBReadOffer1) o;
-    return Objects.equals(this.data, obReadOffer1.data) &&
-        Objects.equals(this.links, obReadOffer1.links) &&
-        Objects.equals(this.meta, obReadOffer1.meta);
+    return Objects.equals(this.data, obReadOffer1.data) && Objects.equals(this.links, obReadOffer1.links)
+        && Objects.equals(this.meta, obReadOffer1.meta);
   }
 
   @Override
@@ -102,7 +103,7 @@ public class OBReadOffer1   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadOffer1 {\n");
-    
+
     sb.append("    data: ").append(toIndentedString(data)).append("\n");
     sb.append("    links: ").append(toIndentedString(links)).append("\n");
     sb.append("    meta: ").append(toIndentedString(meta)).append("\n");
@@ -121,4 +122,3 @@ public class OBReadOffer1   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

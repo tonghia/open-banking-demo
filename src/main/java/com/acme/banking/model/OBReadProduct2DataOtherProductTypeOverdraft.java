@@ -15,13 +15,13 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Borrowing details")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductTypeOverdraft   {
+public class OBReadProduct2DataOtherProductTypeOverdraft {
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("OverdraftTierBandSet")
-  
+
   private List<OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBandSet> overdraftTierBandSet = new ArrayList<>();
 
   public OBReadProduct2DataOtherProductTypeOverdraft notes(List<String> notes) {
@@ -39,8 +39,9 @@ public class OBReadProduct2DataOtherProductTypeOverdraft   {
 
   /**
    * Get notes
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "")
   public List<String> getNotes() {
     return notes;
@@ -50,29 +51,32 @@ public class OBReadProduct2DataOtherProductTypeOverdraft   {
     this.notes = notes;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraft overdraftTierBandSet(List<OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBandSet> overdraftTierBandSet) {
+  public OBReadProduct2DataOtherProductTypeOverdraft overdraftTierBandSet(
+      List<OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBandSet> overdraftTierBandSet) {
     this.overdraftTierBandSet = overdraftTierBandSet;
     return this;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraft addOverdraftTierBandSetItem(OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBandSet overdraftTierBandSetItem) {
+  public OBReadProduct2DataOtherProductTypeOverdraft addOverdraftTierBandSetItem(
+      OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBandSet overdraftTierBandSetItem) {
     this.overdraftTierBandSet.add(overdraftTierBandSetItem);
     return this;
   }
 
   /**
    * Get overdraftTierBandSet
+   * 
    * @return overdraftTierBandSet
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public List<OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBandSet> getOverdraftTierBandSet() {
     return overdraftTierBandSet;
   }
 
-  public void setOverdraftTierBandSet(List<OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBandSet> overdraftTierBandSet) {
+  public void setOverdraftTierBandSet(
+      List<OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBandSet> overdraftTierBandSet) {
     this.overdraftTierBandSet = overdraftTierBandSet;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -83,8 +87,8 @@ public class OBReadProduct2DataOtherProductTypeOverdraft   {
       return false;
     }
     OBReadProduct2DataOtherProductTypeOverdraft obReadProduct2DataOtherProductTypeOverdraft = (OBReadProduct2DataOtherProductTypeOverdraft) o;
-    return Objects.equals(this.notes, obReadProduct2DataOtherProductTypeOverdraft.notes) &&
-        Objects.equals(this.overdraftTierBandSet, obReadProduct2DataOtherProductTypeOverdraft.overdraftTierBandSet);
+    return Objects.equals(this.notes, obReadProduct2DataOtherProductTypeOverdraft.notes)
+        && Objects.equals(this.overdraftTierBandSet, obReadProduct2DataOtherProductTypeOverdraft.overdraftTierBandSet);
   }
 
   @Override
@@ -96,7 +100,7 @@ public class OBReadProduct2DataOtherProductTypeOverdraft   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductTypeOverdraft {\n");
-    
+
     sb.append("    notes: ").append(toIndentedString(notes)).append("\n");
     sb.append("    overdraftTierBandSet: ").append(toIndentedString(overdraftTierBandSet)).append("\n");
     sb.append("}");
@@ -114,4 +118,3 @@ public class OBReadProduct2DataOtherProductTypeOverdraft   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

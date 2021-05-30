@@ -12,17 +12,18 @@ import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Contains details of fees and charges which are not associated with either borrowing or features/benefits
+ * Contains details of fees and charges which are not associated with either
+ * borrowing or features/benefits
  */
 @ApiModel(description = "Contains details of fees and charges which are not associated with either borrowing or features/benefits")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OtherFeesCharges   {
+public class OtherFeesCharges {
   @JsonProperty("FeeChargeDetail")
-  
+
   private List<OtherFeesChargesFeeChargeDetail> feeChargeDetail = new ArrayList<>();
 
   @JsonProperty("FeeChargeCap")
-  
+
   private List<OtherFeesChargesFeeChargeCap> feeChargeCap = null;
 
   public OtherFeesCharges feeChargeDetail(List<OtherFeesChargesFeeChargeDetail> feeChargeDetail) {
@@ -37,8 +38,9 @@ public class OtherFeesCharges   {
 
   /**
    * Other fees/charges details
+   * 
    * @return feeChargeDetail
-  */
+   */
   @ApiModelProperty(required = true, value = "Other fees/charges details")
   public List<OtherFeesChargesFeeChargeDetail> getFeeChargeDetail() {
     return feeChargeDetail;
@@ -62,9 +64,11 @@ public class OtherFeesCharges   {
   }
 
   /**
-   * Details about any caps (maximum charges) that apply to a particular fee/charge
+   * Details about any caps (maximum charges) that apply to a particular
+   * fee/charge
+   * 
    * @return feeChargeCap
-  */
+   */
   @ApiModelProperty(value = "Details about any caps (maximum charges) that apply to a particular fee/charge")
   public List<OtherFeesChargesFeeChargeCap> getFeeChargeCap() {
     return feeChargeCap;
@@ -73,7 +77,6 @@ public class OtherFeesCharges   {
   public void setFeeChargeCap(List<OtherFeesChargesFeeChargeCap> feeChargeCap) {
     this.feeChargeCap = feeChargeCap;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -84,8 +87,8 @@ public class OtherFeesCharges   {
       return false;
     }
     OtherFeesCharges otherFeesCharges = (OtherFeesCharges) o;
-    return Objects.equals(this.feeChargeDetail, otherFeesCharges.feeChargeDetail) &&
-        Objects.equals(this.feeChargeCap, otherFeesCharges.feeChargeCap);
+    return Objects.equals(this.feeChargeDetail, otherFeesCharges.feeChargeDetail)
+        && Objects.equals(this.feeChargeCap, otherFeesCharges.feeChargeCap);
   }
 
   @Override
@@ -97,7 +100,7 @@ public class OtherFeesCharges   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OtherFeesCharges {\n");
-    
+
     sb.append("    feeChargeDetail: ").append(toIndentedString(feeChargeDetail)).append("\n");
     sb.append("    feeChargeCap: ").append(toIndentedString(feeChargeCap)).append("\n");
     sb.append("}");
@@ -115,4 +118,3 @@ public class OtherFeesCharges   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

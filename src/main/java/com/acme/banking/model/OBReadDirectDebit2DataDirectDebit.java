@@ -15,7 +15,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Account to or from which a cash entry is made.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadDirectDebit2DataDirectDebit   {
+public class OBReadDirectDebit2DataDirectDebit {
   @JsonProperty("AccountId")
   private String accountId;
 
@@ -47,9 +47,11 @@ public class OBReadDirectDebit2DataDirectDebit   {
   }
 
   /**
-   * A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.
+   * A unique and immutable identifier used to identify the account resource. This
+   * identifier has no meaning to the account owner.
+   * 
    * @return accountId
-  */
+   */
   @ApiModelProperty(required = true, value = "A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.")
   public String getAccountId() {
     return accountId;
@@ -65,9 +67,11 @@ public class OBReadDirectDebit2DataDirectDebit   {
   }
 
   /**
-   * A unique and immutable identifier used to identify the direct debit resource. This identifier has no meaning to the account owner.
+   * A unique and immutable identifier used to identify the direct debit resource.
+   * This identifier has no meaning to the account owner.
+   * 
    * @return directDebitId
-  */
+   */
   @ApiModelProperty(value = "A unique and immutable identifier used to identify the direct debit resource. This identifier has no meaning to the account owner.")
   public String getDirectDebitId() {
     return directDebitId;
@@ -83,9 +87,12 @@ public class OBReadDirectDebit2DataDirectDebit   {
   }
 
   /**
-   * Direct Debit reference. For AUDDIS service users provide Core Reference. For non AUDDIS service users provide Core reference if possible or last used reference.
+   * Direct Debit reference. For AUDDIS service users provide Core Reference. For
+   * non AUDDIS service users provide Core reference if possible or last used
+   * reference.
+   * 
    * @return mandateIdentification
-  */
+   */
   @ApiModelProperty(required = true, value = "Direct Debit reference. For AUDDIS service users provide Core Reference. For non AUDDIS service users provide Core reference if possible or last used reference.")
   public String getMandateIdentification() {
     return mandateIdentification;
@@ -95,15 +102,17 @@ public class OBReadDirectDebit2DataDirectDebit   {
     this.mandateIdentification = mandateIdentification;
   }
 
-  public OBReadDirectDebit2DataDirectDebit directDebitStatusCode(OBExternalDirectDebitStatus1Code directDebitStatusCode) {
+  public OBReadDirectDebit2DataDirectDebit directDebitStatusCode(
+      OBExternalDirectDebitStatus1Code directDebitStatusCode) {
     this.directDebitStatusCode = directDebitStatusCode;
     return this;
   }
 
   /**
    * Get directDebitStatusCode
+   * 
    * @return directDebitStatusCode
-  */
+   */
   @ApiModelProperty(value = "")
   public OBExternalDirectDebitStatus1Code getDirectDebitStatusCode() {
     return directDebitStatusCode;
@@ -120,8 +129,9 @@ public class OBReadDirectDebit2DataDirectDebit   {
 
   /**
    * Name of Service User.
+   * 
    * @return name
-  */
+   */
   @ApiModelProperty(required = true, value = "Name of Service User.")
   public String getName() {
     return name;
@@ -137,9 +147,13 @@ public class OBReadDirectDebit2DataDirectDebit   {
   }
 
   /**
-   * Date of most recent direct debit collection.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Date of most recent direct debit collection.All dates in the JSON payloads
+   * are represented in ISO 8601 date-time format. All date-time fields in
+   * responses must include the timezone. An example is below:
+   * 2017-04-05T10:43:07+00:00
+   * 
    * @return previousPaymentDateTime
-  */
+   */
   @ApiModelProperty(value = "Date of most recent direct debit collection.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getPreviousPaymentDateTime() {
     return previousPaymentDateTime;
@@ -155,9 +169,11 @@ public class OBReadDirectDebit2DataDirectDebit   {
   }
 
   /**
-   * Regularity with which direct debit instructions are to be created and processed.
+   * Regularity with which direct debit instructions are to be created and
+   * processed.
+   * 
    * @return frequency
-  */
+   */
   @ApiModelProperty(value = "Regularity with which direct debit instructions are to be created and processed.")
   public String getFrequency() {
     return frequency;
@@ -167,15 +183,17 @@ public class OBReadDirectDebit2DataDirectDebit   {
     this.frequency = frequency;
   }
 
-  public OBReadDirectDebit2DataDirectDebit previousPaymentAmount(OBActiveOrHistoricCurrencyAndAmount0 previousPaymentAmount) {
+  public OBReadDirectDebit2DataDirectDebit previousPaymentAmount(
+      OBActiveOrHistoricCurrencyAndAmount0 previousPaymentAmount) {
     this.previousPaymentAmount = previousPaymentAmount;
     return this;
   }
 
   /**
    * Get previousPaymentAmount
+   * 
    * @return previousPaymentAmount
-  */
+   */
   @ApiModelProperty(value = "")
   public OBActiveOrHistoricCurrencyAndAmount0 getPreviousPaymentAmount() {
     return previousPaymentAmount;
@@ -184,7 +202,6 @@ public class OBReadDirectDebit2DataDirectDebit   {
   public void setPreviousPaymentAmount(OBActiveOrHistoricCurrencyAndAmount0 previousPaymentAmount) {
     this.previousPaymentAmount = previousPaymentAmount;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -195,26 +212,27 @@ public class OBReadDirectDebit2DataDirectDebit   {
       return false;
     }
     OBReadDirectDebit2DataDirectDebit obReadDirectDebit2DataDirectDebit = (OBReadDirectDebit2DataDirectDebit) o;
-    return Objects.equals(this.accountId, obReadDirectDebit2DataDirectDebit.accountId) &&
-        Objects.equals(this.directDebitId, obReadDirectDebit2DataDirectDebit.directDebitId) &&
-        Objects.equals(this.mandateIdentification, obReadDirectDebit2DataDirectDebit.mandateIdentification) &&
-        Objects.equals(this.directDebitStatusCode, obReadDirectDebit2DataDirectDebit.directDebitStatusCode) &&
-        Objects.equals(this.name, obReadDirectDebit2DataDirectDebit.name) &&
-        Objects.equals(this.previousPaymentDateTime, obReadDirectDebit2DataDirectDebit.previousPaymentDateTime) &&
-        Objects.equals(this.frequency, obReadDirectDebit2DataDirectDebit.frequency) &&
-        Objects.equals(this.previousPaymentAmount, obReadDirectDebit2DataDirectDebit.previousPaymentAmount);
+    return Objects.equals(this.accountId, obReadDirectDebit2DataDirectDebit.accountId)
+        && Objects.equals(this.directDebitId, obReadDirectDebit2DataDirectDebit.directDebitId)
+        && Objects.equals(this.mandateIdentification, obReadDirectDebit2DataDirectDebit.mandateIdentification)
+        && Objects.equals(this.directDebitStatusCode, obReadDirectDebit2DataDirectDebit.directDebitStatusCode)
+        && Objects.equals(this.name, obReadDirectDebit2DataDirectDebit.name)
+        && Objects.equals(this.previousPaymentDateTime, obReadDirectDebit2DataDirectDebit.previousPaymentDateTime)
+        && Objects.equals(this.frequency, obReadDirectDebit2DataDirectDebit.frequency)
+        && Objects.equals(this.previousPaymentAmount, obReadDirectDebit2DataDirectDebit.previousPaymentAmount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(accountId, directDebitId, mandateIdentification, directDebitStatusCode, name, previousPaymentDateTime, frequency, previousPaymentAmount);
+    return Objects.hash(accountId, directDebitId, mandateIdentification, directDebitStatusCode, name,
+        previousPaymentDateTime, frequency, previousPaymentAmount);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadDirectDebit2DataDirectDebit {\n");
-    
+
     sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
     sb.append("    directDebitId: ").append(toIndentedString(directDebitId)).append("\n");
     sb.append("    mandateIdentification: ").append(toIndentedString(mandateIdentification)).append("\n");
@@ -238,4 +256,3 @@ public class OBReadDirectDebit2DataDirectDebit   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

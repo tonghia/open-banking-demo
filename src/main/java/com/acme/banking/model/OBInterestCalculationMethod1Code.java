@@ -11,11 +11,11 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Methods of calculating interest
  */
 public enum OBInterestCalculationMethod1Code {
-  
+
   ITCO("ITCO"),
-  
+
   ITOT("ITOT"),
-  
+
   ITSI("ITSI");
 
   private String value;
@@ -44,4 +44,3 @@ public enum OBInterestCalculationMethod1Code {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

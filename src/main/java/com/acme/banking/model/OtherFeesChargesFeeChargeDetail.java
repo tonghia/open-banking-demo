@@ -22,13 +22,13 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Other fees/charges details")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OtherFeesChargesFeeChargeDetail   {
+public class OtherFeesChargesFeeChargeDetail {
   /**
    * Categorisation of fees and charges into standard categories.
    */
   public enum FeeCategoryEnum {
     OTHER("Other"),
-    
+
     SERVICING("Servicing");
 
     private String value;
@@ -66,11 +66,11 @@ public class OtherFeesChargesFeeChargeDetail   {
    */
   public enum FeeTypeEnum {
     SERVICECACCOUNTFEE("ServiceCAccountFee"),
-    
+
     SERVICECACCOUNTFEEMONTHLY("ServiceCAccountFeeMonthly"),
-    
+
     SERVICECOTHER("ServiceCOther"),
-    
+
     OTHER("Other");
 
     private String value;
@@ -110,15 +110,16 @@ public class OtherFeesChargesFeeChargeDetail   {
   private String feeRate;
 
   /**
-   * Rate type for Fee/Charge (where it is charged in terms of a rate rather than an amount)
+   * Rate type for Fee/Charge (where it is charged in terms of a rate rather than
+   * an amount)
    */
   public enum FeeRateTypeEnum {
     LINKEDBASERATE("LinkedBaseRate"),
-    
+
     GROSS("Gross"),
-    
+
     NET("Net"),
-    
+
     OTHER("Other");
 
     private String value;
@@ -156,43 +157,43 @@ public class OtherFeesChargesFeeChargeDetail   {
    */
   public enum ApplicationFrequencyEnum {
     ACCOUNTCLOSING("AccountClosing"),
-    
+
     ACCOUNTOPENING("AccountOpening"),
-    
+
     ACADEMICTERM("AcademicTerm"),
-    
+
     CHARGINGPERIOD("ChargingPeriod"),
-    
+
     DAILY("Daily"),
-    
+
     PERITEM("PerItem"),
-    
+
     MONTHLY("Monthly"),
-    
+
     ONACCOUNTANNIVERSARY("OnAccountAnniversary"),
-    
+
     OTHER("Other"),
-    
+
     PERHOUR("PerHour"),
-    
+
     PEROCCURRENCE("PerOccurrence"),
-    
+
     PERSHEET("PerSheet"),
-    
+
     PERTRANSACTION("PerTransaction"),
-    
+
     PERTRANSACTIONAMOUNT("PerTransactionAmount"),
-    
+
     PERTRANSACTIONPERCENTAGE("PerTransactionPercentage"),
-    
+
     QUARTERLY("Quarterly"),
-    
+
     SIXMONTHLY("SixMonthly"),
-    
+
     STATEMENTMONTHLY("StatementMonthly"),
-    
+
     WEEKLY("Weekly"),
-    
+
     YEARLY("Yearly");
 
     private String value;
@@ -230,43 +231,43 @@ public class OtherFeesChargesFeeChargeDetail   {
    */
   public enum CalculationFrequencyEnum {
     ACCOUNTCLOSING("AccountClosing"),
-    
+
     ACCOUNTOPENING("AccountOpening"),
-    
+
     ACADEMICTERM("AcademicTerm"),
-    
+
     CHARGINGPERIOD("ChargingPeriod"),
-    
+
     DAILY("Daily"),
-    
+
     PERITEM("PerItem"),
-    
+
     MONTHLY("Monthly"),
-    
+
     ONACCOUNTANNIVERSARY("OnAccountAnniversary"),
-    
+
     OTHER("Other"),
-    
+
     PERHOUR("PerHour"),
-    
+
     PEROCCURRENCE("PerOccurrence"),
-    
+
     PERSHEET("PerSheet"),
-    
+
     PERTRANSACTION("PerTransaction"),
-    
+
     PERTRANSACTIONAMOUNT("PerTransactionAmount"),
-    
+
     PERTRANSACTIONPERCENTAGE("PerTransactionPercentage"),
-    
+
     QUARTERLY("Quarterly"),
-    
+
     SIXMONTHLY("SixMonthly"),
-    
+
     STATEMENTMONTHLY("StatementMonthly"),
-    
+
     WEEKLY("Weekly"),
-    
+
     YEARLY("Yearly");
 
     private String value;
@@ -300,7 +301,7 @@ public class OtherFeesChargesFeeChargeDetail   {
   private CalculationFrequencyEnum calculationFrequency;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("OtherFeeCategoryType")
@@ -319,7 +320,7 @@ public class OtherFeesChargesFeeChargeDetail   {
   private OtherCalculationFrequency1 otherCalculationFrequency;
 
   @JsonProperty("FeeChargeCap")
-  
+
   private List<OtherFeesChargesFeeChargeCap> feeChargeCap = null;
 
   @JsonProperty("FeeApplicableRange")
@@ -332,8 +333,9 @@ public class OtherFeesChargesFeeChargeDetail   {
 
   /**
    * Categorisation of fees and charges into standard categories.
+   * 
    * @return feeCategory
-  */
+   */
   @ApiModelProperty(required = true, value = "Categorisation of fees and charges into standard categories.")
   public FeeCategoryEnum getFeeCategory() {
     return feeCategory;
@@ -350,8 +352,9 @@ public class OtherFeesChargesFeeChargeDetail   {
 
   /**
    * Fee/Charge Type
+   * 
    * @return feeType
-  */
+   */
   @ApiModelProperty(required = true, value = "Fee/Charge Type")
   public FeeTypeEnum getFeeType() {
     return feeType;
@@ -367,9 +370,11 @@ public class OtherFeesChargesFeeChargeDetail   {
   }
 
   /**
-   * Fee Amount charged for a fee/charge (where it is charged in terms of an amount rather than a rate)
+   * Fee Amount charged for a fee/charge (where it is charged in terms of an
+   * amount rather than a rate)
+   * 
    * @return feeAmount
-  */
+   */
   @ApiModelProperty(value = "Fee Amount charged for a fee/charge (where it is charged in terms of an amount rather than a rate)")
   public String getFeeAmount() {
     return feeAmount;
@@ -385,9 +390,11 @@ public class OtherFeesChargesFeeChargeDetail   {
   }
 
   /**
-   * Rate charged for Fee/Charge (where it is charged in terms of a rate rather than an amount)
+   * Rate charged for Fee/Charge (where it is charged in terms of a rate rather
+   * than an amount)
+   * 
    * @return feeRate
-  */
+   */
   @ApiModelProperty(value = "Rate charged for Fee/Charge (where it is charged in terms of a rate rather than an amount)")
   public String getFeeRate() {
     return feeRate;
@@ -403,9 +410,11 @@ public class OtherFeesChargesFeeChargeDetail   {
   }
 
   /**
-   * Rate type for Fee/Charge (where it is charged in terms of a rate rather than an amount)
+   * Rate type for Fee/Charge (where it is charged in terms of a rate rather than
+   * an amount)
+   * 
    * @return feeRateType
-  */
+   */
   @ApiModelProperty(value = "Rate type for Fee/Charge (where it is charged in terms of a rate rather than an amount)")
   public FeeRateTypeEnum getFeeRateType() {
     return feeRateType;
@@ -422,8 +431,9 @@ public class OtherFeesChargesFeeChargeDetail   {
 
   /**
    * How frequently the fee/charge is applied to the account
+   * 
    * @return applicationFrequency
-  */
+   */
   @ApiModelProperty(required = true, value = "How frequently the fee/charge is applied to the account")
   public ApplicationFrequencyEnum getApplicationFrequency() {
     return applicationFrequency;
@@ -440,8 +450,9 @@ public class OtherFeesChargesFeeChargeDetail   {
 
   /**
    * How frequently the fee/charge is calculated
+   * 
    * @return calculationFrequency
-  */
+   */
   @ApiModelProperty(value = "How frequently the fee/charge is calculated")
   public CalculationFrequencyEnum getCalculationFrequency() {
     return calculationFrequency;
@@ -466,8 +477,9 @@ public class OtherFeesChargesFeeChargeDetail   {
 
   /**
    * Optional additional notes to supplement the fee/charge details.
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "Optional additional notes to supplement the fee/charge details.")
   public List<String> getNotes() {
     return notes;
@@ -484,8 +496,9 @@ public class OtherFeesChargesFeeChargeDetail   {
 
   /**
    * Get otherFeeCategoryType
+   * 
    * @return otherFeeCategoryType
-  */
+   */
   @ApiModelProperty(value = "")
   public OtherFeeCategoryType getOtherFeeCategoryType() {
     return otherFeeCategoryType;
@@ -502,8 +515,9 @@ public class OtherFeesChargesFeeChargeDetail   {
 
   /**
    * Get otherFeeType
+   * 
    * @return otherFeeType
-  */
+   */
   @ApiModelProperty(value = "")
   public OtherFeeType1 getOtherFeeType() {
     return otherFeeType;
@@ -520,8 +534,9 @@ public class OtherFeesChargesFeeChargeDetail   {
 
   /**
    * Get otherFeeRateType
+   * 
    * @return otherFeeRateType
-  */
+   */
   @ApiModelProperty(value = "")
   public OtherFeeRateType1 getOtherFeeRateType() {
     return otherFeeRateType;
@@ -531,15 +546,17 @@ public class OtherFeesChargesFeeChargeDetail   {
     this.otherFeeRateType = otherFeeRateType;
   }
 
-  public OtherFeesChargesFeeChargeDetail otherApplicationFrequency(OtherApplicationFrequency1 otherApplicationFrequency) {
+  public OtherFeesChargesFeeChargeDetail otherApplicationFrequency(
+      OtherApplicationFrequency1 otherApplicationFrequency) {
     this.otherApplicationFrequency = otherApplicationFrequency;
     return this;
   }
 
   /**
    * Get otherApplicationFrequency
+   * 
    * @return otherApplicationFrequency
-  */
+   */
   @ApiModelProperty(value = "")
   public OtherApplicationFrequency1 getOtherApplicationFrequency() {
     return otherApplicationFrequency;
@@ -549,15 +566,17 @@ public class OtherFeesChargesFeeChargeDetail   {
     this.otherApplicationFrequency = otherApplicationFrequency;
   }
 
-  public OtherFeesChargesFeeChargeDetail otherCalculationFrequency(OtherCalculationFrequency1 otherCalculationFrequency) {
+  public OtherFeesChargesFeeChargeDetail otherCalculationFrequency(
+      OtherCalculationFrequency1 otherCalculationFrequency) {
     this.otherCalculationFrequency = otherCalculationFrequency;
     return this;
   }
 
   /**
    * Get otherCalculationFrequency
+   * 
    * @return otherCalculationFrequency
-  */
+   */
   @ApiModelProperty(value = "")
   public OtherCalculationFrequency1 getOtherCalculationFrequency() {
     return otherCalculationFrequency;
@@ -581,9 +600,11 @@ public class OtherFeesChargesFeeChargeDetail   {
   }
 
   /**
-   * Details about any caps (maximum charges) that apply to a particular fee/charge
+   * Details about any caps (maximum charges) that apply to a particular
+   * fee/charge
+   * 
    * @return feeChargeCap
-  */
+   */
   @ApiModelProperty(value = "Details about any caps (maximum charges) that apply to a particular fee/charge")
   public List<OtherFeesChargesFeeChargeCap> getFeeChargeCap() {
     return feeChargeCap;
@@ -600,8 +621,9 @@ public class OtherFeesChargesFeeChargeDetail   {
 
   /**
    * Get feeApplicableRange
+   * 
    * @return feeApplicableRange
-  */
+   */
   @ApiModelProperty(value = "")
   public FeeApplicableRange getFeeApplicableRange() {
     return feeApplicableRange;
@@ -610,7 +632,6 @@ public class OtherFeesChargesFeeChargeDetail   {
   public void setFeeApplicableRange(FeeApplicableRange feeApplicableRange) {
     this.feeApplicableRange = feeApplicableRange;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -621,33 +642,35 @@ public class OtherFeesChargesFeeChargeDetail   {
       return false;
     }
     OtherFeesChargesFeeChargeDetail otherFeesChargesFeeChargeDetail = (OtherFeesChargesFeeChargeDetail) o;
-    return Objects.equals(this.feeCategory, otherFeesChargesFeeChargeDetail.feeCategory) &&
-        Objects.equals(this.feeType, otherFeesChargesFeeChargeDetail.feeType) &&
-        Objects.equals(this.feeAmount, otherFeesChargesFeeChargeDetail.feeAmount) &&
-        Objects.equals(this.feeRate, otherFeesChargesFeeChargeDetail.feeRate) &&
-        Objects.equals(this.feeRateType, otherFeesChargesFeeChargeDetail.feeRateType) &&
-        Objects.equals(this.applicationFrequency, otherFeesChargesFeeChargeDetail.applicationFrequency) &&
-        Objects.equals(this.calculationFrequency, otherFeesChargesFeeChargeDetail.calculationFrequency) &&
-        Objects.equals(this.notes, otherFeesChargesFeeChargeDetail.notes) &&
-        Objects.equals(this.otherFeeCategoryType, otherFeesChargesFeeChargeDetail.otherFeeCategoryType) &&
-        Objects.equals(this.otherFeeType, otherFeesChargesFeeChargeDetail.otherFeeType) &&
-        Objects.equals(this.otherFeeRateType, otherFeesChargesFeeChargeDetail.otherFeeRateType) &&
-        Objects.equals(this.otherApplicationFrequency, otherFeesChargesFeeChargeDetail.otherApplicationFrequency) &&
-        Objects.equals(this.otherCalculationFrequency, otherFeesChargesFeeChargeDetail.otherCalculationFrequency) &&
-        Objects.equals(this.feeChargeCap, otherFeesChargesFeeChargeDetail.feeChargeCap) &&
-        Objects.equals(this.feeApplicableRange, otherFeesChargesFeeChargeDetail.feeApplicableRange);
+    return Objects.equals(this.feeCategory, otherFeesChargesFeeChargeDetail.feeCategory)
+        && Objects.equals(this.feeType, otherFeesChargesFeeChargeDetail.feeType)
+        && Objects.equals(this.feeAmount, otherFeesChargesFeeChargeDetail.feeAmount)
+        && Objects.equals(this.feeRate, otherFeesChargesFeeChargeDetail.feeRate)
+        && Objects.equals(this.feeRateType, otherFeesChargesFeeChargeDetail.feeRateType)
+        && Objects.equals(this.applicationFrequency, otherFeesChargesFeeChargeDetail.applicationFrequency)
+        && Objects.equals(this.calculationFrequency, otherFeesChargesFeeChargeDetail.calculationFrequency)
+        && Objects.equals(this.notes, otherFeesChargesFeeChargeDetail.notes)
+        && Objects.equals(this.otherFeeCategoryType, otherFeesChargesFeeChargeDetail.otherFeeCategoryType)
+        && Objects.equals(this.otherFeeType, otherFeesChargesFeeChargeDetail.otherFeeType)
+        && Objects.equals(this.otherFeeRateType, otherFeesChargesFeeChargeDetail.otherFeeRateType)
+        && Objects.equals(this.otherApplicationFrequency, otherFeesChargesFeeChargeDetail.otherApplicationFrequency)
+        && Objects.equals(this.otherCalculationFrequency, otherFeesChargesFeeChargeDetail.otherCalculationFrequency)
+        && Objects.equals(this.feeChargeCap, otherFeesChargesFeeChargeDetail.feeChargeCap)
+        && Objects.equals(this.feeApplicableRange, otherFeesChargesFeeChargeDetail.feeApplicableRange);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(feeCategory, feeType, feeAmount, feeRate, feeRateType, applicationFrequency, calculationFrequency, notes, otherFeeCategoryType, otherFeeType, otherFeeRateType, otherApplicationFrequency, otherCalculationFrequency, feeChargeCap, feeApplicableRange);
+    return Objects.hash(feeCategory, feeType, feeAmount, feeRate, feeRateType, applicationFrequency,
+        calculationFrequency, notes, otherFeeCategoryType, otherFeeType, otherFeeRateType, otherApplicationFrequency,
+        otherCalculationFrequency, feeChargeCap, feeApplicableRange);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OtherFeesChargesFeeChargeDetail {\n");
-    
+
     sb.append("    feeCategory: ").append(toIndentedString(feeCategory)).append("\n");
     sb.append("    feeType: ").append(toIndentedString(feeType)).append("\n");
     sb.append("    feeAmount: ").append(toIndentedString(feeAmount)).append("\n");
@@ -678,4 +701,3 @@ public class OtherFeesChargesFeeChargeDetail   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

@@ -18,15 +18,20 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "The group of tiers or bands for which credit interest can be applied.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet   {
+public class OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet {
   /**
-   * The methodology of how credit interest is paid/applied. It can be:- 1. Banded Interest rates are banded. i.e. Increasing rate on whole balance as balance increases. 2. Tiered Interest rates are tiered. i.e. increasing rate for each tier as balance increases, but interest paid on tier fixed for that tier and not on whole balance. 3. Whole The same interest rate is applied irrespective of the product holder's account balance
+   * The methodology of how credit interest is paid/applied. It can be:- 1. Banded
+   * Interest rates are banded. i.e. Increasing rate on whole balance as balance
+   * increases. 2. Tiered Interest rates are tiered. i.e. increasing rate for each
+   * tier as balance increases, but interest paid on tier fixed for that tier and
+   * not on whole balance. 3. Whole The same interest rate is applied irrespective
+   * of the product holder's account balance
    */
   public enum TierBandMethodEnum {
     INBA("INBA"),
-    
+
     INTI("INTI"),
-    
+
     INWH("INWH");
 
     private String value;
@@ -63,13 +68,14 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet   {
   private OBInterestCalculationMethod1Code calculationMethod;
 
   /**
-   * Describes whether accrued interest is payable only to the BCA or to another bank account
+   * Describes whether accrued interest is payable only to the BCA or to another
+   * bank account
    */
   public enum DestinationEnum {
     INOT("INOT"),
-    
+
     INPA("INPA"),
-    
+
     INSC("INSC");
 
     private String value;
@@ -103,7 +109,7 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet   {
   private DestinationEnum destination;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("OtherCalculationMethod")
@@ -113,7 +119,7 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet   {
   private OBOtherCodeType10 otherDestination;
 
   @JsonProperty("TierBand")
-  
+
   private List<OBReadProduct2DataOtherProductTypeCreditInterestTierBand> tierBand = new ArrayList<>();
 
   public OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet tierBandMethod(TierBandMethodEnum tierBandMethod) {
@@ -122,9 +128,15 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet   {
   }
 
   /**
-   * The methodology of how credit interest is paid/applied. It can be:- 1. Banded Interest rates are banded. i.e. Increasing rate on whole balance as balance increases. 2. Tiered Interest rates are tiered. i.e. increasing rate for each tier as balance increases, but interest paid on tier fixed for that tier and not on whole balance. 3. Whole The same interest rate is applied irrespective of the product holder's account balance
+   * The methodology of how credit interest is paid/applied. It can be:- 1. Banded
+   * Interest rates are banded. i.e. Increasing rate on whole balance as balance
+   * increases. 2. Tiered Interest rates are tiered. i.e. increasing rate for each
+   * tier as balance increases, but interest paid on tier fixed for that tier and
+   * not on whole balance. 3. Whole The same interest rate is applied irrespective
+   * of the product holder's account balance
+   * 
    * @return tierBandMethod
-  */
+   */
   @ApiModelProperty(required = true, value = "The methodology of how credit interest is paid/applied. It can be:- 1. Banded Interest rates are banded. i.e. Increasing rate on whole balance as balance increases. 2. Tiered Interest rates are tiered. i.e. increasing rate for each tier as balance increases, but interest paid on tier fixed for that tier and not on whole balance. 3. Whole The same interest rate is applied irrespective of the product holder's account balance")
   public TierBandMethodEnum getTierBandMethod() {
     return tierBandMethod;
@@ -134,15 +146,17 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet   {
     this.tierBandMethod = tierBandMethod;
   }
 
-  public OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet calculationMethod(OBInterestCalculationMethod1Code calculationMethod) {
+  public OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet calculationMethod(
+      OBInterestCalculationMethod1Code calculationMethod) {
     this.calculationMethod = calculationMethod;
     return this;
   }
 
   /**
    * Get calculationMethod
+   * 
    * @return calculationMethod
-  */
+   */
   @ApiModelProperty(value = "")
   public OBInterestCalculationMethod1Code getCalculationMethod() {
     return calculationMethod;
@@ -158,9 +172,11 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet   {
   }
 
   /**
-   * Describes whether accrued interest is payable only to the BCA or to another bank account
+   * Describes whether accrued interest is payable only to the BCA or to another
+   * bank account
+   * 
    * @return destination
-  */
+   */
   @ApiModelProperty(required = true, value = "Describes whether accrued interest is payable only to the BCA or to another bank account")
   public DestinationEnum getDestination() {
     return destination;
@@ -185,8 +201,9 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet   {
 
   /**
    * Get notes
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "")
   public List<String> getNotes() {
     return notes;
@@ -196,15 +213,17 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet   {
     this.notes = notes;
   }
 
-  public OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet otherCalculationMethod(OBOtherCodeType10 otherCalculationMethod) {
+  public OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet otherCalculationMethod(
+      OBOtherCodeType10 otherCalculationMethod) {
     this.otherCalculationMethod = otherCalculationMethod;
     return this;
   }
 
   /**
    * Get otherCalculationMethod
+   * 
    * @return otherCalculationMethod
-  */
+   */
   @ApiModelProperty(value = "")
   public OBOtherCodeType10 getOtherCalculationMethod() {
     return otherCalculationMethod;
@@ -214,15 +233,17 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet   {
     this.otherCalculationMethod = otherCalculationMethod;
   }
 
-  public OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet otherDestination(OBOtherCodeType10 otherDestination) {
+  public OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet otherDestination(
+      OBOtherCodeType10 otherDestination) {
     this.otherDestination = otherDestination;
     return this;
   }
 
   /**
    * Get otherDestination
+   * 
    * @return otherDestination
-  */
+   */
   @ApiModelProperty(value = "")
   public OBOtherCodeType10 getOtherDestination() {
     return otherDestination;
@@ -232,20 +253,23 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet   {
     this.otherDestination = otherDestination;
   }
 
-  public OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet tierBand(List<OBReadProduct2DataOtherProductTypeCreditInterestTierBand> tierBand) {
+  public OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet tierBand(
+      List<OBReadProduct2DataOtherProductTypeCreditInterestTierBand> tierBand) {
     this.tierBand = tierBand;
     return this;
   }
 
-  public OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet addTierBandItem(OBReadProduct2DataOtherProductTypeCreditInterestTierBand tierBandItem) {
+  public OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet addTierBandItem(
+      OBReadProduct2DataOtherProductTypeCreditInterestTierBand tierBandItem) {
     this.tierBand.add(tierBandItem);
     return this;
   }
 
   /**
    * Get tierBand
+   * 
    * @return tierBand
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public List<OBReadProduct2DataOtherProductTypeCreditInterestTierBand> getTierBand() {
     return tierBand;
@@ -254,7 +278,6 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet   {
   public void setTierBand(List<OBReadProduct2DataOtherProductTypeCreditInterestTierBand> tierBand) {
     this.tierBand = tierBand;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -265,25 +288,30 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet   {
       return false;
     }
     OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet obReadProduct2DataOtherProductTypeCreditInterestTierBandSet = (OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet) o;
-    return Objects.equals(this.tierBandMethod, obReadProduct2DataOtherProductTypeCreditInterestTierBandSet.tierBandMethod) &&
-        Objects.equals(this.calculationMethod, obReadProduct2DataOtherProductTypeCreditInterestTierBandSet.calculationMethod) &&
-        Objects.equals(this.destination, obReadProduct2DataOtherProductTypeCreditInterestTierBandSet.destination) &&
-        Objects.equals(this.notes, obReadProduct2DataOtherProductTypeCreditInterestTierBandSet.notes) &&
-        Objects.equals(this.otherCalculationMethod, obReadProduct2DataOtherProductTypeCreditInterestTierBandSet.otherCalculationMethod) &&
-        Objects.equals(this.otherDestination, obReadProduct2DataOtherProductTypeCreditInterestTierBandSet.otherDestination) &&
-        Objects.equals(this.tierBand, obReadProduct2DataOtherProductTypeCreditInterestTierBandSet.tierBand);
+    return Objects.equals(this.tierBandMethod,
+        obReadProduct2DataOtherProductTypeCreditInterestTierBandSet.tierBandMethod)
+        && Objects.equals(this.calculationMethod,
+            obReadProduct2DataOtherProductTypeCreditInterestTierBandSet.calculationMethod)
+        && Objects.equals(this.destination, obReadProduct2DataOtherProductTypeCreditInterestTierBandSet.destination)
+        && Objects.equals(this.notes, obReadProduct2DataOtherProductTypeCreditInterestTierBandSet.notes)
+        && Objects.equals(this.otherCalculationMethod,
+            obReadProduct2DataOtherProductTypeCreditInterestTierBandSet.otherCalculationMethod)
+        && Objects.equals(this.otherDestination,
+            obReadProduct2DataOtherProductTypeCreditInterestTierBandSet.otherDestination)
+        && Objects.equals(this.tierBand, obReadProduct2DataOtherProductTypeCreditInterestTierBandSet.tierBand);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(tierBandMethod, calculationMethod, destination, notes, otherCalculationMethod, otherDestination, tierBand);
+    return Objects.hash(tierBandMethod, calculationMethod, destination, notes, otherCalculationMethod, otherDestination,
+        tierBand);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet {\n");
-    
+
     sb.append("    tierBandMethod: ").append(toIndentedString(tierBandMethod)).append("\n");
     sb.append("    calculationMethod: ").append(toIndentedString(calculationMethod)).append("\n");
     sb.append("    destination: ").append(toIndentedString(destination)).append("\n");
@@ -306,4 +334,3 @@ public class OBReadProduct2DataOtherProductTypeCreditInterestTierBandSet   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

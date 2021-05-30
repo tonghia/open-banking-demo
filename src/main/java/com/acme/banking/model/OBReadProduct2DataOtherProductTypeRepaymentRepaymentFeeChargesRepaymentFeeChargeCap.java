@@ -14,31 +14,32 @@ import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * RepaymentFeeChargeCap sets daily, weekly, monthly, yearly limits on the fees that are charged
+ * RepaymentFeeChargeCap sets daily, weekly, monthly, yearly limits on the fees
+ * that are charged
  */
 @ApiModel(description = "RepaymentFeeChargeCap sets daily, weekly, monthly, yearly limits on the fees that are charged")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap   {
+public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap {
   /**
    * Fee/charge type which is being capped
    */
   public enum FeeTypeEnum {
     FEPF("FEPF"),
-    
+
     FTOT("FTOT"),
-    
+
     FYAF("FYAF"),
-    
+
     FYAM("FYAM"),
-    
+
     FYAQ("FYAQ"),
-    
+
     FYCP("FYCP"),
-    
+
     FYDB("FYDB"),
-    
+
     FYMI("FYMI"),
-    
+
     FYXX("FYXX");
 
     private String value;
@@ -69,7 +70,7 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepay
   }
 
   @JsonProperty("FeeType")
-  
+
   private List<FeeTypeEnum> feeType = new ArrayList<>();
 
   @JsonProperty("MinMaxType")
@@ -85,27 +86,30 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepay
   private OBPeriod1Code cappingPeriod;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("OtherFeeType")
-  
+
   private List<OBReadProduct2DataOtherProductTypeOverdraftOtherFeeType> otherFeeType = null;
 
-  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap feeType(List<FeeTypeEnum> feeType) {
+  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap feeType(
+      List<FeeTypeEnum> feeType) {
     this.feeType = feeType;
     return this;
   }
 
-  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap addFeeTypeItem(FeeTypeEnum feeTypeItem) {
+  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap addFeeTypeItem(
+      FeeTypeEnum feeTypeItem) {
     this.feeType.add(feeTypeItem);
     return this;
   }
 
   /**
    * Get feeType
+   * 
    * @return feeType
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public List<FeeTypeEnum> getFeeType() {
     return feeType;
@@ -115,15 +119,17 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepay
     this.feeType = feeType;
   }
 
-  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap minMaxType(OBMinMaxType1Code minMaxType) {
+  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap minMaxType(
+      OBMinMaxType1Code minMaxType) {
     this.minMaxType = minMaxType;
     return this;
   }
 
   /**
    * Get minMaxType
+   * 
    * @return minMaxType
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBMinMaxType1Code getMinMaxType() {
     return minMaxType;
@@ -133,15 +139,18 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepay
     this.minMaxType = minMaxType;
   }
 
-  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap feeCapOccurrence(Integer feeCapOccurrence) {
+  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap feeCapOccurrence(
+      Integer feeCapOccurrence) {
     this.feeCapOccurrence = feeCapOccurrence;
     return this;
   }
 
   /**
-   * fee/charges are captured dependent on the number of occurrences rather than capped at a particular amount
+   * fee/charges are captured dependent on the number of occurrences rather than
+   * capped at a particular amount
+   * 
    * @return feeCapOccurrence
-  */
+   */
   @ApiModelProperty(value = "fee/charges are captured dependent on the number of occurrences rather than capped at a particular amount")
   public Integer getFeeCapOccurrence() {
     return feeCapOccurrence;
@@ -151,15 +160,18 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepay
     this.feeCapOccurrence = feeCapOccurrence;
   }
 
-  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap feeCapAmount(String feeCapAmount) {
+  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap feeCapAmount(
+      String feeCapAmount) {
     this.feeCapAmount = feeCapAmount;
     return this;
   }
 
   /**
-   * Cap amount charged for a fee/charge (where it is charged in terms of an amount rather than a rate)
+   * Cap amount charged for a fee/charge (where it is charged in terms of an
+   * amount rather than a rate)
+   * 
    * @return feeCapAmount
-  */
+   */
   @ApiModelProperty(value = "Cap amount charged for a fee/charge (where it is charged in terms of an amount rather than a rate)")
   public String getFeeCapAmount() {
     return feeCapAmount;
@@ -169,15 +181,17 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepay
     this.feeCapAmount = feeCapAmount;
   }
 
-  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap cappingPeriod(OBPeriod1Code cappingPeriod) {
+  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap cappingPeriod(
+      OBPeriod1Code cappingPeriod) {
     this.cappingPeriod = cappingPeriod;
     return this;
   }
 
   /**
    * Get cappingPeriod
+   * 
    * @return cappingPeriod
-  */
+   */
   @ApiModelProperty(value = "")
   public OBPeriod1Code getCappingPeriod() {
     return cappingPeriod;
@@ -192,7 +206,8 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepay
     return this;
   }
 
-  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap addNotesItem(String notesItem) {
+  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap addNotesItem(
+      String notesItem) {
     if (this.notes == null) {
       this.notes = new ArrayList<>();
     }
@@ -202,8 +217,9 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepay
 
   /**
    * Get notes
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "")
   public List<String> getNotes() {
     return notes;
@@ -213,12 +229,14 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepay
     this.notes = notes;
   }
 
-  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap otherFeeType(List<OBReadProduct2DataOtherProductTypeOverdraftOtherFeeType> otherFeeType) {
+  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap otherFeeType(
+      List<OBReadProduct2DataOtherProductTypeOverdraftOtherFeeType> otherFeeType) {
     this.otherFeeType = otherFeeType;
     return this;
   }
 
-  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap addOtherFeeTypeItem(OBReadProduct2DataOtherProductTypeOverdraftOtherFeeType otherFeeTypeItem) {
+  public OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap addOtherFeeTypeItem(
+      OBReadProduct2DataOtherProductTypeOverdraftOtherFeeType otherFeeTypeItem) {
     if (this.otherFeeType == null) {
       this.otherFeeType = new ArrayList<>();
     }
@@ -228,8 +246,9 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepay
 
   /**
    * Get otherFeeType
+   * 
    * @return otherFeeType
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBReadProduct2DataOtherProductTypeOverdraftOtherFeeType> getOtherFeeType() {
     return otherFeeType;
@@ -238,7 +257,6 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepay
   public void setOtherFeeType(List<OBReadProduct2DataOtherProductTypeOverdraftOtherFeeType> otherFeeType) {
     this.otherFeeType = otherFeeType;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -249,13 +267,20 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepay
       return false;
     }
     OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap obReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap = (OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap) o;
-    return Objects.equals(this.feeType, obReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap.feeType) &&
-        Objects.equals(this.minMaxType, obReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap.minMaxType) &&
-        Objects.equals(this.feeCapOccurrence, obReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap.feeCapOccurrence) &&
-        Objects.equals(this.feeCapAmount, obReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap.feeCapAmount) &&
-        Objects.equals(this.cappingPeriod, obReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap.cappingPeriod) &&
-        Objects.equals(this.notes, obReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap.notes) &&
-        Objects.equals(this.otherFeeType, obReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap.otherFeeType);
+    return Objects.equals(this.feeType,
+        obReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap.feeType)
+        && Objects.equals(this.minMaxType,
+            obReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap.minMaxType)
+        && Objects.equals(this.feeCapOccurrence,
+            obReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap.feeCapOccurrence)
+        && Objects.equals(this.feeCapAmount,
+            obReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap.feeCapAmount)
+        && Objects.equals(this.cappingPeriod,
+            obReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap.cappingPeriod)
+        && Objects.equals(this.notes,
+            obReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap.notes)
+        && Objects.equals(this.otherFeeType,
+            obReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap.otherFeeType);
   }
 
   @Override
@@ -267,7 +292,7 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepay
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepaymentFeeChargeCap {\n");
-    
+
     sb.append("    feeType: ").append(toIndentedString(feeType)).append("\n");
     sb.append("    minMaxType: ").append(toIndentedString(minMaxType)).append("\n");
     sb.append("    feeCapOccurrence: ").append(toIndentedString(feeCapOccurrence)).append("\n");
@@ -290,4 +315,3 @@ public class OBReadProduct2DataOtherProductTypeRepaymentRepaymentFeeChargesRepay
     return o.toString().replace("\n", "\n    ");
   }
 }
-

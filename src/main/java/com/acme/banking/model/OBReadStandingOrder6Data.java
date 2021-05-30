@@ -14,9 +14,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBReadStandingOrder6Data
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadStandingOrder6Data   {
+public class OBReadStandingOrder6Data {
   @JsonProperty("StandingOrder")
-  
+
   private List<OBStandingOrder6> standingOrder = null;
 
   public OBReadStandingOrder6Data standingOrder(List<OBStandingOrder6> standingOrder) {
@@ -34,8 +34,9 @@ public class OBReadStandingOrder6Data   {
 
   /**
    * Get standingOrder
+   * 
    * @return standingOrder
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBStandingOrder6> getStandingOrder() {
     return standingOrder;
@@ -44,7 +45,6 @@ public class OBReadStandingOrder6Data   {
   public void setStandingOrder(List<OBStandingOrder6> standingOrder) {
     this.standingOrder = standingOrder;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -67,7 +67,7 @@ public class OBReadStandingOrder6Data   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadStandingOrder6Data {\n");
-    
+
     sb.append("    standingOrder: ").append(toIndentedString(standingOrder)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -84,4 +84,3 @@ public class OBReadStandingOrder6Data   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

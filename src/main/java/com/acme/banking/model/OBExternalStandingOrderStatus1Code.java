@@ -11,9 +11,9 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Specifies the status of the standing order in code form.
  */
 public enum OBExternalStandingOrderStatus1Code {
-  
+
   ACTIVE("Active"),
-  
+
   INACTIVE("Inactive");
 
   private String value;
@@ -42,4 +42,3 @@ public enum OBExternalStandingOrderStatus1Code {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

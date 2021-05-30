@@ -13,7 +13,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Links relevant to the payload")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class Links   {
+public class Links {
   @JsonProperty("Self")
   private URI self;
 
@@ -36,8 +36,9 @@ public class Links   {
 
   /**
    * Get self
+   * 
    * @return self
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public URI getSelf() {
     return self;
@@ -54,8 +55,9 @@ public class Links   {
 
   /**
    * Get first
+   * 
    * @return first
-  */
+   */
   @ApiModelProperty(value = "")
   public URI getFirst() {
     return first;
@@ -72,8 +74,9 @@ public class Links   {
 
   /**
    * Get prev
+   * 
    * @return prev
-  */
+   */
   @ApiModelProperty(value = "")
   public URI getPrev() {
     return prev;
@@ -90,8 +93,9 @@ public class Links   {
 
   /**
    * Get next
+   * 
    * @return next
-  */
+   */
   @ApiModelProperty(value = "")
   public URI getNext() {
     return next;
@@ -108,8 +112,9 @@ public class Links   {
 
   /**
    * Get last
+   * 
    * @return last
-  */
+   */
   @ApiModelProperty(value = "")
   public URI getLast() {
     return last;
@@ -118,7 +123,6 @@ public class Links   {
   public void setLast(URI last) {
     this.last = last;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -129,11 +133,9 @@ public class Links   {
       return false;
     }
     Links links = (Links) o;
-    return Objects.equals(this.self, links.self) &&
-        Objects.equals(this.first, links.first) &&
-        Objects.equals(this.prev, links.prev) &&
-        Objects.equals(this.next, links.next) &&
-        Objects.equals(this.last, links.last);
+    return Objects.equals(this.self, links.self) && Objects.equals(this.first, links.first)
+        && Objects.equals(this.prev, links.prev) && Objects.equals(this.next, links.next)
+        && Objects.equals(this.last, links.last);
   }
 
   @Override
@@ -145,7 +147,7 @@ public class Links   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Links {\n");
-    
+
     sb.append("    self: ").append(toIndentedString(self)).append("\n");
     sb.append("    first: ").append(toIndentedString(first)).append("\n");
     sb.append("    prev: ").append(toIndentedString(prev)).append("\n");
@@ -166,4 +168,3 @@ public class Links   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

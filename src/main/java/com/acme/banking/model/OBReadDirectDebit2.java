@@ -14,7 +14,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBReadDirectDebit2
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadDirectDebit2   {
+public class OBReadDirectDebit2 {
   @JsonProperty("Data")
   private OBReadDirectDebit2Data data;
 
@@ -31,8 +31,9 @@ public class OBReadDirectDebit2   {
 
   /**
    * Get data
+   * 
    * @return data
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBReadDirectDebit2Data getData() {
     return data;
@@ -49,8 +50,9 @@ public class OBReadDirectDebit2   {
 
   /**
    * Get links
+   * 
    * @return links
-  */
+   */
   @ApiModelProperty(value = "")
   public Links getLinks() {
     return links;
@@ -67,8 +69,9 @@ public class OBReadDirectDebit2   {
 
   /**
    * Get meta
+   * 
    * @return meta
-  */
+   */
   @ApiModelProperty(value = "")
   public Meta getMeta() {
     return meta;
@@ -77,7 +80,6 @@ public class OBReadDirectDebit2   {
   public void setMeta(Meta meta) {
     this.meta = meta;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -88,9 +90,8 @@ public class OBReadDirectDebit2   {
       return false;
     }
     OBReadDirectDebit2 obReadDirectDebit2 = (OBReadDirectDebit2) o;
-    return Objects.equals(this.data, obReadDirectDebit2.data) &&
-        Objects.equals(this.links, obReadDirectDebit2.links) &&
-        Objects.equals(this.meta, obReadDirectDebit2.meta);
+    return Objects.equals(this.data, obReadDirectDebit2.data) && Objects.equals(this.links, obReadDirectDebit2.links)
+        && Objects.equals(this.meta, obReadDirectDebit2.meta);
   }
 
   @Override
@@ -102,7 +103,7 @@ public class OBReadDirectDebit2   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadDirectDebit2 {\n");
-    
+
     sb.append("    data: ").append(toIndentedString(data)).append("\n");
     sb.append("    links: ").append(toIndentedString(links)).append("\n");
     sb.append("    meta: ").append(toIndentedString(meta)).append("\n");
@@ -121,4 +122,3 @@ public class OBReadDirectDebit2   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

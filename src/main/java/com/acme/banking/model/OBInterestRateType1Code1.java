@@ -8,20 +8,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonCreator;
 
 /**
- * Rate type for Fee/Charge (where it is charged in terms of a rate rather than an amount)
+ * Rate type for Fee/Charge (where it is charged in terms of a rate rather than
+ * an amount)
  */
 public enum OBInterestRateType1Code1 {
-  
+
   INBB("INBB"),
-  
+
   INFR("INFR"),
-  
+
   INGR("INGR"),
-  
+
   INLR("INLR"),
-  
+
   INNE("INNE"),
-  
+
   INOT("INOT");
 
   private String value;
@@ -50,4 +51,3 @@ public enum OBInterestRateType1Code1 {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

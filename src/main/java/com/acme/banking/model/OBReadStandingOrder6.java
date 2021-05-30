@@ -14,7 +14,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBReadStandingOrder6
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadStandingOrder6   {
+public class OBReadStandingOrder6 {
   @JsonProperty("Data")
   private OBReadStandingOrder6Data data;
 
@@ -31,8 +31,9 @@ public class OBReadStandingOrder6   {
 
   /**
    * Get data
+   * 
    * @return data
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBReadStandingOrder6Data getData() {
     return data;
@@ -49,8 +50,9 @@ public class OBReadStandingOrder6   {
 
   /**
    * Get links
+   * 
    * @return links
-  */
+   */
   @ApiModelProperty(value = "")
   public Links getLinks() {
     return links;
@@ -67,8 +69,9 @@ public class OBReadStandingOrder6   {
 
   /**
    * Get meta
+   * 
    * @return meta
-  */
+   */
   @ApiModelProperty(value = "")
   public Meta getMeta() {
     return meta;
@@ -77,7 +80,6 @@ public class OBReadStandingOrder6   {
   public void setMeta(Meta meta) {
     this.meta = meta;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -88,9 +90,9 @@ public class OBReadStandingOrder6   {
       return false;
     }
     OBReadStandingOrder6 obReadStandingOrder6 = (OBReadStandingOrder6) o;
-    return Objects.equals(this.data, obReadStandingOrder6.data) &&
-        Objects.equals(this.links, obReadStandingOrder6.links) &&
-        Objects.equals(this.meta, obReadStandingOrder6.meta);
+    return Objects.equals(this.data, obReadStandingOrder6.data)
+        && Objects.equals(this.links, obReadStandingOrder6.links)
+        && Objects.equals(this.meta, obReadStandingOrder6.meta);
   }
 
   @Override
@@ -102,7 +104,7 @@ public class OBReadStandingOrder6   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadStandingOrder6 {\n");
-    
+
     sb.append("    data: ").append(toIndentedString(data)).append("\n");
     sb.append("    links: ").append(toIndentedString(links)).append("\n");
     sb.append("    meta: ").append(toIndentedString(meta)).append("\n");
@@ -121,4 +123,3 @@ public class OBReadStandingOrder6   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

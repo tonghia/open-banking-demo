@@ -11,11 +11,12 @@ import java.math.BigDecimal;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Set of elements used to provide details of a generic interest amount related to the statement resource.
+ * Set of elements used to provide details of a generic interest amount related
+ * to the statement resource.
  */
 @ApiModel(description = "Set of elements used to provide details of a generic interest amount related to the statement resource.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBStatement2StatementInterest   {
+public class OBStatement2StatementInterest {
   @JsonProperty("Description")
   private String description;
 
@@ -44,8 +45,9 @@ public class OBStatement2StatementInterest   {
 
   /**
    * Description that may be available for the statement interest.
+   * 
    * @return description
-  */
+   */
   @ApiModelProperty(value = "Description that may be available for the statement interest.")
   public String getDescription() {
     return description;
@@ -62,8 +64,9 @@ public class OBStatement2StatementInterest   {
 
   /**
    * Get creditDebitIndicator
+   * 
    * @return creditDebitIndicator
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBCreditDebitCode0 getCreditDebitIndicator() {
     return creditDebitIndicator;
@@ -80,8 +83,9 @@ public class OBStatement2StatementInterest   {
 
   /**
    * Interest amount type, in a coded form.
+   * 
    * @return type
-  */
+   */
   @ApiModelProperty(required = true, value = "Interest amount type, in a coded form.")
   public String getType() {
     return type;
@@ -97,9 +101,11 @@ public class OBStatement2StatementInterest   {
   }
 
   /**
-   * field representing a percentage (e.g. 0.05 represents 5% and 0.9525 represents 95.25%). Note the number of decimal places may vary.
+   * field representing a percentage (e.g. 0.05 represents 5% and 0.9525
+   * represents 95.25%). Note the number of decimal places may vary.
+   * 
    * @return rate
-  */
+   */
   @ApiModelProperty(value = "field representing a percentage (e.g. 0.05 represents 5% and 0.9525 represents 95.25%). Note the number of decimal places may vary.")
   public BigDecimal getRate() {
     return rate;
@@ -116,8 +122,9 @@ public class OBStatement2StatementInterest   {
 
   /**
    * Description that may be available for the statement Interest rate type.
+   * 
    * @return rateType
-  */
+   */
   @ApiModelProperty(value = "Description that may be available for the statement Interest rate type.")
   public String getRateType() {
     return rateType;
@@ -134,8 +141,9 @@ public class OBStatement2StatementInterest   {
 
   /**
    * Specifies the statement fee type requested
+   * 
    * @return frequency
-  */
+   */
   @ApiModelProperty(value = "Specifies the statement fee type requested")
   public String getFrequency() {
     return frequency;
@@ -152,8 +160,9 @@ public class OBStatement2StatementInterest   {
 
   /**
    * Get amount
+   * 
    * @return amount
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBActiveOrHistoricCurrencyAndAmount7 getAmount() {
     return amount;
@@ -162,7 +171,6 @@ public class OBStatement2StatementInterest   {
   public void setAmount(OBActiveOrHistoricCurrencyAndAmount7 amount) {
     this.amount = amount;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -173,13 +181,13 @@ public class OBStatement2StatementInterest   {
       return false;
     }
     OBStatement2StatementInterest obStatement2StatementInterest = (OBStatement2StatementInterest) o;
-    return Objects.equals(this.description, obStatement2StatementInterest.description) &&
-        Objects.equals(this.creditDebitIndicator, obStatement2StatementInterest.creditDebitIndicator) &&
-        Objects.equals(this.type, obStatement2StatementInterest.type) &&
-        Objects.equals(this.rate, obStatement2StatementInterest.rate) &&
-        Objects.equals(this.rateType, obStatement2StatementInterest.rateType) &&
-        Objects.equals(this.frequency, obStatement2StatementInterest.frequency) &&
-        Objects.equals(this.amount, obStatement2StatementInterest.amount);
+    return Objects.equals(this.description, obStatement2StatementInterest.description)
+        && Objects.equals(this.creditDebitIndicator, obStatement2StatementInterest.creditDebitIndicator)
+        && Objects.equals(this.type, obStatement2StatementInterest.type)
+        && Objects.equals(this.rate, obStatement2StatementInterest.rate)
+        && Objects.equals(this.rateType, obStatement2StatementInterest.rateType)
+        && Objects.equals(this.frequency, obStatement2StatementInterest.frequency)
+        && Objects.equals(this.amount, obStatement2StatementInterest.amount);
   }
 
   @Override
@@ -191,7 +199,7 @@ public class OBStatement2StatementInterest   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBStatement2StatementInterest {\n");
-    
+
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    creditDebitIndicator: ").append(toIndentedString(creditDebitIndicator)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
@@ -214,4 +222,3 @@ public class OBStatement2StatementInterest   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

@@ -15,13 +15,13 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Details about the interest that may be payable to the SME Loan holders")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductTypeLoanInterest   {
+public class OBReadProduct2DataOtherProductTypeLoanInterest {
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("LoanInterestTierBandSet")
-  
+
   private List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet> loanInterestTierBandSet = new ArrayList<>();
 
   public OBReadProduct2DataOtherProductTypeLoanInterest notes(List<String> notes) {
@@ -39,8 +39,9 @@ public class OBReadProduct2DataOtherProductTypeLoanInterest   {
 
   /**
    * Get notes
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "")
   public List<String> getNotes() {
     return notes;
@@ -50,29 +51,32 @@ public class OBReadProduct2DataOtherProductTypeLoanInterest   {
     this.notes = notes;
   }
 
-  public OBReadProduct2DataOtherProductTypeLoanInterest loanInterestTierBandSet(List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet> loanInterestTierBandSet) {
+  public OBReadProduct2DataOtherProductTypeLoanInterest loanInterestTierBandSet(
+      List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet> loanInterestTierBandSet) {
     this.loanInterestTierBandSet = loanInterestTierBandSet;
     return this;
   }
 
-  public OBReadProduct2DataOtherProductTypeLoanInterest addLoanInterestTierBandSetItem(OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet loanInterestTierBandSetItem) {
+  public OBReadProduct2DataOtherProductTypeLoanInterest addLoanInterestTierBandSetItem(
+      OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet loanInterestTierBandSetItem) {
     this.loanInterestTierBandSet.add(loanInterestTierBandSetItem);
     return this;
   }
 
   /**
    * Get loanInterestTierBandSet
+   * 
    * @return loanInterestTierBandSet
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet> getLoanInterestTierBandSet() {
     return loanInterestTierBandSet;
   }
 
-  public void setLoanInterestTierBandSet(List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet> loanInterestTierBandSet) {
+  public void setLoanInterestTierBandSet(
+      List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBandSet> loanInterestTierBandSet) {
     this.loanInterestTierBandSet = loanInterestTierBandSet;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -83,8 +87,8 @@ public class OBReadProduct2DataOtherProductTypeLoanInterest   {
       return false;
     }
     OBReadProduct2DataOtherProductTypeLoanInterest obReadProduct2DataOtherProductTypeLoanInterest = (OBReadProduct2DataOtherProductTypeLoanInterest) o;
-    return Objects.equals(this.notes, obReadProduct2DataOtherProductTypeLoanInterest.notes) &&
-        Objects.equals(this.loanInterestTierBandSet, obReadProduct2DataOtherProductTypeLoanInterest.loanInterestTierBandSet);
+    return Objects.equals(this.notes, obReadProduct2DataOtherProductTypeLoanInterest.notes) && Objects
+        .equals(this.loanInterestTierBandSet, obReadProduct2DataOtherProductTypeLoanInterest.loanInterestTierBandSet);
   }
 
   @Override
@@ -96,7 +100,7 @@ public class OBReadProduct2DataOtherProductTypeLoanInterest   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductTypeLoanInterest {\n");
-    
+
     sb.append("    notes: ").append(toIndentedString(notes)).append("\n");
     sb.append("    loanInterestTierBandSet: ").append(toIndentedString(loanInterestTierBandSet)).append("\n");
     sb.append("}");
@@ -114,4 +118,3 @@ public class OBReadProduct2DataOtherProductTypeLoanInterest   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

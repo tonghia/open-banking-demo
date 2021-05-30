@@ -15,7 +15,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Set of elements used to provide details of a fee for the statement resource.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBStatement2StatementFee   {
+public class OBStatement2StatementFee {
   @JsonProperty("Description")
   private String description;
 
@@ -44,8 +44,9 @@ public class OBStatement2StatementFee   {
 
   /**
    * Description that may be available for the statement fee.
+   * 
    * @return description
-  */
+   */
   @ApiModelProperty(value = "Description that may be available for the statement fee.")
   public String getDescription() {
     return description;
@@ -62,8 +63,9 @@ public class OBStatement2StatementFee   {
 
   /**
    * Get creditDebitIndicator
+   * 
    * @return creditDebitIndicator
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBCreditDebitCode0 getCreditDebitIndicator() {
     return creditDebitIndicator;
@@ -80,8 +82,9 @@ public class OBStatement2StatementFee   {
 
   /**
    * Fee type, in a coded form.
+   * 
    * @return type
-  */
+   */
   @ApiModelProperty(required = true, value = "Fee type, in a coded form.")
   public String getType() {
     return type;
@@ -97,9 +100,11 @@ public class OBStatement2StatementFee   {
   }
 
   /**
-   * Rate charged for Statement Fee (where it is charged in terms of a rate rather than an amount)
+   * Rate charged for Statement Fee (where it is charged in terms of a rate rather
+   * than an amount)
+   * 
    * @return rate
-  */
+   */
   @ApiModelProperty(value = "Rate charged for Statement Fee (where it is charged in terms of a rate rather than an amount)")
   public BigDecimal getRate() {
     return rate;
@@ -116,8 +121,9 @@ public class OBStatement2StatementFee   {
 
   /**
    * Description that may be available for the statement fee rate type.
+   * 
    * @return rateType
-  */
+   */
   @ApiModelProperty(value = "Description that may be available for the statement fee rate type.")
   public String getRateType() {
     return rateType;
@@ -134,8 +140,9 @@ public class OBStatement2StatementFee   {
 
   /**
    * How frequently the fee is applied to the Account.
+   * 
    * @return frequency
-  */
+   */
   @ApiModelProperty(value = "How frequently the fee is applied to the Account.")
   public String getFrequency() {
     return frequency;
@@ -152,8 +159,9 @@ public class OBStatement2StatementFee   {
 
   /**
    * Get amount
+   * 
    * @return amount
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBActiveOrHistoricCurrencyAndAmount6 getAmount() {
     return amount;
@@ -162,7 +170,6 @@ public class OBStatement2StatementFee   {
   public void setAmount(OBActiveOrHistoricCurrencyAndAmount6 amount) {
     this.amount = amount;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -173,13 +180,13 @@ public class OBStatement2StatementFee   {
       return false;
     }
     OBStatement2StatementFee obStatement2StatementFee = (OBStatement2StatementFee) o;
-    return Objects.equals(this.description, obStatement2StatementFee.description) &&
-        Objects.equals(this.creditDebitIndicator, obStatement2StatementFee.creditDebitIndicator) &&
-        Objects.equals(this.type, obStatement2StatementFee.type) &&
-        Objects.equals(this.rate, obStatement2StatementFee.rate) &&
-        Objects.equals(this.rateType, obStatement2StatementFee.rateType) &&
-        Objects.equals(this.frequency, obStatement2StatementFee.frequency) &&
-        Objects.equals(this.amount, obStatement2StatementFee.amount);
+    return Objects.equals(this.description, obStatement2StatementFee.description)
+        && Objects.equals(this.creditDebitIndicator, obStatement2StatementFee.creditDebitIndicator)
+        && Objects.equals(this.type, obStatement2StatementFee.type)
+        && Objects.equals(this.rate, obStatement2StatementFee.rate)
+        && Objects.equals(this.rateType, obStatement2StatementFee.rateType)
+        && Objects.equals(this.frequency, obStatement2StatementFee.frequency)
+        && Objects.equals(this.amount, obStatement2StatementFee.amount);
   }
 
   @Override
@@ -191,7 +198,7 @@ public class OBStatement2StatementFee   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBStatement2StatementFee {\n");
-    
+
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    creditDebitIndicator: ").append(toIndentedString(creditDebitIndicator)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
@@ -214,4 +221,3 @@ public class OBStatement2StatementFee   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

@@ -14,9 +14,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBReadDataStatement2
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadDataStatement2   {
+public class OBReadDataStatement2 {
   @JsonProperty("Statement")
-  
+
   private List<OBStatement2> statement = null;
 
   public OBReadDataStatement2 statement(List<OBStatement2> statement) {
@@ -34,8 +34,9 @@ public class OBReadDataStatement2   {
 
   /**
    * Get statement
+   * 
    * @return statement
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBStatement2> getStatement() {
     return statement;
@@ -44,7 +45,6 @@ public class OBReadDataStatement2   {
   public void setStatement(List<OBStatement2> statement) {
     this.statement = statement;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -67,7 +67,7 @@ public class OBReadDataStatement2   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadDataStatement2 {\n");
-    
+
     sb.append("    statement: ").append(toIndentedString(statement)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -84,4 +84,3 @@ public class OBReadDataStatement2   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

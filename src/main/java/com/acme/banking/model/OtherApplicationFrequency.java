@@ -8,11 +8,12 @@ import io.swagger.annotations.ApiModelProperty;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Other application frequencies that are not available in the standard code list
+ * Other application frequencies that are not available in the standard code
+ * list
  */
 @ApiModel(description = "Other application frequencies that are not available in the standard code list")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OtherApplicationFrequency   {
+public class OtherApplicationFrequency {
   @JsonProperty("Code")
   private String code;
 
@@ -29,8 +30,9 @@ public class OtherApplicationFrequency   {
 
   /**
    * The four letter Mnemonic used within an XML file to identify a code
+   * 
    * @return code
-  */
+   */
   @ApiModelProperty(value = "The four letter Mnemonic used within an XML file to identify a code")
   public String getCode() {
     return code;
@@ -47,8 +49,9 @@ public class OtherApplicationFrequency   {
 
   /**
    * Long name associated with the code
+   * 
    * @return name
-  */
+   */
   @ApiModelProperty(required = true, value = "Long name associated with the code")
   public String getName() {
     return name;
@@ -65,8 +68,9 @@ public class OtherApplicationFrequency   {
 
   /**
    * Description to describe the purpose of the code
+   * 
    * @return description
-  */
+   */
   @ApiModelProperty(required = true, value = "Description to describe the purpose of the code")
   public String getDescription() {
     return description;
@@ -75,7 +79,6 @@ public class OtherApplicationFrequency   {
   public void setDescription(String description) {
     this.description = description;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -86,9 +89,9 @@ public class OtherApplicationFrequency   {
       return false;
     }
     OtherApplicationFrequency otherApplicationFrequency = (OtherApplicationFrequency) o;
-    return Objects.equals(this.code, otherApplicationFrequency.code) &&
-        Objects.equals(this.name, otherApplicationFrequency.name) &&
-        Objects.equals(this.description, otherApplicationFrequency.description);
+    return Objects.equals(this.code, otherApplicationFrequency.code)
+        && Objects.equals(this.name, otherApplicationFrequency.name)
+        && Objects.equals(this.description, otherApplicationFrequency.description);
   }
 
   @Override
@@ -100,7 +103,7 @@ public class OtherApplicationFrequency   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OtherApplicationFrequency {\n");
-    
+
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
@@ -119,4 +122,3 @@ public class OtherApplicationFrequency   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

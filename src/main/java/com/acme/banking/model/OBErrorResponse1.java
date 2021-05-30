@@ -11,11 +11,12 @@ import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * An array of detail error codes, and messages, and URLs to documentation to help remediation.
+ * An array of detail error codes, and messages, and URLs to documentation to
+ * help remediation.
  */
 @ApiModel(description = "An array of detail error codes, and messages, and URLs to documentation to help remediation.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBErrorResponse1   {
+public class OBErrorResponse1 {
   @JsonProperty("Code")
   private String code;
 
@@ -26,7 +27,7 @@ public class OBErrorResponse1   {
   private String message;
 
   @JsonProperty("Errors")
-  
+
   private List<OBError1> errors = new ArrayList<>();
 
   public OBErrorResponse1 code(String code) {
@@ -36,8 +37,9 @@ public class OBErrorResponse1   {
 
   /**
    * High level textual error code, to help categorize the errors.
+   * 
    * @return code
-  */
+   */
   @ApiModelProperty(required = true, value = "High level textual error code, to help categorize the errors.")
   public String getCode() {
     return code;
@@ -53,9 +55,11 @@ public class OBErrorResponse1   {
   }
 
   /**
-   * A unique reference for the error instance, for audit purposes, in case of unknown/unclassified errors.
+   * A unique reference for the error instance, for audit purposes, in case of
+   * unknown/unclassified errors.
+   * 
    * @return id
-  */
+   */
   @ApiModelProperty(value = "A unique reference for the error instance, for audit purposes, in case of unknown/unclassified errors.")
   public String getId() {
     return id;
@@ -71,9 +75,11 @@ public class OBErrorResponse1   {
   }
 
   /**
-   * Brief Error message, e.g., 'There is something wrong with the request parameters provided'
+   * Brief Error message, e.g., 'There is something wrong with the request
+   * parameters provided'
+   * 
    * @return message
-  */
+   */
   @ApiModelProperty(required = true, value = "Brief Error message, e.g., 'There is something wrong with the request parameters provided'")
   public String getMessage() {
     return message;
@@ -95,8 +101,9 @@ public class OBErrorResponse1   {
 
   /**
    * Get errors
+   * 
    * @return errors
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public List<OBError1> getErrors() {
     return errors;
@@ -105,7 +112,6 @@ public class OBErrorResponse1   {
   public void setErrors(List<OBError1> errors) {
     this.errors = errors;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -116,10 +122,9 @@ public class OBErrorResponse1   {
       return false;
     }
     OBErrorResponse1 obErrorResponse1 = (OBErrorResponse1) o;
-    return Objects.equals(this.code, obErrorResponse1.code) &&
-        Objects.equals(this.id, obErrorResponse1.id) &&
-        Objects.equals(this.message, obErrorResponse1.message) &&
-        Objects.equals(this.errors, obErrorResponse1.errors);
+    return Objects.equals(this.code, obErrorResponse1.code) && Objects.equals(this.id, obErrorResponse1.id)
+        && Objects.equals(this.message, obErrorResponse1.message)
+        && Objects.equals(this.errors, obErrorResponse1.errors);
   }
 
   @Override
@@ -131,7 +136,7 @@ public class OBErrorResponse1   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBErrorResponse1 {\n");
-    
+
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    message: ").append(toIndentedString(message)).append("\n");
@@ -151,4 +156,3 @@ public class OBErrorResponse1   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

@@ -14,9 +14,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBReadAccount6Data
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadAccount6Data   {
+public class OBReadAccount6Data {
   @JsonProperty("Account")
-  
+
   private List<OBAccount6> account = null;
 
   public OBReadAccount6Data account(List<OBAccount6> account) {
@@ -34,8 +34,9 @@ public class OBReadAccount6Data   {
 
   /**
    * Get account
+   * 
    * @return account
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBAccount6> getAccount() {
     return account;
@@ -44,7 +45,6 @@ public class OBReadAccount6Data   {
   public void setAccount(List<OBAccount6> account) {
     this.account = account;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -67,7 +67,7 @@ public class OBReadAccount6Data   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadAccount6Data {\n");
-    
+
     sb.append("    account: ").append(toIndentedString(account)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -84,4 +84,3 @@ public class OBReadAccount6Data   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

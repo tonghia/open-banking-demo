@@ -14,9 +14,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBReadDataTransaction6
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadDataTransaction6   {
+public class OBReadDataTransaction6 {
   @JsonProperty("Transaction")
-  
+
   private List<OBTransaction6> transaction = null;
 
   public OBReadDataTransaction6 transaction(List<OBTransaction6> transaction) {
@@ -34,8 +34,9 @@ public class OBReadDataTransaction6   {
 
   /**
    * Get transaction
+   * 
    * @return transaction
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBTransaction6> getTransaction() {
     return transaction;
@@ -44,7 +45,6 @@ public class OBReadDataTransaction6   {
   public void setTransaction(List<OBTransaction6> transaction) {
     this.transaction = transaction;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -67,7 +67,7 @@ public class OBReadDataTransaction6   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadDataTransaction6 {\n");
-    
+
     sb.append("    transaction: ").append(toIndentedString(transaction)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -84,4 +84,3 @@ public class OBReadDataTransaction6   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

@@ -14,37 +14,45 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * ProductDetails1
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class ProductDetails1   {
+public class ProductDetails1 {
   /**
-   * Market segmentation is a marketing term referring to the aggregating of prospective buyers into groups, or segments, that have common needs and respond similarly to a marketing action. Market segmentation enables companies to target different categories of consumers who perceive the full value of certain products and services differently from one another.  Read more: Market Segmentation http://www.investopedia.com/terms/m/marketsegmentation.asp#ixzz4gfEEalTd  With respect to PCA products, they are segmented in relation to different markets that they wish to focus on. 
+   * Market segmentation is a marketing term referring to the aggregating of
+   * prospective buyers into groups, or segments, that have common needs and
+   * respond similarly to a marketing action. Market segmentation enables
+   * companies to target different categories of consumers who perceive the full
+   * value of certain products and services differently from one another. Read
+   * more: Market Segmentation
+   * http://www.investopedia.com/terms/m/marketsegmentation.asp#ixzz4gfEEalTd With
+   * respect to PCA products, they are segmented in relation to different markets
+   * that they wish to focus on.
    */
   public enum SegmentEnum {
     BASIC("Basic"),
-    
+
     BENEFITANDREWARD("BenefitAndReward"),
-    
+
     CREDITINTEREST("CreditInterest"),
-    
+
     CASHBACK("Cashback"),
-    
+
     GENERAL("General"),
-    
+
     GRADUATE("Graduate"),
-    
+
     OTHER("Other"),
-    
+
     OVERDRAFT("Overdraft"),
-    
+
     PACKAGED("Packaged"),
-    
+
     PREMIUM("Premium"),
-    
+
     REWARD("Reward"),
-    
+
     STUDENT("Student"),
-    
+
     YOUNGADULT("YoungAdult"),
-    
+
     YOUTH("Youth");
 
     private String value;
@@ -75,14 +83,14 @@ public class ProductDetails1   {
   }
 
   @JsonProperty("Segment")
-  
+
   private List<SegmentEnum> segment = null;
 
   @JsonProperty("MonthlyMaximumCharge")
   private String monthlyMaximumCharge;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   public ProductDetails1 segment(List<SegmentEnum> segment) {
@@ -99,9 +107,18 @@ public class ProductDetails1   {
   }
 
   /**
-   * Market segmentation is a marketing term referring to the aggregating of prospective buyers into groups, or segments, that have common needs and respond similarly to a marketing action. Market segmentation enables companies to target different categories of consumers who perceive the full value of certain products and services differently from one another.  Read more: Market Segmentation http://www.investopedia.com/terms/m/marketsegmentation.asp#ixzz4gfEEalTd  With respect to PCA products, they are segmented in relation to different markets that they wish to focus on. 
+   * Market segmentation is a marketing term referring to the aggregating of
+   * prospective buyers into groups, or segments, that have common needs and
+   * respond similarly to a marketing action. Market segmentation enables
+   * companies to target different categories of consumers who perceive the full
+   * value of certain products and services differently from one another. Read
+   * more: Market Segmentation
+   * http://www.investopedia.com/terms/m/marketsegmentation.asp#ixzz4gfEEalTd With
+   * respect to PCA products, they are segmented in relation to different markets
+   * that they wish to focus on.
+   * 
    * @return segment
-  */
+   */
   @ApiModelProperty(value = "Market segmentation is a marketing term referring to the aggregating of prospective buyers into groups, or segments, that have common needs and respond similarly to a marketing action. Market segmentation enables companies to target different categories of consumers who perceive the full value of certain products and services differently from one another.  Read more: Market Segmentation http://www.investopedia.com/terms/m/marketsegmentation.asp#ixzz4gfEEalTd  With respect to PCA products, they are segmented in relation to different markets that they wish to focus on. ")
   public List<SegmentEnum> getSegment() {
     return segment;
@@ -117,9 +134,11 @@ public class ProductDetails1   {
   }
 
   /**
-   * The maximum relevant charges that could accrue as defined fully in Part 7 of the CMA order
+   * The maximum relevant charges that could accrue as defined fully in Part 7 of
+   * the CMA order
+   * 
    * @return monthlyMaximumCharge
-  */
+   */
   @ApiModelProperty(value = "The maximum relevant charges that could accrue as defined fully in Part 7 of the CMA order")
   public String getMonthlyMaximumCharge() {
     return monthlyMaximumCharge;
@@ -144,8 +163,9 @@ public class ProductDetails1   {
 
   /**
    * Optional additional notes to supplement the Core product details
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "Optional additional notes to supplement the Core product details")
   public List<String> getNotes() {
     return notes;
@@ -154,7 +174,6 @@ public class ProductDetails1   {
   public void setNotes(List<String> notes) {
     this.notes = notes;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -165,9 +184,9 @@ public class ProductDetails1   {
       return false;
     }
     ProductDetails1 productDetails1 = (ProductDetails1) o;
-    return Objects.equals(this.segment, productDetails1.segment) &&
-        Objects.equals(this.monthlyMaximumCharge, productDetails1.monthlyMaximumCharge) &&
-        Objects.equals(this.notes, productDetails1.notes);
+    return Objects.equals(this.segment, productDetails1.segment)
+        && Objects.equals(this.monthlyMaximumCharge, productDetails1.monthlyMaximumCharge)
+        && Objects.equals(this.notes, productDetails1.notes);
   }
 
   @Override
@@ -179,7 +198,7 @@ public class ProductDetails1   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ProductDetails1 {\n");
-    
+
     sb.append("    segment: ").append(toIndentedString(segment)).append("\n");
     sb.append("    monthlyMaximumCharge: ").append(toIndentedString(monthlyMaximumCharge)).append("\n");
     sb.append("    notes: ").append(toIndentedString(notes)).append("\n");
@@ -198,4 +217,3 @@ public class ProductDetails1   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

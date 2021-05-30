@@ -11,11 +11,12 @@ import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Information that locates and identifies a specific address, as defined by postal services.
+ * Information that locates and identifies a specific address, as defined by
+ * postal services.
  */
 @ApiModel(description = "Information that locates and identifies a specific address, as defined by postal services.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBPostalAddress6   {
+public class OBPostalAddress6 {
   @JsonProperty("AddressType")
   private OBAddressTypeCode addressType;
 
@@ -44,7 +45,7 @@ public class OBPostalAddress6   {
   private String country;
 
   @JsonProperty("AddressLine")
-  
+
   private List<String> addressLine = null;
 
   public OBPostalAddress6 addressType(OBAddressTypeCode addressType) {
@@ -54,8 +55,9 @@ public class OBPostalAddress6   {
 
   /**
    * Get addressType
+   * 
    * @return addressType
-  */
+   */
   @ApiModelProperty(value = "")
   public OBAddressTypeCode getAddressType() {
     return addressType;
@@ -72,8 +74,9 @@ public class OBPostalAddress6   {
 
   /**
    * Identification of a division of a large organisation or building.
+   * 
    * @return department
-  */
+   */
   @ApiModelProperty(value = "Identification of a division of a large organisation or building.")
   public String getDepartment() {
     return department;
@@ -90,8 +93,9 @@ public class OBPostalAddress6   {
 
   /**
    * Identification of a sub-division of a large organisation or building.
+   * 
    * @return subDepartment
-  */
+   */
   @ApiModelProperty(value = "Identification of a sub-division of a large organisation or building.")
   public String getSubDepartment() {
     return subDepartment;
@@ -108,8 +112,9 @@ public class OBPostalAddress6   {
 
   /**
    * Name of a street or thoroughfare.
+   * 
    * @return streetName
-  */
+   */
   @ApiModelProperty(value = "Name of a street or thoroughfare.")
   public String getStreetName() {
     return streetName;
@@ -126,8 +131,9 @@ public class OBPostalAddress6   {
 
   /**
    * Number that identifies the position of a building on a street.
+   * 
    * @return buildingNumber
-  */
+   */
   @ApiModelProperty(value = "Number that identifies the position of a building on a street.")
   public String getBuildingNumber() {
     return buildingNumber;
@@ -143,9 +149,11 @@ public class OBPostalAddress6   {
   }
 
   /**
-   * Identifier consisting of a group of letters and/or numbers that is added to a postal address to assist the sorting of mail.
+   * Identifier consisting of a group of letters and/or numbers that is added to a
+   * postal address to assist the sorting of mail.
+   * 
    * @return postCode
-  */
+   */
   @ApiModelProperty(value = "Identifier consisting of a group of letters and/or numbers that is added to a postal address to assist the sorting of mail.")
   public String getPostCode() {
     return postCode;
@@ -162,8 +170,9 @@ public class OBPostalAddress6   {
 
   /**
    * Name of a built-up area, with defined boundaries, and a local government.
+   * 
    * @return townName
-  */
+   */
   @ApiModelProperty(value = "Name of a built-up area, with defined boundaries, and a local government.")
   public String getTownName() {
     return townName;
@@ -180,8 +189,9 @@ public class OBPostalAddress6   {
 
   /**
    * Identifies a subdivision of a country such as state, region, county.
+   * 
    * @return countrySubDivision
-  */
+   */
   @ApiModelProperty(value = "Identifies a subdivision of a country such as state, region, county.")
   public String getCountrySubDivision() {
     return countrySubDivision;
@@ -198,8 +208,9 @@ public class OBPostalAddress6   {
 
   /**
    * Nation with its own government.
+   * 
    * @return country
-  */
+   */
   @ApiModelProperty(value = "Nation with its own government.")
   public String getCountry() {
     return country;
@@ -224,8 +235,9 @@ public class OBPostalAddress6   {
 
   /**
    * Get addressLine
+   * 
    * @return addressLine
-  */
+   */
   @ApiModelProperty(value = "")
   public List<String> getAddressLine() {
     return addressLine;
@@ -234,7 +246,6 @@ public class OBPostalAddress6   {
   public void setAddressLine(List<String> addressLine) {
     this.addressLine = addressLine;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -245,28 +256,29 @@ public class OBPostalAddress6   {
       return false;
     }
     OBPostalAddress6 obPostalAddress6 = (OBPostalAddress6) o;
-    return Objects.equals(this.addressType, obPostalAddress6.addressType) &&
-        Objects.equals(this.department, obPostalAddress6.department) &&
-        Objects.equals(this.subDepartment, obPostalAddress6.subDepartment) &&
-        Objects.equals(this.streetName, obPostalAddress6.streetName) &&
-        Objects.equals(this.buildingNumber, obPostalAddress6.buildingNumber) &&
-        Objects.equals(this.postCode, obPostalAddress6.postCode) &&
-        Objects.equals(this.townName, obPostalAddress6.townName) &&
-        Objects.equals(this.countrySubDivision, obPostalAddress6.countrySubDivision) &&
-        Objects.equals(this.country, obPostalAddress6.country) &&
-        Objects.equals(this.addressLine, obPostalAddress6.addressLine);
+    return Objects.equals(this.addressType, obPostalAddress6.addressType)
+        && Objects.equals(this.department, obPostalAddress6.department)
+        && Objects.equals(this.subDepartment, obPostalAddress6.subDepartment)
+        && Objects.equals(this.streetName, obPostalAddress6.streetName)
+        && Objects.equals(this.buildingNumber, obPostalAddress6.buildingNumber)
+        && Objects.equals(this.postCode, obPostalAddress6.postCode)
+        && Objects.equals(this.townName, obPostalAddress6.townName)
+        && Objects.equals(this.countrySubDivision, obPostalAddress6.countrySubDivision)
+        && Objects.equals(this.country, obPostalAddress6.country)
+        && Objects.equals(this.addressLine, obPostalAddress6.addressLine);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(addressType, department, subDepartment, streetName, buildingNumber, postCode, townName, countrySubDivision, country, addressLine);
+    return Objects.hash(addressType, department, subDepartment, streetName, buildingNumber, postCode, townName,
+        countrySubDivision, country, addressLine);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBPostalAddress6 {\n");
-    
+
     sb.append("    addressType: ").append(toIndentedString(addressType)).append("\n");
     sb.append("    department: ").append(toIndentedString(department)).append("\n");
     sb.append("    subDepartment: ").append(toIndentedString(subDepartment)).append("\n");
@@ -292,4 +304,3 @@ public class OBPostalAddress6   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

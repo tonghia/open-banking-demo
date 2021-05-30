@@ -11,23 +11,23 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Fee/Charge Type
  */
 public enum OBFeeType1Code {
-  
+
   FEPF("FEPF"),
-  
+
   FTOT("FTOT"),
-  
+
   FYAF("FYAF"),
-  
+
   FYAM("FYAM"),
-  
+
   FYAQ("FYAQ"),
-  
+
   FYCP("FYCP"),
-  
+
   FYDB("FYDB"),
-  
+
   FYMI("FYMI"),
-  
+
   FYXX("FYXX");
 
   private String value;
@@ -56,4 +56,3 @@ public enum OBFeeType1Code {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

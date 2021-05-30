@@ -8,11 +8,12 @@ import io.swagger.annotations.ApiModelProperty;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
- * Set of elements used to fully identify the type of underlying transaction resulting in an entry.
+ * Set of elements used to fully identify the type of underlying transaction
+ * resulting in an entry.
  */
 @ApiModel(description = "Set of elements used to fully identify the type of underlying transaction resulting in an entry.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBBankTransactionCodeStructure1   {
+public class OBBankTransactionCodeStructure1 {
   @JsonProperty("Code")
   private String code;
 
@@ -26,8 +27,9 @@ public class OBBankTransactionCodeStructure1   {
 
   /**
    * Specifies the family within a domain.
+   * 
    * @return code
-  */
+   */
   @ApiModelProperty(required = true, value = "Specifies the family within a domain.")
   public String getCode() {
     return code;
@@ -44,8 +46,9 @@ public class OBBankTransactionCodeStructure1   {
 
   /**
    * Specifies the sub-product family within a specific family.
+   * 
    * @return subCode
-  */
+   */
   @ApiModelProperty(required = true, value = "Specifies the sub-product family within a specific family.")
   public String getSubCode() {
     return subCode;
@@ -54,7 +57,6 @@ public class OBBankTransactionCodeStructure1   {
   public void setSubCode(String subCode) {
     this.subCode = subCode;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -65,8 +67,8 @@ public class OBBankTransactionCodeStructure1   {
       return false;
     }
     OBBankTransactionCodeStructure1 obBankTransactionCodeStructure1 = (OBBankTransactionCodeStructure1) o;
-    return Objects.equals(this.code, obBankTransactionCodeStructure1.code) &&
-        Objects.equals(this.subCode, obBankTransactionCodeStructure1.subCode);
+    return Objects.equals(this.code, obBankTransactionCodeStructure1.code)
+        && Objects.equals(this.subCode, obBankTransactionCodeStructure1.subCode);
   }
 
   @Override
@@ -78,7 +80,7 @@ public class OBBankTransactionCodeStructure1   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBBankTransactionCodeStructure1 {\n");
-    
+
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    subCode: ").append(toIndentedString(subCode)).append("\n");
     sb.append("}");
@@ -96,4 +98,3 @@ public class OBBankTransactionCodeStructure1   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

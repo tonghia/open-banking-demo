@@ -16,21 +16,23 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Overdraft fees and charges")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class Overdraft1OverdraftFeesCharges   {
+public class Overdraft1OverdraftFeesCharges {
   @JsonProperty("OverdraftFeeChargeCap")
-  
+
   private List<Overdraft1OverdraftFeeChargeCap> overdraftFeeChargeCap = null;
 
   @JsonProperty("OverdraftFeeChargeDetail")
-  
+
   private List<Overdraft1OverdraftFeeChargeDetail> overdraftFeeChargeDetail = new ArrayList<>();
 
-  public Overdraft1OverdraftFeesCharges overdraftFeeChargeCap(List<Overdraft1OverdraftFeeChargeCap> overdraftFeeChargeCap) {
+  public Overdraft1OverdraftFeesCharges overdraftFeeChargeCap(
+      List<Overdraft1OverdraftFeeChargeCap> overdraftFeeChargeCap) {
     this.overdraftFeeChargeCap = overdraftFeeChargeCap;
     return this;
   }
 
-  public Overdraft1OverdraftFeesCharges addOverdraftFeeChargeCapItem(Overdraft1OverdraftFeeChargeCap overdraftFeeChargeCapItem) {
+  public Overdraft1OverdraftFeesCharges addOverdraftFeeChargeCapItem(
+      Overdraft1OverdraftFeeChargeCap overdraftFeeChargeCapItem) {
     if (this.overdraftFeeChargeCap == null) {
       this.overdraftFeeChargeCap = new ArrayList<>();
     }
@@ -39,9 +41,11 @@ public class Overdraft1OverdraftFeesCharges   {
   }
 
   /**
-   * Details about any caps (maximum charges) that apply to a particular fee/charge
+   * Details about any caps (maximum charges) that apply to a particular
+   * fee/charge
+   * 
    * @return overdraftFeeChargeCap
-  */
+   */
   @ApiModelProperty(value = "Details about any caps (maximum charges) that apply to a particular fee/charge")
   public List<Overdraft1OverdraftFeeChargeCap> getOverdraftFeeChargeCap() {
     return overdraftFeeChargeCap;
@@ -51,20 +55,23 @@ public class Overdraft1OverdraftFeesCharges   {
     this.overdraftFeeChargeCap = overdraftFeeChargeCap;
   }
 
-  public Overdraft1OverdraftFeesCharges overdraftFeeChargeDetail(List<Overdraft1OverdraftFeeChargeDetail> overdraftFeeChargeDetail) {
+  public Overdraft1OverdraftFeesCharges overdraftFeeChargeDetail(
+      List<Overdraft1OverdraftFeeChargeDetail> overdraftFeeChargeDetail) {
     this.overdraftFeeChargeDetail = overdraftFeeChargeDetail;
     return this;
   }
 
-  public Overdraft1OverdraftFeesCharges addOverdraftFeeChargeDetailItem(Overdraft1OverdraftFeeChargeDetail overdraftFeeChargeDetailItem) {
+  public Overdraft1OverdraftFeesCharges addOverdraftFeeChargeDetailItem(
+      Overdraft1OverdraftFeeChargeDetail overdraftFeeChargeDetailItem) {
     this.overdraftFeeChargeDetail.add(overdraftFeeChargeDetailItem);
     return this;
   }
 
   /**
    * Details about the fees/charges
+   * 
    * @return overdraftFeeChargeDetail
-  */
+   */
   @ApiModelProperty(required = true, value = "Details about the fees/charges")
   public List<Overdraft1OverdraftFeeChargeDetail> getOverdraftFeeChargeDetail() {
     return overdraftFeeChargeDetail;
@@ -73,7 +80,6 @@ public class Overdraft1OverdraftFeesCharges   {
   public void setOverdraftFeeChargeDetail(List<Overdraft1OverdraftFeeChargeDetail> overdraftFeeChargeDetail) {
     this.overdraftFeeChargeDetail = overdraftFeeChargeDetail;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -84,8 +90,8 @@ public class Overdraft1OverdraftFeesCharges   {
       return false;
     }
     Overdraft1OverdraftFeesCharges overdraft1OverdraftFeesCharges = (Overdraft1OverdraftFeesCharges) o;
-    return Objects.equals(this.overdraftFeeChargeCap, overdraft1OverdraftFeesCharges.overdraftFeeChargeCap) &&
-        Objects.equals(this.overdraftFeeChargeDetail, overdraft1OverdraftFeesCharges.overdraftFeeChargeDetail);
+    return Objects.equals(this.overdraftFeeChargeCap, overdraft1OverdraftFeesCharges.overdraftFeeChargeCap)
+        && Objects.equals(this.overdraftFeeChargeDetail, overdraft1OverdraftFeesCharges.overdraftFeeChargeDetail);
   }
 
   @Override
@@ -97,7 +103,7 @@ public class Overdraft1OverdraftFeesCharges   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Overdraft1OverdraftFeesCharges {\n");
-    
+
     sb.append("    overdraftFeeChargeCap: ").append(toIndentedString(overdraftFeeChargeCap)).append("\n");
     sb.append("    overdraftFeeChargeDetail: ").append(toIndentedString(overdraftFeeChargeDetail)).append("\n");
     sb.append("}");
@@ -115,4 +121,3 @@ public class Overdraft1OverdraftFeesCharges   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

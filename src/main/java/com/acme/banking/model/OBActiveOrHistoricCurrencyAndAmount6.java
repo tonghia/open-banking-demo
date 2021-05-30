@@ -12,7 +12,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Amount of money associated with the statement fee type.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBActiveOrHistoricCurrencyAndAmount6   {
+public class OBActiveOrHistoricCurrencyAndAmount6 {
   @JsonProperty("Amount")
   private String amount;
 
@@ -25,9 +25,11 @@ public class OBActiveOrHistoricCurrencyAndAmount6   {
   }
 
   /**
-   * A number of monetary units specified in an active currency where the unit of currency is explicit and compliant with ISO 4217.
+   * A number of monetary units specified in an active currency where the unit of
+   * currency is explicit and compliant with ISO 4217.
+   * 
    * @return amount
-  */
+   */
   @ApiModelProperty(required = true, value = "A number of monetary units specified in an active currency where the unit of currency is explicit and compliant with ISO 4217.")
   public String getAmount() {
     return amount;
@@ -43,9 +45,13 @@ public class OBActiveOrHistoricCurrencyAndAmount6   {
   }
 
   /**
-   * A code allocated to a currency by a Maintenance Agency under an international identification scheme, as described in the latest edition of the international standard ISO 4217 \"Codes for the representation of currencies and funds\".
+   * A code allocated to a currency by a Maintenance Agency under an international
+   * identification scheme, as described in the latest edition of the
+   * international standard ISO 4217 \"Codes for the representation of currencies
+   * and funds\".
+   * 
    * @return currency
-  */
+   */
   @ApiModelProperty(required = true, value = "A code allocated to a currency by a Maintenance Agency under an international identification scheme, as described in the latest edition of the international standard ISO 4217 \"Codes for the representation of currencies and funds\".")
   public String getCurrency() {
     return currency;
@@ -54,7 +60,6 @@ public class OBActiveOrHistoricCurrencyAndAmount6   {
   public void setCurrency(String currency) {
     this.currency = currency;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -65,8 +70,8 @@ public class OBActiveOrHistoricCurrencyAndAmount6   {
       return false;
     }
     OBActiveOrHistoricCurrencyAndAmount6 obActiveOrHistoricCurrencyAndAmount6 = (OBActiveOrHistoricCurrencyAndAmount6) o;
-    return Objects.equals(this.amount, obActiveOrHistoricCurrencyAndAmount6.amount) &&
-        Objects.equals(this.currency, obActiveOrHistoricCurrencyAndAmount6.currency);
+    return Objects.equals(this.amount, obActiveOrHistoricCurrencyAndAmount6.amount)
+        && Objects.equals(this.currency, obActiveOrHistoricCurrencyAndAmount6.currency);
   }
 
   @Override
@@ -78,7 +83,7 @@ public class OBActiveOrHistoricCurrencyAndAmount6   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBActiveOrHistoricCurrencyAndAmount6 {\n");
-    
+
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
     sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
     sb.append("}");
@@ -96,4 +101,3 @@ public class OBActiveOrHistoricCurrencyAndAmount6   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

@@ -20,33 +20,33 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Details about the fees/charges")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OverdraftOverdraftFeeChargeDetail   {
+public class OverdraftOverdraftFeeChargeDetail {
   /**
    * Overdraft fee type
    */
   public enum FeeTypeEnum {
     ARRANGEDOVERDRAFT("ArrangedOverdraft"),
-    
+
     ANNUALREVIEW("AnnualReview"),
-    
+
     EMERGENCYBORROWING("EmergencyBorrowing"),
-    
+
     BORROWINGITEM("BorrowingItem"),
-    
+
     OVERDRAFTRENEWAL("OverdraftRenewal"),
-    
+
     OVERDRAFTSETUP("OverdraftSetup"),
-    
+
     SURCHARGE("Surcharge"),
-    
+
     TEMPOVERDRAFT("TempOverdraft"),
-    
+
     UNAUTHORISEDBORROWING("UnauthorisedBorrowing"),
-    
+
     UNAUTHORISEDPAIDTRANS("UnauthorisedPaidTrans"),
-    
+
     OTHER("Other"),
-    
+
     UNAUTHORISEDUNPAIDTRANS("UnauthorisedUnpaidTrans");
 
     private String value;
@@ -95,11 +95,12 @@ public class OverdraftOverdraftFeeChargeDetail   {
   private String feeRate;
 
   /**
-   * Rate type for overdraft fee/charge (where it is charged in terms of a rate rather than an amount)
+   * Rate type for overdraft fee/charge (where it is charged in terms of a rate
+   * rather than an amount)
    */
   public enum FeeRateTypeEnum {
     GROSS("Gross"),
-    
+
     OTHER("Other");
 
     private String value;
@@ -137,43 +138,43 @@ public class OverdraftOverdraftFeeChargeDetail   {
    */
   public enum ApplicationFrequencyEnum {
     ONCLOSING("OnClosing"),
-    
+
     ONOPENING("OnOpening"),
-    
+
     CHARGINGPERIOD("ChargingPeriod"),
-    
+
     DAILY("Daily"),
-    
+
     PERITEM("PerItem"),
-    
+
     MONTHLY("Monthly"),
-    
+
     ONANNIVERSARY("OnAnniversary"),
-    
+
     OTHER("Other"),
-    
+
     PERHUNDREDPOUNDS("PerHundredPounds"),
-    
+
     PERHOUR("PerHour"),
-    
+
     PEROCCURRENCE("PerOccurrence"),
-    
+
     PERSHEET("PerSheet"),
-    
+
     PERTRANSACTION("PerTransaction"),
-    
+
     PERTRANSACTIONAMOUNT("PerTransactionAmount"),
-    
+
     PERTRANSACTIONPERCENTAGE("PerTransactionPercentage"),
-    
+
     QUARTERLY("Quarterly"),
-    
+
     SIXMONTHLY("SixMonthly"),
-    
+
     STATEMENTMONTHLY("StatementMonthly"),
-    
+
     WEEKLY("Weekly"),
-    
+
     YEARLY("Yearly");
 
     private String value;
@@ -211,43 +212,43 @@ public class OverdraftOverdraftFeeChargeDetail   {
    */
   public enum CalculationFrequencyEnum {
     ONCLOSING("OnClosing"),
-    
+
     ONOPENING("OnOpening"),
-    
+
     CHARGINGPERIOD("ChargingPeriod"),
-    
+
     DAILY("Daily"),
-    
+
     PERITEM("PerItem"),
-    
+
     MONTHLY("Monthly"),
-    
+
     ONANNIVERSARY("OnAnniversary"),
-    
+
     OTHER("Other"),
-    
+
     PERHUNDREDPOUNDS("PerHundredPounds"),
-    
+
     PERHOUR("PerHour"),
-    
+
     PEROCCURRENCE("PerOccurrence"),
-    
+
     PERSHEET("PerSheet"),
-    
+
     PERTRANSACTION("PerTransaction"),
-    
+
     PERTRANSACTIONAMOUNT("PerTransactionAmount"),
-    
+
     PERTRANSACTIONPERCENTAGE("PerTransactionPercentage"),
-    
+
     QUARTERLY("Quarterly"),
-    
+
     SIXMONTHLY("SixMonthly"),
-    
+
     STATEMENTMONTHLY("StatementMonthly"),
-    
+
     WEEKLY("Weekly"),
-    
+
     YEARLY("Yearly");
 
     private String value;
@@ -281,11 +282,11 @@ public class OverdraftOverdraftFeeChargeDetail   {
   private CalculationFrequencyEnum calculationFrequency;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("OverdraftFeeChargeCap")
-  
+
   private List<OverdraftOverdraftFeeChargeCap> overdraftFeeChargeCap = null;
 
   @JsonProperty("OtherFeeType")
@@ -307,8 +308,9 @@ public class OverdraftOverdraftFeeChargeDetail   {
 
   /**
    * Overdraft fee type
+   * 
    * @return feeType
-  */
+   */
   @ApiModelProperty(required = true, value = "Overdraft fee type")
   public FeeTypeEnum getFeeType() {
     return feeType;
@@ -325,8 +327,9 @@ public class OverdraftOverdraftFeeChargeDetail   {
 
   /**
    * Indicates whether fee and charges are negotiable
+   * 
    * @return negotiableIndicator
-  */
+   */
   @ApiModelProperty(value = "Indicates whether fee and charges are negotiable")
   public Boolean getNegotiableIndicator() {
     return negotiableIndicator;
@@ -342,9 +345,11 @@ public class OverdraftOverdraftFeeChargeDetail   {
   }
 
   /**
-   * Indicates if the fee/charge is already covered by an 'Overdraft Control' fee or not.
+   * Indicates if the fee/charge is already covered by an 'Overdraft Control' fee
+   * or not.
+   * 
    * @return overdraftControlIndicator
-  */
+   */
   @ApiModelProperty(value = "Indicates if the fee/charge is already covered by an 'Overdraft Control' fee or not.")
   public Boolean getOverdraftControlIndicator() {
     return overdraftControlIndicator;
@@ -360,9 +365,11 @@ public class OverdraftOverdraftFeeChargeDetail   {
   }
 
   /**
-   * Every additional tranche of an overdraft balance to which an overdraft fee is applied
+   * Every additional tranche of an overdraft balance to which an overdraft fee is
+   * applied
+   * 
    * @return incrementalBorrowingAmount
-  */
+   */
   @ApiModelProperty(value = "Every additional tranche of an overdraft balance to which an overdraft fee is applied")
   public String getIncrementalBorrowingAmount() {
     return incrementalBorrowingAmount;
@@ -378,9 +385,11 @@ public class OverdraftOverdraftFeeChargeDetail   {
   }
 
   /**
-   * Amount charged for an overdraft fee/charge (where it is charged in terms of an amount rather than a rate)
+   * Amount charged for an overdraft fee/charge (where it is charged in terms of
+   * an amount rather than a rate)
+   * 
    * @return feeAmount
-  */
+   */
   @ApiModelProperty(value = "Amount charged for an overdraft fee/charge (where it is charged in terms of an amount rather than a rate)")
   public String getFeeAmount() {
     return feeAmount;
@@ -396,9 +405,11 @@ public class OverdraftOverdraftFeeChargeDetail   {
   }
 
   /**
-   * Rate charged for overdraft fee/charge (where it is charged in terms of a rate rather than an amount)
+   * Rate charged for overdraft fee/charge (where it is charged in terms of a rate
+   * rather than an amount)
+   * 
    * @return feeRate
-  */
+   */
   @ApiModelProperty(value = "Rate charged for overdraft fee/charge (where it is charged in terms of a rate rather than an amount)")
   public String getFeeRate() {
     return feeRate;
@@ -414,9 +425,11 @@ public class OverdraftOverdraftFeeChargeDetail   {
   }
 
   /**
-   * Rate type for overdraft fee/charge (where it is charged in terms of a rate rather than an amount)
+   * Rate type for overdraft fee/charge (where it is charged in terms of a rate
+   * rather than an amount)
+   * 
    * @return feeRateType
-  */
+   */
   @ApiModelProperty(value = "Rate type for overdraft fee/charge (where it is charged in terms of a rate rather than an amount)")
   public FeeRateTypeEnum getFeeRateType() {
     return feeRateType;
@@ -433,8 +446,9 @@ public class OverdraftOverdraftFeeChargeDetail   {
 
   /**
    * Frequency at which the overdraft charge is applied to the account
+   * 
    * @return applicationFrequency
-  */
+   */
   @ApiModelProperty(required = true, value = "Frequency at which the overdraft charge is applied to the account")
   public ApplicationFrequencyEnum getApplicationFrequency() {
     return applicationFrequency;
@@ -451,8 +465,9 @@ public class OverdraftOverdraftFeeChargeDetail   {
 
   /**
    * How often is the overdraft fee/charge calculated for the account.
+   * 
    * @return calculationFrequency
-  */
+   */
   @ApiModelProperty(value = "How often is the overdraft fee/charge calculated for the account.")
   public CalculationFrequencyEnum getCalculationFrequency() {
     return calculationFrequency;
@@ -476,9 +491,11 @@ public class OverdraftOverdraftFeeChargeDetail   {
   }
 
   /**
-   * Free text for capturing any other info related to Overdraft Fees Charge Details
+   * Free text for capturing any other info related to Overdraft Fees Charge
+   * Details
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "Free text for capturing any other info related to Overdraft Fees Charge Details")
   public List<String> getNotes() {
     return notes;
@@ -488,12 +505,14 @@ public class OverdraftOverdraftFeeChargeDetail   {
     this.notes = notes;
   }
 
-  public OverdraftOverdraftFeeChargeDetail overdraftFeeChargeCap(List<OverdraftOverdraftFeeChargeCap> overdraftFeeChargeCap) {
+  public OverdraftOverdraftFeeChargeDetail overdraftFeeChargeCap(
+      List<OverdraftOverdraftFeeChargeCap> overdraftFeeChargeCap) {
     this.overdraftFeeChargeCap = overdraftFeeChargeCap;
     return this;
   }
 
-  public OverdraftOverdraftFeeChargeDetail addOverdraftFeeChargeCapItem(OverdraftOverdraftFeeChargeCap overdraftFeeChargeCapItem) {
+  public OverdraftOverdraftFeeChargeDetail addOverdraftFeeChargeCapItem(
+      OverdraftOverdraftFeeChargeCap overdraftFeeChargeCapItem) {
     if (this.overdraftFeeChargeCap == null) {
       this.overdraftFeeChargeCap = new ArrayList<>();
     }
@@ -502,9 +521,12 @@ public class OverdraftOverdraftFeeChargeDetail   {
   }
 
   /**
-   * Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in gbp), an amount (in items) or a rate.
+   * Details about any caps (maximum charges) that apply to a particular
+   * fee/charge. Capping can either be based on an amount (in gbp), an amount (in
+   * items) or a rate.
+   * 
    * @return overdraftFeeChargeCap
-  */
+   */
   @ApiModelProperty(value = "Details about any caps (maximum charges) that apply to a particular fee/charge. Capping can either be based on an amount (in gbp), an amount (in items) or a rate.")
   public List<OverdraftOverdraftFeeChargeCap> getOverdraftFeeChargeCap() {
     return overdraftFeeChargeCap;
@@ -521,8 +543,9 @@ public class OverdraftOverdraftFeeChargeDetail   {
 
   /**
    * Get otherFeeType
+   * 
    * @return otherFeeType
-  */
+   */
   @ApiModelProperty(value = "")
   public OtherFeeType getOtherFeeType() {
     return otherFeeType;
@@ -539,8 +562,9 @@ public class OverdraftOverdraftFeeChargeDetail   {
 
   /**
    * Get otherFeeRateType
+   * 
    * @return otherFeeRateType
-  */
+   */
   @ApiModelProperty(value = "")
   public OtherFeeRateType getOtherFeeRateType() {
     return otherFeeRateType;
@@ -550,15 +574,17 @@ public class OverdraftOverdraftFeeChargeDetail   {
     this.otherFeeRateType = otherFeeRateType;
   }
 
-  public OverdraftOverdraftFeeChargeDetail otherApplicationFrequency(OtherApplicationFrequency otherApplicationFrequency) {
+  public OverdraftOverdraftFeeChargeDetail otherApplicationFrequency(
+      OtherApplicationFrequency otherApplicationFrequency) {
     this.otherApplicationFrequency = otherApplicationFrequency;
     return this;
   }
 
   /**
    * Get otherApplicationFrequency
+   * 
    * @return otherApplicationFrequency
-  */
+   */
   @ApiModelProperty(value = "")
   public OtherApplicationFrequency getOtherApplicationFrequency() {
     return otherApplicationFrequency;
@@ -568,15 +594,17 @@ public class OverdraftOverdraftFeeChargeDetail   {
     this.otherApplicationFrequency = otherApplicationFrequency;
   }
 
-  public OverdraftOverdraftFeeChargeDetail otherCalculationFrequency(OtherCalculationFrequency otherCalculationFrequency) {
+  public OverdraftOverdraftFeeChargeDetail otherCalculationFrequency(
+      OtherCalculationFrequency otherCalculationFrequency) {
     this.otherCalculationFrequency = otherCalculationFrequency;
     return this;
   }
 
   /**
    * Get otherCalculationFrequency
+   * 
    * @return otherCalculationFrequency
-  */
+   */
   @ApiModelProperty(value = "")
   public OtherCalculationFrequency getOtherCalculationFrequency() {
     return otherCalculationFrequency;
@@ -585,7 +613,6 @@ public class OverdraftOverdraftFeeChargeDetail   {
   public void setOtherCalculationFrequency(OtherCalculationFrequency otherCalculationFrequency) {
     this.otherCalculationFrequency = otherCalculationFrequency;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -596,33 +623,35 @@ public class OverdraftOverdraftFeeChargeDetail   {
       return false;
     }
     OverdraftOverdraftFeeChargeDetail overdraftOverdraftFeeChargeDetail = (OverdraftOverdraftFeeChargeDetail) o;
-    return Objects.equals(this.feeType, overdraftOverdraftFeeChargeDetail.feeType) &&
-        Objects.equals(this.negotiableIndicator, overdraftOverdraftFeeChargeDetail.negotiableIndicator) &&
-        Objects.equals(this.overdraftControlIndicator, overdraftOverdraftFeeChargeDetail.overdraftControlIndicator) &&
-        Objects.equals(this.incrementalBorrowingAmount, overdraftOverdraftFeeChargeDetail.incrementalBorrowingAmount) &&
-        Objects.equals(this.feeAmount, overdraftOverdraftFeeChargeDetail.feeAmount) &&
-        Objects.equals(this.feeRate, overdraftOverdraftFeeChargeDetail.feeRate) &&
-        Objects.equals(this.feeRateType, overdraftOverdraftFeeChargeDetail.feeRateType) &&
-        Objects.equals(this.applicationFrequency, overdraftOverdraftFeeChargeDetail.applicationFrequency) &&
-        Objects.equals(this.calculationFrequency, overdraftOverdraftFeeChargeDetail.calculationFrequency) &&
-        Objects.equals(this.notes, overdraftOverdraftFeeChargeDetail.notes) &&
-        Objects.equals(this.overdraftFeeChargeCap, overdraftOverdraftFeeChargeDetail.overdraftFeeChargeCap) &&
-        Objects.equals(this.otherFeeType, overdraftOverdraftFeeChargeDetail.otherFeeType) &&
-        Objects.equals(this.otherFeeRateType, overdraftOverdraftFeeChargeDetail.otherFeeRateType) &&
-        Objects.equals(this.otherApplicationFrequency, overdraftOverdraftFeeChargeDetail.otherApplicationFrequency) &&
-        Objects.equals(this.otherCalculationFrequency, overdraftOverdraftFeeChargeDetail.otherCalculationFrequency);
+    return Objects.equals(this.feeType, overdraftOverdraftFeeChargeDetail.feeType)
+        && Objects.equals(this.negotiableIndicator, overdraftOverdraftFeeChargeDetail.negotiableIndicator)
+        && Objects.equals(this.overdraftControlIndicator, overdraftOverdraftFeeChargeDetail.overdraftControlIndicator)
+        && Objects.equals(this.incrementalBorrowingAmount, overdraftOverdraftFeeChargeDetail.incrementalBorrowingAmount)
+        && Objects.equals(this.feeAmount, overdraftOverdraftFeeChargeDetail.feeAmount)
+        && Objects.equals(this.feeRate, overdraftOverdraftFeeChargeDetail.feeRate)
+        && Objects.equals(this.feeRateType, overdraftOverdraftFeeChargeDetail.feeRateType)
+        && Objects.equals(this.applicationFrequency, overdraftOverdraftFeeChargeDetail.applicationFrequency)
+        && Objects.equals(this.calculationFrequency, overdraftOverdraftFeeChargeDetail.calculationFrequency)
+        && Objects.equals(this.notes, overdraftOverdraftFeeChargeDetail.notes)
+        && Objects.equals(this.overdraftFeeChargeCap, overdraftOverdraftFeeChargeDetail.overdraftFeeChargeCap)
+        && Objects.equals(this.otherFeeType, overdraftOverdraftFeeChargeDetail.otherFeeType)
+        && Objects.equals(this.otherFeeRateType, overdraftOverdraftFeeChargeDetail.otherFeeRateType)
+        && Objects.equals(this.otherApplicationFrequency, overdraftOverdraftFeeChargeDetail.otherApplicationFrequency)
+        && Objects.equals(this.otherCalculationFrequency, overdraftOverdraftFeeChargeDetail.otherCalculationFrequency);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(feeType, negotiableIndicator, overdraftControlIndicator, incrementalBorrowingAmount, feeAmount, feeRate, feeRateType, applicationFrequency, calculationFrequency, notes, overdraftFeeChargeCap, otherFeeType, otherFeeRateType, otherApplicationFrequency, otherCalculationFrequency);
+    return Objects.hash(feeType, negotiableIndicator, overdraftControlIndicator, incrementalBorrowingAmount, feeAmount,
+        feeRate, feeRateType, applicationFrequency, calculationFrequency, notes, overdraftFeeChargeCap, otherFeeType,
+        otherFeeRateType, otherApplicationFrequency, otherCalculationFrequency);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OverdraftOverdraftFeeChargeDetail {\n");
-    
+
     sb.append("    feeType: ").append(toIndentedString(feeType)).append("\n");
     sb.append("    negotiableIndicator: ").append(toIndentedString(negotiableIndicator)).append("\n");
     sb.append("    overdraftControlIndicator: ").append(toIndentedString(overdraftControlIndicator)).append("\n");
@@ -653,4 +682,3 @@ public class OverdraftOverdraftFeeChargeDetail   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

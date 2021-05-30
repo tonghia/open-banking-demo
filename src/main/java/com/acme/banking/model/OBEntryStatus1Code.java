@@ -11,9 +11,9 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Status of a transaction entry on the books of the account servicer.
  */
 public enum OBEntryStatus1Code {
-  
+
   BOOKED("Booked"),
-  
+
   PENDING("Pending");
 
   private String value;
@@ -42,4 +42,3 @@ public enum OBEntryStatus1Code {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

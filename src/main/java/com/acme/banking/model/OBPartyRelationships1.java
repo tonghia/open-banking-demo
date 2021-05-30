@@ -13,7 +13,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "The Party's relationships with other resources.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBPartyRelationships1   {
+public class OBPartyRelationships1 {
   @JsonProperty("Account")
   private OBPartyRelationships1Account account;
 
@@ -24,8 +24,9 @@ public class OBPartyRelationships1   {
 
   /**
    * Get account
+   * 
    * @return account
-  */
+   */
   @ApiModelProperty(value = "")
   public OBPartyRelationships1Account getAccount() {
     return account;
@@ -34,7 +35,6 @@ public class OBPartyRelationships1   {
   public void setAccount(OBPartyRelationships1Account account) {
     this.account = account;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -57,7 +57,7 @@ public class OBPartyRelationships1   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBPartyRelationships1 {\n");
-    
+
     sb.append("    account: ").append(toIndentedString(account)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -74,4 +74,3 @@ public class OBPartyRelationships1   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

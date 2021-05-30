@@ -16,7 +16,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Provides overdraft details for a specific tier or band")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand   {
+public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand {
   @JsonProperty("Identification")
   private String identification;
 
@@ -40,17 +40,17 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand   {
    */
   public enum AgreementPeriodEnum {
     PACT("PACT"),
-    
+
     PDAY("PDAY"),
-    
+
     PHYR("PHYR"),
-    
+
     PMTH("PMTH"),
-    
+
     PQTR("PQTR"),
-    
+
     PWEK("PWEK"),
-    
+
     PYER("PYER");
 
     private String value;
@@ -84,13 +84,19 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand   {
   private AgreementPeriodEnum agreementPeriod;
 
   /**
-   * Refers to which interest rate is applied when interests are tiered. For example, if an overdraft balance is �2k and the interest tiers are:- 0-�500 0.1%, 500-1000 0.2%, 1000-10000 0.5%, then the applicable interest rate could either be 0.5% of the entire balance (since the account balance sits in the top interest tier) or (0.1%*500)+(0.2%*500)+(0.5%*1000). In the 1st situation, we say the interest is applied to the �Whole� of the account balance,  and in the 2nd that it is �Tiered�.
+   * Refers to which interest rate is applied when interests are tiered. For
+   * example, if an overdraft balance is �2k and the interest tiers are:- 0-�500
+   * 0.1%, 500-1000 0.2%, 1000-10000 0.5%, then the applicable interest rate could
+   * either be 0.5% of the entire balance (since the account balance sits in the
+   * top interest tier) or (0.1%*500)+(0.2%*500)+(0.5%*1000). In the 1st
+   * situation, we say the interest is applied to the �Whole� of the account
+   * balance, and in the 2nd that it is �Tiered�.
    */
   public enum OverdraftInterestChargingCoverageEnum {
     INBA("INBA"),
-    
+
     INTI("INTI"),
-    
+
     INWH("INWH");
 
     private String value;
@@ -127,11 +133,11 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand   {
   private Boolean bankGuaranteedIndicator;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("OverdraftFeesCharges")
-  
+
   private List<OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeesCharges> overdraftFeesCharges = null;
 
   public OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand identification(String identification) {
@@ -140,9 +146,10 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand   {
   }
 
   /**
-   * Unique and unambiguous identification of a  Tier Band for a overdraft.
+   * Unique and unambiguous identification of a Tier Band for a overdraft.
+   * 
    * @return identification
-  */
+   */
   @ApiModelProperty(value = "Unique and unambiguous identification of a  Tier Band for a overdraft.")
   public String getIdentification() {
     return identification;
@@ -159,8 +166,9 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand   {
 
   /**
    * Minimum value of Overdraft Tier/Band
+   * 
    * @return tierValueMin
-  */
+   */
   @ApiModelProperty(required = true, value = "Minimum value of Overdraft Tier/Band")
   public String getTierValueMin() {
     return tierValueMin;
@@ -177,8 +185,9 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand   {
 
   /**
    * Maximum value of Overdraft Tier/Band
+   * 
    * @return tierValueMax
-  */
+   */
   @ApiModelProperty(value = "Maximum value of Overdraft Tier/Band")
   public String getTierValueMax() {
     return tierValueMax;
@@ -194,9 +203,11 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand   {
   }
 
   /**
-   * EAR means Effective Annual Rate and/or Equivalent Annual Rate (frequently used interchangeably), being the actual annual interest rate of an Overdraft.
+   * EAR means Effective Annual Rate and/or Equivalent Annual Rate (frequently
+   * used interchangeably), being the actual annual interest rate of an Overdraft.
+   * 
    * @return EAR
-  */
+   */
   @ApiModelProperty(value = "EAR means Effective Annual Rate and/or Equivalent Annual Rate (frequently used interchangeably), being the actual annual interest rate of an Overdraft.")
   public String getEAR() {
     return EAR;
@@ -213,8 +224,9 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand   {
 
   /**
    * Specifies the minimum length of a band for a fixed overdraft agreement
+   * 
    * @return agreementLengthMin
-  */
+   */
   @ApiModelProperty(value = "Specifies the minimum length of a band for a fixed overdraft agreement")
   public Integer getAgreementLengthMin() {
     return agreementLengthMin;
@@ -231,8 +243,9 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand   {
 
   /**
    * Specifies the maximum length of a band for a fixed overdraft agreement
+   * 
    * @return agreementLengthMax
-  */
+   */
   @ApiModelProperty(value = "Specifies the maximum length of a band for a fixed overdraft agreement")
   public Integer getAgreementLengthMax() {
     return agreementLengthMax;
@@ -242,15 +255,17 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand   {
     this.agreementLengthMax = agreementLengthMax;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand agreementPeriod(AgreementPeriodEnum agreementPeriod) {
+  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand agreementPeriod(
+      AgreementPeriodEnum agreementPeriod) {
     this.agreementPeriod = agreementPeriod;
     return this;
   }
 
   /**
    * Specifies the period of a fixed length overdraft agreement
+   * 
    * @return agreementPeriod
-  */
+   */
   @ApiModelProperty(value = "Specifies the period of a fixed length overdraft agreement")
   public AgreementPeriodEnum getAgreementPeriod() {
     return agreementPeriod;
@@ -260,33 +275,46 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand   {
     this.agreementPeriod = agreementPeriod;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand overdraftInterestChargingCoverage(OverdraftInterestChargingCoverageEnum overdraftInterestChargingCoverage) {
+  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand overdraftInterestChargingCoverage(
+      OverdraftInterestChargingCoverageEnum overdraftInterestChargingCoverage) {
     this.overdraftInterestChargingCoverage = overdraftInterestChargingCoverage;
     return this;
   }
 
   /**
-   * Refers to which interest rate is applied when interests are tiered. For example, if an overdraft balance is �2k and the interest tiers are:- 0-�500 0.1%, 500-1000 0.2%, 1000-10000 0.5%, then the applicable interest rate could either be 0.5% of the entire balance (since the account balance sits in the top interest tier) or (0.1%*500)+(0.2%*500)+(0.5%*1000). In the 1st situation, we say the interest is applied to the �Whole� of the account balance,  and in the 2nd that it is �Tiered�.
+   * Refers to which interest rate is applied when interests are tiered. For
+   * example, if an overdraft balance is �2k and the interest tiers are:- 0-�500
+   * 0.1%, 500-1000 0.2%, 1000-10000 0.5%, then the applicable interest rate could
+   * either be 0.5% of the entire balance (since the account balance sits in the
+   * top interest tier) or (0.1%*500)+(0.2%*500)+(0.5%*1000). In the 1st
+   * situation, we say the interest is applied to the �Whole� of the account
+   * balance, and in the 2nd that it is �Tiered�.
+   * 
    * @return overdraftInterestChargingCoverage
-  */
+   */
   @ApiModelProperty(value = "Refers to which interest rate is applied when interests are tiered. For example, if an overdraft balance is �2k and the interest tiers are:- 0-�500 0.1%, 500-1000 0.2%, 1000-10000 0.5%, then the applicable interest rate could either be 0.5% of the entire balance (since the account balance sits in the top interest tier) or (0.1%*500)+(0.2%*500)+(0.5%*1000). In the 1st situation, we say the interest is applied to the �Whole� of the account balance,  and in the 2nd that it is �Tiered�.")
   public OverdraftInterestChargingCoverageEnum getOverdraftInterestChargingCoverage() {
     return overdraftInterestChargingCoverage;
   }
 
-  public void setOverdraftInterestChargingCoverage(OverdraftInterestChargingCoverageEnum overdraftInterestChargingCoverage) {
+  public void setOverdraftInterestChargingCoverage(
+      OverdraftInterestChargingCoverageEnum overdraftInterestChargingCoverage) {
     this.overdraftInterestChargingCoverage = overdraftInterestChargingCoverage;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand bankGuaranteedIndicator(Boolean bankGuaranteedIndicator) {
+  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand bankGuaranteedIndicator(
+      Boolean bankGuaranteedIndicator) {
     this.bankGuaranteedIndicator = bankGuaranteedIndicator;
     return this;
   }
 
   /**
-   * Indicates whether the advertised overdraft rate is guaranteed to be offered to a borrower by the bank e.g. if it�s part of a government scheme, or whether the rate may vary dependent on the applicant�s circumstances.
+   * Indicates whether the advertised overdraft rate is guaranteed to be offered
+   * to a borrower by the bank e.g. if it�s part of a government scheme, or
+   * whether the rate may vary dependent on the applicant�s circumstances.
+   * 
    * @return bankGuaranteedIndicator
-  */
+   */
   @ApiModelProperty(value = "Indicates whether the advertised overdraft rate is guaranteed to be offered to a borrower by the bank e.g. if it�s part of a government scheme, or whether the rate may vary dependent on the applicant�s circumstances.")
   public Boolean getBankGuaranteedIndicator() {
     return bankGuaranteedIndicator;
@@ -311,8 +339,9 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand   {
 
   /**
    * Get notes
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "")
   public List<String> getNotes() {
     return notes;
@@ -322,12 +351,14 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand   {
     this.notes = notes;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand overdraftFeesCharges(List<OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeesCharges> overdraftFeesCharges) {
+  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand overdraftFeesCharges(
+      List<OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeesCharges> overdraftFeesCharges) {
     this.overdraftFeesCharges = overdraftFeesCharges;
     return this;
   }
 
-  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand addOverdraftFeesChargesItem(OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeesCharges overdraftFeesChargesItem) {
+  public OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand addOverdraftFeesChargesItem(
+      OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeesCharges overdraftFeesChargesItem) {
     if (this.overdraftFeesCharges == null) {
       this.overdraftFeesCharges = new ArrayList<>();
     }
@@ -337,17 +368,18 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand   {
 
   /**
    * Get overdraftFeesCharges
+   * 
    * @return overdraftFeesCharges
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeesCharges> getOverdraftFeesCharges() {
     return overdraftFeesCharges;
   }
 
-  public void setOverdraftFeesCharges(List<OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeesCharges> overdraftFeesCharges) {
+  public void setOverdraftFeesCharges(
+      List<OBReadProduct2DataOtherProductTypeOverdraftOverdraftFeesCharges> overdraftFeesCharges) {
     this.overdraftFeesCharges = overdraftFeesCharges;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -358,29 +390,37 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand   {
       return false;
     }
     OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand = (OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand) o;
-    return Objects.equals(this.identification, obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.identification) &&
-        Objects.equals(this.tierValueMin, obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.tierValueMin) &&
-        Objects.equals(this.tierValueMax, obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.tierValueMax) &&
-        Objects.equals(this.EAR, obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.EAR) &&
-        Objects.equals(this.agreementLengthMin, obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.agreementLengthMin) &&
-        Objects.equals(this.agreementLengthMax, obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.agreementLengthMax) &&
-        Objects.equals(this.agreementPeriod, obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.agreementPeriod) &&
-        Objects.equals(this.overdraftInterestChargingCoverage, obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.overdraftInterestChargingCoverage) &&
-        Objects.equals(this.bankGuaranteedIndicator, obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.bankGuaranteedIndicator) &&
-        Objects.equals(this.notes, obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.notes) &&
-        Objects.equals(this.overdraftFeesCharges, obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.overdraftFeesCharges);
+    return Objects.equals(this.identification,
+        obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.identification)
+        && Objects.equals(this.tierValueMin, obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.tierValueMin)
+        && Objects.equals(this.tierValueMax, obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.tierValueMax)
+        && Objects.equals(this.EAR, obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.EAR)
+        && Objects.equals(this.agreementLengthMin,
+            obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.agreementLengthMin)
+        && Objects.equals(this.agreementLengthMax,
+            obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.agreementLengthMax)
+        && Objects.equals(this.agreementPeriod,
+            obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.agreementPeriod)
+        && Objects.equals(this.overdraftInterestChargingCoverage,
+            obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.overdraftInterestChargingCoverage)
+        && Objects.equals(this.bankGuaranteedIndicator,
+            obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.bankGuaranteedIndicator)
+        && Objects.equals(this.notes, obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.notes)
+        && Objects.equals(this.overdraftFeesCharges,
+            obReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand.overdraftFeesCharges);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(identification, tierValueMin, tierValueMax, EAR, agreementLengthMin, agreementLengthMax, agreementPeriod, overdraftInterestChargingCoverage, bankGuaranteedIndicator, notes, overdraftFeesCharges);
+    return Objects.hash(identification, tierValueMin, tierValueMax, EAR, agreementLengthMin, agreementLengthMax,
+        agreementPeriod, overdraftInterestChargingCoverage, bankGuaranteedIndicator, notes, overdraftFeesCharges);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand {\n");
-    
+
     sb.append("    identification: ").append(toIndentedString(identification)).append("\n");
     sb.append("    tierValueMin: ").append(toIndentedString(tierValueMin)).append("\n");
     sb.append("    tierValueMax: ").append(toIndentedString(tierValueMax)).append("\n");
@@ -388,7 +428,8 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand   {
     sb.append("    agreementLengthMin: ").append(toIndentedString(agreementLengthMin)).append("\n");
     sb.append("    agreementLengthMax: ").append(toIndentedString(agreementLengthMax)).append("\n");
     sb.append("    agreementPeriod: ").append(toIndentedString(agreementPeriod)).append("\n");
-    sb.append("    overdraftInterestChargingCoverage: ").append(toIndentedString(overdraftInterestChargingCoverage)).append("\n");
+    sb.append("    overdraftInterestChargingCoverage: ").append(toIndentedString(overdraftInterestChargingCoverage))
+        .append("\n");
     sb.append("    bankGuaranteedIndicator: ").append(toIndentedString(bankGuaranteedIndicator)).append("\n");
     sb.append("    notes: ").append(toIndentedString(notes)).append("\n");
     sb.append("    overdraftFeesCharges: ").append(toIndentedString(overdraftFeesCharges)).append("\n");
@@ -407,4 +448,3 @@ public class OBReadProduct2DataOtherProductTypeOverdraftOverdraftTierBand   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

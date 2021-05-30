@@ -18,7 +18,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Tier Band Details")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand   {
+public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand {
   @JsonProperty("Identification")
   private String identification;
 
@@ -36,17 +36,17 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
    */
   public enum MinTermPeriodEnum {
     PACT("PACT"),
-    
+
     PDAY("PDAY"),
-    
+
     PHYR("PHYR"),
-    
+
     PMTH("PMTH"),
-    
+
     PQTR("PQTR"),
-    
+
     PWEK("PWEK"),
-    
+
     PYER("PYER");
 
     private String value;
@@ -87,17 +87,17 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
    */
   public enum MaxTermPeriodEnum {
     PACT("PACT"),
-    
+
     PDAY("PDAY"),
-    
+
     PHYR("PHYR"),
-    
+
     PMTH("PMTH"),
-    
+
     PQTR("PQTR"),
-    
+
     PWEK("PWEK"),
-    
+
     PYER("PYER");
 
     private String value;
@@ -137,19 +137,20 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
   private String repAPR;
 
   /**
-   * Interest rate types, other than APR, which financial institutions may use to describe the annual interest rate payable for the SME Loan.
+   * Interest rate types, other than APR, which financial institutions may use to
+   * describe the annual interest rate payable for the SME Loan.
    */
   public enum LoanProviderInterestRateTypeEnum {
     INBB("INBB"),
-    
+
     INFR("INFR"),
-    
+
     INGR("INGR"),
-    
+
     INLR("INLR"),
-    
+
     INNE("INNE"),
-    
+
     INOT("INOT");
 
     private String value;
@@ -186,14 +187,14 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
   private String loanProviderInterestRate;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   @JsonProperty("OtherLoanProviderInterestRateType")
   private OBReadProduct2DataOtherProductTypeLoanInterestOtherLoanProviderInterestRateType otherLoanProviderInterestRateType;
 
   @JsonProperty("LoanInterestFeesCharges")
-  
+
   private List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestFeesCharges> loanInterestFeesCharges = null;
 
   public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand identification(String identification) {
@@ -202,9 +203,10 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
   }
 
   /**
-   * Unique and unambiguous identification of a  Tier Band for a SME Loan.
+   * Unique and unambiguous identification of a Tier Band for a SME Loan.
+   * 
    * @return identification
-  */
+   */
   @ApiModelProperty(value = "Unique and unambiguous identification of a  Tier Band for a SME Loan.")
   public String getIdentification() {
     return identification;
@@ -221,8 +223,9 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
 
   /**
    * Minimum loan value for which the loan interest tier applies.
+   * 
    * @return tierValueMinimum
-  */
+   */
   @ApiModelProperty(required = true, value = "Minimum loan value for which the loan interest tier applies.")
   public String getTierValueMinimum() {
     return tierValueMinimum;
@@ -239,8 +242,9 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
 
   /**
    * Maximum loan value for which the loan interest tier applies.
+   * 
    * @return tierValueMaximum
-  */
+   */
   @ApiModelProperty(value = "Maximum loan value for which the loan interest tier applies.")
   public String getTierValueMaximum() {
     return tierValueMaximum;
@@ -257,8 +261,9 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
 
   /**
    * Minimum loan term for which the loan interest tier applies.
+   * 
    * @return tierValueMinTerm
-  */
+   */
   @ApiModelProperty(required = true, value = "Minimum loan term for which the loan interest tier applies.")
   public Integer getTierValueMinTerm() {
     return tierValueMinTerm;
@@ -268,15 +273,17 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
     this.tierValueMinTerm = tierValueMinTerm;
   }
 
-  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand minTermPeriod(MinTermPeriodEnum minTermPeriod) {
+  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand minTermPeriod(
+      MinTermPeriodEnum minTermPeriod) {
     this.minTermPeriod = minTermPeriod;
     return this;
   }
 
   /**
    * The unit of period (days, weeks, months etc.) of the Minimum Term
+   * 
    * @return minTermPeriod
-  */
+   */
   @ApiModelProperty(required = true, value = "The unit of period (days, weeks, months etc.) of the Minimum Term")
   public MinTermPeriodEnum getMinTermPeriod() {
     return minTermPeriod;
@@ -293,8 +300,9 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
 
   /**
    * Maximum loan term for which the loan interest tier applies.
+   * 
    * @return tierValueMaxTerm
-  */
+   */
   @ApiModelProperty(value = "Maximum loan term for which the loan interest tier applies.")
   public Integer getTierValueMaxTerm() {
     return tierValueMaxTerm;
@@ -304,15 +312,17 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
     this.tierValueMaxTerm = tierValueMaxTerm;
   }
 
-  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand maxTermPeriod(MaxTermPeriodEnum maxTermPeriod) {
+  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand maxTermPeriod(
+      MaxTermPeriodEnum maxTermPeriod) {
     this.maxTermPeriod = maxTermPeriod;
     return this;
   }
 
   /**
    * The unit of period (days, weeks, months etc.) of the Maximum Term
+   * 
    * @return maxTermPeriod
-  */
+   */
   @ApiModelProperty(value = "The unit of period (days, weeks, months etc.) of the Maximum Term")
   public MaxTermPeriodEnum getMaxTermPeriod() {
     return maxTermPeriod;
@@ -322,15 +332,17 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
     this.maxTermPeriod = maxTermPeriod;
   }
 
-  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand fixedVariableInterestRateType(OBInterestFixedVariableType1Code fixedVariableInterestRateType) {
+  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand fixedVariableInterestRateType(
+      OBInterestFixedVariableType1Code fixedVariableInterestRateType) {
     this.fixedVariableInterestRateType = fixedVariableInterestRateType;
     return this;
   }
 
   /**
    * Get fixedVariableInterestRateType
+   * 
    * @return fixedVariableInterestRateType
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBInterestFixedVariableType1Code getFixedVariableInterestRateType() {
     return fixedVariableInterestRateType;
@@ -346,9 +358,15 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
   }
 
   /**
-   * The annual equivalent rate (AER) is interest that is calculated under the assumption that any interest paid is combined with the original balance and the next interest payment will be based on the slightly higher account balance. Overall, this means that interest can be compounded several times in a year depending on the number of times that interest payments are made.  For SME Loan, this APR is the representative APR which includes any account fees.
+   * The annual equivalent rate (AER) is interest that is calculated under the
+   * assumption that any interest paid is combined with the original balance and
+   * the next interest payment will be based on the slightly higher account
+   * balance. Overall, this means that interest can be compounded several times in
+   * a year depending on the number of times that interest payments are made. For
+   * SME Loan, this APR is the representative APR which includes any account fees.
+   * 
    * @return repAPR
-  */
+   */
   @ApiModelProperty(required = true, value = "The annual equivalent rate (AER) is interest that is calculated under the assumption that any interest paid is combined with the original balance and the next interest payment will be based on the slightly higher account balance. Overall, this means that interest can be compounded several times in a year depending on the number of times that interest payments are made.  For SME Loan, this APR is the representative APR which includes any account fees.")
   public String getRepAPR() {
     return repAPR;
@@ -358,15 +376,18 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
     this.repAPR = repAPR;
   }
 
-  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand loanProviderInterestRateType(LoanProviderInterestRateTypeEnum loanProviderInterestRateType) {
+  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand loanProviderInterestRateType(
+      LoanProviderInterestRateTypeEnum loanProviderInterestRateType) {
     this.loanProviderInterestRateType = loanProviderInterestRateType;
     return this;
   }
 
   /**
-   * Interest rate types, other than APR, which financial institutions may use to describe the annual interest rate payable for the SME Loan.
+   * Interest rate types, other than APR, which financial institutions may use to
+   * describe the annual interest rate payable for the SME Loan.
+   * 
    * @return loanProviderInterestRateType
-  */
+   */
   @ApiModelProperty(value = "Interest rate types, other than APR, which financial institutions may use to describe the annual interest rate payable for the SME Loan.")
   public LoanProviderInterestRateTypeEnum getLoanProviderInterestRateType() {
     return loanProviderInterestRateType;
@@ -376,15 +397,17 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
     this.loanProviderInterestRateType = loanProviderInterestRateType;
   }
 
-  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand loanProviderInterestRate(String loanProviderInterestRate) {
+  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand loanProviderInterestRate(
+      String loanProviderInterestRate) {
     this.loanProviderInterestRate = loanProviderInterestRate;
     return this;
   }
 
   /**
    * Loan provider Interest for the SME Loan product
+   * 
    * @return loanProviderInterestRate
-  */
+   */
   @ApiModelProperty(value = "Loan provider Interest for the SME Loan product")
   public String getLoanProviderInterestRate() {
     return loanProviderInterestRate;
@@ -409,8 +432,9 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
 
   /**
    * Get notes
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "")
   public List<String> getNotes() {
     return notes;
@@ -420,30 +444,35 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
     this.notes = notes;
   }
 
-  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand otherLoanProviderInterestRateType(OBReadProduct2DataOtherProductTypeLoanInterestOtherLoanProviderInterestRateType otherLoanProviderInterestRateType) {
+  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand otherLoanProviderInterestRateType(
+      OBReadProduct2DataOtherProductTypeLoanInterestOtherLoanProviderInterestRateType otherLoanProviderInterestRateType) {
     this.otherLoanProviderInterestRateType = otherLoanProviderInterestRateType;
     return this;
   }
 
   /**
    * Get otherLoanProviderInterestRateType
+   * 
    * @return otherLoanProviderInterestRateType
-  */
+   */
   @ApiModelProperty(value = "")
   public OBReadProduct2DataOtherProductTypeLoanInterestOtherLoanProviderInterestRateType getOtherLoanProviderInterestRateType() {
     return otherLoanProviderInterestRateType;
   }
 
-  public void setOtherLoanProviderInterestRateType(OBReadProduct2DataOtherProductTypeLoanInterestOtherLoanProviderInterestRateType otherLoanProviderInterestRateType) {
+  public void setOtherLoanProviderInterestRateType(
+      OBReadProduct2DataOtherProductTypeLoanInterestOtherLoanProviderInterestRateType otherLoanProviderInterestRateType) {
     this.otherLoanProviderInterestRateType = otherLoanProviderInterestRateType;
   }
 
-  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand loanInterestFeesCharges(List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestFeesCharges> loanInterestFeesCharges) {
+  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand loanInterestFeesCharges(
+      List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestFeesCharges> loanInterestFeesCharges) {
     this.loanInterestFeesCharges = loanInterestFeesCharges;
     return this;
   }
 
-  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand addLoanInterestFeesChargesItem(OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestFeesCharges loanInterestFeesChargesItem) {
+  public OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand addLoanInterestFeesChargesItem(
+      OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestFeesCharges loanInterestFeesChargesItem) {
     if (this.loanInterestFeesCharges == null) {
       this.loanInterestFeesCharges = new ArrayList<>();
     }
@@ -453,17 +482,18 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
 
   /**
    * Get loanInterestFeesCharges
+   * 
    * @return loanInterestFeesCharges
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestFeesCharges> getLoanInterestFeesCharges() {
     return loanInterestFeesCharges;
   }
 
-  public void setLoanInterestFeesCharges(List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestFeesCharges> loanInterestFeesCharges) {
+  public void setLoanInterestFeesCharges(
+      List<OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestFeesCharges> loanInterestFeesCharges) {
     this.loanInterestFeesCharges = loanInterestFeesCharges;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -474,32 +504,46 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
       return false;
     }
     OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand = (OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand) o;
-    return Objects.equals(this.identification, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.identification) &&
-        Objects.equals(this.tierValueMinimum, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.tierValueMinimum) &&
-        Objects.equals(this.tierValueMaximum, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.tierValueMaximum) &&
-        Objects.equals(this.tierValueMinTerm, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.tierValueMinTerm) &&
-        Objects.equals(this.minTermPeriod, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.minTermPeriod) &&
-        Objects.equals(this.tierValueMaxTerm, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.tierValueMaxTerm) &&
-        Objects.equals(this.maxTermPeriod, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.maxTermPeriod) &&
-        Objects.equals(this.fixedVariableInterestRateType, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.fixedVariableInterestRateType) &&
-        Objects.equals(this.repAPR, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.repAPR) &&
-        Objects.equals(this.loanProviderInterestRateType, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.loanProviderInterestRateType) &&
-        Objects.equals(this.loanProviderInterestRate, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.loanProviderInterestRate) &&
-        Objects.equals(this.notes, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.notes) &&
-        Objects.equals(this.otherLoanProviderInterestRateType, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.otherLoanProviderInterestRateType) &&
-        Objects.equals(this.loanInterestFeesCharges, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.loanInterestFeesCharges);
+    return Objects.equals(this.identification,
+        obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.identification)
+        && Objects.equals(this.tierValueMinimum,
+            obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.tierValueMinimum)
+        && Objects.equals(this.tierValueMaximum,
+            obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.tierValueMaximum)
+        && Objects.equals(this.tierValueMinTerm,
+            obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.tierValueMinTerm)
+        && Objects.equals(this.minTermPeriod,
+            obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.minTermPeriod)
+        && Objects.equals(this.tierValueMaxTerm,
+            obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.tierValueMaxTerm)
+        && Objects.equals(this.maxTermPeriod,
+            obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.maxTermPeriod)
+        && Objects.equals(this.fixedVariableInterestRateType,
+            obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.fixedVariableInterestRateType)
+        && Objects.equals(this.repAPR, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.repAPR)
+        && Objects.equals(this.loanProviderInterestRateType,
+            obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.loanProviderInterestRateType)
+        && Objects.equals(this.loanProviderInterestRate,
+            obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.loanProviderInterestRate)
+        && Objects.equals(this.notes, obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.notes)
+        && Objects.equals(this.otherLoanProviderInterestRateType,
+            obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.otherLoanProviderInterestRateType)
+        && Objects.equals(this.loanInterestFeesCharges,
+            obReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand.loanInterestFeesCharges);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(identification, tierValueMinimum, tierValueMaximum, tierValueMinTerm, minTermPeriod, tierValueMaxTerm, maxTermPeriod, fixedVariableInterestRateType, repAPR, loanProviderInterestRateType, loanProviderInterestRate, notes, otherLoanProviderInterestRateType, loanInterestFeesCharges);
+    return Objects.hash(identification, tierValueMinimum, tierValueMaximum, tierValueMinTerm, minTermPeriod,
+        tierValueMaxTerm, maxTermPeriod, fixedVariableInterestRateType, repAPR, loanProviderInterestRateType,
+        loanProviderInterestRate, notes, otherLoanProviderInterestRateType, loanInterestFeesCharges);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand {\n");
-    
+
     sb.append("    identification: ").append(toIndentedString(identification)).append("\n");
     sb.append("    tierValueMinimum: ").append(toIndentedString(tierValueMinimum)).append("\n");
     sb.append("    tierValueMaximum: ").append(toIndentedString(tierValueMaximum)).append("\n");
@@ -507,12 +551,14 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
     sb.append("    minTermPeriod: ").append(toIndentedString(minTermPeriod)).append("\n");
     sb.append("    tierValueMaxTerm: ").append(toIndentedString(tierValueMaxTerm)).append("\n");
     sb.append("    maxTermPeriod: ").append(toIndentedString(maxTermPeriod)).append("\n");
-    sb.append("    fixedVariableInterestRateType: ").append(toIndentedString(fixedVariableInterestRateType)).append("\n");
+    sb.append("    fixedVariableInterestRateType: ").append(toIndentedString(fixedVariableInterestRateType))
+        .append("\n");
     sb.append("    repAPR: ").append(toIndentedString(repAPR)).append("\n");
     sb.append("    loanProviderInterestRateType: ").append(toIndentedString(loanProviderInterestRateType)).append("\n");
     sb.append("    loanProviderInterestRate: ").append(toIndentedString(loanProviderInterestRate)).append("\n");
     sb.append("    notes: ").append(toIndentedString(notes)).append("\n");
-    sb.append("    otherLoanProviderInterestRateType: ").append(toIndentedString(otherLoanProviderInterestRateType)).append("\n");
+    sb.append("    otherLoanProviderInterestRateType: ").append(toIndentedString(otherLoanProviderInterestRateType))
+        .append("\n");
     sb.append("    loanInterestFeesCharges: ").append(toIndentedString(loanInterestFeesCharges)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -529,4 +575,3 @@ public class OBReadProduct2DataOtherProductTypeLoanInterestLoanInterestTierBand 
     return o.toString().replace("\n", "\n    ");
   }
 }
-

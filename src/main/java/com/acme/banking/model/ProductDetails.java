@@ -14,25 +14,33 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * ProductDetails
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class ProductDetails   {
+public class ProductDetails {
   /**
-   * Market segmentation is a marketing term referring to the aggregating of prospective buyers into groups, or segments, that have common needs and respond similarly to a marketing action. Market segmentation enables companies to target different categories of consumers who perceive the full value of certain products and services differently from one another.  Read more: Market Segmentation http://www.investopedia.com/terms/m/marketsegmentation.asp#ixzz4gfEEalTd  With respect to BCA products, they are segmented in relation to different markets that they wish to focus on. 
+   * Market segmentation is a marketing term referring to the aggregating of
+   * prospective buyers into groups, or segments, that have common needs and
+   * respond similarly to a marketing action. Market segmentation enables
+   * companies to target different categories of consumers who perceive the full
+   * value of certain products and services differently from one another. Read
+   * more: Market Segmentation
+   * http://www.investopedia.com/terms/m/marketsegmentation.asp#ixzz4gfEEalTd With
+   * respect to BCA products, they are segmented in relation to different markets
+   * that they wish to focus on.
    */
   public enum SegmentEnum {
     CLIENTACCOUNT("ClientAccount"),
-    
+
     STANDARD("Standard"),
-    
+
     NONCOMMERCIALCHAITIESCLBSOC("NonCommercialChaitiesClbSoc"),
-    
+
     NONCOMMERCIALPUBLICAUTHGOVT("NonCommercialPublicAuthGovt"),
-    
+
     RELIGIOUS("Religious"),
-    
+
     SECTORSPECIFIC("SectorSpecific"),
-    
+
     STARTUP("Startup"),
-    
+
     SWITCHER("Switcher");
 
     private String value;
@@ -63,7 +71,7 @@ public class ProductDetails   {
   }
 
   @JsonProperty("Segment")
-  
+
   private List<SegmentEnum> segment = null;
 
   @JsonProperty("FeeFreeLength")
@@ -74,15 +82,15 @@ public class ProductDetails   {
    */
   public enum FeeFreeLengthPeriodEnum {
     DAY("Day"),
-    
+
     HALF_YEAR("Half Year"),
-    
+
     MONTH("Month"),
-    
+
     QUARTER("Quarter"),
-    
+
     WEEK("Week"),
-    
+
     YEAR("Year");
 
     private String value;
@@ -116,7 +124,7 @@ public class ProductDetails   {
   private FeeFreeLengthPeriodEnum feeFreeLengthPeriod;
 
   @JsonProperty("Notes")
-  
+
   private List<String> notes = null;
 
   public ProductDetails segment(List<SegmentEnum> segment) {
@@ -133,9 +141,18 @@ public class ProductDetails   {
   }
 
   /**
-   * Market segmentation is a marketing term referring to the aggregating of prospective buyers into groups, or segments, that have common needs and respond similarly to a marketing action. Market segmentation enables companies to target different categories of consumers who perceive the full value of certain products and services differently from one another.  Read more: Market Segmentation http://www.investopedia.com/terms/m/marketsegmentation.asp#ixzz4gfEEalTd  With respect to BCA products, they are segmented in relation to different markets that they wish to focus on. 
+   * Market segmentation is a marketing term referring to the aggregating of
+   * prospective buyers into groups, or segments, that have common needs and
+   * respond similarly to a marketing action. Market segmentation enables
+   * companies to target different categories of consumers who perceive the full
+   * value of certain products and services differently from one another. Read
+   * more: Market Segmentation
+   * http://www.investopedia.com/terms/m/marketsegmentation.asp#ixzz4gfEEalTd With
+   * respect to BCA products, they are segmented in relation to different markets
+   * that they wish to focus on.
+   * 
    * @return segment
-  */
+   */
   @ApiModelProperty(value = "Market segmentation is a marketing term referring to the aggregating of prospective buyers into groups, or segments, that have common needs and respond similarly to a marketing action. Market segmentation enables companies to target different categories of consumers who perceive the full value of certain products and services differently from one another.  Read more: Market Segmentation http://www.investopedia.com/terms/m/marketsegmentation.asp#ixzz4gfEEalTd  With respect to BCA products, they are segmented in relation to different markets that they wish to focus on. ")
   public List<SegmentEnum> getSegment() {
     return segment;
@@ -152,8 +169,9 @@ public class ProductDetails   {
 
   /**
    * The length/duration of the fee free period
+   * 
    * @return feeFreeLength
-  */
+   */
   @ApiModelProperty(value = "The length/duration of the fee free period")
   public Float getFeeFreeLength() {
     return feeFreeLength;
@@ -170,8 +188,9 @@ public class ProductDetails   {
 
   /**
    * The unit of period (days, weeks, months etc.) of the promotional length
+   * 
    * @return feeFreeLengthPeriod
-  */
+   */
   @ApiModelProperty(value = "The unit of period (days, weeks, months etc.) of the promotional length")
   public FeeFreeLengthPeriodEnum getFeeFreeLengthPeriod() {
     return feeFreeLengthPeriod;
@@ -196,8 +215,9 @@ public class ProductDetails   {
 
   /**
    * Optional additional notes to supplement the Core product details
+   * 
    * @return notes
-  */
+   */
   @ApiModelProperty(value = "Optional additional notes to supplement the Core product details")
   public List<String> getNotes() {
     return notes;
@@ -206,7 +226,6 @@ public class ProductDetails   {
   public void setNotes(List<String> notes) {
     this.notes = notes;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -217,10 +236,10 @@ public class ProductDetails   {
       return false;
     }
     ProductDetails productDetails = (ProductDetails) o;
-    return Objects.equals(this.segment, productDetails.segment) &&
-        Objects.equals(this.feeFreeLength, productDetails.feeFreeLength) &&
-        Objects.equals(this.feeFreeLengthPeriod, productDetails.feeFreeLengthPeriod) &&
-        Objects.equals(this.notes, productDetails.notes);
+    return Objects.equals(this.segment, productDetails.segment)
+        && Objects.equals(this.feeFreeLength, productDetails.feeFreeLength)
+        && Objects.equals(this.feeFreeLengthPeriod, productDetails.feeFreeLengthPeriod)
+        && Objects.equals(this.notes, productDetails.notes);
   }
 
   @Override
@@ -232,7 +251,7 @@ public class ProductDetails   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ProductDetails {\n");
-    
+
     sb.append("    segment: ").append(toIndentedString(segment)).append("\n");
     sb.append("    feeFreeLength: ").append(toIndentedString(feeFreeLength)).append("\n");
     sb.append("    feeFreeLengthPeriod: ").append(toIndentedString(feeFreeLengthPeriod)).append("\n");
@@ -252,4 +271,3 @@ public class ProductDetails   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

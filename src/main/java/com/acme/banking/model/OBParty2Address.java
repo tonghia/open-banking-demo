@@ -15,12 +15,12 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Postal address of a party.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBParty2Address   {
+public class OBParty2Address {
   @JsonProperty("AddressType")
   private OBAddressTypeCode addressType;
 
   @JsonProperty("AddressLine")
-  
+
   private List<String> addressLine = null;
 
   @JsonProperty("StreetName")
@@ -48,8 +48,9 @@ public class OBParty2Address   {
 
   /**
    * Get addressType
+   * 
    * @return addressType
-  */
+   */
   @ApiModelProperty(value = "")
   public OBAddressTypeCode getAddressType() {
     return addressType;
@@ -74,8 +75,9 @@ public class OBParty2Address   {
 
   /**
    * Get addressLine
+   * 
    * @return addressLine
-  */
+   */
   @ApiModelProperty(value = "")
   public List<String> getAddressLine() {
     return addressLine;
@@ -92,8 +94,9 @@ public class OBParty2Address   {
 
   /**
    * Name of a street or thoroughfare.
+   * 
    * @return streetName
-  */
+   */
   @ApiModelProperty(value = "Name of a street or thoroughfare.")
   public String getStreetName() {
     return streetName;
@@ -110,8 +113,9 @@ public class OBParty2Address   {
 
   /**
    * Number that identifies the position of a building on a street.
+   * 
    * @return buildingNumber
-  */
+   */
   @ApiModelProperty(value = "Number that identifies the position of a building on a street.")
   public String getBuildingNumber() {
     return buildingNumber;
@@ -127,9 +131,11 @@ public class OBParty2Address   {
   }
 
   /**
-   * Identifier consisting of a group of letters and/or numbers that is added to a postal address to assist the sorting of mail.
+   * Identifier consisting of a group of letters and/or numbers that is added to a
+   * postal address to assist the sorting of mail.
+   * 
    * @return postCode
-  */
+   */
   @ApiModelProperty(value = "Identifier consisting of a group of letters and/or numbers that is added to a postal address to assist the sorting of mail.")
   public String getPostCode() {
     return postCode;
@@ -146,8 +152,9 @@ public class OBParty2Address   {
 
   /**
    * Name of a built-up area, with defined boundaries, and a local government.
+   * 
    * @return townName
-  */
+   */
   @ApiModelProperty(value = "Name of a built-up area, with defined boundaries, and a local government.")
   public String getTownName() {
     return townName;
@@ -164,8 +171,9 @@ public class OBParty2Address   {
 
   /**
    * Identifies a subdivision of a country eg, state, region, county.
+   * 
    * @return countrySubDivision
-  */
+   */
   @ApiModelProperty(value = "Identifies a subdivision of a country eg, state, region, county.")
   public String getCountrySubDivision() {
     return countrySubDivision;
@@ -182,8 +190,9 @@ public class OBParty2Address   {
 
   /**
    * Nation with its own government, occupying a particular territory.
+   * 
    * @return country
-  */
+   */
   @ApiModelProperty(required = true, value = "Nation with its own government, occupying a particular territory.")
   public String getCountry() {
     return country;
@@ -192,7 +201,6 @@ public class OBParty2Address   {
   public void setCountry(String country) {
     this.country = country;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -203,26 +211,27 @@ public class OBParty2Address   {
       return false;
     }
     OBParty2Address obParty2Address = (OBParty2Address) o;
-    return Objects.equals(this.addressType, obParty2Address.addressType) &&
-        Objects.equals(this.addressLine, obParty2Address.addressLine) &&
-        Objects.equals(this.streetName, obParty2Address.streetName) &&
-        Objects.equals(this.buildingNumber, obParty2Address.buildingNumber) &&
-        Objects.equals(this.postCode, obParty2Address.postCode) &&
-        Objects.equals(this.townName, obParty2Address.townName) &&
-        Objects.equals(this.countrySubDivision, obParty2Address.countrySubDivision) &&
-        Objects.equals(this.country, obParty2Address.country);
+    return Objects.equals(this.addressType, obParty2Address.addressType)
+        && Objects.equals(this.addressLine, obParty2Address.addressLine)
+        && Objects.equals(this.streetName, obParty2Address.streetName)
+        && Objects.equals(this.buildingNumber, obParty2Address.buildingNumber)
+        && Objects.equals(this.postCode, obParty2Address.postCode)
+        && Objects.equals(this.townName, obParty2Address.townName)
+        && Objects.equals(this.countrySubDivision, obParty2Address.countrySubDivision)
+        && Objects.equals(this.country, obParty2Address.country);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(addressType, addressLine, streetName, buildingNumber, postCode, townName, countrySubDivision, country);
+    return Objects.hash(addressType, addressLine, streetName, buildingNumber, postCode, townName, countrySubDivision,
+        country);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBParty2Address {\n");
-    
+
     sb.append("    addressType: ").append(toIndentedString(addressType)).append("\n");
     sb.append("    addressLine: ").append(toIndentedString(addressLine)).append("\n");
     sb.append("    streetName: ").append(toIndentedString(streetName)).append("\n");
@@ -246,4 +255,3 @@ public class OBParty2Address   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

@@ -12,7 +12,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Other tariff type which is not in the standard list.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2DataOtherProductTypeOtherTariffType   {
+public class OBReadProduct2DataOtherProductTypeOtherTariffType {
   @JsonProperty("Code")
   private String code;
 
@@ -29,8 +29,9 @@ public class OBReadProduct2DataOtherProductTypeOtherTariffType   {
 
   /**
    * The four letter Mnemonic used within an XML file to identify a code
+   * 
    * @return code
-  */
+   */
   @ApiModelProperty(value = "The four letter Mnemonic used within an XML file to identify a code")
   public String getCode() {
     return code;
@@ -47,8 +48,9 @@ public class OBReadProduct2DataOtherProductTypeOtherTariffType   {
 
   /**
    * Long name associated with the code
+   * 
    * @return name
-  */
+   */
   @ApiModelProperty(required = true, value = "Long name associated with the code")
   public String getName() {
     return name;
@@ -65,8 +67,9 @@ public class OBReadProduct2DataOtherProductTypeOtherTariffType   {
 
   /**
    * Description to describe the purpose of the code
+   * 
    * @return description
-  */
+   */
   @ApiModelProperty(required = true, value = "Description to describe the purpose of the code")
   public String getDescription() {
     return description;
@@ -75,7 +78,6 @@ public class OBReadProduct2DataOtherProductTypeOtherTariffType   {
   public void setDescription(String description) {
     this.description = description;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -86,9 +88,9 @@ public class OBReadProduct2DataOtherProductTypeOtherTariffType   {
       return false;
     }
     OBReadProduct2DataOtherProductTypeOtherTariffType obReadProduct2DataOtherProductTypeOtherTariffType = (OBReadProduct2DataOtherProductTypeOtherTariffType) o;
-    return Objects.equals(this.code, obReadProduct2DataOtherProductTypeOtherTariffType.code) &&
-        Objects.equals(this.name, obReadProduct2DataOtherProductTypeOtherTariffType.name) &&
-        Objects.equals(this.description, obReadProduct2DataOtherProductTypeOtherTariffType.description);
+    return Objects.equals(this.code, obReadProduct2DataOtherProductTypeOtherTariffType.code)
+        && Objects.equals(this.name, obReadProduct2DataOtherProductTypeOtherTariffType.name)
+        && Objects.equals(this.description, obReadProduct2DataOtherProductTypeOtherTariffType.description);
   }
 
   @Override
@@ -100,7 +102,7 @@ public class OBReadProduct2DataOtherProductTypeOtherTariffType   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2DataOtherProductTypeOtherTariffType {\n");
-    
+
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
@@ -119,4 +121,3 @@ public class OBReadProduct2DataOtherProductTypeOtherTariffType   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

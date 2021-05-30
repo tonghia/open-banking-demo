@@ -15,7 +15,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBReadConsentResponse1Data
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadConsentResponse1Data   {
+public class OBReadConsentResponse1Data {
   @JsonProperty("ConsentId")
   private String consentId;
 
@@ -28,11 +28,11 @@ public class OBReadConsentResponse1Data   {
    */
   public enum StatusEnum {
     AUTHORISED("Authorised"),
-    
+
     AWAITINGAUTHORISATION("AwaitingAuthorisation"),
-    
+
     REJECTED("Rejected"),
-    
+
     REVOKED("Revoked");
 
     private String value;
@@ -70,49 +70,51 @@ public class OBReadConsentResponse1Data   {
   private OffsetDateTime statusUpdateDateTime;
 
   /**
-   * Specifies the Open Banking account access data types. This is a list of the data clusters being consented by the PSU, and requested for authorisation with the ASPSP.
+   * Specifies the Open Banking account access data types. This is a list of the
+   * data clusters being consented by the PSU, and requested for authorisation
+   * with the ASPSP.
    */
   public enum PermissionsEnum {
     READACCOUNTSBASIC("ReadAccountsBasic"),
-    
+
     READACCOUNTSDETAIL("ReadAccountsDetail"),
-    
+
     READBALANCES("ReadBalances"),
-    
+
     READBENEFICIARIESBASIC("ReadBeneficiariesBasic"),
-    
+
     READBENEFICIARIESDETAIL("ReadBeneficiariesDetail"),
-    
+
     READDIRECTDEBITS("ReadDirectDebits"),
-    
+
     READOFFERS("ReadOffers"),
-    
+
     READPAN("ReadPAN"),
-    
+
     READPARTY("ReadParty"),
-    
+
     READPARTYPSU("ReadPartyPSU"),
-    
+
     READPRODUCTS("ReadProducts"),
-    
+
     READSCHEDULEDPAYMENTSBASIC("ReadScheduledPaymentsBasic"),
-    
+
     READSCHEDULEDPAYMENTSDETAIL("ReadScheduledPaymentsDetail"),
-    
+
     READSTANDINGORDERSBASIC("ReadStandingOrdersBasic"),
-    
+
     READSTANDINGORDERSDETAIL("ReadStandingOrdersDetail"),
-    
+
     READSTATEMENTSBASIC("ReadStatementsBasic"),
-    
+
     READSTATEMENTSDETAIL("ReadStatementsDetail"),
-    
+
     READTRANSACTIONSBASIC("ReadTransactionsBasic"),
-    
+
     READTRANSACTIONSCREDITS("ReadTransactionsCredits"),
-    
+
     READTRANSACTIONSDEBITS("ReadTransactionsDebits"),
-    
+
     READTRANSACTIONSDETAIL("ReadTransactionsDetail");
 
     private String value;
@@ -143,7 +145,7 @@ public class OBReadConsentResponse1Data   {
   }
 
   @JsonProperty("Permissions")
-  
+
   private List<PermissionsEnum> permissions = new ArrayList<>();
 
   @JsonProperty("ExpirationDateTime")
@@ -164,9 +166,11 @@ public class OBReadConsentResponse1Data   {
   }
 
   /**
-   * Unique identification as assigned to identify the account access consent resource.
+   * Unique identification as assigned to identify the account access consent
+   * resource.
+   * 
    * @return consentId
-  */
+   */
   @ApiModelProperty(required = true, value = "Unique identification as assigned to identify the account access consent resource.")
   public String getConsentId() {
     return consentId;
@@ -182,9 +186,13 @@ public class OBReadConsentResponse1Data   {
   }
 
   /**
-   * Date and time at which the resource was created.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Date and time at which the resource was created.All dates in the JSON
+   * payloads are represented in ISO 8601 date-time format. All date-time fields
+   * in responses must include the timezone. An example is below:
+   * 2017-04-05T10:43:07+00:00
+   * 
    * @return creationDateTime
-  */
+   */
   @ApiModelProperty(required = true, value = "Date and time at which the resource was created.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getCreationDateTime() {
     return creationDateTime;
@@ -201,8 +209,9 @@ public class OBReadConsentResponse1Data   {
 
   /**
    * Specifies the status of consent resource in code form.
+   * 
    * @return status
-  */
+   */
   @ApiModelProperty(required = true, value = "Specifies the status of consent resource in code form.")
   public StatusEnum getStatus() {
     return status;
@@ -218,9 +227,13 @@ public class OBReadConsentResponse1Data   {
   }
 
   /**
-   * Date and time at which the resource status was updated.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Date and time at which the resource status was updated.All dates in the JSON
+   * payloads are represented in ISO 8601 date-time format. All date-time fields
+   * in responses must include the timezone. An example is below:
+   * 2017-04-05T10:43:07+00:00
+   * 
    * @return statusUpdateDateTime
-  */
+   */
   @ApiModelProperty(required = true, value = "Date and time at which the resource status was updated.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getStatusUpdateDateTime() {
     return statusUpdateDateTime;
@@ -242,8 +255,9 @@ public class OBReadConsentResponse1Data   {
 
   /**
    * Get permissions
+   * 
    * @return permissions
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public List<PermissionsEnum> getPermissions() {
     return permissions;
@@ -259,9 +273,14 @@ public class OBReadConsentResponse1Data   {
   }
 
   /**
-   * Specified date and time the permissions will expire. If this is not populated, the permissions will be open ended.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Specified date and time the permissions will expire. If this is not
+   * populated, the permissions will be open ended.All dates in the JSON payloads
+   * are represented in ISO 8601 date-time format. All date-time fields in
+   * responses must include the timezone. An example is below:
+   * 2017-04-05T10:43:07+00:00
+   * 
    * @return expirationDateTime
-  */
+   */
   @ApiModelProperty(value = "Specified date and time the permissions will expire. If this is not populated, the permissions will be open ended.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getExpirationDateTime() {
     return expirationDateTime;
@@ -277,9 +296,14 @@ public class OBReadConsentResponse1Data   {
   }
 
   /**
-   * Specified start date and time for the transaction query period. If this is not populated, the start date will be open ended, and data will be returned from the earliest available transaction.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Specified start date and time for the transaction query period. If this is
+   * not populated, the start date will be open ended, and data will be returned
+   * from the earliest available transaction.All dates in the JSON payloads are
+   * represented in ISO 8601 date-time format. All date-time fields in responses
+   * must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * 
    * @return transactionFromDateTime
-  */
+   */
   @ApiModelProperty(value = "Specified start date and time for the transaction query period. If this is not populated, the start date will be open ended, and data will be returned from the earliest available transaction.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getTransactionFromDateTime() {
     return transactionFromDateTime;
@@ -295,9 +319,14 @@ public class OBReadConsentResponse1Data   {
   }
 
   /**
-   * Specified end date and time for the transaction query period. If this is not populated, the end date will be open ended, and data will be returned to the latest available transaction.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Specified end date and time for the transaction query period. If this is not
+   * populated, the end date will be open ended, and data will be returned to the
+   * latest available transaction.All dates in the JSON payloads are represented
+   * in ISO 8601 date-time format. All date-time fields in responses must include
+   * the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * 
    * @return transactionToDateTime
-  */
+   */
   @ApiModelProperty(value = "Specified end date and time for the transaction query period. If this is not populated, the end date will be open ended, and data will be returned to the latest available transaction.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getTransactionToDateTime() {
     return transactionToDateTime;
@@ -306,7 +335,6 @@ public class OBReadConsentResponse1Data   {
   public void setTransactionToDateTime(OffsetDateTime transactionToDateTime) {
     this.transactionToDateTime = transactionToDateTime;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -317,26 +345,27 @@ public class OBReadConsentResponse1Data   {
       return false;
     }
     OBReadConsentResponse1Data obReadConsentResponse1Data = (OBReadConsentResponse1Data) o;
-    return Objects.equals(this.consentId, obReadConsentResponse1Data.consentId) &&
-        Objects.equals(this.creationDateTime, obReadConsentResponse1Data.creationDateTime) &&
-        Objects.equals(this.status, obReadConsentResponse1Data.status) &&
-        Objects.equals(this.statusUpdateDateTime, obReadConsentResponse1Data.statusUpdateDateTime) &&
-        Objects.equals(this.permissions, obReadConsentResponse1Data.permissions) &&
-        Objects.equals(this.expirationDateTime, obReadConsentResponse1Data.expirationDateTime) &&
-        Objects.equals(this.transactionFromDateTime, obReadConsentResponse1Data.transactionFromDateTime) &&
-        Objects.equals(this.transactionToDateTime, obReadConsentResponse1Data.transactionToDateTime);
+    return Objects.equals(this.consentId, obReadConsentResponse1Data.consentId)
+        && Objects.equals(this.creationDateTime, obReadConsentResponse1Data.creationDateTime)
+        && Objects.equals(this.status, obReadConsentResponse1Data.status)
+        && Objects.equals(this.statusUpdateDateTime, obReadConsentResponse1Data.statusUpdateDateTime)
+        && Objects.equals(this.permissions, obReadConsentResponse1Data.permissions)
+        && Objects.equals(this.expirationDateTime, obReadConsentResponse1Data.expirationDateTime)
+        && Objects.equals(this.transactionFromDateTime, obReadConsentResponse1Data.transactionFromDateTime)
+        && Objects.equals(this.transactionToDateTime, obReadConsentResponse1Data.transactionToDateTime);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(consentId, creationDateTime, status, statusUpdateDateTime, permissions, expirationDateTime, transactionFromDateTime, transactionToDateTime);
+    return Objects.hash(consentId, creationDateTime, status, statusUpdateDateTime, permissions, expirationDateTime,
+        transactionFromDateTime, transactionToDateTime);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadConsentResponse1Data {\n");
-    
+
     sb.append("    consentId: ").append(toIndentedString(consentId)).append("\n");
     sb.append("    creationDateTime: ").append(toIndentedString(creationDateTime)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
@@ -360,4 +389,3 @@ public class OBReadConsentResponse1Data   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

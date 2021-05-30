@@ -30,7 +30,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Provides further details on an entry in the report.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBTransaction6Detail   {
+public class OBTransaction6Detail {
   @JsonProperty("AccountId")
   private String accountId;
 
@@ -41,7 +41,7 @@ public class OBTransaction6Detail   {
   private String transactionReference;
 
   @JsonProperty("StatementReference")
-  
+
   private List<String> statementReference = null;
 
   @JsonProperty("CreditDebitIndicator")
@@ -112,9 +112,11 @@ public class OBTransaction6Detail   {
   }
 
   /**
-   * A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.
+   * A unique and immutable identifier used to identify the account resource. This
+   * identifier has no meaning to the account owner.
+   * 
    * @return accountId
-  */
+   */
   @ApiModelProperty(required = true, value = "A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.")
   public String getAccountId() {
     return accountId;
@@ -130,9 +132,11 @@ public class OBTransaction6Detail   {
   }
 
   /**
-   * Unique identifier for the transaction within an servicing institution. This identifier is both unique and immutable.
+   * Unique identifier for the transaction within an servicing institution. This
+   * identifier is both unique and immutable.
+   * 
    * @return transactionId
-  */
+   */
   @ApiModelProperty(value = "Unique identifier for the transaction within an servicing institution. This identifier is both unique and immutable.")
   public String getTransactionId() {
     return transactionId;
@@ -148,9 +152,11 @@ public class OBTransaction6Detail   {
   }
 
   /**
-   * Unique reference for the transaction. This reference is optionally populated, and may as an example be the FPID in the Faster Payments context.
+   * Unique reference for the transaction. This reference is optionally populated,
+   * and may as an example be the FPID in the Faster Payments context.
+   * 
    * @return transactionReference
-  */
+   */
   @ApiModelProperty(value = "Unique reference for the transaction. This reference is optionally populated, and may as an example be the FPID in the Faster Payments context.")
   public String getTransactionReference() {
     return transactionReference;
@@ -175,8 +181,9 @@ public class OBTransaction6Detail   {
 
   /**
    * Get statementReference
+   * 
    * @return statementReference
-  */
+   */
   @ApiModelProperty(value = "")
   public List<String> getStatementReference() {
     return statementReference;
@@ -193,8 +200,9 @@ public class OBTransaction6Detail   {
 
   /**
    * Get creditDebitIndicator
+   * 
    * @return creditDebitIndicator
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBCreditDebitCode1 getCreditDebitIndicator() {
     return creditDebitIndicator;
@@ -211,8 +219,9 @@ public class OBTransaction6Detail   {
 
   /**
    * Get status
+   * 
    * @return status
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBEntryStatus1Code getStatus() {
     return status;
@@ -229,8 +238,9 @@ public class OBTransaction6Detail   {
 
   /**
    * Get transactionMutability
+   * 
    * @return transactionMutability
-  */
+   */
   @ApiModelProperty(value = "")
   public OBTransactionMutability1Code getTransactionMutability() {
     return transactionMutability;
@@ -246,9 +256,15 @@ public class OBTransaction6Detail   {
   }
 
   /**
-   * Date and time when a transaction entry is posted to an account on the account servicer's books. Usage: Booking date is the expected booking date, unless the status is booked, in which case it is the actual booking date.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Date and time when a transaction entry is posted to an account on the account
+   * servicer's books. Usage: Booking date is the expected booking date, unless
+   * the status is booked, in which case it is the actual booking date.All dates
+   * in the JSON payloads are represented in ISO 8601 date-time format. All
+   * date-time fields in responses must include the timezone. An example is below:
+   * 2017-04-05T10:43:07+00:00
+   * 
    * @return bookingDateTime
-  */
+   */
   @ApiModelProperty(required = true, value = "Date and time when a transaction entry is posted to an account on the account servicer's books. Usage: Booking date is the expected booking date, unless the status is booked, in which case it is the actual booking date.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getBookingDateTime() {
     return bookingDateTime;
@@ -264,9 +280,19 @@ public class OBTransaction6Detail   {
   }
 
   /**
-   * Date and time at which assets become available to the account owner in case of a credit entry, or cease to be available to the account owner in case of a debit transaction entry. Usage: If transaction entry status is pending and value date is present, then the value date refers to an expected/requested value date. For transaction entries subject to availability/float and for which availability information is provided, the value date must not be used. In this case the availability component identifies the number of availability days.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Date and time at which assets become available to the account owner in case
+   * of a credit entry, or cease to be available to the account owner in case of a
+   * debit transaction entry. Usage: If transaction entry status is pending and
+   * value date is present, then the value date refers to an expected/requested
+   * value date. For transaction entries subject to availability/float and for
+   * which availability information is provided, the value date must not be used.
+   * In this case the availability component identifies the number of availability
+   * days.All dates in the JSON payloads are represented in ISO 8601 date-time
+   * format. All date-time fields in responses must include the timezone. An
+   * example is below: 2017-04-05T10:43:07+00:00
+   * 
    * @return valueDateTime
-  */
+   */
   @ApiModelProperty(value = "Date and time at which assets become available to the account owner in case of a credit entry, or cease to be available to the account owner in case of a debit transaction entry. Usage: If transaction entry status is pending and value date is present, then the value date refers to an expected/requested value date. For transaction entries subject to availability/float and for which availability information is provided, the value date must not be used. In this case the availability component identifies the number of availability days.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getValueDateTime() {
     return valueDateTime;
@@ -282,9 +308,11 @@ public class OBTransaction6Detail   {
   }
 
   /**
-   * Further details of the transaction.  This is the transaction narrative, which is unstructured text.
+   * Further details of the transaction. This is the transaction narrative, which
+   * is unstructured text.
+   * 
    * @return transactionInformation
-  */
+   */
   @ApiModelProperty(value = "Further details of the transaction.  This is the transaction narrative, which is unstructured text.")
   public String getTransactionInformation() {
     return transactionInformation;
@@ -300,9 +328,11 @@ public class OBTransaction6Detail   {
   }
 
   /**
-   * Information that locates and identifies a specific address for a transaction entry, that is presented in free format text.
+   * Information that locates and identifies a specific address for a transaction
+   * entry, that is presented in free format text.
+   * 
    * @return addressLine
-  */
+   */
   @ApiModelProperty(value = "Information that locates and identifies a specific address for a transaction entry, that is presented in free format text.")
   public String getAddressLine() {
     return addressLine;
@@ -319,8 +349,9 @@ public class OBTransaction6Detail   {
 
   /**
    * Get amount
+   * 
    * @return amount
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBActiveOrHistoricCurrencyAndAmount9 getAmount() {
     return amount;
@@ -337,8 +368,9 @@ public class OBTransaction6Detail   {
 
   /**
    * Get chargeAmount
+   * 
    * @return chargeAmount
-  */
+   */
   @ApiModelProperty(value = "")
   public OBActiveOrHistoricCurrencyAndAmount10 getChargeAmount() {
     return chargeAmount;
@@ -355,8 +387,9 @@ public class OBTransaction6Detail   {
 
   /**
    * Get currencyExchange
+   * 
    * @return currencyExchange
-  */
+   */
   @ApiModelProperty(value = "")
   public OBCurrencyExchange5 getCurrencyExchange() {
     return currencyExchange;
@@ -373,8 +406,9 @@ public class OBTransaction6Detail   {
 
   /**
    * Get bankTransactionCode
+   * 
    * @return bankTransactionCode
-  */
+   */
   @ApiModelProperty(value = "")
   public OBBankTransactionCodeStructure1 getBankTransactionCode() {
     return bankTransactionCode;
@@ -384,21 +418,24 @@ public class OBTransaction6Detail   {
     this.bankTransactionCode = bankTransactionCode;
   }
 
-  public OBTransaction6Detail proprietaryBankTransactionCode(ProprietaryBankTransactionCodeStructure1 proprietaryBankTransactionCode) {
+  public OBTransaction6Detail proprietaryBankTransactionCode(
+      ProprietaryBankTransactionCodeStructure1 proprietaryBankTransactionCode) {
     this.proprietaryBankTransactionCode = proprietaryBankTransactionCode;
     return this;
   }
 
   /**
    * Get proprietaryBankTransactionCode
+   * 
    * @return proprietaryBankTransactionCode
-  */
+   */
   @ApiModelProperty(value = "")
   public ProprietaryBankTransactionCodeStructure1 getProprietaryBankTransactionCode() {
     return proprietaryBankTransactionCode;
   }
 
-  public void setProprietaryBankTransactionCode(ProprietaryBankTransactionCodeStructure1 proprietaryBankTransactionCode) {
+  public void setProprietaryBankTransactionCode(
+      ProprietaryBankTransactionCodeStructure1 proprietaryBankTransactionCode) {
     this.proprietaryBankTransactionCode = proprietaryBankTransactionCode;
   }
 
@@ -409,8 +446,9 @@ public class OBTransaction6Detail   {
 
   /**
    * Get balance
+   * 
    * @return balance
-  */
+   */
   @ApiModelProperty(value = "")
   public OBTransactionCashBalance getBalance() {
     return balance;
@@ -427,8 +465,9 @@ public class OBTransaction6Detail   {
 
   /**
    * Get merchantDetails
+   * 
    * @return merchantDetails
-  */
+   */
   @ApiModelProperty(value = "")
   public OBMerchantDetails1 getMerchantDetails() {
     return merchantDetails;
@@ -445,8 +484,9 @@ public class OBTransaction6Detail   {
 
   /**
    * Get creditorAgent
+   * 
    * @return creditorAgent
-  */
+   */
   @ApiModelProperty(value = "")
   public OBBranchAndFinancialInstitutionIdentification61 getCreditorAgent() {
     return creditorAgent;
@@ -463,8 +503,9 @@ public class OBTransaction6Detail   {
 
   /**
    * Get creditorAccount
+   * 
    * @return creditorAccount
-  */
+   */
   @ApiModelProperty(value = "")
   public OBCashAccount60 getCreditorAccount() {
     return creditorAccount;
@@ -481,8 +522,9 @@ public class OBTransaction6Detail   {
 
   /**
    * Get debtorAgent
+   * 
    * @return debtorAgent
-  */
+   */
   @ApiModelProperty(value = "")
   public OBBranchAndFinancialInstitutionIdentification62 getDebtorAgent() {
     return debtorAgent;
@@ -499,8 +541,9 @@ public class OBTransaction6Detail   {
 
   /**
    * Get debtorAccount
+   * 
    * @return debtorAccount
-  */
+   */
   @ApiModelProperty(value = "")
   public OBCashAccount61 getDebtorAccount() {
     return debtorAccount;
@@ -517,8 +560,9 @@ public class OBTransaction6Detail   {
 
   /**
    * Get cardInstrument
+   * 
    * @return cardInstrument
-  */
+   */
   @ApiModelProperty(value = "")
   public OBTransactionCardInstrument1 getCardInstrument() {
     return cardInstrument;
@@ -534,9 +578,11 @@ public class OBTransaction6Detail   {
   }
 
   /**
-   * Additional information that can not be captured in the structured fields and/or any other specific block.
+   * Additional information that can not be captured in the structured fields
+   * and/or any other specific block.
+   * 
    * @return supplementaryData
-  */
+   */
   @ApiModelProperty(value = "Additional information that can not be captured in the structured fields and/or any other specific block.")
   public Object getSupplementaryData() {
     return supplementaryData;
@@ -545,7 +591,6 @@ public class OBTransaction6Detail   {
   public void setSupplementaryData(Object supplementaryData) {
     this.supplementaryData = supplementaryData;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -556,42 +601,45 @@ public class OBTransaction6Detail   {
       return false;
     }
     OBTransaction6Detail obTransaction6Detail = (OBTransaction6Detail) o;
-    return Objects.equals(this.accountId, obTransaction6Detail.accountId) &&
-        Objects.equals(this.transactionId, obTransaction6Detail.transactionId) &&
-        Objects.equals(this.transactionReference, obTransaction6Detail.transactionReference) &&
-        Objects.equals(this.statementReference, obTransaction6Detail.statementReference) &&
-        Objects.equals(this.creditDebitIndicator, obTransaction6Detail.creditDebitIndicator) &&
-        Objects.equals(this.status, obTransaction6Detail.status) &&
-        Objects.equals(this.transactionMutability, obTransaction6Detail.transactionMutability) &&
-        Objects.equals(this.bookingDateTime, obTransaction6Detail.bookingDateTime) &&
-        Objects.equals(this.valueDateTime, obTransaction6Detail.valueDateTime) &&
-        Objects.equals(this.transactionInformation, obTransaction6Detail.transactionInformation) &&
-        Objects.equals(this.addressLine, obTransaction6Detail.addressLine) &&
-        Objects.equals(this.amount, obTransaction6Detail.amount) &&
-        Objects.equals(this.chargeAmount, obTransaction6Detail.chargeAmount) &&
-        Objects.equals(this.currencyExchange, obTransaction6Detail.currencyExchange) &&
-        Objects.equals(this.bankTransactionCode, obTransaction6Detail.bankTransactionCode) &&
-        Objects.equals(this.proprietaryBankTransactionCode, obTransaction6Detail.proprietaryBankTransactionCode) &&
-        Objects.equals(this.balance, obTransaction6Detail.balance) &&
-        Objects.equals(this.merchantDetails, obTransaction6Detail.merchantDetails) &&
-        Objects.equals(this.creditorAgent, obTransaction6Detail.creditorAgent) &&
-        Objects.equals(this.creditorAccount, obTransaction6Detail.creditorAccount) &&
-        Objects.equals(this.debtorAgent, obTransaction6Detail.debtorAgent) &&
-        Objects.equals(this.debtorAccount, obTransaction6Detail.debtorAccount) &&
-        Objects.equals(this.cardInstrument, obTransaction6Detail.cardInstrument) &&
-        Objects.equals(this.supplementaryData, obTransaction6Detail.supplementaryData);
+    return Objects.equals(this.accountId, obTransaction6Detail.accountId)
+        && Objects.equals(this.transactionId, obTransaction6Detail.transactionId)
+        && Objects.equals(this.transactionReference, obTransaction6Detail.transactionReference)
+        && Objects.equals(this.statementReference, obTransaction6Detail.statementReference)
+        && Objects.equals(this.creditDebitIndicator, obTransaction6Detail.creditDebitIndicator)
+        && Objects.equals(this.status, obTransaction6Detail.status)
+        && Objects.equals(this.transactionMutability, obTransaction6Detail.transactionMutability)
+        && Objects.equals(this.bookingDateTime, obTransaction6Detail.bookingDateTime)
+        && Objects.equals(this.valueDateTime, obTransaction6Detail.valueDateTime)
+        && Objects.equals(this.transactionInformation, obTransaction6Detail.transactionInformation)
+        && Objects.equals(this.addressLine, obTransaction6Detail.addressLine)
+        && Objects.equals(this.amount, obTransaction6Detail.amount)
+        && Objects.equals(this.chargeAmount, obTransaction6Detail.chargeAmount)
+        && Objects.equals(this.currencyExchange, obTransaction6Detail.currencyExchange)
+        && Objects.equals(this.bankTransactionCode, obTransaction6Detail.bankTransactionCode)
+        && Objects.equals(this.proprietaryBankTransactionCode, obTransaction6Detail.proprietaryBankTransactionCode)
+        && Objects.equals(this.balance, obTransaction6Detail.balance)
+        && Objects.equals(this.merchantDetails, obTransaction6Detail.merchantDetails)
+        && Objects.equals(this.creditorAgent, obTransaction6Detail.creditorAgent)
+        && Objects.equals(this.creditorAccount, obTransaction6Detail.creditorAccount)
+        && Objects.equals(this.debtorAgent, obTransaction6Detail.debtorAgent)
+        && Objects.equals(this.debtorAccount, obTransaction6Detail.debtorAccount)
+        && Objects.equals(this.cardInstrument, obTransaction6Detail.cardInstrument)
+        && Objects.equals(this.supplementaryData, obTransaction6Detail.supplementaryData);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(accountId, transactionId, transactionReference, statementReference, creditDebitIndicator, status, transactionMutability, bookingDateTime, valueDateTime, transactionInformation, addressLine, amount, chargeAmount, currencyExchange, bankTransactionCode, proprietaryBankTransactionCode, balance, merchantDetails, creditorAgent, creditorAccount, debtorAgent, debtorAccount, cardInstrument, supplementaryData);
+    return Objects.hash(accountId, transactionId, transactionReference, statementReference, creditDebitIndicator,
+        status, transactionMutability, bookingDateTime, valueDateTime, transactionInformation, addressLine, amount,
+        chargeAmount, currencyExchange, bankTransactionCode, proprietaryBankTransactionCode, balance, merchantDetails,
+        creditorAgent, creditorAccount, debtorAgent, debtorAccount, cardInstrument, supplementaryData);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBTransaction6Detail {\n");
-    
+
     sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
     sb.append("    transactionId: ").append(toIndentedString(transactionId)).append("\n");
     sb.append("    transactionReference: ").append(toIndentedString(transactionReference)).append("\n");
@@ -607,7 +655,8 @@ public class OBTransaction6Detail   {
     sb.append("    chargeAmount: ").append(toIndentedString(chargeAmount)).append("\n");
     sb.append("    currencyExchange: ").append(toIndentedString(currencyExchange)).append("\n");
     sb.append("    bankTransactionCode: ").append(toIndentedString(bankTransactionCode)).append("\n");
-    sb.append("    proprietaryBankTransactionCode: ").append(toIndentedString(proprietaryBankTransactionCode)).append("\n");
+    sb.append("    proprietaryBankTransactionCode: ").append(toIndentedString(proprietaryBankTransactionCode))
+        .append("\n");
     sb.append("    balance: ").append(toIndentedString(balance)).append("\n");
     sb.append("    merchantDetails: ").append(toIndentedString(merchantDetails)).append("\n");
     sb.append("    creditorAgent: ").append(toIndentedString(creditorAgent)).append("\n");
@@ -631,4 +680,3 @@ public class OBTransaction6Detail   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

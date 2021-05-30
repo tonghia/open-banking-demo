@@ -22,7 +22,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Provides further details on a statement resource.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBStatement2Basic   {
+public class OBStatement2Basic {
   @JsonProperty("AccountId")
   private String accountId;
 
@@ -48,31 +48,31 @@ public class OBStatement2Basic   {
   private OffsetDateTime creationDateTime;
 
   @JsonProperty("StatementDescription")
-  
+
   private List<String> statementDescription = null;
 
   @JsonProperty("StatementBenefit")
-  
+
   private List<OBStatement2StatementBenefit> statementBenefit = null;
 
   @JsonProperty("StatementFee")
-  
+
   private List<OBStatement2StatementFee> statementFee = null;
 
   @JsonProperty("StatementInterest")
-  
+
   private List<OBStatement2StatementInterest> statementInterest = null;
 
   @JsonProperty("StatementDateTime")
-  
+
   private List<OBStatement2StatementDateTime> statementDateTime = null;
 
   @JsonProperty("StatementRate")
-  
+
   private List<OBStatement2StatementRate> statementRate = null;
 
   @JsonProperty("StatementValue")
-  
+
   private List<OBStatement2StatementValue> statementValue = null;
 
   public OBStatement2Basic accountId(String accountId) {
@@ -81,9 +81,11 @@ public class OBStatement2Basic   {
   }
 
   /**
-   * A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.
+   * A unique and immutable identifier used to identify the account resource. This
+   * identifier has no meaning to the account owner.
+   * 
    * @return accountId
-  */
+   */
   @ApiModelProperty(required = true, value = "A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.")
   public String getAccountId() {
     return accountId;
@@ -99,9 +101,11 @@ public class OBStatement2Basic   {
   }
 
   /**
-   * Unique identifier for the statement resource within an servicing institution. This identifier is both unique and immutable.
+   * Unique identifier for the statement resource within an servicing institution.
+   * This identifier is both unique and immutable.
+   * 
    * @return statementId
-  */
+   */
   @ApiModelProperty(value = "Unique identifier for the statement resource within an servicing institution. This identifier is both unique and immutable.")
   public String getStatementId() {
     return statementId;
@@ -117,9 +121,11 @@ public class OBStatement2Basic   {
   }
 
   /**
-   * Unique reference for the statement. This reference may be optionally populated if available.
+   * Unique reference for the statement. This reference may be optionally
+   * populated if available.
+   * 
    * @return statementReference
-  */
+   */
   @ApiModelProperty(value = "Unique reference for the statement. This reference may be optionally populated if available.")
   public String getStatementReference() {
     return statementReference;
@@ -136,8 +142,9 @@ public class OBStatement2Basic   {
 
   /**
    * Get type
+   * 
    * @return type
-  */
+   */
   @ApiModelProperty(required = true, value = "")
   public OBExternalStatementType1Code getType() {
     return type;
@@ -153,9 +160,13 @@ public class OBStatement2Basic   {
   }
 
   /**
-   * Date and time at which the statement period starts.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Date and time at which the statement period starts.All dates in the JSON
+   * payloads are represented in ISO 8601 date-time format. All date-time fields
+   * in responses must include the timezone. An example is below:
+   * 2017-04-05T10:43:07+00:00
+   * 
    * @return startDateTime
-  */
+   */
   @ApiModelProperty(required = true, value = "Date and time at which the statement period starts.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getStartDateTime() {
     return startDateTime;
@@ -171,9 +182,13 @@ public class OBStatement2Basic   {
   }
 
   /**
-   * Date and time at which the statement period ends.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Date and time at which the statement period ends.All dates in the JSON
+   * payloads are represented in ISO 8601 date-time format. All date-time fields
+   * in responses must include the timezone. An example is below:
+   * 2017-04-05T10:43:07+00:00
+   * 
    * @return endDateTime
-  */
+   */
   @ApiModelProperty(required = true, value = "Date and time at which the statement period ends.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getEndDateTime() {
     return endDateTime;
@@ -189,9 +204,13 @@ public class OBStatement2Basic   {
   }
 
   /**
-   * Date and time at which the resource was created.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+   * Date and time at which the resource was created.All dates in the JSON
+   * payloads are represented in ISO 8601 date-time format. All date-time fields
+   * in responses must include the timezone. An example is below:
+   * 2017-04-05T10:43:07+00:00
+   * 
    * @return creationDateTime
-  */
+   */
   @ApiModelProperty(required = true, value = "Date and time at which the resource was created.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00")
   public OffsetDateTime getCreationDateTime() {
     return creationDateTime;
@@ -216,8 +235,9 @@ public class OBStatement2Basic   {
 
   /**
    * Get statementDescription
+   * 
    * @return statementDescription
-  */
+   */
   @ApiModelProperty(value = "")
   public List<String> getStatementDescription() {
     return statementDescription;
@@ -242,8 +262,9 @@ public class OBStatement2Basic   {
 
   /**
    * Get statementBenefit
+   * 
    * @return statementBenefit
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBStatement2StatementBenefit> getStatementBenefit() {
     return statementBenefit;
@@ -268,8 +289,9 @@ public class OBStatement2Basic   {
 
   /**
    * Get statementFee
+   * 
    * @return statementFee
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBStatement2StatementFee> getStatementFee() {
     return statementFee;
@@ -294,8 +316,9 @@ public class OBStatement2Basic   {
 
   /**
    * Get statementInterest
+   * 
    * @return statementInterest
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBStatement2StatementInterest> getStatementInterest() {
     return statementInterest;
@@ -320,8 +343,9 @@ public class OBStatement2Basic   {
 
   /**
    * Get statementDateTime
+   * 
    * @return statementDateTime
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBStatement2StatementDateTime> getStatementDateTime() {
     return statementDateTime;
@@ -346,8 +370,9 @@ public class OBStatement2Basic   {
 
   /**
    * Get statementRate
+   * 
    * @return statementRate
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBStatement2StatementRate> getStatementRate() {
     return statementRate;
@@ -372,8 +397,9 @@ public class OBStatement2Basic   {
 
   /**
    * Get statementValue
+   * 
    * @return statementValue
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBStatement2StatementValue> getStatementValue() {
     return statementValue;
@@ -382,7 +408,6 @@ public class OBStatement2Basic   {
   public void setStatementValue(List<OBStatement2StatementValue> statementValue) {
     this.statementValue = statementValue;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -393,32 +418,34 @@ public class OBStatement2Basic   {
       return false;
     }
     OBStatement2Basic obStatement2Basic = (OBStatement2Basic) o;
-    return Objects.equals(this.accountId, obStatement2Basic.accountId) &&
-        Objects.equals(this.statementId, obStatement2Basic.statementId) &&
-        Objects.equals(this.statementReference, obStatement2Basic.statementReference) &&
-        Objects.equals(this.type, obStatement2Basic.type) &&
-        Objects.equals(this.startDateTime, obStatement2Basic.startDateTime) &&
-        Objects.equals(this.endDateTime, obStatement2Basic.endDateTime) &&
-        Objects.equals(this.creationDateTime, obStatement2Basic.creationDateTime) &&
-        Objects.equals(this.statementDescription, obStatement2Basic.statementDescription) &&
-        Objects.equals(this.statementBenefit, obStatement2Basic.statementBenefit) &&
-        Objects.equals(this.statementFee, obStatement2Basic.statementFee) &&
-        Objects.equals(this.statementInterest, obStatement2Basic.statementInterest) &&
-        Objects.equals(this.statementDateTime, obStatement2Basic.statementDateTime) &&
-        Objects.equals(this.statementRate, obStatement2Basic.statementRate) &&
-        Objects.equals(this.statementValue, obStatement2Basic.statementValue);
+    return Objects.equals(this.accountId, obStatement2Basic.accountId)
+        && Objects.equals(this.statementId, obStatement2Basic.statementId)
+        && Objects.equals(this.statementReference, obStatement2Basic.statementReference)
+        && Objects.equals(this.type, obStatement2Basic.type)
+        && Objects.equals(this.startDateTime, obStatement2Basic.startDateTime)
+        && Objects.equals(this.endDateTime, obStatement2Basic.endDateTime)
+        && Objects.equals(this.creationDateTime, obStatement2Basic.creationDateTime)
+        && Objects.equals(this.statementDescription, obStatement2Basic.statementDescription)
+        && Objects.equals(this.statementBenefit, obStatement2Basic.statementBenefit)
+        && Objects.equals(this.statementFee, obStatement2Basic.statementFee)
+        && Objects.equals(this.statementInterest, obStatement2Basic.statementInterest)
+        && Objects.equals(this.statementDateTime, obStatement2Basic.statementDateTime)
+        && Objects.equals(this.statementRate, obStatement2Basic.statementRate)
+        && Objects.equals(this.statementValue, obStatement2Basic.statementValue);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(accountId, statementId, statementReference, type, startDateTime, endDateTime, creationDateTime, statementDescription, statementBenefit, statementFee, statementInterest, statementDateTime, statementRate, statementValue);
+    return Objects.hash(accountId, statementId, statementReference, type, startDateTime, endDateTime, creationDateTime,
+        statementDescription, statementBenefit, statementFee, statementInterest, statementDateTime, statementRate,
+        statementValue);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBStatement2Basic {\n");
-    
+
     sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
     sb.append("    statementId: ").append(toIndentedString(statementId)).append("\n");
     sb.append("    statementReference: ").append(toIndentedString(statementReference)).append("\n");
@@ -448,4 +475,3 @@ public class OBStatement2Basic   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

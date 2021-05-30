@@ -11,9 +11,9 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Min Max type
  */
 public enum OBMinMaxType1Code {
-  
+
   FMMN("FMMN"),
-  
+
   FMMX("FMMX");
 
   private String value;
@@ -42,4 +42,3 @@ public enum OBMinMaxType1Code {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

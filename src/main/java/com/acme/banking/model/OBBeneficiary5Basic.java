@@ -12,7 +12,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * OBBeneficiary5Basic
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBBeneficiary5Basic   {
+public class OBBeneficiary5Basic {
   @JsonProperty("AccountId")
   private String accountId;
 
@@ -34,9 +34,11 @@ public class OBBeneficiary5Basic   {
   }
 
   /**
-   * A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.
+   * A unique and immutable identifier used to identify the account resource. This
+   * identifier has no meaning to the account owner.
+   * 
    * @return accountId
-  */
+   */
   @ApiModelProperty(value = "A unique and immutable identifier used to identify the account resource. This identifier has no meaning to the account owner.")
   public String getAccountId() {
     return accountId;
@@ -52,9 +54,11 @@ public class OBBeneficiary5Basic   {
   }
 
   /**
-   * A unique and immutable identifier used to identify the beneficiary resource. This identifier has no meaning to the account owner.
+   * A unique and immutable identifier used to identify the beneficiary resource.
+   * This identifier has no meaning to the account owner.
+   * 
    * @return beneficiaryId
-  */
+   */
   @ApiModelProperty(value = "A unique and immutable identifier used to identify the beneficiary resource. This identifier has no meaning to the account owner.")
   public String getBeneficiaryId() {
     return beneficiaryId;
@@ -71,8 +75,9 @@ public class OBBeneficiary5Basic   {
 
   /**
    * Get beneficiaryType
+   * 
    * @return beneficiaryType
-  */
+   */
   @ApiModelProperty(value = "")
   public OBBeneficiaryType1Code getBeneficiaryType() {
     return beneficiaryType;
@@ -88,9 +93,17 @@ public class OBBeneficiary5Basic   {
   }
 
   /**
-   * Unique reference, as assigned by the creditor, to unambiguously refer to the payment transaction. Usage: If available, the initiating party should provide this reference in the structured remittance information, to enable reconciliation by the creditor upon receipt of the amount of money. If the business context requires the use of a creditor reference or a payment remit identification, and only one identifier can be passed through the end-to-end chain, the creditor's reference or payment remittance identification should be quoted in the end-to-end transaction identification.
+   * Unique reference, as assigned by the creditor, to unambiguously refer to the
+   * payment transaction. Usage: If available, the initiating party should provide
+   * this reference in the structured remittance information, to enable
+   * reconciliation by the creditor upon receipt of the amount of money. If the
+   * business context requires the use of a creditor reference or a payment remit
+   * identification, and only one identifier can be passed through the end-to-end
+   * chain, the creditor's reference or payment remittance identification should
+   * be quoted in the end-to-end transaction identification.
+   * 
    * @return reference
-  */
+   */
   @ApiModelProperty(value = "Unique reference, as assigned by the creditor, to unambiguously refer to the payment transaction. Usage: If available, the initiating party should provide this reference in the structured remittance information, to enable reconciliation by the creditor upon receipt of the amount of money. If the business context requires the use of a creditor reference or a payment remit identification, and only one identifier can be passed through the end-to-end chain, the creditor's reference or payment remittance identification should be quoted in the end-to-end transaction identification.")
   public String getReference() {
     return reference;
@@ -106,9 +119,11 @@ public class OBBeneficiary5Basic   {
   }
 
   /**
-   * Additional information that can not be captured in the structured fields and/or any other specific block.
+   * Additional information that can not be captured in the structured fields
+   * and/or any other specific block.
+   * 
    * @return supplementaryData
-  */
+   */
   @ApiModelProperty(value = "Additional information that can not be captured in the structured fields and/or any other specific block.")
   public Object getSupplementaryData() {
     return supplementaryData;
@@ -117,7 +132,6 @@ public class OBBeneficiary5Basic   {
   public void setSupplementaryData(Object supplementaryData) {
     this.supplementaryData = supplementaryData;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -128,11 +142,11 @@ public class OBBeneficiary5Basic   {
       return false;
     }
     OBBeneficiary5Basic obBeneficiary5Basic = (OBBeneficiary5Basic) o;
-    return Objects.equals(this.accountId, obBeneficiary5Basic.accountId) &&
-        Objects.equals(this.beneficiaryId, obBeneficiary5Basic.beneficiaryId) &&
-        Objects.equals(this.beneficiaryType, obBeneficiary5Basic.beneficiaryType) &&
-        Objects.equals(this.reference, obBeneficiary5Basic.reference) &&
-        Objects.equals(this.supplementaryData, obBeneficiary5Basic.supplementaryData);
+    return Objects.equals(this.accountId, obBeneficiary5Basic.accountId)
+        && Objects.equals(this.beneficiaryId, obBeneficiary5Basic.beneficiaryId)
+        && Objects.equals(this.beneficiaryType, obBeneficiary5Basic.beneficiaryType)
+        && Objects.equals(this.reference, obBeneficiary5Basic.reference)
+        && Objects.equals(this.supplementaryData, obBeneficiary5Basic.supplementaryData);
   }
 
   @Override
@@ -144,7 +158,7 @@ public class OBBeneficiary5Basic   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBBeneficiary5Basic {\n");
-    
+
     sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
     sb.append("    beneficiaryId: ").append(toIndentedString(beneficiaryId)).append("\n");
     sb.append("    beneficiaryType: ").append(toIndentedString(beneficiaryType)).append("\n");
@@ -165,4 +179,3 @@ public class OBBeneficiary5Basic   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

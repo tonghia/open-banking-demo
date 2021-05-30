@@ -15,9 +15,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Aligning with the read write specs structure.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBReadProduct2Data   {
+public class OBReadProduct2Data {
   @JsonProperty("Product")
-  
+
   private List<OBReadProduct2DataProduct> product = null;
 
   public OBReadProduct2Data product(List<OBReadProduct2DataProduct> product) {
@@ -35,8 +35,9 @@ public class OBReadProduct2Data   {
 
   /**
    * Get product
+   * 
    * @return product
-  */
+   */
   @ApiModelProperty(value = "")
   public List<OBReadProduct2DataProduct> getProduct() {
     return product;
@@ -45,7 +46,6 @@ public class OBReadProduct2Data   {
   public void setProduct(List<OBReadProduct2DataProduct> product) {
     this.product = product;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -68,7 +68,7 @@ public class OBReadProduct2Data   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBReadProduct2Data {\n");
-    
+
     sb.append("    product: ").append(toIndentedString(product)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -85,4 +85,3 @@ public class OBReadProduct2Data   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

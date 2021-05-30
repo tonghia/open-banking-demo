@@ -11,9 +11,9 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Specifies the status of the direct debit in code form.
  */
 public enum OBExternalDirectDebitStatus1Code {
-  
+
   ACTIVE("Active"),
-  
+
   INACTIVE("Inactive");
 
   private String value;
@@ -42,4 +42,3 @@ public enum OBExternalDirectDebitStatus1Code {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-

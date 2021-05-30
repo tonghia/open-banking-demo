@@ -12,7 +12,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Set of elements to fully identify a proprietary bank transaction code.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class ProprietaryBankTransactionCodeStructure1   {
+public class ProprietaryBankTransactionCodeStructure1 {
   @JsonProperty("Code")
   private String code;
 
@@ -26,8 +26,9 @@ public class ProprietaryBankTransactionCodeStructure1   {
 
   /**
    * Proprietary bank transaction code to identify the underlying transaction.
+   * 
    * @return code
-  */
+   */
   @ApiModelProperty(required = true, value = "Proprietary bank transaction code to identify the underlying transaction.")
   public String getCode() {
     return code;
@@ -44,8 +45,9 @@ public class ProprietaryBankTransactionCodeStructure1   {
 
   /**
    * Identification of the issuer of the proprietary bank transaction code.
+   * 
    * @return issuer
-  */
+   */
   @ApiModelProperty(value = "Identification of the issuer of the proprietary bank transaction code.")
   public String getIssuer() {
     return issuer;
@@ -54,7 +56,6 @@ public class ProprietaryBankTransactionCodeStructure1   {
   public void setIssuer(String issuer) {
     this.issuer = issuer;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -65,8 +66,8 @@ public class ProprietaryBankTransactionCodeStructure1   {
       return false;
     }
     ProprietaryBankTransactionCodeStructure1 proprietaryBankTransactionCodeStructure1 = (ProprietaryBankTransactionCodeStructure1) o;
-    return Objects.equals(this.code, proprietaryBankTransactionCodeStructure1.code) &&
-        Objects.equals(this.issuer, proprietaryBankTransactionCodeStructure1.issuer);
+    return Objects.equals(this.code, proprietaryBankTransactionCodeStructure1.code)
+        && Objects.equals(this.issuer, proprietaryBankTransactionCodeStructure1.issuer);
   }
 
   @Override
@@ -78,7 +79,7 @@ public class ProprietaryBankTransactionCodeStructure1   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ProprietaryBankTransactionCodeStructure1 {\n");
-    
+
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    issuer: ").append(toIndentedString(issuer)).append("\n");
     sb.append("}");
@@ -96,4 +97,3 @@ public class ProprietaryBankTransactionCodeStructure1   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

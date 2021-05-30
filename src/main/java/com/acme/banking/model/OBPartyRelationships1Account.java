@@ -13,7 +13,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  */
 @ApiModel(description = "Relationship to the Account resource.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-05-30T19:13:53.869644+07:00[Asia/Ho_Chi_Minh]")
-public class OBPartyRelationships1Account   {
+public class OBPartyRelationships1Account {
   @JsonProperty("Related")
   private URI related;
 
@@ -27,8 +27,9 @@ public class OBPartyRelationships1Account   {
 
   /**
    * Absolute URI to the related resource.
+   * 
    * @return related
-  */
+   */
   @ApiModelProperty(required = true, value = "Absolute URI to the related resource.")
   public URI getRelated() {
     return related;
@@ -44,9 +45,11 @@ public class OBPartyRelationships1Account   {
   }
 
   /**
-   * Unique identification as assigned by the ASPSP to uniquely identify the related resource.
+   * Unique identification as assigned by the ASPSP to uniquely identify the
+   * related resource.
+   * 
    * @return id
-  */
+   */
   @ApiModelProperty(required = true, value = "Unique identification as assigned by the ASPSP to uniquely identify the related resource.")
   public String getId() {
     return id;
@@ -55,7 +58,6 @@ public class OBPartyRelationships1Account   {
   public void setId(String id) {
     this.id = id;
   }
-
 
   @Override
   public boolean equals(Object o) {
@@ -66,8 +68,8 @@ public class OBPartyRelationships1Account   {
       return false;
     }
     OBPartyRelationships1Account obPartyRelationships1Account = (OBPartyRelationships1Account) o;
-    return Objects.equals(this.related, obPartyRelationships1Account.related) &&
-        Objects.equals(this.id, obPartyRelationships1Account.id);
+    return Objects.equals(this.related, obPartyRelationships1Account.related)
+        && Objects.equals(this.id, obPartyRelationships1Account.id);
   }
 
   @Override
@@ -79,7 +81,7 @@ public class OBPartyRelationships1Account   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OBPartyRelationships1Account {\n");
-    
+
     sb.append("    related: ").append(toIndentedString(related)).append("\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("}");
@@ -97,4 +99,3 @@ public class OBPartyRelationships1Account   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

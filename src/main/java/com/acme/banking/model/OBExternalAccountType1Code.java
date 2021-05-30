@@ -11,9 +11,9 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * Specifies the type of account (personal or business).
  */
 public enum OBExternalAccountType1Code {
-  
+
   BUSINESS("Business"),
-  
+
   PERSONAL("Personal");
 
   private String value;
@@ -42,4 +42,3 @@ public enum OBExternalAccountType1Code {
     throw new IllegalArgumentException("Unexpected value '" + value + "'");
   }
 }
-
