@@ -52,6 +52,7 @@ test {
 task srcZip(type: Zip) {
 	classifier = 'src'
 	from projectDir
+	include 'open-api/*'
 	include 'src/**/*'
 	include '*.gradle'
 	include 'README.md'
