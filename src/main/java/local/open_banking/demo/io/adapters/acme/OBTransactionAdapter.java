@@ -1,4 +1,4 @@
-package local.open_banking.demo.io.adapter.acme;
+package local.open_banking.demo.io.adapters.acme;
 
 import com.acme.banking.model.OBTransaction6;
 import local.open_banking.demo.io.entity.Transaction;
