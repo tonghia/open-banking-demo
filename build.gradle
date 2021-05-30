@@ -79,11 +79,11 @@ openApiGenerate {
 
 task copyGenerated(type: Copy) {
 	from "$buildDir/generated/src/main/java/com/acme/banking/model"
-	into "$rootDir/src/main/java/com/acme/banking/model"
+	into "$rootDir/src/main/java/local/open_banking/demo/com/model"
 }
 
 task cleanGenerated(type: Delete) {
-	delete "$rootDir/src/main/java/com"
+	delete "$rootDir/src/main/java/local/open_banking/demo/com"
 }
 
 clean.dependsOn cleanGenerated
