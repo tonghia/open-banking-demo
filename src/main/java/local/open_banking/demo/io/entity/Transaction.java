@@ -1,4 +1,4 @@
-package local.open_banking.demo.entity;
+package local.open_banking.demo.io.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

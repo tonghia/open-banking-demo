@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.4.2'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
+	id "org.openapi.generator" version "5.0.0"
 }
 
 group = 'local.open_banking'
@@ -35,6 +36,13 @@ dependencies {
 	testCompile "org.testcontainers:testcontainers:1.15.1"
 	testCompile "org.testcontainers:junit-jupiter:1.15.1"
 	testCompile "org.testcontainers:mysql:1.15.1"
+
+	implementation 'io.springfox:springfox-swagger2:2.9.2'
+	implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+	implementation 'org.openapitools:jackson-databind-nullable:0.2.1'
+
+	compile 'io.github.resilience4j:resilience4j-spring-boot2:1.5.0'
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 }
 
 test {
@@ -51,3 +59,31 @@ task srcZip(type: Zip) {
 		println "Path to zip: $archivePath.path"
 	}
 }
+
+openApiGenerate {
+	generatorName = "spring"
+	generateModelDocumentation = false
+	generateApiDocumentation = false
+	inputSpec = "$rootDir/open-api/open-banking.yaml".toString()
+	outputDir = "$buildDir/generated".toString()
+	invokerPackage = "com.acme.banking.invoker"
+	modelPackage = "com.acme.banking.model"
+	apiPackage = "com.acme.banking.api"
+	configOptions = [
+			dateLibrary: "java8",
+			basePackage: "com.acme.banking",
+			interfaceOnly: "true",
+			useBeanValidation: "false"
+	]
+}
+
+task copyGenerated(type: Copy) {
+	from "$buildDir/generated/src/main/java/com/acme/banking/model"
+	into "$rootDir/src/main/java/com/acme/banking/model"
+}
+
+task cleanGenerated(type: Delete) {
+	delete "$rootDir/src/main/java/com"
+}
+
+clean.dependsOn cleanGenerated

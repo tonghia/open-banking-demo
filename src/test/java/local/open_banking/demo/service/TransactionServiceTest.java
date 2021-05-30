@@ -1,8 +1,8 @@
 package local.open_banking.demo.service;
 
-import local.open_banking.demo.entity.Transaction;
-import local.open_banking.demo.repository.TransactionRepository;
-import local.open_banking.demo.service.TransactionService;
+import local.open_banking.demo.io.entity.Transaction;
+import local.open_banking.demo.io.repository.TransactionRepository;
+import local.open_banking.demo.io.service.TransactionService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;

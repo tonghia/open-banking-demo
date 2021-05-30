@@ -1,7 +1,7 @@
 package local.open_banking.demo.web;
 
 import local.open_banking.demo.DemoApplication;
-import local.open_banking.demo.web.TransactionController;
+import local.open_banking.demo.io.web.TransactionController;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

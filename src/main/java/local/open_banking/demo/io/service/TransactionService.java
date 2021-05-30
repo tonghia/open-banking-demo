@@ -1,7 +1,7 @@
-package local.open_banking.demo.service;
+package local.open_banking.demo.io.service;
 
-import local.open_banking.demo.entity.Transaction;
-import local.open_banking.demo.repository.TransactionRepository;
+import local.open_banking.demo.io.entity.Transaction;
+import local.open_banking.demo.io.repository.TransactionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

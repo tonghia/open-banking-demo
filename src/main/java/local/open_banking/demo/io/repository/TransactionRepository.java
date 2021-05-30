@@ -1,8 +1,9 @@
-package local.open_banking.demo.repository;
+package local.open_banking.demo.io.repository;
 
-import local.open_banking.demo.entity.Transaction;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import local.open_banking.demo.io.entity.Transaction;
 
 import java.util.List;
 
